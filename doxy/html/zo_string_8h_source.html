@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Plik źródłowy zoString.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('zo_string_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">zoString.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="zo_string_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ZO_STRING_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_STRING_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="zo_types_8h.html">zoTypes.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="code" href="zo_string_8h.html#adba4bd95e62f8f6b86aa90abb3c982df">    6</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> <a class="code" href="zo_string_8h.html#adba4bd95e62f8f6b86aa90abb3c982df">strToU16</a>(<a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>* str)</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="union_u16.html">U16</a> *num;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    num = (<a class="code" href="union_u16.html">U16</a>*)str;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">return</span> num-&gt;<a class="code" href="union_u16.html#ac1cb060dbcb04738fb1ca731dc022620">all</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="zo_string_8h.html#a1e3a5047731c35d27fcd5d80d57dc853">   13</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="zo_types_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a> <a class="code" href="zo_string_8h.html#a1e3a5047731c35d27fcd5d80d57dc853">strToS16</a>(<a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>* str)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="union_s16.html">S16</a>* num;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    num = (<a class="code" href="union_s16.html">S16</a>*)str;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> num-&gt;<a class="code" href="union_s16.html#a5c4a2569b20b47f029c2f2239a406435">all</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="zo_string_8h.html#a757fb09eee62648c6e50f3ea6d804181">   20</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="zo_types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> <a class="code" href="zo_string_8h.html#a757fb09eee62648c6e50f3ea6d804181">strToU32</a>(<a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>* str)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="union_u32.html">U32</a> *num;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    num = (<a class="code" href="union_u32.html">U32</a>*)str;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> num-&gt;<a class="code" href="union_u32.html#a78c8432c620e791ffb7e5da5ac1feb83">all</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="zo_string_8h.html#ad411307855e92e37dc299a50d78281b4">   27</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> <a class="code" href="zo_string_8h.html#ad411307855e92e37dc299a50d78281b4">strToS32</a>(<a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>* str)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="union_s32.html">S32</a> *num;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    num = (<a class="code" href="union_s32.html">S32</a>*)str;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> num-&gt;<a class="code" href="union_s32.html#a542b14244bbfbe6c342d1c3d87ec292c">all</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="zo_string_8h.html#a4087ddef12508f66de51cd2baa9e28ca">   34</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="zo_types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> <a class="code" href="zo_string_8h.html#a4087ddef12508f66de51cd2baa9e28ca">strToU64</a>(<a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>* str)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="union_u64.html">U64</a> *num;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    num = (<a class="code" href="union_u64.html">U64</a>*)str;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> num-&gt;<a class="code" href="union_u64.html#a8a96599ea1037f6b344ff6fc26d39fbd">all</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="zo_string_8h.html#a22a88455cc09f893a1cc5fc77b9ae162">   41</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="zo_types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> <a class="code" href="zo_string_8h.html#a22a88455cc09f893a1cc5fc77b9ae162">strToS64</a>(<a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>* str)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="union_s64.html">S64</a> *num;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    num = (<a class="code" href="union_s64.html">S64</a>*)str;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> num-&gt;<a class="code" href="union_s64.html#a37d76c495a07e3476ab3a6d916768573">all</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="zo_string_8h.html#ab7ca42e1938ab70e713a85379332b119">   48</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="zo_string_8h.html#ab7ca42e1938ab70e713a85379332b119">u16ToStr</a>(<a class="code" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> data, <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>* str)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="union_u16.html">U16</a>* num;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    num = (<a class="code" href="union_u16.html">U16</a>*)str;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    num-&gt;<a class="code" href="union_u16.html#ac1cb060dbcb04738fb1ca731dc022620">all</a> = data;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="zo_string_8h.html#a07b402e7198397f5a86f0831bea087b9">   55</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="zo_string_8h.html#a07b402e7198397f5a86f0831bea087b9">s16ToStr</a>(<a class="code" href="zo_types_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a> data, <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>* str)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="union_s16.html">S16</a>* num;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    num = (<a class="code" href="union_s16.html">S16</a>*)str;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    num-&gt;<a class="code" href="union_s16.html#a5c4a2569b20b47f029c2f2239a406435">all</a> = data;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="zo_string_8h.html#a6ba6dde3f630cb95991ad7f99e7a9ed9">   62</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="zo_string_8h.html#a6ba6dde3f630cb95991ad7f99e7a9ed9">u32ToStr</a>(<a class="code" href="zo_types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> data, <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>* str)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="union_u32.html">U32</a>* num;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    num = (<a class="code" href="union_u32.html">U32</a>*)str;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    num-&gt;<a class="code" href="union_u32.html#a78c8432c620e791ffb7e5da5ac1feb83">all</a> = data;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="zo_string_8h.html#ac78c8f3c207848b13cfe08c25d3d9fb9">   69</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="zo_string_8h.html#ac78c8f3c207848b13cfe08c25d3d9fb9">s32ToStr</a>(<a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> data, <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>* str)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="union_s32.html">S32</a>* num;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    num = (<a class="code" href="union_s32.html">S32</a>*)str;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    num-&gt;<a class="code" href="union_s32.html#a542b14244bbfbe6c342d1c3d87ec292c">all</a> = data;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="zo_string_8h.html#a592d0be80d8da0339900307ffa32be27">   76</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="zo_string_8h.html#a592d0be80d8da0339900307ffa32be27">u64ToStr</a>(<a class="code" href="zo_types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> data, <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>* str)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="union_u64.html">U64</a>* num;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    num = (<a class="code" href="union_u64.html">U64</a>*)str;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    num-&gt;<a class="code" href="union_u64.html#a8a96599ea1037f6b344ff6fc26d39fbd">all</a> = data;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="zo_string_8h.html#a859a55e9ee358145ed96531f6f3601ee">   83</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="zo_string_8h.html#a859a55e9ee358145ed96531f6f3601ee">s64ToStr</a>(<a class="code" href="zo_types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> data, <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>* str)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="union_s64.html">S64</a>* num;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    num = (<a class="code" href="union_s64.html">S64</a>*)str;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    num-&gt;<a class="code" href="union_s64.html#a37d76c495a07e3476ab3a6d916768573">all</a> = data;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif //ZO_STRING_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb5fb232909a11b4992a277a944d4228.html">SuperModified.V1</a></li><li class="navelem"><a class="el" href="zo_string_8h.html">zoString.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:49:49 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

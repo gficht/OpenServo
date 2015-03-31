@@ -1,0 +1,1227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku zoI2c.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('zo_i2c_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku zoI2c.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="zo_types_8h_source.html">zoTypes.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="zo_error_8h_source.html">zoError.h</a>&quot;</code><br/>
+</div>
+<p><a href="zo_i2c_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:ac641751acdc74f64f7875fc59edcb330"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#ac641751acdc74f64f7875fc59edcb330">ZO_I2C_ENABLE_MASTER_TRANSMIT</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a1595593768951b933c876b9b549828cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a1595593768951b933c876b9b549828cc">ZO_I2C_ENABLE_MASTER_RECEIVE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:af6db5241fcf2de2d0ac996d1119924d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#af6db5241fcf2de2d0ac996d1119924d3">ZO_I2C_ERROR_NONE</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memitem:aac519e60561c508c88db71ace34fc47a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#aac519e60561c508c88db71ace34fc47a">ZO_I2C_ERROR_NODEV</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memitem:aed12c742288a6b2ea2ff0fd9425ca759"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#aed12c742288a6b2ea2ff0fd9425ca759">ZO_I2C_ERROR_BUS_ERROR</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memitem:af18e8fa7ed9ee6db9da7ebe30382e89c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#af18e8fa7ed9ee6db9da7ebe30382e89c">ZO_I2C_ERROR_ARBITRATION_LOST</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memitem:aa85100a9de25b083c9592b4909821e7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#aa85100a9de25b083c9592b4909821e7a">ZO_I2C_ERROR_INDETERMINATE</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memitem:a569e4760fe55fc03e5b218c1c2137f80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a569e4760fe55fc03e5b218c1c2137f80">ZO_I2C_ERROR_WAIT_ON_BUS_READY_TIMEOUT</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="memitem:a3f4c245231f5a9e1ac2ea41b5a624a5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a3f4c245231f5a9e1ac2ea41b5a624a5c">ZO_I2C_ERROR_WAIT_ON_TRANSMIT_TIMEOUT</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="memitem:a756246bb1a7a4e6bee8676a000208ff2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a756246bb1a7a4e6bee8676a000208ff2">ZO_I2C_ERROR_WAIT_ON_RECEIVE_TIMEOUT</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="memitem:aeec47e7d1e1108b101578e0826f31835"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#aeec47e7d1e1108b101578e0826f31835">ZO_I2C_DEFAULT_BITRATE_KHZ</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memitem:aba37d0d46ff475be13bc8c3cf84aa0ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#aba37d0d46ff475be13bc8c3cf84aa0ae">ZO_I2C_DEFAULT_WAIT_ON_BUS_READY_TIMEOUT_MILISECONDS</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memitem:a88969376a1b9d77114eb1e83eff056b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a88969376a1b9d77114eb1e83eff056b5">ZO_I2C_DEFAULT_WAIT_ON_TRANSMIT_TIMEOUT_MILISECONDS</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memitem:a3fd711119bde1a9df6dba5ca132e005d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a3fd711119bde1a9df6dba5ca132e005d">ZO_I2C_DEFAULT_WAIT_ON_RECEIVE_TIMEOUT_MILISECONDS</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memitem:a60f81cc411b2c9cdaeab4ced3812b918"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a60f81cc411b2c9cdaeab4ced3812b918">ZO_I2C_BUFFER_SIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memitem:a8ec630c2063d0353c53d140b99382d80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a8ec630c2063d0353c53d140b99382d80">TW_START</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memitem:a8dce3e4b7e35355a8add9ed63d1fa3ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a8dce3e4b7e35355a8add9ed63d1fa3ab">TW_REP_START</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memitem:a85cae14b4190042335d25ed9a1b72369"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a85cae14b4190042335d25ed9a1b72369">TW_MT_SLA_ACK</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memitem:aca64b973c51d6548a962c1d7cae0663e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#aca64b973c51d6548a962c1d7cae0663e">TW_MT_SLA_NACK</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memitem:a4c28186053b5298305b131ad3e1111f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a4c28186053b5298305b131ad3e1111f7">TW_MT_DATA_ACK</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="memitem:a91c107a74d268f8578d866ed1bbbd4f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a91c107a74d268f8578d866ed1bbbd4f3">TW_MT_DATA_NACK</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="memitem:a5959251c4bd80f48b5a029447d86adb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a5959251c4bd80f48b5a029447d86adb3">TW_MT_ARB_LOST</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="memitem:ad85222308836bfbe099255662ffb510c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#ad85222308836bfbe099255662ffb510c">TW_MR_ARB_LOST</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="memitem:ac16504b87d15d83b97bb0ce61577bb40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#ac16504b87d15d83b97bb0ce61577bb40">TW_MR_SLA_ACK</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="memitem:a655325b6f8a1818103b126cc3774d8e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a655325b6f8a1818103b126cc3774d8e8">TW_MR_SLA_NACK</a>&#160;&#160;&#160;0x09</td></tr>
+<tr class="memitem:a3c8c79b2ecb8d22358839890161cc33b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a3c8c79b2ecb8d22358839890161cc33b">TW_MR_DATA_ACK</a>&#160;&#160;&#160;0x0A</td></tr>
+<tr class="memitem:a532f0ffa12f684346c74a5cbec15950e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a532f0ffa12f684346c74a5cbec15950e">TW_MR_DATA_NACK</a>&#160;&#160;&#160;0x0B</td></tr>
+<tr class="memitem:a9e9e761d674793772e6b3f77fc9d7fab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a9e9e761d674793772e6b3f77fc9d7fab">TW_SR_SLA_ACK</a>&#160;&#160;&#160;0x0C</td></tr>
+<tr class="memitem:a1c3ed5ed345d17972002b9fd07f4f829"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a1c3ed5ed345d17972002b9fd07f4f829">TW_SR_ARB_LOST_SLA_ACK</a>&#160;&#160;&#160;0x0D</td></tr>
+<tr class="memitem:a6eb3b4230887a8b73d7787ff231ea911"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a6eb3b4230887a8b73d7787ff231ea911">TW_SR_GCALL_ACK</a>&#160;&#160;&#160;0x0E</td></tr>
+<tr class="memitem:a4756103341a65e0e3889996cdf15b2fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a4756103341a65e0e3889996cdf15b2fa">TW_SR_ARB_LOST_GCALL_ACK</a>&#160;&#160;&#160;0x0F</td></tr>
+<tr class="memitem:ac50f1a59c74c3109d4913dbecfb472c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#ac50f1a59c74c3109d4913dbecfb472c1">TW_SR_DATA_ACK</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="memitem:a6c0fa701fe9d96b0b7df29e8af154f94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a6c0fa701fe9d96b0b7df29e8af154f94">TW_SR_DATA_NACK</a>&#160;&#160;&#160;0x11</td></tr>
+<tr class="memitem:a4abaad098fd92bed63719ffb01802c8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a4abaad098fd92bed63719ffb01802c8d">TW_SR_GCALL_DATA_ACK</a>&#160;&#160;&#160;0x12</td></tr>
+<tr class="memitem:a42234278f9b01b9af75dbbc617b97890"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a42234278f9b01b9af75dbbc617b97890">TW_SR_GCALL_DATA_NACK</a>&#160;&#160;&#160;0x13</td></tr>
+<tr class="memitem:a98d2570f965790884cf1774e716ec629"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a98d2570f965790884cf1774e716ec629">TW_SR_STOP</a>&#160;&#160;&#160;0x14</td></tr>
+<tr class="memitem:a0ecd2ca38d00279194460e65028a0533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a0ecd2ca38d00279194460e65028a0533">TW_ST_SLA_ACK</a>&#160;&#160;&#160;0x15</td></tr>
+<tr class="memitem:a1064659d0758206d43d69cd582d1f5da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a1064659d0758206d43d69cd582d1f5da">TW_ST_ARB_LOST_SLA_ACK</a>&#160;&#160;&#160;0x16</td></tr>
+<tr class="memitem:a2de84bf7cbf1cd7ae43a6e0f0eeca719"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a2de84bf7cbf1cd7ae43a6e0f0eeca719">TW_ST_DATA_ACK</a>&#160;&#160;&#160;0x17</td></tr>
+<tr class="memitem:acc1837317b1d45e9bb49b8e83cfe6d42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#acc1837317b1d45e9bb49b8e83cfe6d42">TW_ST_DATA_NACK</a>&#160;&#160;&#160;0x18</td></tr>
+<tr class="memitem:af92d03d0051d47f5b9375f0ef9293d64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#af92d03d0051d47f5b9375f0ef9293d64">TW_ST_LAST_DATA</a>&#160;&#160;&#160;0x19</td></tr>
+<tr class="memitem:abcff70642634cb53e9d8e93872f70c90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#abcff70642634cb53e9d8e93872f70c90">TW_NO_INFO</a>&#160;&#160;&#160;0x1F</td></tr>
+<tr class="memitem:a90d373160b1d0a3f0c454af83c57df71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a90d373160b1d0a3f0c454af83c57df71">TW_BUS_ERROR</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memitem:a81c7d817d47c3125f0c7104a250761e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a81c7d817d47c3125f0c7104a250761e1">TWCR_CMD_MASK</a>&#160;&#160;&#160;0x0F</td></tr>
+<tr class="memitem:a496d253a5d6725e74ab16d67d99eb6ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a496d253a5d6725e74ab16d67d99eb6ca">TWSR_STATUS_MASK</a>&#160;&#160;&#160;0xF8</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ac281ee5ffd48c105a275ba271eb8902c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#ac281ee5ffd48c105a275ba271eb8902c">zoI2cInit</a> (void)</td></tr>
+<tr class="memitem:a9bcbf2cc0ae2806dbc1331ad032c4d74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a9bcbf2cc0ae2806dbc1331ad032c4d74">zoI2cSetBitrate</a> (<a class="el" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> bitrateKHz)</td></tr>
+<tr class="memitem:a5663c5b32d21d54f1a7ef81e3f815233"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a5663c5b32d21d54f1a7ef81e3f815233">zoI2cSetLocalDeviceAddr</a> (<a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> deviceAddr, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> genCallEn)</td></tr>
+<tr class="memitem:a2b73875f75377096274f652cbd268e2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a2b73875f75377096274f652cbd268e2e">zoI2cSetWaitOnBusReadyTimeOut</a> (<a class="el" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> miliseconds)</td></tr>
+<tr class="memitem:a233aba29c1cc9befae6d3ff1799f63d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a233aba29c1cc9befae6d3ff1799f63d7">zoI2cSetWaitOnTransmitTimeOut</a> (<a class="el" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> miliseconds)</td></tr>
+<tr class="memitem:ace34d783b94716c2f06eaa7e2c3e7813"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#ace34d783b94716c2f06eaa7e2c3e7813">zoI2cSetWaitOnReceiveTimeOut</a> (<a class="el" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> miliseconds)</td></tr>
+<tr class="memitem:a0bba98535b088bec67057b223a72f5aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a0bba98535b088bec67057b223a72f5aa">zoI2cSetSlaveReceiveHandler</a> (void(*i2cSlaveRx_func)(<a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> receiveDataLength, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> *receiveData))</td></tr>
+<tr class="memitem:afccfdd3a1e475fe12194f0a324df1201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#afccfdd3a1e475fe12194f0a324df1201">zoI2cSetSlaveTransmitHandler</a> (<a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>(*i2cSlaveTx_func)(<a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> transmitDataLengthMax, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> *transmitData))</td></tr>
+<tr class="memitem:a0925fcf1649ab379ccdc063f9499bf0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a0925fcf1649ab379ccdc063f9499bf0a">zoI2cMasterSend</a> (<a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> deviceAddr, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> length, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> *data)</td></tr>
+<tr class="memitem:aef0eabeb1407215b09cca2ecd7b8f9d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#aef0eabeb1407215b09cca2ecd7b8f9d0">zoI2cMasterSendBlocking</a> (<a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> deviceAddr, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> length, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> *data)</td></tr>
+<tr class="memitem:abba0faa2b3544146515052905452e404"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#abba0faa2b3544146515052905452e404">zoI2cMasterReceive</a> (<a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> deviceAddr, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> length, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> *data)</td></tr>
+<tr class="memitem:a64172f8680310995e30f7772df6d9111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a64172f8680310995e30f7772df6d9111">zoI2cSendStart</a> (void)</td></tr>
+<tr class="memitem:ac12c527a6ba75313b0655b1abc4d3ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#ac12c527a6ba75313b0655b1abc4d3ef5">zoI2cSendStop</a> (void)</td></tr>
+<tr class="memitem:a800b72b9a19f27a7a2386c289e4655e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a800b72b9a19f27a7a2386c289e4655e2">zoI2cWaitForComplete</a> (void)</td></tr>
+<tr class="memitem:a7c31860c9a8f9acb04b82bf1a084f30e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#a7c31860c9a8f9acb04b82bf1a084f30e">zoI2cSendByte</a> (<a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> data)</td></tr>
+<tr class="memitem:aa0cb81da3d34d43c14ec0eacb82e90b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#aa0cb81da3d34d43c14ec0eacb82e90b5">zoI2cAcknowledgeRx</a> (<a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> acknowledge)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:aa03834cf7af32ca1ebd8eaf4335165e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_z_o___e_r_r_o_r.html">ZO_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_i2c_8h.html#aa03834cf7af32ca1ebd8eaf4335165e0">zoI2cError</a></td></tr>
+</table>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="a90d373160b1d0a3f0c454af83c57df71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_BUS_ERROR&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad85222308836bfbe099255662ffb510c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_MR_ARB_LOST&#160;&#160;&#160;0x07</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3c8c79b2ecb8d22358839890161cc33b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_MR_DATA_ACK&#160;&#160;&#160;0x0A</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a532f0ffa12f684346c74a5cbec15950e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_MR_DATA_NACK&#160;&#160;&#160;0x0B</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac16504b87d15d83b97bb0ce61577bb40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_MR_SLA_ACK&#160;&#160;&#160;0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a655325b6f8a1818103b126cc3774d8e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_MR_SLA_NACK&#160;&#160;&#160;0x09</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5959251c4bd80f48b5a029447d86adb3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_MT_ARB_LOST&#160;&#160;&#160;0x07</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c28186053b5298305b131ad3e1111f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_MT_DATA_ACK&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a91c107a74d268f8578d866ed1bbbd4f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_MT_DATA_NACK&#160;&#160;&#160;0x06</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a85cae14b4190042335d25ed9a1b72369"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_MT_SLA_ACK&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca64b973c51d6548a962c1d7cae0663e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_MT_SLA_NACK&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abcff70642634cb53e9d8e93872f70c90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_NO_INFO&#160;&#160;&#160;0x1F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8dce3e4b7e35355a8add9ed63d1fa3ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_REP_START&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4756103341a65e0e3889996cdf15b2fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_SR_ARB_LOST_GCALL_ACK&#160;&#160;&#160;0x0F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c3ed5ed345d17972002b9fd07f4f829"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_SR_ARB_LOST_SLA_ACK&#160;&#160;&#160;0x0D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac50f1a59c74c3109d4913dbecfb472c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_SR_DATA_ACK&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c0fa701fe9d96b0b7df29e8af154f94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_SR_DATA_NACK&#160;&#160;&#160;0x11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6eb3b4230887a8b73d7787ff231ea911"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_SR_GCALL_ACK&#160;&#160;&#160;0x0E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4abaad098fd92bed63719ffb01802c8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_SR_GCALL_DATA_ACK&#160;&#160;&#160;0x12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42234278f9b01b9af75dbbc617b97890"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_SR_GCALL_DATA_NACK&#160;&#160;&#160;0x13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e9e761d674793772e6b3f77fc9d7fab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_SR_SLA_ACK&#160;&#160;&#160;0x0C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a98d2570f965790884cf1774e716ec629"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_SR_STOP&#160;&#160;&#160;0x14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1064659d0758206d43d69cd582d1f5da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_ST_ARB_LOST_SLA_ACK&#160;&#160;&#160;0x16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2de84bf7cbf1cd7ae43a6e0f0eeca719"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_ST_DATA_ACK&#160;&#160;&#160;0x17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc1837317b1d45e9bb49b8e83cfe6d42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_ST_DATA_NACK&#160;&#160;&#160;0x18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af92d03d0051d47f5b9375f0ef9293d64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_ST_LAST_DATA&#160;&#160;&#160;0x19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ecd2ca38d00279194460e65028a0533"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_ST_SLA_ACK&#160;&#160;&#160;0x15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ec630c2063d0353c53d140b99382d80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TW_START&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a81c7d817d47c3125f0c7104a250761e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWCR_CMD_MASK&#160;&#160;&#160;0x0F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8h.html#aa0cb81da3d34d43c14ec0eacb82e90b5">zoI2cAcknowledgeRx()</a>, <a class="el" href="zo_i2c_8c.html#af75262b3a651190a50dafa424bed22bd">zoI2cFunctorArbitrationLost()</a>, <a class="el" href="zo_i2c_8c.html#a74a26303f95d15eeb3c772351294707b">zoI2cFunctorBusError()</a>, <a class="el" href="zo_i2c_8c.html#a508cb7f794b9952fbe586faf88c70873">zoI2cFunctorSrAck()</a>, <a class="el" href="zo_i2c_8c.html#aebdcf30f3970cc0399cc805a71968672">zoI2cFunctorStAck()</a>, <a class="el" href="zo_i2c_8c.html#a39c3bba734bfedde939ee5e9ad94b849">zoI2cFunctorStDataAck()</a>, <a class="el" href="zo_i2c_8c.html#ac789c5a53add7a75cf71f3d234819e83">zoI2cFunctorStDataNAck()</a>, <a class="el" href="zo_i2c_8c.html#a20bed223de72389ed8b90e09f7e2bbcf">zoI2cFunctorStop()</a>, <a class="el" href="zo_i2c_8h.html#a7c31860c9a8f9acb04b82bf1a084f30e">zoI2cSendByte()</a>, <a class="el" href="zo_i2c_8h.html#a64172f8680310995e30f7772df6d9111">zoI2cSendStart()</a> i <a class="el" href="zo_i2c_8h.html#ac12c527a6ba75313b0655b1abc4d3ef5">zoI2cSendStop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a496d253a5d6725e74ab16d67d99eb6ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWSR_STATUS_MASK&#160;&#160;&#160;0xF8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a60f81cc411b2c9cdaeab4ced3812b918"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_BUFFER_SIZE&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#adb7b8b98548e616d59355392cabaa53e">zoI2cFunctorSrDataAck()</a> i <a class="el" href="zo_i2c_8c.html#aebdcf30f3970cc0399cc805a71968672">zoI2cFunctorStAck()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeec47e7d1e1108b101578e0826f31835"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_DEFAULT_BITRATE_KHZ&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8h.html#ac281ee5ffd48c105a275ba271eb8902c">zoI2cInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba37d0d46ff475be13bc8c3cf84aa0ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_DEFAULT_WAIT_ON_BUS_READY_TIMEOUT_MILISECONDS&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3fd711119bde1a9df6dba5ca132e005d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_DEFAULT_WAIT_ON_RECEIVE_TIMEOUT_MILISECONDS&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88969376a1b9d77114eb1e83eff056b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_DEFAULT_WAIT_ON_TRANSMIT_TIMEOUT_MILISECONDS&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1595593768951b933c876b9b549828cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_ENABLE_MASTER_RECEIVE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac641751acdc74f64f7875fc59edcb330"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_ENABLE_MASTER_TRANSMIT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af18e8fa7ed9ee6db9da7ebe30382e89c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_ERROR_ARBITRATION_LOST&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#af75262b3a651190a50dafa424bed22bd">zoI2cFunctorArbitrationLost()</a> i <a class="el" href="zo_sms_error_8h.html#aeb4a8df3d1556c3bcf770591f3017d22">zoSmsErrorHandleCommandResponseFailure()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aed12c742288a6b2ea2ff0fd9425ca759"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_ERROR_BUS_ERROR&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a74a26303f95d15eeb3c772351294707b">zoI2cFunctorBusError()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa85100a9de25b083c9592b4909821e7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_ERROR_INDETERMINATE&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#acf1730ac661bba8539ed1b54c898b7d5">zoI2cFunctorNoInfo()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac519e60561c508c88db71ace34fc47a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_ERROR_NODEV&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#af03702c0c2fa2fd924de6dc59965e2b7">zoI2cFunctorMasterNAck()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af6db5241fcf2de2d0ac996d1119924d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_ERROR_NONE&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a569e4760fe55fc03e5b218c1c2137f80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_ERROR_WAIT_ON_BUS_READY_TIMEOUT&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8h.html#a0925fcf1649ab379ccdc063f9499bf0a">zoI2cMasterSend()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a756246bb1a7a4e6bee8676a000208ff2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_ERROR_WAIT_ON_RECEIVE_TIMEOUT&#160;&#160;&#160;0x07</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3f4c245231f5a9e1ac2ea41b5a624a5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_I2C_ERROR_WAIT_ON_TRANSMIT_TIMEOUT&#160;&#160;&#160;0x06</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_i2c_8h.html#aef0eabeb1407215b09cca2ecd7b8f9d0">zoI2cMasterSendBlocking()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="aa0cb81da3d34d43c14ec0eacb82e90b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoI2cAcknowledgeRx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td>
+          <td class="paramname"><em>acknowledge</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_i2c_8h.html#a81c7d817d47c3125f0c7104a250761e1">TWCR_CMD_MASK</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#a469acaf3591e7f9332a8c9465aac161a">zoI2cFunctorMrDataAck()</a>, <a class="el" href="zo_i2c_8c.html#ae0939857624dcfa79d3b050c7fb1995a">zoI2cFunctorMrSlaveAck()</a>, <a class="el" href="zo_i2c_8c.html#adb7b8b98548e616d59355392cabaa53e">zoI2cFunctorSrDataAck()</a> i <a class="el" href="zo_i2c_8c.html#a4ccd676bc38ae0cd92d67bdae3fef4ee">zoI2cFunctorSrDataNack()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac281ee5ffd48c105a275ba271eb8902c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoI2cInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_i2c_8c.html#aa37622ea90b0986b6d4e882731400555a7810297ccb052132c025d8038759159e">I2C_IDLE</a>, <a class="el" href="avrlibdefs_8h.html#aad5ebd34cb344c26ac87594f79b06b73">sei</a>, <a class="el" href="zo_i2c_8h.html#aeec47e7d1e1108b101578e0826f31835">ZO_I2C_DEFAULT_BITRATE_KHZ</a>, <a class="el" href="zo_error_8c.html#a64a80a1610edf235a729b7969d1c2721">zoErrorInit()</a>, <a class="el" href="zo_i2c_8c.html#a218f065b08fa595dea748d2742cd3542">zoI2cFunctorInit()</a>, <a class="el" href="zo_i2c_8c.html#a9bcbf2cc0ae2806dbc1331ad032c4d74">zoI2cSetBitrate()</a> i <a class="el" href="zo_system_timer_8c.html#a4f161d8756f134d4a0828dc0b46892d8">zoSystemTimerInit()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_protocol_i2_c_8h.html#ac477e4ce0441b815c4f47317af6af51d">zoProtocolI2cInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abba0faa2b3544146515052905452e404"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoI2cMasterReceive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>deviceAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0925fcf1649ab379ccdc063f9499bf0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoI2cMasterSend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>deviceAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="zo_i2c_8c.html#aa37622ea90b0986b6d4e882731400555a2e9f083e8406bbde1a7e820ca6025c34">I2C_MASTER_TX</a>, <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="el" href="zo_i2c_8h.html#a569e4760fe55fc03e5b218c1c2137f80">ZO_I2C_ERROR_WAIT_ON_BUS_READY_TIMEOUT</a>, <a class="el" href="zo_error_8c.html#a9f86f4bc1e454eed4be55c523ba161fe">zoErrorPut()</a>, <a class="el" href="zo_i2c_8c.html#a64172f8680310995e30f7772df6d9111">zoI2cSendStart()</a>, <a class="el" href="zo_system_timer_8c.html#aa55e60426766ae966328dceec3c9f2a7">zoSystemTimerTimeOutExpired()</a> i <a class="el" href="zo_system_timer_8c.html#a8cb569bce349f705b4e584818c61f040">zoSystemTimerTimeOutInit()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_i2c_8h.html#aef0eabeb1407215b09cca2ecd7b8f9d0">zoI2cMasterSendBlocking()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef0eabeb1407215b09cca2ecd7b8f9d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoI2cMasterSendBlocking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>deviceAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="zo_i2c_8c.html#aa37622ea90b0986b6d4e882731400555a7810297ccb052132c025d8038759159e">I2C_IDLE</a>, <a class="el" href="zo_i2c_8h.html#a3f4c245231f5a9e1ac2ea41b5a624a5c">ZO_I2C_ERROR_WAIT_ON_TRANSMIT_TIMEOUT</a>, <a class="el" href="zo_error_8c.html#a64fa10670838d38c9a8e7139a40a9cbc">zoErrorIsEmpty()</a>, <a class="el" href="zo_error_8c.html#a9f86f4bc1e454eed4be55c523ba161fe">zoErrorPut()</a>, <a class="el" href="zo_i2c_8c.html#a0925fcf1649ab379ccdc063f9499bf0a">zoI2cMasterSend()</a>, <a class="el" href="zo_system_timer_8c.html#aa55e60426766ae966328dceec3c9f2a7">zoSystemTimerTimeOutExpired()</a> i <a class="el" href="zo_system_timer_8c.html#a8cb569bce349f705b4e584818c61f040">zoSystemTimerTimeOutInit()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_protocol_i2_c_8h.html#aff5921af0badf09f4b1621bad7aab710">zoProtocolI2cPutPacket()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c31860c9a8f9acb04b82bf1a084f30e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoI2cSendByte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_i2c_8h.html#a81c7d817d47c3125f0c7104a250761e1">TWCR_CMD_MASK</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#af072bb10afc6d7ff6cec2e25fe0ad785">zoI2cFunctorMtAck()</a> i <a class="el" href="zo_i2c_8c.html#a4e512517e8594f89dc4049799efa8eef">zoI2cFunctorStart()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a64172f8680310995e30f7772df6d9111"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoI2cSendStart </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_i2c_8h.html#a81c7d817d47c3125f0c7104a250761e1">TWCR_CMD_MASK</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_i2c_8h.html#a0925fcf1649ab379ccdc063f9499bf0a">zoI2cMasterSend()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac12c527a6ba75313b0655b1abc4d3ef5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoI2cSendStop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_i2c_8h.html#a81c7d817d47c3125f0c7104a250761e1">TWCR_CMD_MASK</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_i2c_8c.html#af03702c0c2fa2fd924de6dc59965e2b7">zoI2cFunctorMasterNAck()</a>, <a class="el" href="zo_i2c_8c.html#a067086003aed029007248dcbf4f23824">zoI2cFunctorMrDataNAck()</a> i <a class="el" href="zo_i2c_8c.html#af072bb10afc6d7ff6cec2e25fe0ad785">zoI2cFunctorMtAck()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9bcbf2cc0ae2806dbc1331ad032c4d74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoI2cSetBitrate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
+          <td class="paramname"><em>bitrateKHz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a> i <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_i2c_8h.html#ac281ee5ffd48c105a275ba271eb8902c">zoI2cInit()</a>, <a class="el" href="zo_protocol_i2_c_8h.html#ac477e4ce0441b815c4f47317af6af51d">zoProtocolI2cInit()</a> i <a class="el" href="zo_protocol_i2_c_8h.html#a1f8193678b6b75b572ab6e17f39f032b">zoProtocolI2cSetBitrate()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5663c5b32d21d54f1a7ef81e3f815233"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoI2cSetLocalDeviceAddr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>deviceAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>genCallEn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a> i <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_protocol_i2_c_8h.html#ac477e4ce0441b815c4f47317af6af51d">zoProtocolI2cInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0bba98535b088bec67057b223a72f5aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoI2cSetSlaveReceiveHandler </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(<a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> receiveDataLength, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> *receiveData)&#160;</td>
+          <td class="paramname"><em>i2cSlaveRx_func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_protocol_i2_c_8h.html#ac477e4ce0441b815c4f47317af6af51d">zoProtocolI2cInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afccfdd3a1e475fe12194f0a324df1201"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoI2cSetSlaveTransmitHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>(*)(<a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> transmitDataLengthMax, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> *transmitData)&#160;</td>
+          <td class="paramname"><em>i2cSlaveTx_func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2b73875f75377096274f652cbd268e2e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoI2cSetWaitOnBusReadyTimeOut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
+          <td class="paramname"><em>miliseconds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ace34d783b94716c2f06eaa7e2c3e7813"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoI2cSetWaitOnReceiveTimeOut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
+          <td class="paramname"><em>miliseconds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a233aba29c1cc9befae6d3ff1799f63d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoI2cSetWaitOnTransmitTimeOut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
+          <td class="paramname"><em>miliseconds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a800b72b9a19f27a7a2386c289e4655e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoI2cWaitForComplete </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Dokumentacja zmiennych</h2>
+<a class="anchor" id="aa03834cf7af32ca1ebd8eaf4335165e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_z_o___e_r_r_o_r.html">ZO_ERROR</a> zoI2cError</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb5fb232909a11b4992a277a944d4228.html">SuperModified.V1</a></li><li class="navelem"><a class="el" href="zo_i2c_8h.html">zoI2c.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:49:49 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

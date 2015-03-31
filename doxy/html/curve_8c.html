@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku curve.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="modules.html"><span>Moduły</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('curve_8c.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku curve.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="openservo_8h_source.html">openservo.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="curve_8h_source.html">curve.h</a>&quot;</code><br/>
+</div>
+<p><a href="curve_8c_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a4ae7ef840d719b02d9acf2e16045b345"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="curve_8c.html#a4ae7ef840d719b02d9acf2e16045b345">curve_init</a> (uint16_t t0, uint16_t t1, float p0, float p1, float v0, float v1)</td></tr>
+<tr class="memitem:abdf8a4099ab058e1dff0ac54490d9b0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="curve_8c.html#abdf8a4099ab058e1dff0ac54490d9b0e">curve_solve</a> (uint16_t t, float *x, float *dx)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:aed360e5e5ff45442add036bcd09a3627"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="curve_8c.html#aed360e5e5ff45442add036bcd09a3627">curve_t0</a></td></tr>
+<tr class="memitem:a9a40fad651b7b663e0b2dc384280a572"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="curve_8c.html#a9a40fad651b7b663e0b2dc384280a572">curve_t1</a></td></tr>
+<tr class="memitem:ad2fa3bf703065de86374bc3afd120911"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="curve_8c.html#ad2fa3bf703065de86374bc3afd120911">curve_duration</a></td></tr>
+<tr class="memitem:acca16ffada43f7bea1c8618a84d412d3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="curve_8c.html#acca16ffada43f7bea1c8618a84d412d3">curve_p0</a></td></tr>
+<tr class="memitem:ac37ff8353bd837002d727098260859c4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="curve_8c.html#ac37ff8353bd837002d727098260859c4">curve_p1</a></td></tr>
+<tr class="memitem:a48206de581ac95a11754790fd72e12b5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="curve_8c.html#a48206de581ac95a11754790fd72e12b5">curve_v0</a></td></tr>
+<tr class="memitem:ac3d355fff49d79d31cda464e4bc9b3e7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="curve_8c.html#ac3d355fff49d79d31cda464e4bc9b3e7">curve_v1</a></td></tr>
+</table>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="a4ae7ef840d719b02d9acf2e16045b345"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void curve_init </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>t0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>p0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>v0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>v1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="curve_8c_source.html#l00053">53</a> pliku <a class="el" href="curve_8c_source.html">curve.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="curve_8c_source.html#l00038">curve_duration</a>, <a class="el" href="curve_8c_source.html#l00042">curve_p0</a>, <a class="el" href="curve_8c_source.html#l00043">curve_p1</a>, <a class="el" href="curve_8c_source.html#l00036">curve_t0</a>, <a class="el" href="curve_8c_source.html#l00037">curve_t1</a>, <a class="el" href="curve_8c_source.html#l00044">curve_v0</a> i <a class="el" href="curve_8c_source.html#l00045">curve_v1</a>.</p>
+
+<p>Odwołania w <a class="el" href="motion_8c_source.html#l00156">motion_append()</a>, <a class="el" href="motion_8c_source.html#l00086">motion_init()</a>, <a class="el" href="motion_8c_source.html#l00210">motion_next()</a> i <a class="el" href="motion_8c_source.html#l00113">motion_reset()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="comment">// Set the time parameters.</span></div>
+<div class="line">    <a class="code" href="curve_8c.html#aed360e5e5ff45442add036bcd09a3627">curve_t0</a> = t0;</div>
+<div class="line">    <a class="code" href="curve_8c.html#a9a40fad651b7b663e0b2dc384280a572">curve_t1</a> = t1;</div>
+<div class="line">    <a class="code" href="curve_8c.html#ad2fa3bf703065de86374bc3afd120911">curve_duration</a> = t1 - t0;</div>
+<div class="line">    curve_duration_float = (float) <a class="code" href="curve_8c.html#ad2fa3bf703065de86374bc3afd120911">curve_duration</a>;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// The tangents are expressed as slope of value/time.  The time span will</span></div>
+<div class="line">    <span class="comment">// be normalized to 0.0 to 1.0 range so correct the tangents by scaling</span></div>
+<div class="line">    <span class="comment">// them by the duration of the curve.</span></div>
+<div class="line">    v0 *= curve_duration_float;</div>
+<div class="line">    v1 *= curve_duration_float;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the curve parameters.</span></div>
+<div class="line">    <a class="code" href="curve_8c.html#acca16ffada43f7bea1c8618a84d412d3">curve_p0</a> = p0;</div>
+<div class="line">    <a class="code" href="curve_8c.html#ac37ff8353bd837002d727098260859c4">curve_p1</a> = p1;</div>
+<div class="line">    <a class="code" href="curve_8c.html#a48206de581ac95a11754790fd72e12b5">curve_v0</a> = v0;</div>
+<div class="line">    <a class="code" href="curve_8c.html#ac3d355fff49d79d31cda464e4bc9b3e7">curve_v1</a> = v1;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the cubic coefficients by multiplying the matrix form of</span></div>
+<div class="line">    <span class="comment">// the Hermite curve by the curve parameters p0, p1, v0 and v1.</span></div>
+<div class="line">    <span class="comment">//</span></div>
+<div class="line">    <span class="comment">// | a |   |  2  -2   1   1 |   |       p0       |</span></div>
+<div class="line">    <span class="comment">// | b |   | -3   3  -2  -1 |   |       p1       |</span></div>
+<div class="line">    <span class="comment">// | c | = |  0   0   1   0 | . | (t1 - t0) * v0 |</span></div>
+<div class="line">    <span class="comment">// | d |   |  1   0   0   0 |   | (t1 - t0) * v1 |</span></div>
+<div class="line">    <span class="comment">//</span></div>
+<div class="line">    <span class="comment">// a = 2p0 - 2p1 + v0 + v1</span></div>
+<div class="line">    <span class="comment">// b = -3p0 + 3p1 -2v0 - v1</span></div>
+<div class="line">    <span class="comment">// c = v0</span></div>
+<div class="line">    <span class="comment">// d = p0</span></div>
+<div class="line">    <span class="comment">//</span></div>
+<div class="line">    curve_a = (2.0 * p0) - (2.0 * p1) + v0 + v1;</div>
+<div class="line">    curve_b = -(3.0 * p0) + (3.0 * p1) - (2.0 * v0) - v1;</div>
+<div class="line">    curve_c = v0;</div>
+<div class="line">    curve_d = p0;</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="abdf8a4099ab058e1dff0ac54490d9b0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void curve_solve </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>dx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="curve_8c_source.html#l00093">93</a> pliku <a class="el" href="curve_8c_source.html">curve.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="curve_8c_source.html#l00042">curve_p0</a>, <a class="el" href="curve_8c_source.html#l00043">curve_p1</a>, <a class="el" href="curve_8c_source.html#l00036">curve_t0</a>, <a class="el" href="curve_8c_source.html#l00037">curve_t1</a>, <a class="el" href="curve_8c_source.html#l00044">curve_v0</a> i <a class="el" href="curve_8c_source.html#l00045">curve_v1</a>.</p>
+
+<p>Odwołania w <a class="el" href="motion_8c_source.html#l00210">motion_next()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="comment">// Handle cases where t is outside and indise the curve.</span></div>
+<div class="line">    <span class="keywordflow">if</span> (t &lt;= <a class="code" href="curve_8c.html#aed360e5e5ff45442add036bcd09a3627">curve_t0</a>)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// Set x and in and out dx.</span></div>
+<div class="line">        *x = <a class="code" href="curve_8c.html#acca16ffada43f7bea1c8618a84d412d3">curve_p0</a>;</div>
+<div class="line">        *dx = t &lt; <a class="code" href="curve_8c.html#aed360e5e5ff45442add036bcd09a3627">curve_t0</a> ? 0.0 : <a class="code" href="curve_8c.html#a48206de581ac95a11754790fd72e12b5">curve_v0</a>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (t &gt;= <a class="code" href="curve_8c.html#a9a40fad651b7b663e0b2dc384280a572">curve_t1</a>)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// Set x and in and out dx.</span></div>
+<div class="line">        *x = <a class="code" href="curve_8c.html#ac37ff8353bd837002d727098260859c4">curve_p1</a>;</div>
+<div class="line">        *dx = t &gt; <a class="code" href="curve_8c.html#a9a40fad651b7b663e0b2dc384280a572">curve_t1</a> ? 0.0 : <a class="code" href="curve_8c.html#ac3d355fff49d79d31cda464e4bc9b3e7">curve_v1</a>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span></div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// Subtract out the t0 value from t.</span></div>
+<div class="line">        <span class="keywordtype">float</span> t1 = ((float) (t - <a class="code" href="curve_8c.html#aed360e5e5ff45442add036bcd09a3627">curve_t0</a>)) / curve_duration_float;</div>
+<div class="line">        <span class="keywordtype">float</span> t2 = t1 * t1;</div>
+<div class="line">        <span class="keywordtype">float</span> t3 = t2 * t1;</div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// Determine the cubic polynomial.</span></div>
+<div class="line">        <span class="comment">// x = at^3 + bt^2 + ct + d</span></div>
+<div class="line">        *x = (curve_a * t3) + (curve_b * t2) + (curve_c * t1) + curve_d;</div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// Determine the cubic polynomial derivative.</span></div>
+<div class="line">        <span class="comment">// dx = 3at^2 + 2bt + c</span></div>
+<div class="line">        *dx = (3.0 * curve_a * t2) + (2.0 * curve_b * t1) + curve_c;</div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// The time span has been normalized to 0.0 to 1.0 range so correct</span></div>
+<div class="line">        <span class="comment">// the derivative to the duration of the curve.</span></div>
+<div class="line">        *dx /= curve_duration_float;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/><h2>Dokumentacja zmiennych</h2>
+<a class="anchor" id="ad2fa3bf703065de86374bc3afd120911"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t curve_duration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="curve_8c_source.html#l00038">38</a> pliku <a class="el" href="curve_8c_source.html">curve.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="curve_8c_source.html#l00053">curve_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acca16ffada43f7bea1c8618a84d412d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float curve_p0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="curve_8c_source.html#l00042">42</a> pliku <a class="el" href="curve_8c_source.html">curve.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="curve_8c_source.html#l00053">curve_init()</a> i <a class="el" href="curve_8c_source.html#l00093">curve_solve()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac37ff8353bd837002d727098260859c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float curve_p1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="curve_8c_source.html#l00043">43</a> pliku <a class="el" href="curve_8c_source.html">curve.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="curve_8c_source.html#l00053">curve_init()</a> i <a class="el" href="curve_8c_source.html#l00093">curve_solve()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aed360e5e5ff45442add036bcd09a3627"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t curve_t0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="curve_8c_source.html#l00036">36</a> pliku <a class="el" href="curve_8c_source.html">curve.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="curve_8c_source.html#l00053">curve_init()</a> i <a class="el" href="curve_8c_source.html#l00093">curve_solve()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a40fad651b7b663e0b2dc384280a572"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t curve_t1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="curve_8c_source.html#l00037">37</a> pliku <a class="el" href="curve_8c_source.html">curve.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="curve_8c_source.html#l00053">curve_init()</a> i <a class="el" href="curve_8c_source.html#l00093">curve_solve()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48206de581ac95a11754790fd72e12b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float curve_v0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="curve_8c_source.html#l00044">44</a> pliku <a class="el" href="curve_8c_source.html">curve.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="curve_8c_source.html#l00053">curve_init()</a> i <a class="el" href="curve_8c_source.html#l00093">curve_solve()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3d355fff49d79d31cda464e4bc9b3e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float curve_v1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="curve_8c_source.html#l00045">45</a> pliku <a class="el" href="curve_8c_source.html">curve.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="curve_8c_source.html#l00053">curve_init()</a> i <a class="el" href="curve_8c_source.html#l00093">curve_solve()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="curve_8c.html">curve.c</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:58:49 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

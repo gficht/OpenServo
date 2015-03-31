@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku twi.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="modules.html"><span>Moduły</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('twi_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku twi.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="twi_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:afe8d194149a5499af7252ccc19700c4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#afe8d194149a5499af7252ccc19700c4a">TWI_CMD_RESET</a>&#160;&#160;&#160;0x80</td></tr>
+<tr class="memitem:ad205932ee17e2786f4d0b3e163796a90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#ad205932ee17e2786f4d0b3e163796a90">TWI_CMD_CHECKED_TXN</a>&#160;&#160;&#160;0x81</td></tr>
+<tr class="memitem:af4dabbab63eaf24c48b912b2f88fdd19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#af4dabbab63eaf24c48b912b2f88fdd19">TWI_CMD_PWM_ENABLE</a>&#160;&#160;&#160;0x82</td></tr>
+<tr class="memitem:a7b01ae4278909edd3b5b923716c69e1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#a7b01ae4278909edd3b5b923716c69e1a">TWI_CMD_PWM_DISABLE</a>&#160;&#160;&#160;0x83</td></tr>
+<tr class="memitem:a1ce62a33c30a7341d39b8a5ddefc02cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#a1ce62a33c30a7341d39b8a5ddefc02cf">TWI_CMD_WRITE_ENABLE</a>&#160;&#160;&#160;0x84</td></tr>
+<tr class="memitem:ab12b6be0f632e2447d3bd03e23864772"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#ab12b6be0f632e2447d3bd03e23864772">TWI_CMD_WRITE_DISABLE</a>&#160;&#160;&#160;0x85</td></tr>
+<tr class="memitem:a8c531016922a5d51c2554fb58205f0cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#a8c531016922a5d51c2554fb58205f0cc">TWI_CMD_REGISTERS_SAVE</a>&#160;&#160;&#160;0x86</td></tr>
+<tr class="memitem:a62c4ad055f88b154c73e061a469f0727"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#a62c4ad055f88b154c73e061a469f0727">TWI_CMD_REGISTERS_RESTORE</a>&#160;&#160;&#160;0x87</td></tr>
+<tr class="memitem:aee6252dd8fd6caa381767ac36e0100b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#aee6252dd8fd6caa381767ac36e0100b0">TWI_CMD_REGISTERS_DEFAULT</a>&#160;&#160;&#160;0x88</td></tr>
+<tr class="memitem:a76bdb089779ffe2f374b37332a23192d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#a76bdb089779ffe2f374b37332a23192d">TWI_CMD_EEPROM_ERASE</a>&#160;&#160;&#160;0x89</td></tr>
+<tr class="memitem:adda2d2cee78b4307e7a938b70334b227"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#adda2d2cee78b4307e7a938b70334b227">TWI_CMD_VOLTAGE_READ</a>&#160;&#160;&#160;0x90</td></tr>
+<tr class="memitem:af9b623b329662f5790faf6ae1a78bda7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#af9b623b329662f5790faf6ae1a78bda7">TWI_CMD_CURVE_MOTION_ENABLE</a>&#160;&#160;&#160;0x91</td></tr>
+<tr class="memitem:a4d8992eb6e37d264437596ea5dcf9799"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#a4d8992eb6e37d264437596ea5dcf9799">TWI_CMD_CURVE_MOTION_DISABLE</a>&#160;&#160;&#160;0x92</td></tr>
+<tr class="memitem:a1615d6f292b95399115a0b9d918ad82f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#a1615d6f292b95399115a0b9d918ad82f">TWI_CMD_CURVE_MOTION_RESET</a>&#160;&#160;&#160;0x93</td></tr>
+<tr class="memitem:ae4180b7e27d0ccddf0afd16269f5deb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#ae4180b7e27d0ccddf0afd16269f5deb0">TWI_CMD_CURVE_MOTION_APPEND</a>&#160;&#160;&#160;0x94</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a146c5894c82f4628297b421fe7048161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#a146c5894c82f4628297b421fe7048161">twi_slave_init</a> (uint8_t)</td></tr>
+<tr class="memitem:a0e14ff554666fa691c8ebde2899ef097"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#a0e14ff554666fa691c8ebde2899ef097">twi_receive_byte</a> (void)</td></tr>
+<tr class="memitem:a8349e405d696bacfd58dd8d19264c5c6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="twi_8h.html#a8349e405d696bacfd58dd8d19264c5c6">twi_data_in_receive_buffer</a> (void)</td></tr>
+</table>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="ad205932ee17e2786f4d0b3e163796a90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_CHECKED_TXN&#160;&#160;&#160;0x81</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00031">31</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4180b7e27d0ccddf0afd16269f5deb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_CURVE_MOTION_APPEND&#160;&#160;&#160;0x94</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00044">44</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d8992eb6e37d264437596ea5dcf9799"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_CURVE_MOTION_DISABLE&#160;&#160;&#160;0x92</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00042">42</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af9b623b329662f5790faf6ae1a78bda7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_CURVE_MOTION_ENABLE&#160;&#160;&#160;0x91</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00041">41</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1615d6f292b95399115a0b9d918ad82f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_CURVE_MOTION_RESET&#160;&#160;&#160;0x93</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00043">43</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76bdb089779ffe2f374b37332a23192d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_EEPROM_ERASE&#160;&#160;&#160;0x89</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00039">39</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7b01ae4278909edd3b5b923716c69e1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_PWM_DISABLE&#160;&#160;&#160;0x83</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00033">33</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af4dabbab63eaf24c48b912b2f88fdd19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_PWM_ENABLE&#160;&#160;&#160;0x82</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00032">32</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aee6252dd8fd6caa381767ac36e0100b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_REGISTERS_DEFAULT&#160;&#160;&#160;0x88</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00038">38</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a62c4ad055f88b154c73e061a469f0727"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_REGISTERS_RESTORE&#160;&#160;&#160;0x87</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00037">37</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c531016922a5d51c2554fb58205f0cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_REGISTERS_SAVE&#160;&#160;&#160;0x86</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00036">36</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe8d194149a5499af7252ccc19700c4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_RESET&#160;&#160;&#160;0x80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00030">30</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adda2d2cee78b4307e7a938b70334b227"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_VOLTAGE_READ&#160;&#160;&#160;0x90</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00040">40</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab12b6be0f632e2447d3bd03e23864772"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_WRITE_DISABLE&#160;&#160;&#160;0x85</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00035">35</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ce62a33c30a7341d39b8a5ddefc02cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CMD_WRITE_ENABLE&#160;&#160;&#160;0x84</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8h_source.html#l00034">34</a> pliku <a class="el" href="twi_8h_source.html">twi.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="a8349e405d696bacfd58dd8d19264c5c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t twi_data_in_receive_buffer </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8c_source.html#l00481">481</a> pliku <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="comment">// Return 0 (FALSE) if the receive buffer is empty.</span></div>
+<div class="line">    <span class="keywordflow">return</span> (twi_rxhead != twi_rxtail);</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0e14ff554666fa691c8ebde2899ef097"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t twi_receive_byte </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8c_source.html#l00467">467</a> pliku <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="twi_8c_source.html#l00042">TWI_RX_BUFFER_MASK</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="comment">// Wait for data in the buffer.</span></div>
+<div class="line">    <span class="keywordflow">while</span> (twi_rxhead == twi_rxtail);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Calculate buffer index.</span></div>
+<div class="line">    twi_rxtail = (twi_rxtail + 1 ) &amp; <a class="code" href="twi_8c.html#a6f058cb4c5ef5a93c6bd310f82d86964">TWI_RX_BUFFER_MASK</a>;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Return data from the buffer.</span></div>
+<div class="line">    <span class="keywordflow">return</span> twi_rxbuf[twi_rxtail];</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a146c5894c82f4628297b421fe7048161"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void twi_slave_init </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="twi_8c_source.html#l00412">412</a> pliku <a class="el" href="twi_8c_source.html">twi.c</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="comment">// Flush the buffers.</span></div>
+<div class="line">    twi_rxtail = 0;</div>
+<div class="line">    twi_rxhead = 0;</div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#if defined(__AVR_ATtiny45__) || defined(__AVR_ATtiny85__)</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Set the slave address.</span></div>
+<div class="line">    twi_slave_address = slave_address &amp; 0x7f;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the interrupt enable, wire mode and clock settings.  Note: At this</span></div>
+<div class="line">    <span class="comment">// time the wire mode must not be set to hold the SCL line low when the </span></div>
+<div class="line">    <span class="comment">// counter overflows. Otherwise, this TWI slave will interfere with other</span></div>
+<div class="line">    <span class="comment">// TWI slaves.</span></div>
+<div class="line">    USICR = (0&lt;&lt;USISIE) | (0&lt;&lt;USIOIE) |                 <span class="comment">// Disable start condition and overflow interrupt.</span></div>
+<div class="line">            (1&lt;&lt;USIWM1) | (0&lt;&lt;USIWM0) |                 <span class="comment">// Set USI to two-wire mode without clock stretching.</span></div>
+<div class="line">            (1&lt;&lt;USICS1) | (0&lt;&lt;USICS0) | (0&lt;&lt;USICLK) |   <span class="comment">// Shift Register Clock Source = External, positive edge</span></div>
+<div class="line">            (0&lt;&lt;USITC);                                 <span class="comment">// No toggle of clock pin.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Clear the interrupt flags and reset the counter.</span></div>
+<div class="line">    USISR = (1&lt;&lt;USISIF) | (1&lt;&lt;USIOIF) | (1&lt;&lt;USIPF) |        <span class="comment">// Clear interrupt flags.</span></div>
+<div class="line">            (0x0&lt;&lt;USICNT0);                                 <span class="comment">// USI to sample 8 bits or 16 edge toggles.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Configure SDA.</span></div>
+<div class="line">    DDR_USI &amp;= ~(1&lt;&lt;DD_SDA);</div>
+<div class="line">    PORT_USI &amp;= ~(1&lt;&lt;P_SDA);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Configure SCL.</span></div>
+<div class="line">    DDR_USI |= (1&lt;&lt;DD_SCL);</div>
+<div class="line">    PORT_USI |= (1&lt;&lt;P_SCL);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Start condition interrupt enable.</span></div>
+<div class="line">    USICR |= (1&lt;&lt;USISIE);</div>
+<div class="line"><span class="preprocessor">#endif // __AVR_ATtiny45__ || __AVR_ATtiny85____</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if defined(__AVR_ATmega8__) || defined(__AVR_ATmega88__) || defined(__AVR_ATmega168__)</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Set own TWI slave address.</span></div>
+<div class="line">    TWAR = slave_address &lt;&lt; 1;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Default content = SDA released.</span></div>
+<div class="line">    TWDR = 0xFF;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Initialize the TWI interrupt to wait for a new event.</span></div>
+<div class="line">    TWCR = (1&lt;&lt;TWEN) |                                  <span class="comment">// Keep the TWI interface enabled.</span></div>
+<div class="line">           (1&lt;&lt;TWIE) |                                  <span class="comment">// Keep the TWI interrupt enabled.</span></div>
+<div class="line">           (0&lt;&lt;TWSTA) |                                 <span class="comment">// Don&#39;t generate start condition.</span></div>
+<div class="line">           (0&lt;&lt;TWSTO) |                                 <span class="comment">// Don&#39;t generate stop condition.</span></div>
+<div class="line">           (1&lt;&lt;TWINT) |                                 <span class="comment">// Clear the TWI interrupt.</span></div>
+<div class="line">           (1&lt;&lt;TWEA) |                                  <span class="comment">// Acknowledge the data.</span></div>
+<div class="line">           (0&lt;&lt;TWWC);                                   <span class="comment">//</span></div>
+<div class="line"><span class="preprocessor">#endif // __AVR_ATmega8__ || __AVR_ATmega88__ || __AVR_ATmega168__</span></div>
+<div class="line"><span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="twi_8h.html">twi.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:58:50 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

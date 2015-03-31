@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: OpenServo</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="modules.html"><span>Moduły</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group__tolinski__openservo.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">OpenServo</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Plik konfiguracji OpenServa.  
+<a href="#details">Więcej...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:gab3593dabed4b2eff8e9f7c73088853bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__openservo.html#gab3593dabed4b2eff8e9f7c73088853bb">DEFAULT_PID_PGAIN</a>&#160;&#160;&#160;0x047C</td></tr>
+<tr class="memdesc:gab3593dabed4b2eff8e9f7c73088853bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konfiguracja P w PID dla TowerPro SG5010.  <a href="#gab3593dabed4b2eff8e9f7c73088853bb"></a><br/></td></tr>
+<tr class="memitem:gadf9cdf1f42b924088ad9bef906bfb7e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__openservo.html#gadf9cdf1f42b924088ad9bef906bfb7e0">DEFAULT_PID_DGAIN</a>&#160;&#160;&#160;0x1000</td></tr>
+<tr class="memdesc:gadf9cdf1f42b924088ad9bef906bfb7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konfiguracja D w PID dla TowerPro SG5010.  <a href="#gadf9cdf1f42b924088ad9bef906bfb7e0"></a><br/></td></tr>
+<tr class="memitem:ga0459007ac30598963eb6fe596d4e534c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__openservo.html#ga0459007ac30598963eb6fe596d4e534c">DEFAULT_PID_IGAIN</a>&#160;&#160;&#160;0x0001</td></tr>
+<tr class="memdesc:ga0459007ac30598963eb6fe596d4e534c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konfiguracja I w PID dla TowerPro SG5010.  <a href="#ga0459007ac30598963eb6fe596d4e534c"></a><br/></td></tr>
+<tr class="memitem:ga189d6d59ec599a9ec53608cc3fd2b940"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__openservo.html#ga189d6d59ec599a9ec53608cc3fd2b940">DEFAULT_PID_DEADBAND</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memdesc:ga189d6d59ec599a9ec53608cc3fd2b940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Martwa strefa TowerPro SG5010.  <a href="#ga189d6d59ec599a9ec53608cc3fd2b940"></a><br/></td></tr>
+<tr class="memitem:gaf89d287dd6cd8931dd9544088a991b85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__openservo.html#gaf89d287dd6cd8931dd9544088a991b85">DEFAULT_MIN_SEEK</a>&#160;&#160;&#160;0x0060</td></tr>
+<tr class="memdesc:gaf89d287dd6cd8931dd9544088a991b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimalna pozycja.  <a href="#gaf89d287dd6cd8931dd9544088a991b85"></a><br/></td></tr>
+<tr class="memitem:ga3ac12ca83366ee84e3e98c1c0e70abc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__openservo.html#ga3ac12ca83366ee84e3e98c1c0e70abc2">DEFAULT_MAX_SEEK</a>&#160;&#160;&#160;0x03A0</td></tr>
+<tr class="memdesc:ga3ac12ca83366ee84e3e98c1c0e70abc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maksymalna pozycja.  <a href="#ga3ac12ca83366ee84e3e98c1c0e70abc2"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ga840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__openservo.html#ga840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<p>Plik konfiguracji OpenServa. </p>
+<p>Plik main projektu OpenServo.</p>
+<p><br/>
+ Dodano nastawy dla TowerPro SG5010.</p>
+<dl class="section note"><dt>Nota:</dt><dd>Na podstawie projektu OpenServo </dd></dl>
+<dl class="section author"><dt>Autor:</dt><dd>Michael P. Thompson <a href="#" onclick="location.href='mai'+'lto:'+'mpt'+'ho'+'mps'+'on'+'@gm'+'ai'+'l.c'+'om'; return false;">mptho<span style="display: none;">.nosp@m.</span>mpso<span style="display: none;">.nosp@m.</span>n@gma<span style="display: none;">.nosp@m.</span>il.c<span style="display: none;">.nosp@m.</span>om</a></dd></dl>
+<dl class="section note"><dt>Nota:</dt><dd>W programie wykonano kilka zmian: usunięto obsługę TWI oraz dodano obsługę RS485. Odpowiednio zdefiniowano również porty </dd>
+<dd>
+Na podstawie projektu OpenServo </dd></dl>
+<dl class="section author"><dt>Autor:</dt><dd>Jaroslaw Toliński </dd></dl>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="ga3ac12ca83366ee84e3e98c1c0e70abc2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_MAX_SEEK&#160;&#160;&#160;0x03A0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maksymalna pozycja. </p>
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00186">186</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf89d287dd6cd8931dd9544088a991b85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_MIN_SEEK&#160;&#160;&#160;0x0060</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Minimalna pozycja. </p>
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00184">184</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga189d6d59ec599a9ec53608cc3fd2b940"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_PID_DEADBAND&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Martwa strefa TowerPro SG5010. </p>
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00179">179</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gadf9cdf1f42b924088ad9bef906bfb7e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_PID_DGAIN&#160;&#160;&#160;0x1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konfiguracja D w PID dla TowerPro SG5010. </p>
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00175">175</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0459007ac30598963eb6fe596d4e534c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_PID_IGAIN&#160;&#160;&#160;0x0001</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konfiguracja I w PID dla TowerPro SG5010. </p>
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00177">177</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab3593dabed4b2eff8e9f7c73088853bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_PID_PGAIN&#160;&#160;&#160;0x047C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konfiguracja P w PID dla TowerPro SG5010. </p>
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00173">173</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="ga840291bc02cba5474a4cb46a9b9566fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>inicjalizacja pinu sterującego przepływem</p>
+<p>inicjalizacja RS485</p>
+<p>wykonywanie poleceń </p>
+
+<p>Definicja w linii <a class="el" href="main_8c_source.html#l00104">104</a> pliku <a class="el" href="main_8c_source.html">main.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>, <a class="el" href="rs485_8c_source.html#l00067">UartInit()</a> i <a class="el" href="rs485_8c_source.html#l00121">UartInitRs485()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line"><span class="comment">//  int i = 0;</span></div>
+<div class="line">    <span class="comment">// Configure pins to the default states.</span></div>
+<div class="line">    config_pin_defaults();</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Initialize the watchdog module.</span></div>
+<div class="line">    watchdog_init();</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// First, initialize registers that control servo operation.</span></div>
+<div class="line">    registers_init();</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Initialize the PWM module.</span></div>
+<div class="line">    pwm_init();</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Initialize the ADC module.</span></div>
+<div class="line">    adc_init();</div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#if ESTIMATOR_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Initialize the state estimator module.</span></div>
+<div class="line">    estimator_init();</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if REGULATOR_MOTION_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Initialize the regulator algorithm module.</span></div>
+<div class="line">    regulator_init();</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if PID_MOTION_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Initialize the PID algorithm module.</span></div>
+<div class="line">    pid_init();</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if IPD_MOTION_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Initialize the IPD algorithm module.</span></div>
+<div class="line">    ipd_init();</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if CURVE_MOTION_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Initialize curve motion module.</span></div>
+<div class="line">    motion_init();</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line">    <span class="comment">// Initialize the power module.</span></div>
+<div class="line">    power_init();</div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#if PULSE_CONTROL_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>    pulse_control_init();</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line">    <a class="code" href="group__tolinski__uart.html#ga1ef6e34e7e5bea45d9b704ffbd98061a" title="Inicjalizuje pin obsługujący kierunek przeływu danych na potrzeby half-duplexu RS485.">UartInitRs485</a>(&amp;PORTD,PD2);</div>
+<div class="line">    <a class="code" href="group__tolinski__uart.html#ga6a736b13f76843e56a4f1d9f707f1d81" title="Inicjuje UART.">UartInit</a>();</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Initialize the TWI slave module.</span></div>
+<div class="line">    <span class="comment">//twi_slave_init(registers_read_byte(REG_TWI_ADDRESS));</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Finally initialize the timer.</span></div>
+<div class="line">    timer_set(0);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Enable interrupts.</span></div>
+<div class="line">    sei();</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Wait until initial position value is ready.</span></div>
+<div class="line">    <span class="keywordflow">while</span> (!adc_position_value_is_ready());</div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#if CURVE_MOTION_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Reset the curve motion with the current position of the servo.</span></div>
+<div class="line">    motion_reset(adc_get_position_value());</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line">    <span class="comment">// Set the initial seek position and velocity.</span></div>
+<div class="line">    registers_write_word(REG_SEEK_POSITION_HI, REG_SEEK_POSITION_LO, adc_get_position_value());</div>
+<div class="line">    registers_write_word(REG_SEEK_VELOCITY_HI, REG_SEEK_VELOCITY_LO, 0);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// XXX Enable PWM and writing.  I do this for now to make development and</span></div>
+<div class="line">    <span class="comment">// XXX tuning a bit easier.  Constantly manually setting these values to</span></div>
+<div class="line">    <span class="comment">// XXX turn the servo on and write the gain values get&#39;s to be a pain.</span></div>
+<div class="line">    pwm_enable();</div>
+<div class="line">    registers_write_enable();</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// This is the main processing loop for the servo.  It basically looks</span></div>
+<div class="line">    <span class="comment">// for new position, power or TWI commands to be processed.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">for</span> (;;)</div>
+<div class="line">    {</div>
+<div class="line"></div>
+<div class="line">        <a class="code" href="group__tolinski__uart.html#ga1786dc4e4daeaa3ce26e68b47748da48" title="Sprawdza czy przyszło jakieś polecenie, jeśli tak wykonuje je.">RS485CMD</a>();</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// Is position value ready?</span></div>
+<div class="line">        <span class="keywordflow">if</span> (adc_position_value_is_ready())</div>
+<div class="line">        {</div>
+<div class="line">            int16_t pwm;</div>
+<div class="line">            int16_t position;</div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#if PULSE_CONTROL_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>            <span class="comment">// Give pulse control a chance to update the seek position.</span></div>
+<div class="line">            pulse_control_update();</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if CURVE_MOTION_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>            <span class="comment">// Give the motion curve a chance to update the seek position and velocity.</span></div>
+<div class="line">            motion_next(10);</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line">            <span class="comment">// Get the new position value.</span></div>
+<div class="line">            position = (int16_t) adc_get_position_value();</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#if ESTIMATOR_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>            <span class="comment">// Estimate velocity.</span></div>
+<div class="line">            estimate_velocity(position);</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if PID_MOTION_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>            <span class="comment">// Call the PID algorithm module to get a new PWM value.</span></div>
+<div class="line">            pwm = pid_position_to_pwm(position);</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if IPD_MOTION_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>            <span class="comment">// Call the IPD algorithm module to get a new PWM value.</span></div>
+<div class="line">            pwm = ipd_position_to_pwm(position);</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if REGULATOR_MOTION_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>            <span class="comment">// Call the state regulator algorithm module to get a new PWM value.</span></div>
+<div class="line">            pwm = regulator_position_to_pwm(position);</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line">            <span class="comment">// Update the servo movement as indicated by the PWM value.</span></div>
+<div class="line">            <span class="comment">// Sanity checks are performed against the position value.</span></div>
+<div class="line">            pwm_update(position, pwm);</div>
+<div class="line">        }</div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// Is a power value ready?</span></div>
+<div class="line">        <span class="keywordflow">if</span> (adc_power_value_is_ready())</div>
+<div class="line">        {</div>
+<div class="line">            <span class="comment">// Get the new power value.</span></div>
+<div class="line">            uint16_t power = adc_get_power_value();</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// Update the power value for reporting.</span></div>
+<div class="line">            power_update(power);</div>
+<div class="line">        }</div>
+<div class="line"></div>
+<div class="line">        <span class="comment">//UartPutChar(&#39;#&#39;);</span></div>
+<div class="line">  <span class="comment">//      // Was a command recieved?</span></div>
+<div class="line">  <span class="comment">//      if (twi_data_in_receive_buffer())</span></div>
+<div class="line">  <span class="comment">//      {</span></div>
+<div class="line">  <span class="comment">//          // Handle any TWI command.</span></div>
+<div class="line">  <span class="comment">//          handle_twi_command();</span></div>
+<div class="line">  <span class="comment">//      }</span></div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#if MAIN_MOTION_TEST_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>        <span class="comment">// This code is in place for having the servo drive itself between</span></div>
+<div class="line">        <span class="comment">// two positions to aid in the servo tuning process.  This code</span></div>
+<div class="line">        <span class="comment">// should normally be disabled in config.h.</span></div>
+<div class="line"><span class="preprocessor">#if CURVE_MOTION_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>        <span class="keywordflow">if</span> (motion_time_left() == 0)</div>
+<div class="line">        {</div>
+<div class="line">            registers_write_word(REG_CURVE_DELTA_HI, REG_CURVE_DELTA_LO, 2000);</div>
+<div class="line">            registers_write_word(REG_CURVE_POSITION_HI, REG_CURVE_POSITION_LO, 0x0100);</div>
+<div class="line">            motion_append();</div>
+<div class="line">            registers_write_word(REG_CURVE_DELTA_HI, REG_CURVE_DELTA_LO, 1000);</div>
+<div class="line">            registers_write_word(REG_CURVE_POSITION_HI, REG_CURVE_POSITION_LO, 0x0300);</div>
+<div class="line">            motion_append();</div>
+<div class="line">            registers_write_word(REG_CURVE_DELTA_HI, REG_CURVE_DELTA_LO, 2000);</div>
+<div class="line">            registers_write_word(REG_CURVE_POSITION_HI, REG_CURVE_POSITION_LO, 0x0300);</div>
+<div class="line">            motion_append();</div>
+<div class="line">            registers_write_word(REG_CURVE_DELTA_HI, REG_CURVE_DELTA_LO, 1000);</div>
+<div class="line">            registers_write_word(REG_CURVE_POSITION_HI, REG_CURVE_POSITION_LO, 0x0100);</div>
+<div class="line">            motion_append();</div>
+<div class="line">        }</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line"><span class="preprocessor"></span>        {</div>
+<div class="line">            <span class="comment">// Get the timer.</span></div>
+<div class="line">            uint16_t timer = timer_get();</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// Reset the timer if greater than 800.</span></div>
+<div class="line">            <span class="keywordflow">if</span> (timer &gt; 800) timer_set(0);</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// Look for specific events.</span></div>
+<div class="line">            <span class="keywordflow">if</span> (timer == 0)</div>
+<div class="line">            {</div>
+<div class="line">                registers_write_word(REG_SEEK_HI, REG_SEEK_LO, 0x0100);</div>
+<div class="line">            }</div>
+<div class="line">            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (timer == 400)</div>
+<div class="line">            {</div>
+<div class="line">                registers_write_word(REG_SEEK_HI, REG_SEEK_LO, 0x0300);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>    }</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 11:03:46 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

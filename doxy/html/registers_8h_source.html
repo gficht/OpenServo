@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Plik źródłowy registers.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="modules.html"><span>Moduły</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('registers_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">registers.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="registers_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">    Copyright (c) 2006 Michael P. Thompson &lt;mpthompson@gmail.com&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">    Permission is hereby granted, free of charge, to any person </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">    obtaining a copy of this software and associated documentation </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">    files (the &quot;Software&quot;), to deal in the Software without </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    restriction, including without limitation the rights to use, copy, </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">    modify, merge, publish, distribute, sublicense, and/or sell copies </span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">    of the Software, and to permit persons to whom the Software is </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">    furnished to do so, subject to the following conditions:</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    The above copyright notice and this permission notice shall be </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    included in all copies or substantial portions of the Software.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, </span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">    WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, </span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    DEALINGS IN THE SOFTWARE.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    $Id: registers.h,v 1.17 2007/05/14 17:20:40 mpthompson Exp $</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef _OS_REGISTERS_H_</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _OS_REGISTERS_H_ 1</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// Defines servo control registers.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// TWI read/only status registers.  Writing</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// values to these registers has no effect.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="registers_8h.html#abacf9cc9a317e1a487d99330e8cd2110">   37</a></span>&#160;<span class="preprocessor">#define REG_DEVICE_TYPE             0x00</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="registers_8h.html#a1e08e50000570fb8e87b136905214ea8">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_DEVICE_SUBTYPE          0x01</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="registers_8h.html#ae57a3f2b001d584f378d53947466a56f">   39</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_VERSION_MAJOR           0x02</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="registers_8h.html#a71bec643ebf672b20d0f92775f7cc3a0">   40</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_VERSION_MINOR           0x03</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="registers_8h.html#af7933dab07440b3d6d7168238f0dd9cf">   41</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_FLAGS_HI                0x04</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="registers_8h.html#a196ff8b454bb2a2cf5777814aedaba5e">   42</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_FLAGS_LO                0x05</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="registers_8h.html#a307787aaa130840baea0314d9de64c8c">   43</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_TIMER_HI                0x06</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="registers_8h.html#ae33cceb42833c5a4fcd305266dc98d81">   44</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_TIMER_LO                0x07</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="registers_8h.html#aefedc13294bf7cbb72b11ee02d8e2b43">   46</a></span>&#160;<span class="preprocessor">#define REG_POSITION_HI             0x08</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="registers_8h.html#a3a6c69a2e53039889d7d3cff4fe8b2dc">   47</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_POSITION_LO             0x09</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="registers_8h.html#a0ba8dbdee1f07b14aca450ebe30a00d4">   48</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_VELOCITY_HI             0x0A</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="registers_8h.html#acb7378d833f227369cb67dfc769915ea">   49</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_VELOCITY_LO             0x0B</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="registers_8h.html#aa15d1b437298c95558c32e15f1c5e188">   50</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_POWER_HI                0x0C</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="registers_8h.html#a69a93f22a713a309f41e23a8d728e083">   51</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_POWER_LO                0x0D</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="registers_8h.html#ae61da0c85e2949c372b286d10a870174">   52</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_PWM_DIRA                0x0E</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="registers_8h.html#add869b129d1d025bb82d444c821c83e9">   53</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_PWM_DIRB                0x0F</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">// TWI read/write registers.  Writing these</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// registers controls operation of the servo.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="registers_8h.html#a445a52028238cdd60d6bc748f2d7bc20">   58</a></span>&#160;<span class="preprocessor">#define REG_SEEK_POSITION_HI        0x10</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="registers_8h.html#a0db5ccd07201a9f148eec17f44116889">   59</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_SEEK_POSITION_LO        0x11</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="registers_8h.html#a435a2ba3bbe254832f1b63e405f90609">   60</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_SEEK_VELOCITY_HI        0x12</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="registers_8h.html#a999594da1a68e5f44bcc9a8ba6108c5d">   61</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_SEEK_VELOCITY_LO        0x13</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="registers_8h.html#a632e3fa1b611cd38801c066f92fa391d">   62</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_VOLTAGE_HI              0x14</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="registers_8h.html#a1d4605be9e91ea5e578d17893841b89a">   63</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_VOLTAGE_LO              0x15</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="registers_8h.html#af19522174185009323cc1499b4a22cb2">   64</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_CURVE_RESERVED          0x16</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="registers_8h.html#a40239dc23bed6335c515605053cb782b">   65</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_CURVE_BUFFER            0x17</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="registers_8h.html#ab8c8deda8a821830a85a6baf35944a42">   67</a></span>&#160;<span class="preprocessor">#define REG_CURVE_DELTA_HI          0x18</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="registers_8h.html#a7a22c1b08761e444266d8afbf465e08e">   68</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_CURVE_DELTA_LO          0x19</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="registers_8h.html#ac17e1e4b3eecca7f678a2d465c1977d1">   69</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_CURVE_POSITION_HI       0x1A</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="registers_8h.html#a7bb5b9afbbaaeeeefcd55adae4584aac">   70</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_CURVE_POSITION_LO       0x1B</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="registers_8h.html#a2a7bd4d12b7fb8df6040ac2dd8503604">   71</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_CURVE_IN_VELOCITY_HI    0x1C</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="registers_8h.html#a4b7b048e14ad0013819c6aff0ee87465">   72</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_CURVE_IN_VELOCITY_LO    0x1D</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="registers_8h.html#ac3ed7f6e82b5dd9ec97659107d16f83b">   73</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_CURVE_OUT_VELOCITY_HI   0x1E</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="registers_8h.html#a15a6afdf131d4727675dbb543ed618bf">   74</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_CURVE_OUT_VELOCITY_LO   0x1F</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">// TWI safe read/write registers.  These registers</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">// may only be written to when write enabled.</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="registers_8h.html#aea1079173619dc6f4c2250b1e10b4c52">   79</a></span>&#160;<span class="preprocessor">#define REG_TWI_ADDRESS             0x20</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="registers_8h.html#a9fe3c0497ed3f43610f0719a1c5dbfce">   80</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_PID_DEADBAND            0x21</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="registers_8h.html#af96bcf19ea576c18f276a42bf49008cc">   81</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_PID_PGAIN_HI            0x22</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="registers_8h.html#a9dc1436c3b1ac6a454af49c5588d1a1d">   82</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_PID_PGAIN_LO            0x23</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="registers_8h.html#aeb36aa4a1695caa44a4e29195a7063bc">   83</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_PID_DGAIN_HI            0x24</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="registers_8h.html#af1451996a332900d3b22101d513a8c50">   84</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_PID_DGAIN_LO            0x25</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="registers_8h.html#adb04a3964a04991cf52c06b1a814b38e">   85</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_PID_IGAIN_HI            0x26</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="registers_8h.html#a083a7de0a571a29a2a797b9ef735de8c">   86</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_PID_IGAIN_LO            0x27</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="registers_8h.html#ab075f005f7a933e8ad3623fdf452c9af">   88</a></span>&#160;<span class="preprocessor">#define REG_PWM_FREQ_DIVIDER_HI     0x28</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="registers_8h.html#a72bc114d1422c39404c72ff191d572da">   89</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_PWM_FREQ_DIVIDER_LO     0x29</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="registers_8h.html#a4057f850fd9b0870d1d25f047fa47147">   90</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_MIN_SEEK_HI             0x2A</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="registers_8h.html#af895680d43595c4971277de44651f0cd">   91</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_MIN_SEEK_LO             0x2B</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="registers_8h.html#ad33d318398d6d9212ffda3302e333667">   92</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_MAX_SEEK_HI             0x2C</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="registers_8h.html#a9c22bbf6c47239cf536841620f947cc8">   93</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_MAX_SEEK_LO             0x2D</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="registers_8h.html#a512d65e283c5e4481353eba8a226fd76">   94</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_REVERSE_SEEK            0x2E</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="registers_8h.html#aefc2d61f457b2771f1abc8351e2ea1f6">   95</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_RESERVED_2F             0x2F</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">// Set additional safe read/write registers for</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">// the state estimator algorithm.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#ifdef ESTIMATOR_ENABLED</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#define REG_RESERVED_30             0x30</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_RESERVED_31             0x31</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_RESERVED_32             0x32</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_RESERVED_33             0x33</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_RESERVED_34             0x34</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_RESERVED_35             0x35</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_RESERVED_36             0x36</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define REG_RESERVED_37             0x37</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">// Define the register ranges.</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#define MIN_READ_ONLY_REGISTER      0x00</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_READ_ONLY_REGISTER      0x0F</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_READ_WRITE_REGISTER     0x10</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_READ_WRITE_REGISTER     0x1F</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_WRITE_PROTECT_REGISTER  0x20</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_WRITE_PROTECT_REGISTER  0x37</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_UNUSED_REGISTER         0x38</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_UNUSED_REGISTER         0x5F</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_REDIRECT_REGISTER       0x60</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_REDIRECT_REGISTER       0x6F</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_REDIRECTED_REGISTER     0x70</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_REDIRECTED_REGISTER     0x7F</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">// Define the total number of registers define.  This includes </span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">// all registers except unused and redirected registers.</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#define REGISTER_COUNT              (MIN_UNUSED_REGISTER + 16)</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#else // ESTIMATOR_ENABLED</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">// Define the register ranges.</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="code" href="registers_8h.html#ad1d070409e2d636f82ca095eb1c75bac">  136</a></span>&#160;<span class="preprocessor">#define MIN_READ_ONLY_REGISTER      0x00</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="code" href="registers_8h.html#afcbd1fff7fdf5acbe82e32e28d002e4e">  137</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_READ_ONLY_REGISTER      0x0F</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="code" href="registers_8h.html#a3cc61b84440736f1d660fdfaae4ea0ea">  138</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_READ_WRITE_REGISTER     0x10</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="code" href="registers_8h.html#a2f297011277d43f87cf84146d99a5848">  139</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_READ_WRITE_REGISTER     0x1F</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="code" href="registers_8h.html#a243b6bae9e45d99d703054da9c51d38c">  140</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_WRITE_PROTECT_REGISTER  0x20</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="code" href="registers_8h.html#afcfb796f1c06140f959f923eeca4592e">  141</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_WRITE_PROTECT_REGISTER  0x2F</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="code" href="registers_8h.html#ad060606f02727cfcb4fde3ab086c0d54">  142</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_UNUSED_REGISTER         0x30</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="code" href="registers_8h.html#a533bedfba0d98587e7c93b2443076d05">  143</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_UNUSED_REGISTER         0x5F</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="code" href="registers_8h.html#a648219fbc7bc53777fca1dcacde4c556">  144</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_REDIRECT_REGISTER       0x60</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="code" href="registers_8h.html#a3b7b3d6499f0c44bfb1d7ceee4763bc7">  145</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_REDIRECT_REGISTER       0x6F</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="code" href="registers_8h.html#a293aafbec76a61f80371f63676011cdf">  146</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_REDIRECTED_REGISTER     0x70</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="code" href="registers_8h.html#a5d77b6a728c620bfd6e5b65262bcbf26">  147</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_REDIRECTED_REGISTER     0x7F</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">// Define the total number of registers define.  This includes </span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">// all registers except unused and redirected registers.</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="code" href="registers_8h.html#a872bdec8b3471262a8a0131d7dc0fc0d">  151</a></span>&#160;<span class="preprocessor">#define REGISTER_COUNT              (MIN_UNUSED_REGISTER + 16)</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#endif // ESTIMATOR_ENABLED</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">// Define the number of write protect registers.</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="code" href="registers_8h.html#a2335970a48961f1ae2b526456256eda5">  156</a></span>&#160;<span class="preprocessor">#define WRITE_PROTECT_REGISTER_COUNT    (MAX_WRITE_PROTECT_REGISTER - MIN_WRITE_PROTECT_REGISTER + 1)</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">// Define the number of redirect registers.</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="code" href="registers_8h.html#a03bff0d52dfce9187744d260f79694aa">  159</a></span>&#160;<span class="preprocessor">#define REDIRECT_REGISTER_COUNT         (MAX_REDIRECT_REGISTER - MIN_REDIRECT_REGISTER + 1)</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">// Define the flag register REG_FLAGS_HI and REG_FLAGS_LO bits.</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="code" href="registers_8h.html#aacb2216a754f408ff37b684524230864">  165</a></span>&#160;<span class="preprocessor">#define FLAGS_HI_RESERVED_07        0x07</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="code" href="registers_8h.html#af90b5add5cb85c0d4982cc2f4db18776">  166</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_HI_RESERVED_06        0x06</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="code" href="registers_8h.html#af45efde502cab7f1fc48544d15d59fa9">  167</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_HI_RESERVED_05        0x05</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="code" href="registers_8h.html#aae172d4fbe8e6b6639188752de504e7d">  168</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_HI_RESERVED_04        0x04</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="code" href="registers_8h.html#adeec3fe0ee9d0138c6326a7664696719">  169</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_HI_RESERVED_03        0x03</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="code" href="registers_8h.html#ad6b46cf7e4a39bd5a77bb37f521726ac">  170</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_HI_RESERVED_02        0x02</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="code" href="registers_8h.html#ad8230ab2da619da374115023cc4f8eba">  171</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_HI_RESERVED_01        0x01</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="code" href="registers_8h.html#a5049bc424a7d2c4c1e057c3601f2b529">  172</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_HI_RESERVED_00        0x00</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="code" href="registers_8h.html#a7a29c4be31ae7535dcbd7386d9cb0fc5">  174</a></span>&#160;<span class="preprocessor">#define FLAGS_LO_RESERVED_07        0x07</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="code" href="registers_8h.html#a09294f1524a080138d1450d1ec358860">  175</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_LO_RESERVED_06        0x06</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="code" href="registers_8h.html#aa3545c483378c13aa0f210349cffbff7">  176</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_LO_RESERVED_05        0x05</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="code" href="registers_8h.html#a6843eb0c0460ca0171e8fcd2fc92664d">  177</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_LO_RESERVED_04        0x04</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="code" href="registers_8h.html#a3204c649589636c4668f2bb241ecec91">  178</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_LO_RESERVED_03        0x03</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="code" href="registers_8h.html#a80c78ac036eedc30cc874dac3d45cfca">  179</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_LO_MOTION_ENABLED     0x02</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="code" href="registers_8h.html#a3b6da2a75f993f20ec8999012a1f7be3">  180</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_LO_WRITE_ENABLED      0x01</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="code" href="registers_8h.html#aa1158632d7f0ea4ad0f6a2e4e5253f71">  181</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FLAGS_LO_PWM_ENABLED        0x00</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">// Global register array.  Note: to minimize memory the register count doesn&#39;t</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">// include the unused and redirected registers.  For this reason care must be</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">// taken when referencing the redirect registers which come after the unused</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">// registers in this array.</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="registers_8c.html#a8f5f78749168c9713a13d33e502154c5">registers</a>[<a class="code" href="registers_8h.html#a872bdec8b3471262a8a0131d7dc0fc0d">REGISTER_COUNT</a>];</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">// Register functions.</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keywordtype">void</span> <a class="code" href="registers_8c.html#a9857a49018487746c898aa6a2c38ccbb">registers_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keywordtype">void</span> <a class="code" href="registers_8c.html#aeaa2391a9f903aefcde752f3c0be93a6">registers_defaults</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;uint16_t <a class="code" href="registers_8c.html#af8b091233149e27ba0ce0995fee7756b">registers_read_word</a>(uint8_t address_hi, uint8_t address_lo);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="keywordtype">void</span> <a class="code" href="registers_8c.html#a2a7b20190fe395643f0d180422422e78">registers_write_word</a>(uint8_t address_hi, uint8_t address_lo, uint16_t value);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">// Register in-line functions.</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment">// Read a single byte from the registers.</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> uint8_t registers_read_byte(uint8_t address)</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;{</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="registers_8c.html#a8f5f78749168c9713a13d33e502154c5">registers</a>[address];</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">// Write a single byte to the registers.</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> registers_write_byte(uint8_t address, uint8_t value)</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;{</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="registers_8c.html#a8f5f78749168c9713a13d33e502154c5">registers</a>[address] = value;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> registers_write_enable(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;{</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    uint8_t flags_lo = registers_read_byte(<a class="code" href="registers_8h.html#a196ff8b454bb2a2cf5777814aedaba5e">REG_FLAGS_LO</a>);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="comment">// Enable PWM to the servo motor.</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    registers_write_byte(<a class="code" href="registers_8h.html#a196ff8b454bb2a2cf5777814aedaba5e">REG_FLAGS_LO</a>, flags_lo | (1&lt;&lt;<a class="code" href="registers_8h.html#a3b6da2a75f993f20ec8999012a1f7be3">FLAGS_LO_WRITE_ENABLED</a>));</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;}</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> registers_write_disable(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;{</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    uint8_t flags_lo = registers_read_byte(<a class="code" href="registers_8h.html#a196ff8b454bb2a2cf5777814aedaba5e">REG_FLAGS_LO</a>);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="comment">// Disable PWM to the servo motor.</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    registers_write_byte(<a class="code" href="registers_8h.html#a196ff8b454bb2a2cf5777814aedaba5e">REG_FLAGS_LO</a>, flags_lo &amp; ~(1&lt;&lt;<a class="code" href="registers_8h.html#a3b6da2a75f993f20ec8999012a1f7be3">FLAGS_LO_WRITE_ENABLED</a>));</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> uint8_t registers_is_write_enabled(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;{</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">return</span> (registers_read_byte(<a class="code" href="registers_8h.html#a196ff8b454bb2a2cf5777814aedaba5e">REG_FLAGS_LO</a>) &amp; (1&lt;&lt;<a class="code" href="registers_8h.html#a3b6da2a75f993f20ec8999012a1f7be3">FLAGS_LO_WRITE_ENABLED</a>)) ? 1 : 0;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;}</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> uint8_t registers_is_write_disabled(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;{</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">return</span> (registers_read_byte(<a class="code" href="registers_8h.html#a196ff8b454bb2a2cf5777814aedaba5e">REG_FLAGS_LO</a>) &amp; (1&lt;&lt;<a class="code" href="registers_8h.html#a3b6da2a75f993f20ec8999012a1f7be3">FLAGS_LO_WRITE_ENABLED</a>)) ? 0 : 1;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">#endif // _OS_REGISTERS_H_</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="registers_8h.html">registers.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:58:49 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

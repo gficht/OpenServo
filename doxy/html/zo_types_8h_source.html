@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Plik źródłowy zoTypes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('zo_types_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">zoTypes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="zo_types_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ZO_TYPES_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_TYPES_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//****************************************************************************************</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  File Name   : zoTypes.h </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Description : type definitions</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//  Created     : 25.1.2010</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//  Target MCU  : Atmel AVR</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//  Author      : Sissakis Giannis</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//  email       : info@01mech.com</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//  Copyright (C) 2010 Zero One Mechatronics LP</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//  This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//  it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//  the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//  (at your option) any later version.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//  This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//  GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//  You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//****************************************************************************************</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">   31</a></span>&#160;<span class="preprocessor">#define FALSE   0</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">   32</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TRUE    -1</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span>  </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifndef NULL</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="zo_types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">   35</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NULL 0</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//common datatype definitions macros</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">   39</a></span>&#160;<span class="keyword">typedef</span> int8_t      <a class="code" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">   40</a></span>&#160;<span class="keyword">typedef</span> uint8_t     <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="zo_types_8h.html#ac734b11e390fbcb315c60f047bfb7c52">   41</a></span>&#160;<span class="keyword">typedef</span> int8_t      <a class="code" href="zo_types_8h.html#ac734b11e390fbcb315c60f047bfb7c52">s08</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">   42</a></span>&#160;<span class="keyword">typedef</span> uint16_t    <a class="code" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="zo_types_8h.html#aa980e2c02ba2305e0f489d5650655425">   43</a></span>&#160;<span class="keyword">typedef</span> int16_t     <a class="code" href="zo_types_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="zo_types_8h.html#afaa62991928fb9fb18ff0db62a040aba">   44</a></span>&#160;<span class="keyword">typedef</span> uint32_t    <a class="code" href="zo_types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">   45</a></span>&#160;<span class="keyword">typedef</span> int32_t     <a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="zo_types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">   46</a></span>&#160;<span class="keyword">typedef</span> uint64_t    <a class="code" href="zo_types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="zo_types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">   47</a></span>&#160;<span class="keyword">typedef</span> int64_t     <a class="code" href="zo_types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// maximum value that can be held</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// by unsigned data types (8,16,32bits)</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="zo_types_8h.html#af209b7ae7041a754270558c5bafbba8a">   51</a></span>&#160;<span class="preprocessor">#define MAX_U08 255</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="zo_types_8h.html#a7f0dfd7f13d36c40ffb909adfdb7af35">   52</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_U16 65535</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="zo_types_8h.html#a20b4183ab07f41e496119f451c134041">   53</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_U32 4294967295</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">// maximum values that can be held</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// by signed data types (8,16,32bits)</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="zo_types_8h.html#a1b8b84a9eeb0be816b1f76e6a2c46f4c">   57</a></span>&#160;<span class="preprocessor">#define MIN_S08 -128</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="zo_types_8h.html#ac230e69af12a638f6ff73041794926f3">   58</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_S08 127</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="zo_types_8h.html#a74bade79717cab9e52bc89dd085c6e6f">   59</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_S16 -32768</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="zo_types_8h.html#a7c0820d7cc1159cb658281c8d08f130e">   60</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_S16 32767</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="zo_types_8h.html#afbba66fcb199cf13330cc678960a7e7a">   61</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MIN_S32 -2147483648</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="zo_types_8h.html#a9d45091964bbb21641595ab37f2067f3">   62</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAX_S32 2147483647</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="union_u16.html">   64</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="union_u16.html#a9b34197183ecde4180f744e87e534863">   65</a></span>&#160;    <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> byte[2];</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="union_u16.html#ac1cb060dbcb04738fb1ca731dc022620">   66</a></span>&#160;    <a class="code" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> <a class="code" href="union_u16.html#ac1cb060dbcb04738fb1ca731dc022620">all</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}<a class="code" href="union_u16.html">U16</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="union_s16.html">   69</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="union_s16.html#a9b34197183ecde4180f744e87e534863">   70</a></span>&#160;    <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> byte[2];</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="union_s16.html#a5c4a2569b20b47f029c2f2239a406435">   71</a></span>&#160;    <a class="code" href="zo_types_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a> <a class="code" href="union_s16.html#a5c4a2569b20b47f029c2f2239a406435">all</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}<a class="code" href="union_s16.html">S16</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="union_u32.html">   74</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="union_u32.html#ab9cfc5b9d7ed2f9541d1857eed1052ed">   75</a></span>&#160;    <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> byte[4];</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="union_u32.html#a78c8432c620e791ffb7e5da5ac1feb83">   76</a></span>&#160;    <a class="code" href="zo_types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> <a class="code" href="union_u32.html#a78c8432c620e791ffb7e5da5ac1feb83">all</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}<a class="code" href="union_u32.html">U32</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="union_s32.html">   79</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="union_s32.html#ab9cfc5b9d7ed2f9541d1857eed1052ed">   80</a></span>&#160;    <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> byte[4];</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="union_s32.html#a542b14244bbfbe6c342d1c3d87ec292c">   81</a></span>&#160;    <a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> <a class="code" href="union_s32.html#a542b14244bbfbe6c342d1c3d87ec292c">all</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}<a class="code" href="union_s32.html">S32</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="union_u64.html">   84</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="union_u64.html#abe43644d852c3af421e89f2bcf03fba3">   85</a></span>&#160;    <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> byte[8];</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="union_u64.html#a8a96599ea1037f6b344ff6fc26d39fbd">   86</a></span>&#160;    <a class="code" href="zo_types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> <a class="code" href="union_u64.html#a8a96599ea1037f6b344ff6fc26d39fbd">all</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}<a class="code" href="union_u64.html">U64</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="union_s64.html">   89</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="union_s64.html#abe43644d852c3af421e89f2bcf03fba3">   90</a></span>&#160;    <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> byte[8];</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="union_s64.html#a37d76c495a07e3476ab3a6d916768573">   91</a></span>&#160;    <a class="code" href="zo_types_8h.html#a350c6fc928e3bdc6c6486268ac8fb269">s64</a> <a class="code" href="union_s64.html#a37d76c495a07e3476ab3a6d916768573">all</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}<a class="code" href="union_s64.html">S64</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*ZO_TYPES_H*/</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb5fb232909a11b4992a277a944d4228.html">SuperModified.V1</a></li><li class="navelem"><a class="el" href="zo_types_8h.html">zoTypes.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:49:49 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

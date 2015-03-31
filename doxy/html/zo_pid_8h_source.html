@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Plik źródłowy zoPid.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('zo_pid_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">zoPid.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="zo_pid_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ZO_PID_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_PID_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="zo_types_8h.html">zoTypes.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="code" href="struct_z_o___p_i_d.html">    6</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_z_o___p_i_d.html">ZO_PID</a>{</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="struct_z_o___p_i_d.html#a5569fd10f52e70e6b8ada2efab5bcc44">    7</a></span>&#160;    <a class="code" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> <a class="code" href="struct_z_o___p_i_d.html#a5569fd10f52e70e6b8ada2efab5bcc44">GainP</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="code" href="struct_z_o___p_i_d.html#abd1533d665a597f0c3e0b089551956a4">    8</a></span>&#160;    <a class="code" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> <a class="code" href="struct_z_o___p_i_d.html#abd1533d665a597f0c3e0b089551956a4">GainI</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="struct_z_o___p_i_d.html#a1ca7414a5492ede1eac2f23a9976768a">    9</a></span>&#160;    <a class="code" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> <a class="code" href="struct_z_o___p_i_d.html#a1ca7414a5492ede1eac2f23a9976768a">GainD</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="struct_z_o___p_i_d.html#aeca1825aec626ed0564bf8b2fa9b3d1a">   10</a></span>&#160;    <a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> <a class="code" href="struct_z_o___p_i_d.html#aeca1825aec626ed0564bf8b2fa9b3d1a">Error</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="struct_z_o___p_i_d.html#a2cea5b374835ee6ea67bc0c87ec19901">   11</a></span>&#160;    <a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> <a class="code" href="struct_z_o___p_i_d.html#a2cea5b374835ee6ea67bc0c87ec19901">PrevError</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="struct_z_o___p_i_d.html#a8a3c79be3a9596e0f949a8c43ef4820d">   12</a></span>&#160;    <a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> <a class="code" href="struct_z_o___p_i_d.html#a8a3c79be3a9596e0f949a8c43ef4820d">Integral</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="struct_z_o___p_i_d.html#a87d70361d05e8bd508c339b7491356ce">   13</a></span>&#160;    <a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> <a class="code" href="struct_z_o___p_i_d.html#a87d70361d05e8bd508c339b7491356ce">AntiWindUp</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="struct_z_o___p_i_d.html#ab2ed884e6bf46fce682ce840b05f7650">   14</a></span>&#160;    <a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> <a class="code" href="struct_z_o___p_i_d.html#ab2ed884e6bf46fce682ce840b05f7650">SetPoint</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="struct_z_o___p_i_d.html#a2a929ad6d71ca980e2ab707e0cdedca0">   15</a></span>&#160;    void ( *<a class="code" href="struct_z_o___p_i_d.html#a2a929ad6d71ca980e2ab707e0cdedca0">doPID</a> )(<span class="keyword">struct </span><a class="code" href="struct_z_o___p_i_d.html">ZO_PID</a> *selfReference);</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="struct_z_o___p_i_d.html#a130131d397603fd1080dc2c6f4e6b90c">   16</a></span>&#160;    void ( *<a class="code" href="struct_z_o___p_i_d.html#a130131d397603fd1080dc2c6f4e6b90c">setActuator</a> )(<a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> outVal);                  <span class="comment">// user provided function</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="struct_z_o___p_i_d.html#a6ad941eb657bfbc6f8d4a836e08e0fdc">   17</a></span>&#160;    <a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> ( *<a class="code" href="struct_z_o___p_i_d.html#a6ad941eb657bfbc6f8d4a836e08e0fdc">getFeedBack</a> )(void);                         <span class="comment">// user provided function</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="zo_pid_8h.html#a97752506a4dfad7070c8b8513a8cc9b7">   20</a></span>&#160;<span class="preprocessor">#define ZO_PID_DEFAULTS \</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">        {0,0,0,0,0,0,0,0, \</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">        (void (*)(struct ZO_PID *))zoPidDoPid, \</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">        0,0}</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> <a class="code" href="zo_pid_8c.html#a80358cbc55b5bf531a2ff08e22b91e95">zoPidDoPid</a>( <span class="keyword">struct</span> <a class="code" href="struct_z_o___p_i_d.html">ZO_PID</a> *p);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif // ZO_PID_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb5fb232909a11b4992a277a944d4228.html">SuperModified.V1</a></li><li class="navelem"><a class="el" href="zo_pid_8h.html">zoPid.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:49:49 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

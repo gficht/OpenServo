@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Plik źródłowy zoSms.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('zo_sms_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">zoSms.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="zo_sms_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ZO_SUPERMODIFIED_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_SUPERMODIFIED_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="zo_types_8h.html">zoTypes.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="zo_pid_8h.html">zoPid.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdLib.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="zo_protocol_8h.html">zoProtocol.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="zo_encoder_8h.html">zoEncoder.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="zo_error_8h.html">zoError.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ab1aa922a7c9fd48e55706381f1bb3086">   11</a></span>&#160;<span class="preprocessor">#define ZO_SMS_CONTROL_LOOP_HZ_APPROX   1000</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a27f121f6161da1ac385708c767553620">   12</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_SMS_MOTOR_STALLED_TIMEOUT_MS 2000</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//Eeprom adresses for settings____________________________________________________________</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#acae9e721a3305c2963231a9dcf635892">   15</a></span>&#160;<span class="preprocessor">#define ZO_EEPROM_ADDRESS_NODE_ID                   0x0000</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#aab1401dff3390d9c0fbc4dba890a04d2">   16</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_EEPROM_ADDRESS_GAIN_P                    0x0010</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a749a9e6c61e17daf2bb65a06ea418f65">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_EEPROM_ADDRESS_GAIN_I                    0x0020</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#aa04c8715d8ee9dc04dc06fdfd29eae69">   18</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_EEPROM_ADDRESS_GAIN_D                    0x0030</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a042b7df2a6682bf87ff8f7f9b5f74ba0">   19</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_EEPROM_ADDRESS_CURRENT_LIMIT             0x0040</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a42c5e84357b17a973974f07555994152">   20</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_EEPROM_ADDRESS_CURRENT_LIMIT_DURATION    0x0050</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#aba8c8b59a591d29966ec9f581bac32c8">   21</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_EEPROM_ADDRESS_PROFILE_ACCELERATION      0x0060</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a6fc777041ed51de4b835667d44b6efa4">   22</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_EEPROM_ADDRESS_PROFILE_VELOCITY          0x0070</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a82fa6bd0ef23fad71fa2439c628502dc">   23</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_EEPROM_ADDRESS_DIGITAL_IO_CONFIG         0x0080</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ad2d89f232976261e346228d02e63a283">   24</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_EEPROM_ADDRESS_BAUD_I2C                  0x0090</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a5da807ab1e37f4649d319577d62afbef">   25</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_EEPROM_ADDRESS_BAUD_UART                 0x00A0</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a8833aa80e293d0dd1734d06dc62883d5">   26</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_EEPROM_ADDRESS_LAM                       0x00B0</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ae02acd0a5ed4e113dc90adbc6757e3ba">   27</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_EEPROM_ADDRESS_ERROR_REPORTING_LVL       0x00C0</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//Default settings values</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a248329ce9d8a74a25ec1d1929e71a6fb">   30</a></span>&#160;<span class="preprocessor">#define ZO_DEFAULT_NODE_ID                  0x04</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#acc685e8f75a977d3317fc67a1c4ada18">   31</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_DEFAULT_GAIN_P                   8000</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a20e8c83b9e009314384261bd6c1c64ba">   32</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_DEFAULT_GAIN_I                   4000</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#aced71ac45b02c51d10adea1c20ad1872">   33</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_DEFAULT_GAIN_D                   8000</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a0407763bd4e928ea77fb541c7f1eb878">   34</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_DEFAULT_CURRENT_LIMIT            5000</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a4a7e662b5e85269a10807194c345a693">   35</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_DEFAULT_CURRENT_LIMIT_DURATION   5000</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ab1ee40ad1f71dcb4125839bf1a947e9c">   36</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_DEFAULT_PROFILE_ACCELERATION     800</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ac35f2d8fdab8530b58151a749156673d">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_DEFAULT_PROFILE_VELOCITY         800</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ac7a71c1d7abec23e99ba04e4f6676362">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_DEFAULT_DIGITAL_IO_CONFIG        0</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#acb06f1dba658c6e37e9d378ac49e7b08">   39</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_DEFAULT_BAUD_I2C                 100000</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a746b62db7fd433ade79a1e2281022c45">   40</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_DEFAULT_BAUD_UART                115200</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#aef8352f59ca3034e98122e722c4aea8b">   41</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_DEFAULT_LAM                      ZO_PROTOCOL_DEFAULT_LAM</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#adae567eec727d823833efc362ed45c8b">   42</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ZO_DEFAULT_ERROR_REPORTING_LVL      0</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//Types___________________________________________________________________________________</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10">   45</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10">ZO_SMS_CONTROL_STATE</a>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a655e3ee6e5e783b1d8116a0102312a7f">   46</a></span>&#160;    <a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a655e3ee6e5e783b1d8116a0102312a7f">ZO_SMS_CONTROL_NO_CONTROL</a>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10ab0703001cd962f7e1f9a7af7c14a17f5">   47</a></span>&#160;    <a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10ab0703001cd962f7e1f9a7af7c14a17f5">ZO_SMS_CONTROL_POSITION_CONTROL</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a9b0f9809532f42847c05c2d05b73f3eb">   48</a></span>&#160;    <a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a9b0f9809532f42847c05c2d05b73f3eb">ZO_SMS_CONTROL_VELOCITY_CONTROL</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10aa258d9ab6f6a0212c389237db6fd9658">   49</a></span>&#160;    <a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10aa258d9ab6f6a0212c389237db6fd9658">ZO_SMS_CONTROL_PROFILED_VELOCITY_CONTROL</a>,</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a9b6bca85605a98e2de787af5313ae941">   50</a></span>&#160;    <a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a9b6bca85605a98e2de787af5313ae941">ZO_SMS_CONTROL_PROFILED_POSITION_CONTROL</a>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}<a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10">ZO_SMS_CONTROL_STATE</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4">   53</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4">ZO_SMS_PROFILE_STATE</a>{</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4a46ef4e60156137dfdd86c284a529f4ae">   54</a></span>&#160;    <a class="code" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4a46ef4e60156137dfdd86c284a529f4ae">ZO_SMS_PROFILE_ACCELERATING</a>,</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4a23d348fc8a0e9490100ecf2ea0b7b546">   55</a></span>&#160;    <a class="code" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4a23d348fc8a0e9490100ecf2ea0b7b546">ZO_SMS_PROFILE_MOVING_WITH_VELOCITY</a>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4a40f88c211fde5fef6b266b13bb5321cf">   56</a></span>&#160;    <a class="code" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4a40f88c211fde5fef6b266b13bb5321cf">ZO_SMS_PROFILE_DECCELERATING</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}<a class="code" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4">ZO_SMS_PROFILE_STATE</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html">   59</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html">ZO_SMS_CONTROL</a> {</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#aa7f0733336b04ba2e8a8df719eddc176">   60</a></span>&#160;    <a class="code" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10">ZO_SMS_CONTROL_STATE</a> <a class="code" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#aa7f0733336b04ba2e8a8df719eddc176">State</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#a18d647eef83332fc2399db3577056ead">   61</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#a18d647eef83332fc2399db3577056ead">LoopHz</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}<a class="code" href="zo_sms_8h.html#a7df6ea2cf4b59c37c7259615f5e77333">ZO_SMS_CONTROL</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html">   64</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html">ZO_SMS_SETTINGS</a>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a3ed12eed29266a0f446b81a0a23a853a">   65</a></span>&#160;    <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> <a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a3ed12eed29266a0f446b81a0a23a853a">NodeID</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a9f0b432eb90e9e56237568c7dc841dc7">   66</a></span>&#160;    <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> <a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a9f0b432eb90e9e56237568c7dc841dc7">DigitalIoConfig</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#af5f08299e45eea0353cef028acd4ee0a">   67</a></span>&#160;    <a class="code" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> <a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#af5f08299e45eea0353cef028acd4ee0a">CurrentLimit</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a30cc3d678ceec8efa9d70d9ccf6fa01d">   68</a></span>&#160;    <a class="code" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> <a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a30cc3d678ceec8efa9d70d9ccf6fa01d">CurrentLimitDuration</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a344d761b2658bda4e7740bfa89c4b27f">   69</a></span>&#160;    <a class="code" href="zo_types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> <a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a344d761b2658bda4e7740bfa89c4b27f">BaudUart</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a32ffadf49fe2e285b0e69133b13366ba">   70</a></span>&#160;    <a class="code" href="zo_types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> <a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a32ffadf49fe2e285b0e69133b13366ba">BaudI2C</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a655d7fc10bb465ca08a178377d4eb674">   71</a></span>&#160;    <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> <a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a655d7fc10bb465ca08a178377d4eb674">localAcceptanceMask</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#afca30511132ca3aaa8592798b21650bd">   72</a></span>&#160;    <a class="code" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> <a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#afca30511132ca3aaa8592798b21650bd">errorReportingLevel</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}<a class="code" href="zo_sms_8h.html#a8fd8ccf824559cb8fc19c74e52c906df">ZO_SMS_SETTINGS</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714">   75</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714">ZO_SMS_SETPOINT_TYPE</a>{</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a0c0bc7a498606c7855a37c56c5ca5b9a">   76</a></span>&#160;    <a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a0c0bc7a498606c7855a37c56c5ca5b9a">ZO_SMS_SETPOINT_NONE</a> = 0,</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a7ce9e02788bae23439779a827b3f7dd5">   77</a></span>&#160;    <a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a7ce9e02788bae23439779a827b3f7dd5">ZO_SMS_SETPOINT_VELOCITY</a>,</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a9d746bf50dd5d391d3fbff67e4e5986f">   78</a></span>&#160;    <a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a9d746bf50dd5d391d3fbff67e4e5986f">ZO_SMS_SETPOINT_ABSOLUTE_POSITION</a>,</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714adbd7aab5297b41c60eb7f9d9bab8c3ab">   79</a></span>&#160;    <a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714adbd7aab5297b41c60eb7f9d9bab8c3ab">ZO_SMS_SETPOINT_RELATIVE_POSITION</a>,</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a95308513be0d0448c314bbafdd6c72c4">   80</a></span>&#160;    <a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a95308513be0d0448c314bbafdd6c72c4">ZO_SMS_SETPOINT_PROFILED_VELOCITY</a>,</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714aebcf04764dd9a322fa5aa838fc95d2dc">   81</a></span>&#160;    <a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714aebcf04764dd9a322fa5aa838fc95d2dc">ZO_SMS_SETPOINT_PROFILED_ABSOLUTE_POSITION</a>,</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714afdceecea10870a446ace744b8ba6957f">   82</a></span>&#160;    <a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714afdceecea10870a446ace744b8ba6957f">ZO_SMS_SETPOINT_PROFILED_RELATIVE_POSITION</a></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}<a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714">ZO_SMS_SETPOINT_TYPE</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html">   85</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a92a5979ce432c73e93050fda778908fd">   86</a></span>&#160;    <a class="code" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714">ZO_SMS_SETPOINT_TYPE</a> <a class="code" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a92a5979ce432c73e93050fda778908fd">type</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a41cda9fd475265935928b621c55a591d">   87</a></span>&#160;    <a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> <a class="code" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a41cda9fd475265935928b621c55a591d">value</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}<a class="code" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html">ZO_SMS_BUFFERED_SETPOINT</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html">   90</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html">ZO_SMS_PROFILE</a>{</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a5e9fbc6aa2b852a8cd3ce8d7bca25eaa">   91</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a5e9fbc6aa2b852a8cd3ce8d7bca25eaa">PositionSetpoint</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#ac05b9e0210b9ece4102f36feaf3dc403">   92</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#ac05b9e0210b9ece4102f36feaf3dc403">TargetVelDeltaPos</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a35300bb39987df18b2c4e812466c8b15">   93</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a35300bb39987df18b2c4e812466c8b15">VelocityDeltaPos</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#af6ad63e10c94f6011f356bd52e6cc5f9">   94</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#af6ad63e10c94f6011f356bd52e6cc5f9">LastVelocityDeltaPos</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a550eac52bef17234049a49fd91f5d69b">   95</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a550eac52bef17234049a49fd91f5d69b">ConstAccelDeltaVel</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a2fa75ed36a51e358bb72edaa6753ed40">   96</a></span>&#160;    <a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> <a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a2fa75ed36a51e358bb72edaa6753ed40">AccelerationKnee</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a41bf231bb0b2fd9599f0e7cb6236f6d0">   97</a></span>&#160;    <a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> <a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a41bf231bb0b2fd9599f0e7cb6236f6d0">DeccelerationKnee</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a81e2608cc6bd4909dd60c2d9a1c71471">   98</a></span>&#160;    <a class="code" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> <a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a81e2608cc6bd4909dd60c2d9a1c71471">TargetPosition</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#aacacd2ec1b68ebafe10814839d15526a">   99</a></span>&#160;    <a class="code" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> <a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#aacacd2ec1b68ebafe10814839d15526a">DesiredAcceleration</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#ac9dbc865ac761dbfdcad0d9e654f08b6">  100</a></span>&#160;    <a class="code" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> <a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#ac9dbc865ac761dbfdcad0d9e654f08b6">DesiredVelocity</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a0cddf8ad91ee3badd2df4e26a9f4f3dc">  101</a></span>&#160;    <a class="code" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4">ZO_SMS_PROFILE_STATE</a> <a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a0cddf8ad91ee3badd2df4e26a9f4f3dc">State</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}<a class="code" href="zo_sms_8h.html#a5f6b96b784718b1c57d6e2a2c4a0dc0e">ZO_SMS_PROFILE</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="code" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html">  104</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html">ZO_SUPERMODIFIED</a>{</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="code" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">  105</a></span>&#160;    <a class="code" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html">ZO_SMS_CONTROL</a>  <a class="code" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">Control</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="code" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a5180724bf1bb6ea9648e4a228eeecac5">  106</a></span>&#160;    <a class="code" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html">ZO_SMS_SETTINGS</a> <a class="code" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a5180724bf1bb6ea9648e4a228eeecac5">Settings</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="code" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">  107</a></span>&#160;    <a class="code" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html">ZO_SMS_PROFILE</a>  <a class="code" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">Profile</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">  108</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_z_o___p_i_d.html">ZO_PID</a>   <a class="code" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">Pid</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a778635970c8caea5f9fc9417d85ac900">  109</a></span>&#160;    <a class="code" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html">ZO_SMS_BUFFERED_SETPOINT</a> <a class="code" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a778635970c8caea5f9fc9417d85ac900">BufferdSetPoint</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}<a class="code" href="zo_sms_8h.html#ac8d46be6e5b52ead9c65cf81374f7788">ZO_SUPERMODIFIED</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html">ZO_SUPERMODIFIED</a> <a class="code" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">//Functions_______________________________________________________________________________</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">void</span> <a class="code" href="zo_sms_8c.html#ad0ff2d7aff2c345e9ddfda99af235205">zoSmsInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> <a class="code" href="zo_sms_8c.html#ad76b6154c60f318a205c04556108a895">zoSmsPinsInit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">void</span> <a class="code" href="zo_sms_8c.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">void</span> <a class="code" href="zo_sms_8c.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">//bool zoSmsCheckErrors(void);</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">//control loop function</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> <a class="code" href="zo_sms_8c.html#ae826e15b4aba21b9ca5b05ecacd6a0fa">zoSmsControlLoop</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">//inline functions used for code clarity</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="zo_sms_8c.html#add060a589db3baaef4a07d0ef7fe8000">accelerationCompleteCriterion</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="zo_sms_8c.html#a3c233b4069cd593bea45124faa2b2eda">constantVelocityCompletedCriterion</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="zo_sms_8c.html#ac87384ce66e2c198e793acbc95d37f3a">positionReachedCriterion</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">double</span> <a class="code" href="zo_sms_8c.html#a8399bacdf987309a8fbb9b2d5d0dbfd5">deccelRecalc</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif // ZO_SUPERMODIFIED_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb5fb232909a11b4992a277a944d4228.html">SuperModified.V1</a></li><li class="navelem"><a class="el" href="zo_sms_8h.html">zoSms.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:49:49 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

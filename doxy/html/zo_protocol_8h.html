@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku zoProtocol.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('zo_protocol_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Struktury danych</a> &#124;
+<a href="#define-members">Definicje</a> &#124;
+<a href="#enum-members">Wyliczenia</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku zoProtocol.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="zo_types_8h_source.html">zoTypes.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="zo_error_8h_source.html">zoError.h</a>&quot;</code><br/>
+</div>
+<p><a href="zo_protocol_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+Struktury danych</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html">ZO_PROTOCOL_HAL</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:adc30ac1b9b196ad665b5979efad26a3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#adc30ac1b9b196ad665b5979efad26a3a">ZO_PROTOCOL_SET_COMMANDS_START</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memitem:a44725aef820fa4525cb51a056742812e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#a44725aef820fa4525cb51a056742812e">ZO_PROTOCOL_GET_COMMANDS_START</a>&#160;&#160;&#160;0x64</td></tr>
+<tr class="memitem:ad3fae9a8205db60e9d7516934081bcb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#ad3fae9a8205db60e9d7516934081bcb9">ZO_PROTOCOL_BRC_COMMANDS_START</a>&#160;&#160;&#160;0xC8</td></tr>
+<tr class="memitem:acbc8d7ac4632249df4368cc5caae184a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#acbc8d7ac4632249df4368cc5caae184a">ZO_PROTOCOL_ERROR_ID</a>&#160;&#160;&#160;0xFA</td></tr>
+<tr class="memitem:a3427ea80dd9cfc9ae71f2f2d767b764a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#a3427ea80dd9cfc9ae71f2f2d767b764a">ZO_PROTOCOL_HEADER_0</a>&#160;&#160;&#160;0x55</td></tr>
+<tr class="memitem:abde59e96280a426d54d1f24b982388bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#abde59e96280a426d54d1f24b982388bc">ZO_PROTOCOL_HEADER_1</a>&#160;&#160;&#160;0xAA</td></tr>
+<tr class="memitem:a5bf721b54d8e0772330c13c43ec24653"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#a5bf721b54d8e0772330c13c43ec24653">ZO_PROTOCOL_BROADCAST_ID</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memitem:a1afd0331b2eff5b610d5f1afd3901b39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#a1afd0331b2eff5b610d5f1afd3901b39">ZO_PROTOCOL_DATA_SIZE</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="memitem:aa51a706a5951e1678cc527afe17f9822"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#aa51a706a5951e1678cc527afe17f9822">ZO_PROTOCOL_INFO_SIZE</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="memitem:a7d6b7d9d77ae4e55cbae5ec9008cb5ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#a7d6b7d9d77ae4e55cbae5ec9008cb5ca">ZO_PROTOCOL_PACKET_SIZE</a>&#160;&#160;&#160;(<a class="el" href="zo_protocol_8h.html#a1afd0331b2eff5b610d5f1afd3901b39">ZO_PROTOCOL_DATA_SIZE</a> + <a class="el" href="zo_protocol_8h.html#aa51a706a5951e1678cc527afe17f9822">ZO_PROTOCOL_INFO_SIZE</a>)</td></tr>
+<tr class="memitem:a16135d330eebe27d95a8dae1d5d1b14d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#a16135d330eebe27d95a8dae1d5d1b14d">ZO_PROTOCOL_COMMAND_RESPONSE_TIMEOUT_MS</a>&#160;&#160;&#160;200</td></tr>
+<tr class="memitem:ac817870bb1146c4934b2d874454df629"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#ac817870bb1146c4934b2d874454df629">ZO_PROTOCOL_DEFAULT_LAM</a>&#160;&#160;&#160;0xFF</td></tr>
+<tr class="memitem:ab225d0348fefaedd142ce8443cf73a58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#ab225d0348fefaedd142ce8443cf73a58">ZO_PROTOCOL_ERROR_NONE</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="memitem:a0ef96d31ac5d8ded9ea9ac31a484b18a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#a0ef96d31ac5d8ded9ea9ac31a484b18a">ZO_PROTOCOL_ERROR_RESPONSE_TIMEOUT</a>&#160;&#160;&#160;0x21</td></tr>
+<tr class="memitem:a7c4e32ee69465e48ab6e790cc2391367"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#a7c4e32ee69465e48ab6e790cc2391367">ZO_PROTOCOL_ERROR_WRONG_LRC</a>&#160;&#160;&#160;0x22</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="enum-members"></a>
+Wyliczenia</h2></td></tr>
+<tr class="memitem:ad80b112563f5eac61709e18604e004b2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2">ZO_PROTOCOL_HW_TYPE</a> { <br/>
+&#160;&#160;<a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2a690e64a3392e587c2317d428436a168f">ZO_PROTOCOL_HW_I2C</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2a4b41b7068dde35a357f347c80250b2f2">ZO_PROTOCOL_HW_RS232</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2a83d50550cd45c1f8589af95743740beb">ZO_PROTOCOL_HW_HALF_DUPLEX_RS485</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2a4b475e229f7a7450d11ff6eff8234169">ZO_PROTOCOL_HW_UART_5V</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2ab3af357a7bf131a83030d228df129dc3">ZO_PROTOCOL_HW_CAN</a>
+<br/>
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:aa243e02b42b1903c91fcfdd056349233"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#aa243e02b42b1903c91fcfdd056349233">zoProtocolInit</a> (<a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2">ZO_PROTOCOL_HW_TYPE</a> hw, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html">ZO_PROTOCOL_HAL</a> *hal, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> localNodeID)</td></tr>
+<tr class="memitem:ae6bff052f836a7689c2cda3ba3132aff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#ae6bff052f836a7689c2cda3ba3132aff">zoProtocolCommand</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html">ZO_PROTOCOL_HAL</a> *hal, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a7d5d715868c85a11d70b03399785daf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#a7d5d715868c85a11d70b03399785daf0">zoProtocolParse</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html">ZO_PROTOCOL_HAL</a> *hal, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a7beff6cd27ee91f0a6df67f3fda6c4e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#a7beff6cd27ee91f0a6df67f3fda6c4e9">zoProtocolCommandResponse</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html">ZO_PROTOCOL_HAL</a> *hal, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet, <a class="el" href="struct_z_o___e_r_r_o_r.html">ZO_ERROR</a> *error)</td></tr>
+<tr class="memitem:ac8b3f56a50c4cfdc9366ce3c9344ab87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#ac8b3f56a50c4cfdc9366ce3c9344ab87">zoProtocolLRC</a> (const <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> *crcBytes, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> crcByteCount)</td></tr>
+<tr class="memitem:a10076c9abb344a08ed70555f25e4d88e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#a10076c9abb344a08ed70555f25e4d88e">zoProtocolSetLAM</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html">ZO_PROTOCOL_HAL</a> *hal, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> lam)</td></tr>
+<tr class="memitem:a6152a6b5d1e955dfadc1e879789d8c2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_8h.html#a6152a6b5d1e955dfadc1e879789d8c2f">zoProtocolSetBitrate</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html">ZO_PROTOCOL_HAL</a> *hal, <a class="el" href="zo_types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> bitrate)</td></tr>
+</table>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="ad3fae9a8205db60e9d7516934081bcb9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_BRC_COMMANDS_START&#160;&#160;&#160;0xC8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>, <a class="el" href="zo_commands_8h.html#a4a800c27ffa7d54d79f55479ba6261ec">zoCommandsServiceCommand()</a> i <a class="el" href="zo_protocol_8h.html#ae6bff052f836a7689c2cda3ba3132aff">zoProtocolCommand()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5bf721b54d8e0772330c13c43ec24653"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_BROADCAST_ID&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_protocol_uart_8h.html#a900c3454f950496fa6524a6613061979">zoProtocolUartGetPacket()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a16135d330eebe27d95a8dae1d5d1b14d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_COMMAND_RESPONSE_TIMEOUT_MS&#160;&#160;&#160;200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_protocol_8h.html#ae6bff052f836a7689c2cda3ba3132aff">zoProtocolCommand()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1afd0331b2eff5b610d5f1afd3901b39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_DATA_SIZE&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac817870bb1146c4934b2d874454df629"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_DEFAULT_LAM&#160;&#160;&#160;0xFF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_protocol_8h.html#aa243e02b42b1903c91fcfdd056349233">zoProtocolInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acbc8d7ac4632249df4368cc5caae184a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_ERROR_ID&#160;&#160;&#160;0xFA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_protocol_8h.html#a7beff6cd27ee91f0a6df67f3fda6c4e9">zoProtocolCommandResponse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab225d0348fefaedd142ce8443cf73a58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_ERROR_NONE&#160;&#160;&#160;0x20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_error_8h.html#a0dba382f3fc04938cf30829d9c544d8f">zoSmsErrorHandleParseFailure()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ef96d31ac5d8ded9ea9ac31a484b18a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_ERROR_RESPONSE_TIMEOUT&#160;&#160;&#160;0x21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_protocol_8h.html#ae6bff052f836a7689c2cda3ba3132aff">zoProtocolCommand()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c4e32ee69465e48ab6e790cc2391367"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_ERROR_WRONG_LRC&#160;&#160;&#160;0x22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_protocol_8h.html#ae6bff052f836a7689c2cda3ba3132aff">zoProtocolCommand()</a>, <a class="el" href="zo_protocol_8h.html#a7d5d715868c85a11d70b03399785daf0">zoProtocolParse()</a> i <a class="el" href="zo_sms_error_8h.html#a0dba382f3fc04938cf30829d9c544d8f">zoSmsErrorHandleParseFailure()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44725aef820fa4525cb51a056742812e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_GET_COMMANDS_START&#160;&#160;&#160;0x64</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>, <a class="el" href="zo_commands_8h.html#a4a800c27ffa7d54d79f55479ba6261ec">zoCommandsServiceCommand()</a> i <a class="el" href="zo_protocol_8h.html#a7beff6cd27ee91f0a6df67f3fda6c4e9">zoProtocolCommandResponse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3427ea80dd9cfc9ae71f2f2d767b764a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_HEADER_0&#160;&#160;&#160;0x55</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_protocol_uart_8h.html#a900c3454f950496fa6524a6613061979">zoProtocolUartGetPacket()</a> i <a class="el" href="zo_protocol_uart_8h.html#a5d6bf83ed7ddc04e42d86e7d4feb35ec">zoProtocolUartPutPacket()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abde59e96280a426d54d1f24b982388bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_HEADER_1&#160;&#160;&#160;0xAA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_protocol_uart_8h.html#a900c3454f950496fa6524a6613061979">zoProtocolUartGetPacket()</a> i <a class="el" href="zo_protocol_uart_8h.html#a5d6bf83ed7ddc04e42d86e7d4feb35ec">zoProtocolUartPutPacket()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa51a706a5951e1678cc527afe17f9822"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_INFO_SIZE&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d6b7d9d77ae4e55cbae5ec9008cb5ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_PACKET_SIZE&#160;&#160;&#160;(<a class="el" href="zo_protocol_8h.html#a1afd0331b2eff5b610d5f1afd3901b39">ZO_PROTOCOL_DATA_SIZE</a> + <a class="el" href="zo_protocol_8h.html#aa51a706a5951e1678cc527afe17f9822">ZO_PROTOCOL_INFO_SIZE</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_protocol_i2_c_8h.html#aff5921af0badf09f4b1621bad7aab710">zoProtocolI2cPutPacket()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc30ac1b9b196ad665b5979efad26a3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PROTOCOL_SET_COMMANDS_START&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a4a800c27ffa7d54d79f55479ba6261ec">zoCommandsServiceCommand()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja typów wyliczanych</h2>
+<a class="anchor" id="ad80b112563f5eac61709e18604e004b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2">ZO_PROTOCOL_HW_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Wartości wyliczeń: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ad80b112563f5eac61709e18604e004b2a690e64a3392e587c2317d428436a168f"></a>ZO_PROTOCOL_HW_I2C</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad80b112563f5eac61709e18604e004b2a4b41b7068dde35a357f347c80250b2f2"></a>ZO_PROTOCOL_HW_RS232</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad80b112563f5eac61709e18604e004b2a83d50550cd45c1f8589af95743740beb"></a>ZO_PROTOCOL_HW_HALF_DUPLEX_RS485</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad80b112563f5eac61709e18604e004b2a4b475e229f7a7450d11ff6eff8234169"></a>ZO_PROTOCOL_HW_UART_5V</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ad80b112563f5eac61709e18604e004b2ab3af357a7bf131a83030d228df129dc3"></a>ZO_PROTOCOL_HW_CAN</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="ae6bff052f836a7689c2cda3ba3132aff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoProtocolCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html">ZO_PROTOCOL_HAL</a> *&#160;</td>
+          <td class="paramname"><em>hal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#afcec06316d86a5cb9c5d27ab74f16fb9">ZO_PROTOCOL_PACKET::commandID</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#a264d3e782f44d327a49b454eeec5f8be">ZO_PROTOCOL_HAL::error</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#ad6e054e49769d66c5948d6634e56730a">ZO_PROTOCOL_HAL::getPacket</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a67a758ce312a65bff3ebbb55f840075c">ZO_PROTOCOL_PACKET::lrc</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#ae3ea53a3256ffd528ae982b7b0883b58">ZO_PROTOCOL_HAL::putPacket</a>, <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="el" href="zo_protocol_8h.html#ad3fae9a8205db60e9d7516934081bcb9">ZO_PROTOCOL_BRC_COMMANDS_START</a>, <a class="el" href="zo_protocol_8h.html#a16135d330eebe27d95a8dae1d5d1b14d">ZO_PROTOCOL_COMMAND_RESPONSE_TIMEOUT_MS</a>, <a class="el" href="zo_protocol_8h.html#a0ef96d31ac5d8ded9ea9ac31a484b18a">ZO_PROTOCOL_ERROR_RESPONSE_TIMEOUT</a>, <a class="el" href="zo_protocol_8h.html#a7c4e32ee69465e48ab6e790cc2391367">ZO_PROTOCOL_ERROR_WRONG_LRC</a>, <a class="el" href="zo_error_8c.html#a9f86f4bc1e454eed4be55c523ba161fe">zoErrorPut()</a>, <a class="el" href="zo_protocol_8c.html#ac8b3f56a50c4cfdc9366ce3c9344ab87">zoProtocolLRC()</a>, <a class="el" href="zo_system_timer_8c.html#aa55e60426766ae966328dceec3c9f2a7">zoSystemTimerTimeOutExpired()</a> i <a class="el" href="zo_system_timer_8c.html#a8cb569bce349f705b4e584818c61f040">zoSystemTimerTimeOutInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7beff6cd27ee91f0a6df67f3fda6c4e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoProtocolCommandResponse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html">ZO_PROTOCOL_HAL</a> *&#160;</td>
+          <td class="paramname"><em>hal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_z_o___e_r_r_o_r.html">ZO_ERROR</a> *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a51d8bd946ed0aa01619f68a9ad3f9811">ZO_PROTOCOL_PACKET::AddressedNodeID</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#afcec06316d86a5cb9c5d27ab74f16fb9">ZO_PROTOCOL_PACKET::commandID</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#a1c9d961c442f5a9c78a7556f4466e888">ZO_PROTOCOL_HAL::localNodeID</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a67a758ce312a65bff3ebbb55f840075c">ZO_PROTOCOL_PACKET::lrc</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3c4c64be39045dde1e2da08d1ce0cb6c">ZO_PROTOCOL_PACKET::OwnNodeID</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#ae3ea53a3256ffd528ae982b7b0883b58">ZO_PROTOCOL_HAL::putPacket</a>, <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="el" href="zo_protocol_8h.html#acbc8d7ac4632249df4368cc5caae184a">ZO_PROTOCOL_ERROR_ID</a>, <a class="el" href="zo_protocol_8h.html#a44725aef820fa4525cb51a056742812e">ZO_PROTOCOL_GET_COMMANDS_START</a>, <a class="el" href="zo_error_8c.html#afbe72b7d73146fe8a4e2082d0d51c6b8">zoErrorGet()</a>, <a class="el" href="zo_error_8c.html#a64fa10670838d38c9a8e7139a40a9cbc">zoErrorIsEmpty()</a> i <a class="el" href="zo_protocol_8c.html#ac8b3f56a50c4cfdc9366ce3c9344ab87">zoProtocolLRC()</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>, <a class="el" href="zo_sms_error_8h.html#aeb4a8df3d1556c3bcf770591f3017d22">zoSmsErrorHandleCommandResponseFailure()</a> i <a class="el" href="zo_sms_error_8h.html#a0dba382f3fc04938cf30829d9c544d8f">zoSmsErrorHandleParseFailure()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa243e02b42b1903c91fcfdd056349233"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoProtocolInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2">ZO_PROTOCOL_HW_TYPE</a>&#160;</td>
+          <td class="paramname"><em>hw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html">ZO_PROTOCOL_HAL</a> *&#160;</td>
+          <td class="paramname"><em>hal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>localNodeID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#a264d3e782f44d327a49b454eeec5f8be">ZO_PROTOCOL_HAL::error</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#ad6e054e49769d66c5948d6634e56730a">ZO_PROTOCOL_HAL::getPacket</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#aaf63a035a56859e16642215f1f0ddeda">ZO_PROTOCOL_HAL::hw</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#a1c9d961c442f5a9c78a7556f4466e888">ZO_PROTOCOL_HAL::localNodeID</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#ae3ea53a3256ffd528ae982b7b0883b58">ZO_PROTOCOL_HAL::putPacket</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#a452460418ed48c3568a46f8f09bb0106">ZO_PROTOCOL_HAL::setBitRate</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#a2f26de0cf35cc7af42cd206901372259">ZO_PROTOCOL_HAL::setLAM</a>, <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="el" href="zo_protocol_8h.html#ac817870bb1146c4934b2d874454df629">ZO_PROTOCOL_DEFAULT_LAM</a>, <a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2ab3af357a7bf131a83030d228df129dc3">ZO_PROTOCOL_HW_CAN</a>, <a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2a83d50550cd45c1f8589af95743740beb">ZO_PROTOCOL_HW_HALF_DUPLEX_RS485</a>, <a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2a690e64a3392e587c2317d428436a168f">ZO_PROTOCOL_HW_I2C</a>, <a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2a4b41b7068dde35a357f347c80250b2f2">ZO_PROTOCOL_HW_RS232</a>, <a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2a4b475e229f7a7450d11ff6eff8234169">ZO_PROTOCOL_HW_UART_5V</a>, <a class="el" href="zo_protocol_i2_c_8c.html#af08bcf277de85bd9df9ec7b3ca06a287">zoProtocolI2cError</a>, <a class="el" href="zo_protocol_i2_c_8c.html#a301539e3b18205ee1b854bfe2f583434">zoProtocolI2cGetPacket()</a>, <a class="el" href="zo_protocol_i2_c_8c.html#ac477e4ce0441b815c4f47317af6af51d">zoProtocolI2cInit()</a>, <a class="el" href="zo_protocol_i2_c_8c.html#aff5921af0badf09f4b1621bad7aab710">zoProtocolI2cPutPacket()</a>, <a class="el" href="zo_protocol_i2_c_8c.html#a1f8193678b6b75b572ab6e17f39f032b">zoProtocolI2cSetBitrate()</a>, <a class="el" href="zo_protocol_i2_c_8c.html#afe3114613f2d1d5f0c5540a73b7dea48">zoProtocolI2cSetLAM()</a>, <a class="el" href="zo_protocol_uart_8c.html#ae25ab89a908eafce3350dbd84756a47c">zoProtocolUartError</a>, <a class="el" href="zo_protocol_uart_8c.html#a900c3454f950496fa6524a6613061979">zoProtocolUartGetPacket()</a>, <a class="el" href="zo_protocol_uart_8c.html#a67db8d58d72d21e0406e7c0fd525c83f">zoProtocolUartInit()</a>, <a class="el" href="zo_protocol_uart_8c.html#a5d6bf83ed7ddc04e42d86e7d4feb35ec">zoProtocolUartPutPacket()</a>, <a class="el" href="zo_protocol_uart_8c.html#a3ea7432903db7eb468a740169210cea4">zoProtocolUartSetBitrate()</a> i <a class="el" href="zo_protocol_uart_8c.html#a9c71f1da5d698312a5f012a7b2e04027">zoProtocolUartSetLAM()</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8b3f56a50c4cfdc9366ce3c9344ab87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> zoProtocolLRC </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> *&#160;</td>
+          <td class="paramname"><em>crcBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>crcByteCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_protocol_8h.html#ae6bff052f836a7689c2cda3ba3132aff">zoProtocolCommand()</a> i <a class="el" href="zo_protocol_8h.html#a7beff6cd27ee91f0a6df67f3fda6c4e9">zoProtocolCommandResponse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7d5d715868c85a11d70b03399785daf0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoProtocolParse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html">ZO_PROTOCOL_HAL</a> *&#160;</td>
+          <td class="paramname"><em>hal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#a264d3e782f44d327a49b454eeec5f8be">ZO_PROTOCOL_HAL::error</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#ad6e054e49769d66c5948d6634e56730a">ZO_PROTOCOL_HAL::getPacket</a>, <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="el" href="zo_protocol_8h.html#a7c4e32ee69465e48ab6e790cc2391367">ZO_PROTOCOL_ERROR_WRONG_LRC</a> i <a class="el" href="zo_error_8c.html#a9f86f4bc1e454eed4be55c523ba161fe">zoErrorPut()</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6152a6b5d1e955dfadc1e879789d8c2f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoProtocolSetBitrate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html">ZO_PROTOCOL_HAL</a> *&#160;</td>
+          <td class="paramname"><em>hal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>bitrate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#a452460418ed48c3568a46f8f09bb0106">ZO_PROTOCOL_HAL::setBitRate</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10076c9abb344a08ed70555f25e4d88e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoProtocolSetLAM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html">ZO_PROTOCOL_HAL</a> *&#160;</td>
+          <td class="paramname"><em>hal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>lam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___h_a_l.html#a2f26de0cf35cc7af42cd206901372259">ZO_PROTOCOL_HAL::setLAM</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb5fb232909a11b4992a277a944d4228.html">SuperModified.V1</a></li><li class="navelem"><a class="el" href="zo_protocol_8h.html">zoProtocol.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:49:50 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

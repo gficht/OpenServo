@@ -1,0 +1,1539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku zoCommands.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('zo_commands_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#typedef-members">Definicje typów</a> &#124;
+<a href="#enum-members">Wyliczenia</a> &#124;
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku zoCommands.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="zo_types_8h_source.html">zoTypes.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="zo_protocol_8h_source.html">zoProtocol.h</a>&quot;</code><br/>
+</div>
+<p><a href="zo_commands_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:a00046477d26777ed06af0f814d1d81de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a00046477d26777ed06af0f814d1d81de">ZO_COMMANDS_ERROR_NONE</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memitem:a783f06d0b99d82e2357ad26f6cefe3f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a783f06d0b99d82e2357ad26f6cefe3f2">ZO_COMMANDS_ERROR_INVALID_COMMAND_ID</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memitem:a7180edc37e387ef0c7506909db065f85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a7180edc37e387ef0c7506909db065f85">ZO_COMMANDS_ERROR_INVALID_SET_BYTECOUNT</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memitem:a0445e7f57964f10bfe5f86370a388768"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a0445e7f57964f10bfe5f86370a388768">ZO_COMMANDS_ERROR_INVALID_ARGUMENT</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memitem:ab673767f1c5c967bed313637fb29cde8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#ab673767f1c5c967bed313637fb29cde8">ZO_COMMANDS_ERROR_INVALID_COMMAND</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memitem:a965ba3ba2a6c60a2f53c2cf467d022d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a965ba3ba2a6c60a2f53c2cf467d022d6">ZO_COMMANDS_ERROR_INVALID_BYTECOUNT</a>&#160;&#160;&#160;0x05</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="typedef-members"></a>
+Definicje typów</h2></td></tr>
+<tr class="memitem:a6fd45e1690f753a18583ef7f0fb20a20"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a6fd45e1690f753a18583ef7f0fb20a20">ZO_COMMAND_FUNCTOR</a> )(<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="enum-members"></a>
+Wyliczenia</h2></td></tr>
+<tr class="memitem:a229143ecc8e8fd632649f86a54c1e622"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622">ZO_SET_COMMANDS</a> { <br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a703afef5eb6b14a2c9c9b75317480f58">ZO_COMMAND_SET_GAIN_P</a> =  ZO_PROTOCOL_SET_COMMANDS_START, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a7855e2cba1860f47ac8c9ec42aef77f7">ZO_COMMAND_SET_GAIN_I</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622af7ac005c144d8711db6866d205b6be23">ZO_COMMAND_SET_GAIN_D</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622aef0f3544aeb58d58a676329b8de44202">ZO_COMMAND_SET_PROFILE_ACCELERATION</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a3243fb838de2658bf9af02b0c58591b4">ZO_COMMAND_SET_PROFILE_VELOCITY</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a8f70845ac6494c9fdaf0ea9878ad82e9">ZO_COMMAND_SET_CURRENT_LIMIT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622afacfbb57ddc7eac5b8edd649ca792b4f">ZO_COMMAND_SET_CURRENT_LIMIT_DURATION</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ac00c2435c8e005f61c0d2ae05a0b8920">ZO_COMMAND_VELOCITY_MOVE</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a23ee40f9e20f24f72627d2cfe9648cd1">ZO_COMMAND_ABSOLUTE_POSITION_MOVE</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ac0e21e5063851815a9a042b8229eb86f">ZO_COMMAND_RELATIVE_POSITION_MOVE</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ae3fbaaf80223dd9429fa760e720cdd0f">ZO_COMMAND_PROFILED_VELOCITY_MOVE</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622aac95b37f16144c53387883225aa04c6d">ZO_COMMAND_PROFILED_ABSOLUTE_POSITION_MOVE</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622aedf34f83d15d48e4b152c922288d7e9f">ZO_COMMAND_PROFILED_RELATIVE_POSITION_MOVE</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a7bfd2645eec8fd5dd1d54923b43f2fae">ZO_COMMAND_SET_VELOCITY_SETPOINT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a2e8d4b6e2fee9fbe3da8fdc83cc92be8">ZO_COMMAND_SET_ABSOLUTE_POSITION_SETPOINT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a40fcc9ca19e2ee19a41e7a00af0cb06e">ZO_COMMAND_SET_RELATIVE_POSITION_SETPOINT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a47e3a0957b55e1dbad0d495486a66e8b">ZO_COMMAND_SET_PROFILED_VELOCITY_SETPOINT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ab059abff81829c8a70448a7580621941">ZO_COMMAND_SET_PROFILED_ABSOLUTE_POSITION_SETPOINT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a7890b261e03419d07a5df5dccab11b37">ZO_COMMAND_SET_PROFILED_RELATIVE_POSITION_SETPOINT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a95e65c8e7cf40a740aaee0beb22689c1">ZO_COMMAND_CONFIGURE_DIGITAL_IO</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a3a2a5982b4efde7ceee91c7a16eb3922">ZO_COMMAND_SET_DIGITAL_OUT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a93fdfdd7b79fe2f490ef76e23c95107b">ZO_COMMAND_SET_NODE_ID</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622af42dd2ab0d472e458c267b65c1e6a0fa">ZO_COMMAND_SET_LOCAL_ACCEPTANCE_MASK</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a8dff58332ee924c7f8520bcc85653061">ZO_COMMAND_SET_BAUD_UART</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a588d3e8e140b17649a477a7a21693978">ZO_COMMAND_RESET_POSITION</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ace35570383d760ef743d7653e6d180d2">ZO_COMMAND_START</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ab3faaaaf0346ef0a433ebf0d0e9b6a39">ZO_COMMAND_HALT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a007b7e1c934d2c1fcb74f72d737cfe94">ZO_COMMAND_STOP</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622adee4cea08c96692df671eb747bbb65ad">ZO_COMMAND_SET_ERROR_REPORTING_LEVEL</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a75451872fdaa99c61db56d41d0aabed6">ZO_COMMANDS_SET_COMMANDS_END</a>
+<br/>
+ }</td></tr>
+<tr class="memitem:a996551766a987851e59c5f8d5a17d319"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319">ZO_GET_COMMANDS</a> { <br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a419d00177de0265275f757c9029e4bcb">ZO_COMMAND_GET_GAIN_P</a> =  ZO_PROTOCOL_GET_COMMANDS_START, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a27d8b4f8b8afc4790845425ab9b0ebac">ZO_COMMAND_GET_GAIN_I</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a73a03dc15402df692814d008add26982">ZO_COMMAND_GET_GAIN_D</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a86de105c68b3951bfedbe9b93fe82515">ZO_COMMAND_GET_PROFILE_ACCELERATION</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a5c52a3691bea8b1ba2cedf3c4c77e59f">ZO_COMMAND_GET_PROFILE_VELOCITY</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a76d86efb9962dd14bf147ef0b7b16055">ZO_COMMAND_GET_CURRENT_LIMIT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319ab7b49df1d7c82c8620d0e8549633221a">ZO_COMMAND_GET_CURRENT_LIMIT_DURATION</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a7689a0b8dd8590b4b66b0b50ba2de618">ZO_COMMAND_GET_DIO_CONFIGURATION</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a316d5630e0c9726e299d01b9d933f5d8">ZO_COMMAND_GET_LOCAL_ACCEPTANCE_MASK</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a187334993e489c8e6d08c15d0bcd3844">ZO_COMMAND_GET_DIGITAL_IN</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319abd3ebf21421f3b8965304acf64ef98e8">ZO_COMMAND_GET_ANALOG_IN</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a8b9d7da9b3fb9e30501b14b60107b4d7">ZO_COMMAND_GET_POSITION</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a67141e29f40dd34733dcae1992475f87">ZO_COMMAND_GET_ABSOLUTE_POSITION</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a8519fe02218c0b7c96fcdb2d63c8f406">ZO_COMMAND_GET_VELOCITY</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a9dae0c20fcbc4cedb36e23aff9af68b6">ZO_COMMAND_GET_CURRENT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319adcb589736856139025d92a5af99eaab3">ZO_COMMAND_GET_WARNING</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a30cc5418be29ce6af81026de0cf84082">ZO_COMMANDS_GET_COMMANDS_END</a>
+<br/>
+ }</td></tr>
+<tr class="memitem:a00209213a461f9603d1dc5df4b4ea592"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592">ZO_BRC_COMMANDS</a> { <br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592aa17d17fc0aa498bb3cb8d57e46ecf334">ZO_COMMAND_DO_MOVE</a> =  ZO_PROTOCOL_BRC_COMMANDS_START, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592a3dfd131081930610eda24411cdfebaa4">ZO_COMMAND_GLOBAL_START</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592a79c8d21de6ff28e51c243e7fea2b90bf">ZO_COMMAND_GLOBAL_HALT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592a291f7a5a8d34a8f6b274c916c5997bb3">ZO_COMMAND_GLOBAL_STOP</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592a90323ebb6de0020fd0501b7fd0dc6dc7">ZO_COMMANDS_BRC_COMMANDS_END</a>
+<br/>
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:afe800aa9a20974202c82cbdb1020a8b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit</a> (void)</td></tr>
+<tr class="memitem:a4a800c27ffa7d54d79f55479ba6261ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a4a800c27ffa7d54d79f55479ba6261ec">zoCommandsServiceCommand</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a9a088619b0460894d6a59fd2072200b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a9a088619b0460894d6a59fd2072200b6">zoCommandSetGainP</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:aaf41c0ac2e1d44b88c56d75627c44a76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#aaf41c0ac2e1d44b88c56d75627c44a76">zoCommandSetGainI</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a5a604988c6ef56b38bf8640c45ae40ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a5a604988c6ef56b38bf8640c45ae40ff">zoCommandSetGainD</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a10a52ef74b8cf5d24c7625910611124b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a10a52ef74b8cf5d24c7625910611124b">zoCommandSetProfileAcceleration</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a66e4b1b8959fe78b81b72ebd28ec48b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a66e4b1b8959fe78b81b72ebd28ec48b5">zoCommandSetProfileVelocity</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a8d3ad03791d91f36700b6bfbdb7e2f19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a8d3ad03791d91f36700b6bfbdb7e2f19">zoCommandSetCurrentLimit</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:acbbe598c550c8a7806c717c55dae7e11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#acbbe598c550c8a7806c717c55dae7e11">zoCommandSetCurrentLimitDuration</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:ab7f41276777dd8ac1e09a5f23b45d4a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#ab7f41276777dd8ac1e09a5f23b45d4a3">zoCommandVelocityMove</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:ab567d76ce5494d719aeff1b40ac6bff1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#ab567d76ce5494d719aeff1b40ac6bff1">zoCommandAbsolutePositionMove</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:ae241cb0d785307b22d9685374136be3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#ae241cb0d785307b22d9685374136be3d">zoCommandRelativePositionMove</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a53f4a37bec176780573853f663c6d788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a53f4a37bec176780573853f663c6d788">zoCommandProfiledVelocityMove</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a50267515a14d47d38784ca1c019a88c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a50267515a14d47d38784ca1c019a88c1">zoCommandProfiledAbsolutePositionMove</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:af3864ab04fa183898cf807af86d2771b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#af3864ab04fa183898cf807af86d2771b">zoCommandProfiledRelativePositionMove</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a1fba542fd5265c056b4290bfd58ba283"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a1fba542fd5265c056b4290bfd58ba283">zoCommandSetVelocitySetpoint</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a1e98e4798c14837ee9c6a8ba168b8901"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a1e98e4798c14837ee9c6a8ba168b8901">zoCommandSetAbsolutePositionSetpoint</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a00056e3497c4aaa925dd373aa92fe801"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a00056e3497c4aaa925dd373aa92fe801">zoCommandSetRelativePositionSetpoint</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a044b0c7fd23c8f9e901530e89c7e2a50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a044b0c7fd23c8f9e901530e89c7e2a50">zoCommandSetProfiledVelocitySetpoint</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a784da3d42fe55f475a4e20a07dcaad01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a784da3d42fe55f475a4e20a07dcaad01">zoCommandSetProfiledAbsolutePositionSetpoint</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a303be9fa1311277364f7b69fa7a0f1d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a303be9fa1311277364f7b69fa7a0f1d8">zoCommandSetProfiledRelativePositionSetpoint</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:ae0e98a9a04565fc41ffc874a70204039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#ae0e98a9a04565fc41ffc874a70204039">zoCommandConfigureDigitalIO</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a2ca8ec5be256cf1dceec73851ec4290f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a2ca8ec5be256cf1dceec73851ec4290f">zoCommandSetDigitalOut</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a2ffd02d77914e77a036eda73e9575760"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a2ffd02d77914e77a036eda73e9575760">zoCommandSetNodeID</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a50d21024cff7420c4b385cb30057e7d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a50d21024cff7420c4b385cb30057e7d8">zoCommandSetLocalAcceptanceMask</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a5bf813e5c8fb97148f20d1afee733517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a5bf813e5c8fb97148f20d1afee733517">zoCommandSetBaudUart</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a80ad114ddf27b86719cadbaa354db937"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a80ad114ddf27b86719cadbaa354db937">zoCommandResetPosition</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a78ba12fba621c985b0ee498844c1c815"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a78ba12fba621c985b0ee498844c1c815">zoCommandStart</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a2409e12e788250e1680d1555d818d4e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a2409e12e788250e1680d1555d818d4e3">zoCommandHalt</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a33e573991d4058b14fb7e832094cbf49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a33e573991d4058b14fb7e832094cbf49">zoCommandStop</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a843d16f479f6f77f6c457143a1935e28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a843d16f479f6f77f6c457143a1935e28">zoCommandSetErrorReportingLevel</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a30333fb4f0a109b22b9236fadf693cc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a30333fb4f0a109b22b9236fadf693cc2">zoCommandGetGainP</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:ad7d8ba6e5f26ad8e088a97b68d4867f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#ad7d8ba6e5f26ad8e088a97b68d4867f6">zoCommandGetGainI</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a2cb9557f9c3190e391b731016256ec83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a2cb9557f9c3190e391b731016256ec83">zoCommandGetGainD</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:ae3fc04871b6654e56503375482b84293"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#ae3fc04871b6654e56503375482b84293">zoCommandGetProfileAcceleration</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a67e382bf2b4b76bacc34067ec08c90c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a67e382bf2b4b76bacc34067ec08c90c4">zoCommandGetProfileVelocity</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:ade2929ea91420e138a1b1deb293c4d38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#ade2929ea91420e138a1b1deb293c4d38">zoCommandGetCurrentLimit</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a42a21a74a2b71f09ea978124ab1fcb95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a42a21a74a2b71f09ea978124ab1fcb95">zoCommandGetCurrentLimitDuration</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a5a17bd2c12f08c9a44758cb1e1ffd8f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a5a17bd2c12f08c9a44758cb1e1ffd8f7">zoCommandGetDigitalIoConfiguration</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:acd282b35ad758c952d5dd491d683cc1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#acd282b35ad758c952d5dd491d683cc1c">zoCommandGetLocalAcceptanceMask</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:aab70d554e92f073728531b8c77b57d4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#aab70d554e92f073728531b8c77b57d4e">zoCommandGetDigitalIn</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a8be99b451402d74d14dcc25ec9e4ae7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a8be99b451402d74d14dcc25ec9e4ae7e">zoCommandGetAnalogIn</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a063898d0fa81732c6ceee9ffeebec59c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a063898d0fa81732c6ceee9ffeebec59c">zoCommandGetPosition</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a296d00336ab885d5ce45d42e350b4419"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a296d00336ab885d5ce45d42e350b4419">zoCommandGetAbsolutePosition</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:ab8d1c7b8a7410b8008a3be4597bce1be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#ab8d1c7b8a7410b8008a3be4597bce1be">zoCommandGetVelocity</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a8dd73dc5c0cff63107473f67d7d7091f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a8dd73dc5c0cff63107473f67d7d7091f">zoCommandGetCurrent</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a5ed139264d617d24df4da6eb0604149b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a5ed139264d617d24df4da6eb0604149b">zoCommandGetWarning</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:adc44190abaedf1fb0b0febc3d4009347"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#adc44190abaedf1fb0b0febc3d4009347">zoCommandDoMove</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a13920e1b432d06d009a141670f1c4297"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a13920e1b432d06d009a141670f1c4297">zoProfiledVelocity</a> (<a class="el" href="zo_types_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a> velocity)</td></tr>
+<tr class="memitem:aede31b7046eb7e64ae11612d22fa2e2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#aede31b7046eb7e64ae11612d22fa2e2a">zoProfiledMoveAbsolute</a> (<a class="el" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> setpoint)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:a7a891a32582b33b98e78ed11527b1cf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_z_o___e_r_r_o_r.html">ZO_ERROR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_commands_8h.html#a7a891a32582b33b98e78ed11527b1cf5">zoCommandsError</a></td></tr>
+</table>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="a0445e7f57964f10bfe5f86370a388768"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_COMMANDS_ERROR_INVALID_ARGUMENT&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a5bf813e5c8fb97148f20d1afee733517">zoCommandSetBaudUart()</a>, <a class="el" href="zo_commands_8h.html#a8d3ad03791d91f36700b6bfbdb7e2f19">zoCommandSetCurrentLimit()</a>, <a class="el" href="zo_commands_8h.html#a843d16f479f6f77f6c457143a1935e28">zoCommandSetErrorReportingLevel()</a>, <a class="el" href="zo_commands_8h.html#a50d21024cff7420c4b385cb30057e7d8">zoCommandSetLocalAcceptanceMask()</a>, <a class="el" href="zo_commands_8h.html#a2ffd02d77914e77a036eda73e9575760">zoCommandSetNodeID()</a>, <a class="el" href="zo_commands_8h.html#a10a52ef74b8cf5d24c7625910611124b">zoCommandSetProfileAcceleration()</a> i <a class="el" href="zo_commands_8h.html#a66e4b1b8959fe78b81b72ebd28ec48b5">zoCommandSetProfileVelocity()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a965ba3ba2a6c60a2f53c2cf467d022d6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_COMMANDS_ERROR_INVALID_BYTECOUNT&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a4a800c27ffa7d54d79f55479ba6261ec">zoCommandsServiceCommand()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab673767f1c5c967bed313637fb29cde8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_COMMANDS_ERROR_INVALID_COMMAND&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a4a800c27ffa7d54d79f55479ba6261ec">zoCommandsServiceCommand()</a> i <a class="el" href="zo_sms_error_8h.html#a37517af13d91ee187e9cfda90e000494">zoSmsErrorHandleServiceCommandFailure()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a783f06d0b99d82e2357ad26f6cefe3f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_COMMANDS_ERROR_INVALID_COMMAND_ID&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a4a800c27ffa7d54d79f55479ba6261ec">zoCommandsServiceCommand()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7180edc37e387ef0c7506909db065f85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_COMMANDS_ERROR_INVALID_SET_BYTECOUNT&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a4a800c27ffa7d54d79f55479ba6261ec">zoCommandsServiceCommand()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a00046477d26777ed06af0f814d1d81de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_COMMANDS_ERROR_NONE&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Dokumentacja definicji typów</h2>
+<a class="anchor" id="a6fd45e1690f753a18583ef7f0fb20a20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* ZO_COMMAND_FUNCTOR)(<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Dokumentacja typów wyliczanych</h2>
+<a class="anchor" id="a00209213a461f9603d1dc5df4b4ea592"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592">ZO_BRC_COMMANDS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Wartości wyliczeń: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a00209213a461f9603d1dc5df4b4ea592aa17d17fc0aa498bb3cb8d57e46ecf334"></a>ZO_COMMAND_DO_MOVE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a00209213a461f9603d1dc5df4b4ea592a3dfd131081930610eda24411cdfebaa4"></a>ZO_COMMAND_GLOBAL_START</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a00209213a461f9603d1dc5df4b4ea592a79c8d21de6ff28e51c243e7fea2b90bf"></a>ZO_COMMAND_GLOBAL_HALT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a00209213a461f9603d1dc5df4b4ea592a291f7a5a8d34a8f6b274c916c5997bb3"></a>ZO_COMMAND_GLOBAL_STOP</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a00209213a461f9603d1dc5df4b4ea592a90323ebb6de0020fd0501b7fd0dc6dc7"></a>ZO_COMMANDS_BRC_COMMANDS_END</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a996551766a987851e59c5f8d5a17d319"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319">ZO_GET_COMMANDS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Wartości wyliczeń: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a419d00177de0265275f757c9029e4bcb"></a>ZO_COMMAND_GET_GAIN_P</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a27d8b4f8b8afc4790845425ab9b0ebac"></a>ZO_COMMAND_GET_GAIN_I</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a73a03dc15402df692814d008add26982"></a>ZO_COMMAND_GET_GAIN_D</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a86de105c68b3951bfedbe9b93fe82515"></a>ZO_COMMAND_GET_PROFILE_ACCELERATION</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a5c52a3691bea8b1ba2cedf3c4c77e59f"></a>ZO_COMMAND_GET_PROFILE_VELOCITY</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a76d86efb9962dd14bf147ef0b7b16055"></a>ZO_COMMAND_GET_CURRENT_LIMIT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319ab7b49df1d7c82c8620d0e8549633221a"></a>ZO_COMMAND_GET_CURRENT_LIMIT_DURATION</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a7689a0b8dd8590b4b66b0b50ba2de618"></a>ZO_COMMAND_GET_DIO_CONFIGURATION</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a316d5630e0c9726e299d01b9d933f5d8"></a>ZO_COMMAND_GET_LOCAL_ACCEPTANCE_MASK</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a187334993e489c8e6d08c15d0bcd3844"></a>ZO_COMMAND_GET_DIGITAL_IN</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319abd3ebf21421f3b8965304acf64ef98e8"></a>ZO_COMMAND_GET_ANALOG_IN</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a8b9d7da9b3fb9e30501b14b60107b4d7"></a>ZO_COMMAND_GET_POSITION</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a67141e29f40dd34733dcae1992475f87"></a>ZO_COMMAND_GET_ABSOLUTE_POSITION</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a8519fe02218c0b7c96fcdb2d63c8f406"></a>ZO_COMMAND_GET_VELOCITY</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a9dae0c20fcbc4cedb36e23aff9af68b6"></a>ZO_COMMAND_GET_CURRENT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319adcb589736856139025d92a5af99eaab3"></a>ZO_COMMAND_GET_WARNING</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a996551766a987851e59c5f8d5a17d319a30cc5418be29ce6af81026de0cf84082"></a>ZO_COMMANDS_GET_COMMANDS_END</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622">ZO_SET_COMMANDS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Wartości wyliczeń: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a703afef5eb6b14a2c9c9b75317480f58"></a>ZO_COMMAND_SET_GAIN_P</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a7855e2cba1860f47ac8c9ec42aef77f7"></a>ZO_COMMAND_SET_GAIN_I</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622af7ac005c144d8711db6866d205b6be23"></a>ZO_COMMAND_SET_GAIN_D</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622aef0f3544aeb58d58a676329b8de44202"></a>ZO_COMMAND_SET_PROFILE_ACCELERATION</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a3243fb838de2658bf9af02b0c58591b4"></a>ZO_COMMAND_SET_PROFILE_VELOCITY</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a8f70845ac6494c9fdaf0ea9878ad82e9"></a>ZO_COMMAND_SET_CURRENT_LIMIT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622afacfbb57ddc7eac5b8edd649ca792b4f"></a>ZO_COMMAND_SET_CURRENT_LIMIT_DURATION</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622ac00c2435c8e005f61c0d2ae05a0b8920"></a>ZO_COMMAND_VELOCITY_MOVE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a23ee40f9e20f24f72627d2cfe9648cd1"></a>ZO_COMMAND_ABSOLUTE_POSITION_MOVE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622ac0e21e5063851815a9a042b8229eb86f"></a>ZO_COMMAND_RELATIVE_POSITION_MOVE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622ae3fbaaf80223dd9429fa760e720cdd0f"></a>ZO_COMMAND_PROFILED_VELOCITY_MOVE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622aac95b37f16144c53387883225aa04c6d"></a>ZO_COMMAND_PROFILED_ABSOLUTE_POSITION_MOVE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622aedf34f83d15d48e4b152c922288d7e9f"></a>ZO_COMMAND_PROFILED_RELATIVE_POSITION_MOVE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a7bfd2645eec8fd5dd1d54923b43f2fae"></a>ZO_COMMAND_SET_VELOCITY_SETPOINT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a2e8d4b6e2fee9fbe3da8fdc83cc92be8"></a>ZO_COMMAND_SET_ABSOLUTE_POSITION_SETPOINT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a40fcc9ca19e2ee19a41e7a00af0cb06e"></a>ZO_COMMAND_SET_RELATIVE_POSITION_SETPOINT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a47e3a0957b55e1dbad0d495486a66e8b"></a>ZO_COMMAND_SET_PROFILED_VELOCITY_SETPOINT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622ab059abff81829c8a70448a7580621941"></a>ZO_COMMAND_SET_PROFILED_ABSOLUTE_POSITION_SETPOINT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a7890b261e03419d07a5df5dccab11b37"></a>ZO_COMMAND_SET_PROFILED_RELATIVE_POSITION_SETPOINT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a95e65c8e7cf40a740aaee0beb22689c1"></a>ZO_COMMAND_CONFIGURE_DIGITAL_IO</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a3a2a5982b4efde7ceee91c7a16eb3922"></a>ZO_COMMAND_SET_DIGITAL_OUT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a93fdfdd7b79fe2f490ef76e23c95107b"></a>ZO_COMMAND_SET_NODE_ID</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622af42dd2ab0d472e458c267b65c1e6a0fa"></a>ZO_COMMAND_SET_LOCAL_ACCEPTANCE_MASK</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a8dff58332ee924c7f8520bcc85653061"></a>ZO_COMMAND_SET_BAUD_UART</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a588d3e8e140b17649a477a7a21693978"></a>ZO_COMMAND_RESET_POSITION</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622ace35570383d760ef743d7653e6d180d2"></a>ZO_COMMAND_START</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622ab3faaaaf0346ef0a433ebf0d0e9b6a39"></a>ZO_COMMAND_HALT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a007b7e1c934d2c1fcb74f72d737cfe94"></a>ZO_COMMAND_STOP</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622adee4cea08c96692df671eb747bbb65ad"></a>ZO_COMMAND_SET_ERROR_REPORTING_LEVEL</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a229143ecc8e8fd632649f86a54c1e622a75451872fdaa99c61db56d41d0aabed6"></a>ZO_COMMANDS_SET_COMMANDS_END</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="ab567d76ce5494d719aeff1b40ac6bff1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandAbsolutePositionMove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">ZO_SUPERMODIFIED::Control</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">ZO_SUPERMODIFIED::Pid</a>, <a class="el" href="struct_z_o___p_i_d.html#ab2ed884e6bf46fce682ce840b05f7650">ZO_PID::SetPoint</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#aa7f0733336b04ba2e8a8df719eddc176">ZO_SMS_CONTROL::State</a>, <a class="el" href="zo_string_8h.html#ad411307855e92e37dc299a50d78281b4">strToS32()</a> i <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10ab0703001cd962f7e1f9a7af7c14a17f5">ZO_SMS_CONTROL_POSITION_CONTROL</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#adc44190abaedf1fb0b0febc3d4009347">zoCommandDoMove()</a> i <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0e98a9a04565fc41ffc874a70204039"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandConfigureDigitalIO </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a9f0b432eb90e9e56237568c7dc841dc7">ZO_SMS_SETTINGS::DigitalIoConfig</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a5180724bf1bb6ea9648e4a228eeecac5">ZO_SUPERMODIFIED::Settings</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a> i <a class="el" href="zo_sms_8h.html#a82fa6bd0ef23fad71fa2439c628502dc">ZO_EEPROM_ADDRESS_DIGITAL_IO_CONFIG</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc44190abaedf1fb0b0febc3d4009347"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandDoMove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a778635970c8caea5f9fc9417d85ac900">ZO_SUPERMODIFIED::BufferdSetPoint</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="zo_string_8h.html#a07b402e7198397f5a86f0831bea087b9">s16ToStr()</a>, <a class="el" href="zo_string_8h.html#ac78c8f3c207848b13cfe08c25d3d9fb9">s32ToStr()</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a92a5979ce432c73e93050fda778908fd">ZO_SMS_BUFFERED_SETPOINT::type</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a41cda9fd475265935928b621c55a591d">ZO_SMS_BUFFERED_SETPOINT::value</a>, <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a9d746bf50dd5d391d3fbff67e4e5986f">ZO_SMS_SETPOINT_ABSOLUTE_POSITION</a>, <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a0c0bc7a498606c7855a37c56c5ca5b9a">ZO_SMS_SETPOINT_NONE</a>, <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714aebcf04764dd9a322fa5aa838fc95d2dc">ZO_SMS_SETPOINT_PROFILED_ABSOLUTE_POSITION</a>, <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714afdceecea10870a446ace744b8ba6957f">ZO_SMS_SETPOINT_PROFILED_RELATIVE_POSITION</a>, <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a95308513be0d0448c314bbafdd6c72c4">ZO_SMS_SETPOINT_PROFILED_VELOCITY</a>, <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714adbd7aab5297b41c60eb7f9d9bab8c3ab">ZO_SMS_SETPOINT_RELATIVE_POSITION</a>, <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a7ce9e02788bae23439779a827b3f7dd5">ZO_SMS_SETPOINT_VELOCITY</a>, <a class="el" href="zo_commands_8c.html#ab567d76ce5494d719aeff1b40ac6bff1">zoCommandAbsolutePositionMove()</a>, <a class="el" href="zo_commands_8c.html#a53f4a37bec176780573853f663c6d788">zoCommandProfiledVelocityMove()</a>, <a class="el" href="zo_commands_8c.html#ae241cb0d785307b22d9685374136be3d">zoCommandRelativePositionMove()</a>, <a class="el" href="zo_commands_8c.html#ab7f41276777dd8ac1e09a5f23b45d4a3">zoCommandVelocityMove()</a>, <a class="el" href="zo_encoder_8c.html#a3e44304e8885489bc7f96e2068e0f5f5">zoEncoderGetPos()</a> i <a class="el" href="zo_commands_8c.html#a50a1dd840039466e2250f6587c42fa6a">zoProfiledMoveAbsolute()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a296d00336ab885d5ce45d42e350b4419"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetAbsolutePosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_string_8h.html#ab7ca42e1938ab70e713a85379332b119">u16ToStr()</a> i <a class="el" href="zo_encoder_8c.html#aa3292a261ffea2334857d1adeac64189">zoEncoderGetPosAbsolute()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8be99b451402d74d14dcc25ec9e4ae7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetAnalogIn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_string_8h.html#ab7ca42e1938ab70e713a85379332b119">u16ToStr()</a>, <a class="el" href="zo_adc_8h.html#a1c9d2bf8c5d7cd2433df8ea36c20af47afb45caf736e49feadfedb1f593fa9300">ZO_ADC_CHANNEL_0</a>, <a class="el" href="zo_adc_8h.html#a1c9d2bf8c5d7cd2433df8ea36c20af47a01358d3a695099b1ad64cf0ceef6f79c">ZO_ADC_CHANNEL_1</a>, <a class="el" href="zo_adc_8h.html#a1c9d2bf8c5d7cd2433df8ea36c20af47aaad9b42b75fd78db1f7260d36c7d2a93">ZO_ADC_CHANNEL_2</a>, <a class="el" href="zo_adc_8h.html#a1c9d2bf8c5d7cd2433df8ea36c20af47ab39795878271efe93244129da0f36d48">ZO_ADC_CHANNEL_3</a> i <a class="el" href="zo_adc_8c.html#a96c9aba97513e621cbe5b818a1b8781b">zoAdcRead()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8dd73dc5c0cff63107473f67d7d7091f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetCurrent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_string_8h.html#ab7ca42e1938ab70e713a85379332b119">u16ToStr()</a>, <a class="el" href="zo_adc_8h.html#a1c9d2bf8c5d7cd2433df8ea36c20af47af88519e77eeff81e9eb4e538bdb8684b">ZO_ADC_CHANNEL_7</a> i <a class="el" href="zo_adc_8c.html#a96c9aba97513e621cbe5b818a1b8781b">zoAdcRead()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade2929ea91420e138a1b1deb293c4d38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetCurrentLimit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#af5f08299e45eea0353cef028acd4ee0a">ZO_SMS_SETTINGS::CurrentLimit</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a5180724bf1bb6ea9648e4a228eeecac5">ZO_SUPERMODIFIED::Settings</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a> i <a class="el" href="zo_string_8h.html#ab7ca42e1938ab70e713a85379332b119">u16ToStr()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42a21a74a2b71f09ea978124ab1fcb95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetCurrentLimitDuration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a30cc3d678ceec8efa9d70d9ccf6fa01d">ZO_SMS_SETTINGS::CurrentLimitDuration</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a5180724bf1bb6ea9648e4a228eeecac5">ZO_SUPERMODIFIED::Settings</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a> i <a class="el" href="zo_string_8h.html#ab7ca42e1938ab70e713a85379332b119">u16ToStr()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab70d554e92f073728531b8c77b57d4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetDigitalIn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a> i <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a17bd2c12f08c9a44758cb1e1ffd8f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetDigitalIoConfiguration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a9f0b432eb90e9e56237568c7dc841dc7">ZO_SMS_SETTINGS::DigitalIoConfig</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a5180724bf1bb6ea9648e4a228eeecac5">ZO_SUPERMODIFIED::Settings</a> i <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2cb9557f9c3190e391b731016256ec83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetGainD </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___p_i_d.html#a1ca7414a5492ede1eac2f23a9976768a">ZO_PID::GainD</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">ZO_SUPERMODIFIED::Pid</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a> i <a class="el" href="zo_string_8h.html#ab7ca42e1938ab70e713a85379332b119">u16ToStr()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad7d8ba6e5f26ad8e088a97b68d4867f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetGainI </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___p_i_d.html#abd1533d665a597f0c3e0b089551956a4">ZO_PID::GainI</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">ZO_SUPERMODIFIED::Pid</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a> i <a class="el" href="zo_string_8h.html#ab7ca42e1938ab70e713a85379332b119">u16ToStr()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a30333fb4f0a109b22b9236fadf693cc2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetGainP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___p_i_d.html#a5569fd10f52e70e6b8ada2efab5bcc44">ZO_PID::GainP</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">ZO_SUPERMODIFIED::Pid</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a> i <a class="el" href="zo_string_8h.html#ab7ca42e1938ab70e713a85379332b119">u16ToStr()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd282b35ad758c952d5dd491d683cc1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetLocalAcceptanceMask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a655d7fc10bb465ca08a178377d4eb674">ZO_SMS_SETTINGS::localAcceptanceMask</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a5180724bf1bb6ea9648e4a228eeecac5">ZO_SUPERMODIFIED::Settings</a> i <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a063898d0fa81732c6ceee9ffeebec59c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetPosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_string_8h.html#ac78c8f3c207848b13cfe08c25d3d9fb9">s32ToStr()</a> i <a class="el" href="zo_encoder_8c.html#a3e44304e8885489bc7f96e2068e0f5f5">zoEncoderGetPos()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae3fc04871b6654e56503375482b84293"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetProfileAcceleration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#aacacd2ec1b68ebafe10814839d15526a">ZO_SMS_PROFILE::DesiredAcceleration</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a> i <a class="el" href="zo_string_8h.html#ab7ca42e1938ab70e713a85379332b119">u16ToStr()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a67e382bf2b4b76bacc34067ec08c90c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetProfileVelocity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#ac9dbc865ac761dbfdcad0d9e654f08b6">ZO_SMS_PROFILE::DesiredVelocity</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a> i <a class="el" href="zo_string_8h.html#ab7ca42e1938ab70e713a85379332b119">u16ToStr()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8d1c7b8a7410b8008a3be4597bce1be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetVelocity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_string_8h.html#a07b402e7198397f5a86f0831bea087b9">s16ToStr()</a> i <a class="el" href="zo_encoder_8c.html#abee94da3cd9232f74a6fa615241bbb79">zoEncoderGetVel()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ed139264d617d24df4da6eb0604149b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandGetWarning </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_error_8c.html#afbe72b7d73146fe8a4e2082d0d51c6b8">zoErrorGet()</a>, <a class="el" href="zo_error_8c.html#a64fa10670838d38c9a8e7139a40a9cbc">zoErrorIsEmpty()</a> i <a class="el" href="zo_sms_error_8c.html#aa7d95f051b48d5a43e38b3e9d4d7f9e0">zoSmsWarning</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2409e12e788250e1680d1555d818d4e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandHalt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">ZO_SUPERMODIFIED::Control</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">ZO_SUPERMODIFIED::Pid</a>, <a class="el" href="struct_z_o___p_i_d.html#ab2ed884e6bf46fce682ce840b05f7650">ZO_PID::SetPoint</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#aa7f0733336b04ba2e8a8df719eddc176">ZO_SMS_CONTROL::State</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10ab0703001cd962f7e1f9a7af7c14a17f5">ZO_SMS_CONTROL_POSITION_CONTROL</a> i <a class="el" href="zo_encoder_8c.html#a3e44304e8885489bc7f96e2068e0f5f5">zoEncoderGetPos()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a50267515a14d47d38784ca1c019a88c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandProfiledAbsolutePositionMove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_string_8h.html#ad411307855e92e37dc299a50d78281b4">strToS32()</a> i <a class="el" href="zo_commands_8c.html#a50a1dd840039466e2250f6587c42fa6a">zoProfiledMoveAbsolute()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af3864ab04fa183898cf807af86d2771b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandProfiledRelativePositionMove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_string_8h.html#ad411307855e92e37dc299a50d78281b4">strToS32()</a>, <a class="el" href="zo_encoder_8c.html#a3e44304e8885489bc7f96e2068e0f5f5">zoEncoderGetPos()</a> i <a class="el" href="zo_commands_8c.html#a50a1dd840039466e2250f6587c42fa6a">zoProfiledMoveAbsolute()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a53f4a37bec176780573853f663c6d788"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandProfiledVelocityMove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_string_8h.html#a1e3a5047731c35d27fcd5d80d57dc853">strToS16()</a> i <a class="el" href="zo_commands_8c.html#a13920e1b432d06d009a141670f1c4297">zoProfiledVelocity()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#adc44190abaedf1fb0b0febc3d4009347">zoCommandDoMove()</a> i <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae241cb0d785307b22d9685374136be3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandRelativePositionMove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">ZO_SUPERMODIFIED::Control</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">ZO_SUPERMODIFIED::Pid</a>, <a class="el" href="struct_z_o___p_i_d.html#ab2ed884e6bf46fce682ce840b05f7650">ZO_PID::SetPoint</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#aa7f0733336b04ba2e8a8df719eddc176">ZO_SMS_CONTROL::State</a>, <a class="el" href="zo_string_8h.html#ad411307855e92e37dc299a50d78281b4">strToS32()</a> i <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10ab0703001cd962f7e1f9a7af7c14a17f5">ZO_SMS_CONTROL_POSITION_CONTROL</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#adc44190abaedf1fb0b0febc3d4009347">zoCommandDoMove()</a> i <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80ad114ddf27b86719cadbaa354db937"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandResetPosition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_encoder_8c.html#a3b29b6052e20861589b06b629d1f0b2d">zoEncoderReset()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e98e4798c14837ee9c6a8ba168b8901"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetAbsolutePositionSetpoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a778635970c8caea5f9fc9417d85ac900">ZO_SUPERMODIFIED::BufferdSetPoint</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_string_8h.html#ad411307855e92e37dc299a50d78281b4">strToS32()</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a92a5979ce432c73e93050fda778908fd">ZO_SMS_BUFFERED_SETPOINT::type</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a41cda9fd475265935928b621c55a591d">ZO_SMS_BUFFERED_SETPOINT::value</a> i <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a9d746bf50dd5d391d3fbff67e4e5986f">ZO_SMS_SETPOINT_ABSOLUTE_POSITION</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5bf813e5c8fb97148f20d1afee733517"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetBaudUart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_string_8h.html#ad411307855e92e37dc299a50d78281b4">strToS32()</a>, <a class="el" href="zo_commands_8h.html#a0445e7f57964f10bfe5f86370a388768">ZO_COMMANDS_ERROR_INVALID_ARGUMENT</a>, <a class="el" href="zo_sms_8h.html#a5da807ab1e37f4649d319577d62afbef">ZO_EEPROM_ADDRESS_BAUD_UART</a> i <a class="el" href="zo_error_8c.html#a9f86f4bc1e454eed4be55c523ba161fe">zoErrorPut()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d3ad03791d91f36700b6bfbdb7e2f19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetCurrentLimit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#af5f08299e45eea0353cef028acd4ee0a">ZO_SMS_SETTINGS::CurrentLimit</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a5180724bf1bb6ea9648e4a228eeecac5">ZO_SUPERMODIFIED::Settings</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_string_8h.html#adba4bd95e62f8f6b86aa90abb3c982df">strToU16()</a>, <a class="el" href="zo_commands_8h.html#a0445e7f57964f10bfe5f86370a388768">ZO_COMMANDS_ERROR_INVALID_ARGUMENT</a>, <a class="el" href="zo_sms_8h.html#a042b7df2a6682bf87ff8f7f9b5f74ba0">ZO_EEPROM_ADDRESS_CURRENT_LIMIT</a> i <a class="el" href="zo_error_8c.html#a9f86f4bc1e454eed4be55c523ba161fe">zoErrorPut()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acbbe598c550c8a7806c717c55dae7e11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetCurrentLimitDuration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#af5f08299e45eea0353cef028acd4ee0a">ZO_SMS_SETTINGS::CurrentLimit</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a5180724bf1bb6ea9648e4a228eeecac5">ZO_SUPERMODIFIED::Settings</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_string_8h.html#adba4bd95e62f8f6b86aa90abb3c982df">strToU16()</a> i <a class="el" href="zo_sms_8h.html#a42c5e84357b17a973974f07555994152">ZO_EEPROM_ADDRESS_CURRENT_LIMIT_DURATION</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ca8ec5be256cf1dceec73851ec4290f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetDigitalOut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a9f0b432eb90e9e56237568c7dc841dc7">ZO_SMS_SETTINGS::DigitalIoConfig</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a5180724bf1bb6ea9648e4a228eeecac5">ZO_SUPERMODIFIED::Settings</a> i <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a843d16f479f6f77f6c457143a1935e28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetErrorReportingLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#afca30511132ca3aaa8592798b21650bd">ZO_SMS_SETTINGS::errorReportingLevel</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a5180724bf1bb6ea9648e4a228eeecac5">ZO_SUPERMODIFIED::Settings</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_commands_8h.html#a0445e7f57964f10bfe5f86370a388768">ZO_COMMANDS_ERROR_INVALID_ARGUMENT</a>, <a class="el" href="zo_sms_8h.html#ae02acd0a5ed4e113dc90adbc6757e3ba">ZO_EEPROM_ADDRESS_ERROR_REPORTING_LVL</a> i <a class="el" href="zo_error_8c.html#a9f86f4bc1e454eed4be55c523ba161fe">zoErrorPut()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5a604988c6ef56b38bf8640c45ae40ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetGainD </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___p_i_d.html#a1ca7414a5492ede1eac2f23a9976768a">ZO_PID::GainD</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">ZO_SUPERMODIFIED::Pid</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_string_8h.html#adba4bd95e62f8f6b86aa90abb3c982df">strToU16()</a> i <a class="el" href="zo_sms_8h.html#aa04c8715d8ee9dc04dc06fdfd29eae69">ZO_EEPROM_ADDRESS_GAIN_D</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf41c0ac2e1d44b88c56d75627c44a76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetGainI </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___p_i_d.html#abd1533d665a597f0c3e0b089551956a4">ZO_PID::GainI</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">ZO_SUPERMODIFIED::Pid</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_string_8h.html#adba4bd95e62f8f6b86aa90abb3c982df">strToU16()</a> i <a class="el" href="zo_sms_8h.html#a749a9e6c61e17daf2bb65a06ea418f65">ZO_EEPROM_ADDRESS_GAIN_I</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a088619b0460894d6a59fd2072200b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetGainP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___p_i_d.html#a5569fd10f52e70e6b8ada2efab5bcc44">ZO_PID::GainP</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">ZO_SUPERMODIFIED::Pid</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_string_8h.html#adba4bd95e62f8f6b86aa90abb3c982df">strToU16()</a> i <a class="el" href="zo_sms_8h.html#aab1401dff3390d9c0fbc4dba890a04d2">ZO_EEPROM_ADDRESS_GAIN_P</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a50d21024cff7420c4b385cb30057e7d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetLocalAcceptanceMask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_commands_8h.html#a0445e7f57964f10bfe5f86370a388768">ZO_COMMANDS_ERROR_INVALID_ARGUMENT</a>, <a class="el" href="zo_sms_8h.html#a8833aa80e293d0dd1734d06dc62883d5">ZO_EEPROM_ADDRESS_LAM</a> i <a class="el" href="zo_error_8c.html#a9f86f4bc1e454eed4be55c523ba161fe">zoErrorPut()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ffd02d77914e77a036eda73e9575760"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetNodeID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_commands_8h.html#a0445e7f57964f10bfe5f86370a388768">ZO_COMMANDS_ERROR_INVALID_ARGUMENT</a>, <a class="el" href="zo_sms_8h.html#acae9e721a3305c2963231a9dcf635892">ZO_EEPROM_ADDRESS_NODE_ID</a> i <a class="el" href="zo_error_8c.html#a9f86f4bc1e454eed4be55c523ba161fe">zoErrorPut()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10a52ef74b8cf5d24c7625910611124b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetProfileAcceleration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#aacacd2ec1b68ebafe10814839d15526a">ZO_SMS_PROFILE::DesiredAcceleration</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_string_8h.html#adba4bd95e62f8f6b86aa90abb3c982df">strToU16()</a>, <a class="el" href="zo_commands_8h.html#a0445e7f57964f10bfe5f86370a388768">ZO_COMMANDS_ERROR_INVALID_ARGUMENT</a>, <a class="el" href="zo_sms_8h.html#aba8c8b59a591d29966ec9f581bac32c8">ZO_EEPROM_ADDRESS_PROFILE_ACCELERATION</a> i <a class="el" href="zo_error_8c.html#a9f86f4bc1e454eed4be55c523ba161fe">zoErrorPut()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a784da3d42fe55f475a4e20a07dcaad01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetProfiledAbsolutePositionSetpoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a778635970c8caea5f9fc9417d85ac900">ZO_SUPERMODIFIED::BufferdSetPoint</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_string_8h.html#ad411307855e92e37dc299a50d78281b4">strToS32()</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a92a5979ce432c73e93050fda778908fd">ZO_SMS_BUFFERED_SETPOINT::type</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a41cda9fd475265935928b621c55a591d">ZO_SMS_BUFFERED_SETPOINT::value</a> i <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714aebcf04764dd9a322fa5aa838fc95d2dc">ZO_SMS_SETPOINT_PROFILED_ABSOLUTE_POSITION</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a303be9fa1311277364f7b69fa7a0f1d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetProfiledRelativePositionSetpoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a778635970c8caea5f9fc9417d85ac900">ZO_SUPERMODIFIED::BufferdSetPoint</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_string_8h.html#ad411307855e92e37dc299a50d78281b4">strToS32()</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a92a5979ce432c73e93050fda778908fd">ZO_SMS_BUFFERED_SETPOINT::type</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a41cda9fd475265935928b621c55a591d">ZO_SMS_BUFFERED_SETPOINT::value</a> i <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714afdceecea10870a446ace744b8ba6957f">ZO_SMS_SETPOINT_PROFILED_RELATIVE_POSITION</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a044b0c7fd23c8f9e901530e89c7e2a50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetProfiledVelocitySetpoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a778635970c8caea5f9fc9417d85ac900">ZO_SUPERMODIFIED::BufferdSetPoint</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_string_8h.html#a1e3a5047731c35d27fcd5d80d57dc853">strToS16()</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a92a5979ce432c73e93050fda778908fd">ZO_SMS_BUFFERED_SETPOINT::type</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a41cda9fd475265935928b621c55a591d">ZO_SMS_BUFFERED_SETPOINT::value</a> i <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a95308513be0d0448c314bbafdd6c72c4">ZO_SMS_SETPOINT_PROFILED_VELOCITY</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a66e4b1b8959fe78b81b72ebd28ec48b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetProfileVelocity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#ac9dbc865ac761dbfdcad0d9e654f08b6">ZO_SMS_PROFILE::DesiredVelocity</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_string_8h.html#adba4bd95e62f8f6b86aa90abb3c982df">strToU16()</a>, <a class="el" href="zo_commands_8h.html#a0445e7f57964f10bfe5f86370a388768">ZO_COMMANDS_ERROR_INVALID_ARGUMENT</a>, <a class="el" href="zo_sms_8h.html#a6fc777041ed51de4b835667d44b6efa4">ZO_EEPROM_ADDRESS_PROFILE_VELOCITY</a> i <a class="el" href="zo_error_8c.html#a9f86f4bc1e454eed4be55c523ba161fe">zoErrorPut()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a00056e3497c4aaa925dd373aa92fe801"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetRelativePositionSetpoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a778635970c8caea5f9fc9417d85ac900">ZO_SUPERMODIFIED::BufferdSetPoint</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_string_8h.html#ad411307855e92e37dc299a50d78281b4">strToS32()</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a92a5979ce432c73e93050fda778908fd">ZO_SMS_BUFFERED_SETPOINT::type</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a41cda9fd475265935928b621c55a591d">ZO_SMS_BUFFERED_SETPOINT::value</a> i <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714adbd7aab5297b41c60eb7f9d9bab8c3ab">ZO_SMS_SETPOINT_RELATIVE_POSITION</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1fba542fd5265c056b4290bfd58ba283"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandSetVelocitySetpoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a778635970c8caea5f9fc9417d85ac900">ZO_SUPERMODIFIED::BufferdSetPoint</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="zo_string_8h.html#a1e3a5047731c35d27fcd5d80d57dc853">strToS16()</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a92a5979ce432c73e93050fda778908fd">ZO_SMS_BUFFERED_SETPOINT::type</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a41cda9fd475265935928b621c55a591d">ZO_SMS_BUFFERED_SETPOINT::value</a> i <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a7ce9e02788bae23439779a827b3f7dd5">ZO_SMS_SETPOINT_VELOCITY</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe800aa9a20974202c82cbdb1020a8b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandsInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a23ee40f9e20f24f72627d2cfe9648cd1">ZO_COMMAND_ABSOLUTE_POSITION_MOVE</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a95e65c8e7cf40a740aaee0beb22689c1">ZO_COMMAND_CONFIGURE_DIGITAL_IO</a>, <a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592aa17d17fc0aa498bb3cb8d57e46ecf334">ZO_COMMAND_DO_MOVE</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a67141e29f40dd34733dcae1992475f87">ZO_COMMAND_GET_ABSOLUTE_POSITION</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319abd3ebf21421f3b8965304acf64ef98e8">ZO_COMMAND_GET_ANALOG_IN</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a9dae0c20fcbc4cedb36e23aff9af68b6">ZO_COMMAND_GET_CURRENT</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a76d86efb9962dd14bf147ef0b7b16055">ZO_COMMAND_GET_CURRENT_LIMIT</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319ab7b49df1d7c82c8620d0e8549633221a">ZO_COMMAND_GET_CURRENT_LIMIT_DURATION</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a187334993e489c8e6d08c15d0bcd3844">ZO_COMMAND_GET_DIGITAL_IN</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a7689a0b8dd8590b4b66b0b50ba2de618">ZO_COMMAND_GET_DIO_CONFIGURATION</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a73a03dc15402df692814d008add26982">ZO_COMMAND_GET_GAIN_D</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a27d8b4f8b8afc4790845425ab9b0ebac">ZO_COMMAND_GET_GAIN_I</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a419d00177de0265275f757c9029e4bcb">ZO_COMMAND_GET_GAIN_P</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a316d5630e0c9726e299d01b9d933f5d8">ZO_COMMAND_GET_LOCAL_ACCEPTANCE_MASK</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a8b9d7da9b3fb9e30501b14b60107b4d7">ZO_COMMAND_GET_POSITION</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a86de105c68b3951bfedbe9b93fe82515">ZO_COMMAND_GET_PROFILE_ACCELERATION</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a5c52a3691bea8b1ba2cedf3c4c77e59f">ZO_COMMAND_GET_PROFILE_VELOCITY</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a8519fe02218c0b7c96fcdb2d63c8f406">ZO_COMMAND_GET_VELOCITY</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319adcb589736856139025d92a5af99eaab3">ZO_COMMAND_GET_WARNING</a>, <a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592a79c8d21de6ff28e51c243e7fea2b90bf">ZO_COMMAND_GLOBAL_HALT</a>, <a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592a3dfd131081930610eda24411cdfebaa4">ZO_COMMAND_GLOBAL_START</a>, <a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592a291f7a5a8d34a8f6b274c916c5997bb3">ZO_COMMAND_GLOBAL_STOP</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ab3faaaaf0346ef0a433ebf0d0e9b6a39">ZO_COMMAND_HALT</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622aac95b37f16144c53387883225aa04c6d">ZO_COMMAND_PROFILED_ABSOLUTE_POSITION_MOVE</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622aedf34f83d15d48e4b152c922288d7e9f">ZO_COMMAND_PROFILED_RELATIVE_POSITION_MOVE</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ae3fbaaf80223dd9429fa760e720cdd0f">ZO_COMMAND_PROFILED_VELOCITY_MOVE</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ac0e21e5063851815a9a042b8229eb86f">ZO_COMMAND_RELATIVE_POSITION_MOVE</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a588d3e8e140b17649a477a7a21693978">ZO_COMMAND_RESET_POSITION</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a2e8d4b6e2fee9fbe3da8fdc83cc92be8">ZO_COMMAND_SET_ABSOLUTE_POSITION_SETPOINT</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a8dff58332ee924c7f8520bcc85653061">ZO_COMMAND_SET_BAUD_UART</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a8f70845ac6494c9fdaf0ea9878ad82e9">ZO_COMMAND_SET_CURRENT_LIMIT</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622afacfbb57ddc7eac5b8edd649ca792b4f">ZO_COMMAND_SET_CURRENT_LIMIT_DURATION</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a3a2a5982b4efde7ceee91c7a16eb3922">ZO_COMMAND_SET_DIGITAL_OUT</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622adee4cea08c96692df671eb747bbb65ad">ZO_COMMAND_SET_ERROR_REPORTING_LEVEL</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622af7ac005c144d8711db6866d205b6be23">ZO_COMMAND_SET_GAIN_D</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a7855e2cba1860f47ac8c9ec42aef77f7">ZO_COMMAND_SET_GAIN_I</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a703afef5eb6b14a2c9c9b75317480f58">ZO_COMMAND_SET_GAIN_P</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622af42dd2ab0d472e458c267b65c1e6a0fa">ZO_COMMAND_SET_LOCAL_ACCEPTANCE_MASK</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a93fdfdd7b79fe2f490ef76e23c95107b">ZO_COMMAND_SET_NODE_ID</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622aef0f3544aeb58d58a676329b8de44202">ZO_COMMAND_SET_PROFILE_ACCELERATION</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a3243fb838de2658bf9af02b0c58591b4">ZO_COMMAND_SET_PROFILE_VELOCITY</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ab059abff81829c8a70448a7580621941">ZO_COMMAND_SET_PROFILED_ABSOLUTE_POSITION_SETPOINT</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a7890b261e03419d07a5df5dccab11b37">ZO_COMMAND_SET_PROFILED_RELATIVE_POSITION_SETPOINT</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a47e3a0957b55e1dbad0d495486a66e8b">ZO_COMMAND_SET_PROFILED_VELOCITY_SETPOINT</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a40fcc9ca19e2ee19a41e7a00af0cb06e">ZO_COMMAND_SET_RELATIVE_POSITION_SETPOINT</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a7bfd2645eec8fd5dd1d54923b43f2fae">ZO_COMMAND_SET_VELOCITY_SETPOINT</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ace35570383d760ef743d7653e6d180d2">ZO_COMMAND_START</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a007b7e1c934d2c1fcb74f72d737cfe94">ZO_COMMAND_STOP</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ac00c2435c8e005f61c0d2ae05a0b8920">ZO_COMMAND_VELOCITY_MOVE</a>, <a class="el" href="zo_protocol_8h.html#ad3fae9a8205db60e9d7516934081bcb9">ZO_PROTOCOL_BRC_COMMANDS_START</a>, <a class="el" href="zo_protocol_8h.html#a44725aef820fa4525cb51a056742812e">ZO_PROTOCOL_GET_COMMANDS_START</a>, <a class="el" href="zo_commands_8c.html#ab567d76ce5494d719aeff1b40ac6bff1">zoCommandAbsolutePositionMove()</a>, <a class="el" href="zo_commands_8c.html#ae0e98a9a04565fc41ffc874a70204039">zoCommandConfigureDigitalIO()</a>, <a class="el" href="zo_commands_8c.html#adc44190abaedf1fb0b0febc3d4009347">zoCommandDoMove()</a>, <a class="el" href="zo_commands_8c.html#a296d00336ab885d5ce45d42e350b4419">zoCommandGetAbsolutePosition()</a>, <a class="el" href="zo_commands_8c.html#a8be99b451402d74d14dcc25ec9e4ae7e">zoCommandGetAnalogIn()</a>, <a class="el" href="zo_commands_8c.html#a8dd73dc5c0cff63107473f67d7d7091f">zoCommandGetCurrent()</a>, <a class="el" href="zo_commands_8c.html#ade2929ea91420e138a1b1deb293c4d38">zoCommandGetCurrentLimit()</a>, <a class="el" href="zo_commands_8c.html#a42a21a74a2b71f09ea978124ab1fcb95">zoCommandGetCurrentLimitDuration()</a>, <a class="el" href="zo_commands_8c.html#aab70d554e92f073728531b8c77b57d4e">zoCommandGetDigitalIn()</a>, <a class="el" href="zo_commands_8c.html#a5a17bd2c12f08c9a44758cb1e1ffd8f7">zoCommandGetDigitalIoConfiguration()</a>, <a class="el" href="zo_commands_8c.html#a2cb9557f9c3190e391b731016256ec83">zoCommandGetGainD()</a>, <a class="el" href="zo_commands_8c.html#ad7d8ba6e5f26ad8e088a97b68d4867f6">zoCommandGetGainI()</a>, <a class="el" href="zo_commands_8c.html#a30333fb4f0a109b22b9236fadf693cc2">zoCommandGetGainP()</a>, <a class="el" href="zo_commands_8c.html#acd282b35ad758c952d5dd491d683cc1c">zoCommandGetLocalAcceptanceMask()</a>, <a class="el" href="zo_commands_8c.html#a063898d0fa81732c6ceee9ffeebec59c">zoCommandGetPosition()</a>, <a class="el" href="zo_commands_8c.html#ae3fc04871b6654e56503375482b84293">zoCommandGetProfileAcceleration()</a>, <a class="el" href="zo_commands_8c.html#a67e382bf2b4b76bacc34067ec08c90c4">zoCommandGetProfileVelocity()</a>, <a class="el" href="zo_commands_8c.html#ab8d1c7b8a7410b8008a3be4597bce1be">zoCommandGetVelocity()</a>, <a class="el" href="zo_commands_8c.html#a5ed139264d617d24df4da6eb0604149b">zoCommandGetWarning()</a>, <a class="el" href="zo_commands_8c.html#a2409e12e788250e1680d1555d818d4e3">zoCommandHalt()</a>, <a class="el" href="zo_commands_8c.html#a50267515a14d47d38784ca1c019a88c1">zoCommandProfiledAbsolutePositionMove()</a>, <a class="el" href="zo_commands_8c.html#af3864ab04fa183898cf807af86d2771b">zoCommandProfiledRelativePositionMove()</a>, <a class="el" href="zo_commands_8c.html#a53f4a37bec176780573853f663c6d788">zoCommandProfiledVelocityMove()</a>, <a class="el" href="zo_commands_8c.html#ae241cb0d785307b22d9685374136be3d">zoCommandRelativePositionMove()</a>, <a class="el" href="zo_commands_8c.html#a80ad114ddf27b86719cadbaa354db937">zoCommandResetPosition()</a>, <a class="el" href="zo_commands_8c.html#a1e98e4798c14837ee9c6a8ba168b8901">zoCommandSetAbsolutePositionSetpoint()</a>, <a class="el" href="zo_commands_8c.html#a5bf813e5c8fb97148f20d1afee733517">zoCommandSetBaudUart()</a>, <a class="el" href="zo_commands_8c.html#a8d3ad03791d91f36700b6bfbdb7e2f19">zoCommandSetCurrentLimit()</a>, <a class="el" href="zo_commands_8c.html#acbbe598c550c8a7806c717c55dae7e11">zoCommandSetCurrentLimitDuration()</a>, <a class="el" href="zo_commands_8c.html#a2ca8ec5be256cf1dceec73851ec4290f">zoCommandSetDigitalOut()</a>, <a class="el" href="zo_commands_8c.html#a843d16f479f6f77f6c457143a1935e28">zoCommandSetErrorReportingLevel()</a>, <a class="el" href="zo_commands_8c.html#a5a604988c6ef56b38bf8640c45ae40ff">zoCommandSetGainD()</a>, <a class="el" href="zo_commands_8c.html#aaf41c0ac2e1d44b88c56d75627c44a76">zoCommandSetGainI()</a>, <a class="el" href="zo_commands_8c.html#a9a088619b0460894d6a59fd2072200b6">zoCommandSetGainP()</a>, <a class="el" href="zo_commands_8c.html#a50d21024cff7420c4b385cb30057e7d8">zoCommandSetLocalAcceptanceMask()</a>, <a class="el" href="zo_commands_8c.html#a2ffd02d77914e77a036eda73e9575760">zoCommandSetNodeID()</a>, <a class="el" href="zo_commands_8c.html#a10a52ef74b8cf5d24c7625910611124b">zoCommandSetProfileAcceleration()</a>, <a class="el" href="zo_commands_8c.html#a784da3d42fe55f475a4e20a07dcaad01">zoCommandSetProfiledAbsolutePositionSetpoint()</a>, <a class="el" href="zo_commands_8c.html#a303be9fa1311277364f7b69fa7a0f1d8">zoCommandSetProfiledRelativePositionSetpoint()</a>, <a class="el" href="zo_commands_8c.html#a044b0c7fd23c8f9e901530e89c7e2a50">zoCommandSetProfiledVelocitySetpoint()</a>, <a class="el" href="zo_commands_8c.html#a66e4b1b8959fe78b81b72ebd28ec48b5">zoCommandSetProfileVelocity()</a>, <a class="el" href="zo_commands_8c.html#a00056e3497c4aaa925dd373aa92fe801">zoCommandSetRelativePositionSetpoint()</a>, <a class="el" href="zo_commands_8c.html#a1fba542fd5265c056b4290bfd58ba283">zoCommandSetVelocitySetpoint()</a>, <a class="el" href="zo_commands_8c.html#a78ba12fba621c985b0ee498844c1c815">zoCommandStart()</a>, <a class="el" href="zo_commands_8c.html#a33e573991d4058b14fb7e832094cbf49">zoCommandStop()</a>, <a class="el" href="zo_commands_8c.html#ab7f41276777dd8ac1e09a5f23b45d4a3">zoCommandVelocityMove()</a> i <a class="el" href="zo_error_8c.html#a64a80a1610edf235a729b7969d1c2721">zoErrorInit()</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a800c27ffa7d54d79f55479ba6261ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoCommandsServiceCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#afcec06316d86a5cb9c5d27ab74f16fb9">ZO_PROTOCOL_PACKET::commandID</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592aa17d17fc0aa498bb3cb8d57e46ecf334">ZO_COMMAND_DO_MOVE</a>, <a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592a79c8d21de6ff28e51c243e7fea2b90bf">ZO_COMMAND_GLOBAL_HALT</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ab3faaaaf0346ef0a433ebf0d0e9b6a39">ZO_COMMAND_HALT</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622aedf34f83d15d48e4b152c922288d7e9f">ZO_COMMAND_PROFILED_RELATIVE_POSITION_MOVE</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622ac00c2435c8e005f61c0d2ae05a0b8920">ZO_COMMAND_VELOCITY_MOVE</a>, <a class="el" href="zo_commands_8h.html#a00209213a461f9603d1dc5df4b4ea592a90323ebb6de0020fd0501b7fd0dc6dc7">ZO_COMMANDS_BRC_COMMANDS_END</a>, <a class="el" href="zo_commands_8h.html#a965ba3ba2a6c60a2f53c2cf467d022d6">ZO_COMMANDS_ERROR_INVALID_BYTECOUNT</a>, <a class="el" href="zo_commands_8h.html#ab673767f1c5c967bed313637fb29cde8">ZO_COMMANDS_ERROR_INVALID_COMMAND</a>, <a class="el" href="zo_commands_8h.html#a783f06d0b99d82e2357ad26f6cefe3f2">ZO_COMMANDS_ERROR_INVALID_COMMAND_ID</a>, <a class="el" href="zo_commands_8h.html#a7180edc37e387ef0c7506909db065f85">ZO_COMMANDS_ERROR_INVALID_SET_BYTECOUNT</a>, <a class="el" href="zo_commands_8h.html#a996551766a987851e59c5f8d5a17d319a30cc5418be29ce6af81026de0cf84082">ZO_COMMANDS_GET_COMMANDS_END</a>, <a class="el" href="zo_commands_8h.html#a229143ecc8e8fd632649f86a54c1e622a75451872fdaa99c61db56d41d0aabed6">ZO_COMMANDS_SET_COMMANDS_END</a>, <a class="el" href="zo_protocol_8h.html#ad3fae9a8205db60e9d7516934081bcb9">ZO_PROTOCOL_BRC_COMMANDS_START</a>, <a class="el" href="zo_protocol_8h.html#a44725aef820fa4525cb51a056742812e">ZO_PROTOCOL_GET_COMMANDS_START</a>, <a class="el" href="zo_protocol_8h.html#adc30ac1b9b196ad665b5979efad26a3a">ZO_PROTOCOL_SET_COMMANDS_START</a>, <a class="el" href="zo_error_8c.html#a64fa10670838d38c9a8e7139a40a9cbc">zoErrorIsEmpty()</a>, <a class="el" href="zo_error_8c.html#a9f86f4bc1e454eed4be55c523ba161fe">zoErrorPut()</a> i <a class="el" href="zo_motor_8c.html#aa42c5a35f329a660f58e4b9fa24b8a54">zoMotorGetState()</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a78ba12fba621c985b0ee498844c1c815"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandStart </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a778635970c8caea5f9fc9417d85ac900">ZO_SUPERMODIFIED::BufferdSetPoint</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">ZO_SUPERMODIFIED::Control</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___p_i_d.html#a8a3c79be3a9596e0f949a8c43ef4820d">ZO_PID::Integral</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">ZO_SUPERMODIFIED::Pid</a>, <a class="el" href="struct_z_o___p_i_d.html#a2cea5b374835ee6ea67bc0c87ec19901">ZO_PID::PrevError</a>, <a class="el" href="struct_z_o___p_i_d.html#ab2ed884e6bf46fce682ce840b05f7650">ZO_PID::SetPoint</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#aa7f0733336b04ba2e8a8df719eddc176">ZO_SMS_CONTROL::State</a>, <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a92a5979ce432c73e93050fda778908fd">ZO_SMS_BUFFERED_SETPOINT::type</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10ab0703001cd962f7e1f9a7af7c14a17f5">ZO_SMS_CONTROL_POSITION_CONTROL</a>, <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a0c0bc7a498606c7855a37c56c5ca5b9a">ZO_SMS_SETPOINT_NONE</a>, <a class="el" href="zo_encoder_8c.html#a3b29b6052e20861589b06b629d1f0b2d">zoEncoderReset()</a> i <a class="el" href="zo_motor_8c.html#ab0e98f7ee42bb777ee6ab1b8a8d54f5a">zoMotorSetState()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a33e573991d4058b14fb7e832094cbf49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandStop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">ZO_SUPERMODIFIED::Control</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#aa7f0733336b04ba2e8a8df719eddc176">ZO_SMS_CONTROL::State</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a655e3ee6e5e783b1d8116a0102312a7f">ZO_SMS_CONTROL_NO_CONTROL</a> i <a class="el" href="zo_motor_8c.html#ab0e98f7ee42bb777ee6ab1b8a8d54f5a">zoMotorSetState()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a> i <a class="el" href="zo_sms_error_8h.html#a8b2306b94095b0acb1228a2e7bc0a96b">zoSmsErrorPoll()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab7f41276777dd8ac1e09a5f23b45d4a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoCommandVelocityMove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">ZO_SUPERMODIFIED::Control</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#a18d647eef83332fc2399db3577056ead">ZO_SMS_CONTROL::LoopHz</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a5e9fbc6aa2b852a8cd3ce8d7bca25eaa">ZO_SMS_PROFILE::PositionSetpoint</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#aa7f0733336b04ba2e8a8df719eddc176">ZO_SMS_CONTROL::State</a>, <a class="el" href="zo_string_8h.html#a1e3a5047731c35d27fcd5d80d57dc853">strToS16()</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a35300bb39987df18b2c4e812466c8b15">ZO_SMS_PROFILE::VelocityDeltaPos</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10ab0703001cd962f7e1f9a7af7c14a17f5">ZO_SMS_CONTROL_POSITION_CONTROL</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a9b0f9809532f42847c05c2d05b73f3eb">ZO_SMS_CONTROL_VELOCITY_CONTROL</a> i <a class="el" href="zo_encoder_8c.html#a3e44304e8885489bc7f96e2068e0f5f5">zoEncoderGetPos()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#adc44190abaedf1fb0b0febc3d4009347">zoCommandDoMove()</a> i <a class="el" href="zo_commands_8h.html#afe800aa9a20974202c82cbdb1020a8b3">zoCommandsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aede31b7046eb7e64ae11612d22fa2e2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoProfiledMoveAbsolute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td>
+          <td class="paramname"><em>setpoint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a2fa75ed36a51e358bb72edaa6753ed40">ZO_SMS_PROFILE::AccelerationKnee</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a550eac52bef17234049a49fd91f5d69b">ZO_SMS_PROFILE::ConstAccelDeltaVel</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">ZO_SUPERMODIFIED::Control</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a41bf231bb0b2fd9599f0e7cb6236f6d0">ZO_SMS_PROFILE::DeccelerationKnee</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#aacacd2ec1b68ebafe10814839d15526a">ZO_SMS_PROFILE::DesiredAcceleration</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#ac9dbc865ac761dbfdcad0d9e654f08b6">ZO_SMS_PROFILE::DesiredVelocity</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#af6ad63e10c94f6011f356bd52e6cc5f9">ZO_SMS_PROFILE::LastVelocityDeltaPos</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#a18d647eef83332fc2399db3577056ead">ZO_SMS_CONTROL::LoopHz</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a5e9fbc6aa2b852a8cd3ce8d7bca25eaa">ZO_SMS_PROFILE::PositionSetpoint</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#aa7f0733336b04ba2e8a8df719eddc176">ZO_SMS_CONTROL::State</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a0cddf8ad91ee3badd2df4e26a9f4f3dc">ZO_SMS_PROFILE::State</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a81e2608cc6bd4909dd60c2d9a1c71471">ZO_SMS_PROFILE::TargetPosition</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#ac05b9e0210b9ece4102f36feaf3dc403">ZO_SMS_PROFILE::TargetVelDeltaPos</a>, <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a35300bb39987df18b2c4e812466c8b15">ZO_SMS_PROFILE::VelocityDeltaPos</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10ab0703001cd962f7e1f9a7af7c14a17f5">ZO_SMS_CONTROL_POSITION_CONTROL</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a9b6bca85605a98e2de787af5313ae941">ZO_SMS_CONTROL_PROFILED_POSITION_CONTROL</a>, <a class="el" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4a46ef4e60156137dfdd86c284a529f4ae">ZO_SMS_PROFILE_ACCELERATING</a>, <a class="el" href="zo_encoder_8c.html#a3e44304e8885489bc7f96e2068e0f5f5">zoEncoderGetPos()</a> i <a class="el" href="zo_encoder_8c.html#abee94da3cd9232f74a6fa615241bbb79">zoEncoderGetVel()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#adc44190abaedf1fb0b0febc3d4009347">zoCommandDoMove()</a>, <a class="el" href="zo_commands_8h.html#a50267515a14d47d38784ca1c019a88c1">zoCommandProfiledAbsolutePositionMove()</a> i <a class="el" href="zo_commands_8h.html#af3864ab04fa183898cf807af86d2771b">zoCommandProfiledRelativePositionMove()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a13920e1b432d06d009a141670f1c4297"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoProfiledVelocity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a>&#160;</td>
+          <td class="paramname"><em>velocity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a2fa75ed36a51e358bb72edaa6753ed40">ZO_SMS_PROFILE::AccelerationKnee</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a550eac52bef17234049a49fd91f5d69b">ZO_SMS_PROFILE::ConstAccelDeltaVel</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">ZO_SUPERMODIFIED::Control</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#aacacd2ec1b68ebafe10814839d15526a">ZO_SMS_PROFILE::DesiredAcceleration</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#af6ad63e10c94f6011f356bd52e6cc5f9">ZO_SMS_PROFILE::LastVelocityDeltaPos</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#a18d647eef83332fc2399db3577056ead">ZO_SMS_CONTROL::LoopHz</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a5e9fbc6aa2b852a8cd3ce8d7bca25eaa">ZO_SMS_PROFILE::PositionSetpoint</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#aa7f0733336b04ba2e8a8df719eddc176">ZO_SMS_CONTROL::State</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#ac05b9e0210b9ece4102f36feaf3dc403">ZO_SMS_PROFILE::TargetVelDeltaPos</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a35300bb39987df18b2c4e812466c8b15">ZO_SMS_PROFILE::VelocityDeltaPos</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10ab0703001cd962f7e1f9a7af7c14a17f5">ZO_SMS_CONTROL_POSITION_CONTROL</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10aa258d9ab6f6a0212c389237db6fd9658">ZO_SMS_CONTROL_PROFILED_VELOCITY_CONTROL</a>, <a class="el" href="zo_encoder_8c.html#a3e44304e8885489bc7f96e2068e0f5f5">zoEncoderGetPos()</a> i <a class="el" href="zo_encoder_8c.html#abee94da3cd9232f74a6fa615241bbb79">zoEncoderGetVel()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a53f4a37bec176780573853f663c6d788">zoCommandProfiledVelocityMove()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja zmiennych</h2>
+<a class="anchor" id="a7a891a32582b33b98e78ed11527b1cf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_z_o___e_r_r_o_r.html">ZO_ERROR</a> zoCommandsError</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_error_8h.html#a37517af13d91ee187e9cfda90e000494">zoSmsErrorHandleServiceCommandFailure()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb5fb232909a11b4992a277a944d4228.html">SuperModified.V1</a></li><li class="navelem"><a class="el" href="zo_commands_8h.html">zoCommands.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:49:49 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

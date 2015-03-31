@@ -1,0 +1,44 @@
+Partlist
+
+Exported from openservo-officialv3.sch at 2012-04-28 00:03:13
+
+EAGLE Version 6.1.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value              Device                    Package            Library        Sheet
+
+C1       0.01uF             C-USC0603                 C0603              rcl            1
+C2       0.1uF              C-USC0603                 C0603              rcl            1
+C3       0.1uF              C-USC0603                 C0603              rcl            1
+C4       0.1uF              C-USC0603                 C0603              rcl            1
+C5       0.1uF              C-USC0603K                C0603K             rcl            1
+C6       0.1uF              C-USC0603                 C0603              rcl            1
+C7       1uF                C-USC0603                 C0603              rcl            1
+C8       33uF               CPOL-US153CLV-0405        153CLV-0405        rcl            1
+IC2      ATMEGA168          ATMEGA168                 TQFP32-08          MOJA           1
+IC3      ZXCT1021           ZXCT1021SOT23-5           SOT23-5            MOJA           1
+JP1                         SOLDERJUMPER_2WAYPASTE2&3 SJ_3_PASTE2&3      MOJA           1
+PAD1                        2,15/1,0                  2,15/1,0           wirepad        1
+PAD2                        2,15/1,0                  2,15/1,0           wirepad        1
+PAD3                        1,6/0,8                   1,6/0,8            wirepad        1
+PAD4                        1,6/0,8                   1,6/0,8            wirepad        1
+PAD5                        1,6/0,8                   1,6/0,8            wirepad        1
+PAD6                        2,15/1,0                  2,15/1,0           wirepad        1
+PAD7                        2,15/1,0                  2,15/1,0           wirepad        1
+R1       120R               R-EU_R0603                R0603              resistor       1
+R2       4.7K               R-US_R0603                R0603              rcl            1
+R3       4.7K               R-US_R0603                R0603              rcl            1
+R4       2.0K               R-US_R0603                R0603              rcl            1
+R7       100K               R-US_R0603                R0603              rcl            1
+R8       100K               R-US_R0603                R0603              rcl            1
+R9       0.1Ohm             R-US_R0603                R0603              rcl            1
+R11      1K                 R-US_R0603                R0603              rcl            1
+R35      100K               R-US_R0603                R0603              rcl            1
+R45      100K               R-US_R0603                R0603              rcl            1
+U$1      IRF7309            IRF7309                   SO8-2              irf-2          1
+U$2      IRF7309            IRF7309                   SO8-2              irf-2          1
+U$3      4-EDGEVERSION2     4-EDGEVERSION2            4-PIN-EDGE-V2      openservo      1
+U$4      4-EDGEVERSION2     4-EDGEVERSION2            4-PIN-EDGE-V2      openservo      1
+U1       MCP1701AT-5002I/CB MCP1701AT-5002I/CB        SOT95P255X145-3N   mcp1701AT-5002 1
+U2       MAX485CSA+         MAX485CSA+                SOIC127P600X175-8N MAX485CSA      1

@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku zoProtocolUart.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('zo_protocol_uart_8c.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Wyliczenia</a> &#124;
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku zoProtocolUart.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;avr/io.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="zo_protocol_uart_8h_source.html">zoProtocolUart.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="zo_mcu_8h_source.html">zoMcu.h</a>&quot;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="enum-members"></a>
+Wyliczenia</h2></td></tr>
+<tr class="memitem:aab4114a60dcc81a87731ae211d88ee53"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53">ZO_PROTOCOL_UART_DECODER_STATE</a> { <br/>
+&#160;&#160;<a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53a34852f142fe3fd7cf29f210a443083f3">WAIT_ON_HEADER_0</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53a199ba2aed4e83c833f97b5063e8f2f63">WAIT_ON_HEADER_1</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53a9efaf617cb40415b92b8469c12612bb7">WAIT_ON_ADDRESSED_NODE_ID</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53a5d496d2b36e671ca56c4fcb0efd05e87">WAIT_ON_OWN_NODE_ID</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53adbde5bdde708d583654292f1cccc6cde">WAIT_ON_COMMAND_ID</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53a8b9de61d05017fdf76b3e68014756832">WAIT_ON_BYTECOUNT</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53a581fb57dff05d4ca95bd8fbee3f507f6">WAIT_ON_DATA</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53aedc634501db7fd3bdf297e7b3db8c1ab">WAIT_ON_LRC</a>
+<br/>
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a67db8d58d72d21e0406e7c0fd525c83f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_uart_8c.html#a67db8d58d72d21e0406e7c0fd525c83f">zoProtocolUartInit</a> (<a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2">ZO_PROTOCOL_HW_TYPE</a> hw, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> ownNodeID, <a class="el" href="zo_types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> baudRate)</td></tr>
+<tr class="memitem:a5d6bf83ed7ddc04e42d86e7d4feb35ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_uart_8c.html#a5d6bf83ed7ddc04e42d86e7d4feb35ec">zoProtocolUartPutPacket</a> (const <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a900c3454f950496fa6524a6613061979"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_uart_8c.html#a900c3454f950496fa6524a6613061979">zoProtocolUartGetPacket</a> (<a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *packet)</td></tr>
+<tr class="memitem:a9c71f1da5d698312a5f012a7b2e04027"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_uart_8c.html#a9c71f1da5d698312a5f012a7b2e04027">zoProtocolUartSetLAM</a> (<a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> localAcceptanceMask)</td></tr>
+<tr class="memitem:a3ea7432903db7eb468a740169210cea4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_uart_8c.html#a3ea7432903db7eb468a740169210cea4">zoProtocolUartSetBitrate</a> (<a class="el" href="zo_types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> bitsPerSecond)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:ae25ab89a908eafce3350dbd84756a47c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_z_o___e_r_r_o_r.html">ZO_ERROR</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_protocol_uart_8c.html#ae25ab89a908eafce3350dbd84756a47c">zoProtocolUartError</a> = &amp;<a class="el" href="zo_uart_8h.html#af9ebc6145cbce3b2afefe4c55277974e">zoUartError</a></td></tr>
+</table>
+<hr/><h2>Dokumentacja typów wyliczanych</h2>
+<a class="anchor" id="aab4114a60dcc81a87731ae211d88ee53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53">ZO_PROTOCOL_UART_DECODER_STATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Wartości wyliczeń: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="aab4114a60dcc81a87731ae211d88ee53a34852f142fe3fd7cf29f210a443083f3"></a>WAIT_ON_HEADER_0</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aab4114a60dcc81a87731ae211d88ee53a199ba2aed4e83c833f97b5063e8f2f63"></a>WAIT_ON_HEADER_1</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aab4114a60dcc81a87731ae211d88ee53a9efaf617cb40415b92b8469c12612bb7"></a>WAIT_ON_ADDRESSED_NODE_ID</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aab4114a60dcc81a87731ae211d88ee53a5d496d2b36e671ca56c4fcb0efd05e87"></a>WAIT_ON_OWN_NODE_ID</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aab4114a60dcc81a87731ae211d88ee53adbde5bdde708d583654292f1cccc6cde"></a>WAIT_ON_COMMAND_ID</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aab4114a60dcc81a87731ae211d88ee53a8b9de61d05017fdf76b3e68014756832"></a>WAIT_ON_BYTECOUNT</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aab4114a60dcc81a87731ae211d88ee53a581fb57dff05d4ca95bd8fbee3f507f6"></a>WAIT_ON_DATA</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aab4114a60dcc81a87731ae211d88ee53aedc634501db7fd3bdf297e7b3db8c1ab"></a>WAIT_ON_LRC</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="a900c3454f950496fa6524a6613061979"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoProtocolUartGetPacket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a51d8bd946ed0aa01619f68a9ad3f9811">ZO_PROTOCOL_PACKET::AddressedNodeID</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#afcec06316d86a5cb9c5d27ab74f16fb9">ZO_PROTOCOL_PACKET::commandID</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a67a758ce312a65bff3ebbb55f840075c">ZO_PROTOCOL_PACKET::lrc</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3c4c64be39045dde1e2da08d1ce0cb6c">ZO_PROTOCOL_PACKET::OwnNodeID</a>, <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53a9efaf617cb40415b92b8469c12612bb7">WAIT_ON_ADDRESSED_NODE_ID</a>, <a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53a8b9de61d05017fdf76b3e68014756832">WAIT_ON_BYTECOUNT</a>, <a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53adbde5bdde708d583654292f1cccc6cde">WAIT_ON_COMMAND_ID</a>, <a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53a581fb57dff05d4ca95bd8fbee3f507f6">WAIT_ON_DATA</a>, <a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53a34852f142fe3fd7cf29f210a443083f3">WAIT_ON_HEADER_0</a>, <a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53a199ba2aed4e83c833f97b5063e8f2f63">WAIT_ON_HEADER_1</a>, <a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53aedc634501db7fd3bdf297e7b3db8c1ab">WAIT_ON_LRC</a>, <a class="el" href="zo_protocol_uart_8c.html#aab4114a60dcc81a87731ae211d88ee53a5d496d2b36e671ca56c4fcb0efd05e87">WAIT_ON_OWN_NODE_ID</a>, <a class="el" href="zo_protocol_8h.html#a5bf721b54d8e0772330c13c43ec24653">ZO_PROTOCOL_BROADCAST_ID</a>, <a class="el" href="zo_protocol_8h.html#a3427ea80dd9cfc9ae71f2f2d767b764a">ZO_PROTOCOL_HEADER_0</a>, <a class="el" href="zo_protocol_8h.html#abde59e96280a426d54d1f24b982388bc">ZO_PROTOCOL_HEADER_1</a> i <a class="el" href="zo_uart_8c.html#ae4aaebffbfa0801a00fc359d698a04c1">zoUartGetChar()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_protocol_8h.html#aa243e02b42b1903c91fcfdd056349233">zoProtocolInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a67db8d58d72d21e0406e7c0fd525c83f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoProtocolUartInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2">ZO_PROTOCOL_HW_TYPE</a>&#160;</td>
+          <td class="paramname"><em>hw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>ownNodeID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>baudRate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="el" href="zo_protocol_8h.html#ad80b112563f5eac61709e18604e004b2a83d50550cd45c1f8589af95743740beb">ZO_PROTOCOL_HW_HALF_DUPLEX_RS485</a>, <a class="el" href="zo_uart_8c.html#a126ca20da0fa20fba3e26235017aa6b9">zoUartInit()</a>, <a class="el" href="zo_uart_8c.html#aa29c227ca1a5201a83467422b24b325c">zoUartInitRs485()</a> i <a class="el" href="zo_uart_8c.html#aea99efcf2183ee61d6a73c37964a3141">zoUartSetBaud()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_protocol_8h.html#aa243e02b42b1903c91fcfdd056349233">zoProtocolInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d6bf83ed7ddc04e42d86e7d4feb35ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoProtocolUartPutPacket </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html">ZO_PROTOCOL_PACKET</a> *&#160;</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a51d8bd946ed0aa01619f68a9ad3f9811">ZO_PROTOCOL_PACKET::AddressedNodeID</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#abd8b0dc942e521e826f1845f2e587953">ZO_PROTOCOL_PACKET::byteCount</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#afcec06316d86a5cb9c5d27ab74f16fb9">ZO_PROTOCOL_PACKET::commandID</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3f2b87bb96d1d45e1610036884911085">ZO_PROTOCOL_PACKET::data</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a67a758ce312a65bff3ebbb55f840075c">ZO_PROTOCOL_PACKET::lrc</a>, <a class="el" href="struct_z_o___p_r_o_t_o_c_o_l___p_a_c_k_e_t.html#a3c4c64be39045dde1e2da08d1ce0cb6c">ZO_PROTOCOL_PACKET::OwnNodeID</a>, <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="el" href="zo_protocol_8h.html#a3427ea80dd9cfc9ae71f2f2d767b764a">ZO_PROTOCOL_HEADER_0</a>, <a class="el" href="zo_protocol_8h.html#abde59e96280a426d54d1f24b982388bc">ZO_PROTOCOL_HEADER_1</a>, <a class="el" href="zo_uart_8c.html#afb955160c9ba50ac40f2877acadeb07e">zoUartPutChar()</a> i <a class="el" href="zo_uart_8c.html#a305653993f2db5cf3be8e0ea65af823c">zoUartPutData()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_protocol_8h.html#aa243e02b42b1903c91fcfdd056349233">zoProtocolInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ea7432903db7eb468a740169210cea4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoProtocolUartSetBitrate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
+          <td class="paramname"><em>bitsPerSecond</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_uart_8c.html#aea99efcf2183ee61d6a73c37964a3141">zoUartSetBaud()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_protocol_8h.html#aa243e02b42b1903c91fcfdd056349233">zoProtocolInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c71f1da5d698312a5f012a7b2e04027"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoProtocolUartSetLAM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>localAcceptanceMask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_protocol_8h.html#aa243e02b42b1903c91fcfdd056349233">zoProtocolInit()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja zmiennych</h2>
+<a class="anchor" id="ae25ab89a908eafce3350dbd84756a47c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_z_o___e_r_r_o_r.html">ZO_ERROR</a>* zoProtocolUartError = &amp;<a class="el" href="zo_uart_8h.html#af9ebc6145cbce3b2afefe4c55277974e">zoUartError</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_protocol_8h.html#aa243e02b42b1903c91fcfdd056349233">zoProtocolInit()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb5fb232909a11b4992a277a944d4228.html">SuperModified.V1</a></li><li class="navelem"><a class="el" href="zo_protocol_uart_8c.html">zoProtocolUart.c</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:49:50 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

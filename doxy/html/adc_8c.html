@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku adc.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="modules.html"><span>Moduły</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('adc_8c.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku adc.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;inttypes.h&gt;</code><br/>
+<code>#include &lt;avr/io.h&gt;</code><br/>
+<code>#include &lt;avr/interrupt.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="openservo_8h_source.html">openservo.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="adc_8h_source.html">adc.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="timer_8h_source.html">timer.h</a>&quot;</code><br/>
+</div>
+<p><a href="adc_8c_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:ab5530bcf2d3277bba7466d9accca0b65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#ab5530bcf2d3277bba7466d9accca0b65">ADC_CHANNEL_POWER</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a70fb02eda2b41b8487e290186663f09b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a70fb02eda2b41b8487e290186663f09b">ADC_CHANNEL_POSITION</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a06ae6661461b3020498eb584c2020e77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a06ae6661461b3020498eb584c2020e77">ADC_CHANNEL_VOLTAGE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:a13948ad035b5e2183d058b8762b870af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a13948ad035b5e2183d058b8762b870af">ADPS</a>&#160;&#160;&#160;((1&lt;&lt;ADPS2) | (1&lt;&lt;ADPS1) | (0&lt;&lt;ADPS0))</td></tr>
+<tr class="memitem:a62b0199efa9cfba6838583bb6d6839b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a62b0199efa9cfba6838583bb6d6839b3">CSPS</a>&#160;&#160;&#160;((1&lt;&lt;CS02) | (0&lt;&lt;CS01) | (1&lt;&lt;CS00))</td></tr>
+<tr class="memitem:a773734684a2e2ee77ad1401b5aa414c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a773734684a2e2ee77ad1401b5aa414c2">CRVALUE</a>&#160;&#160;&#160;78</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a2b815e6730e8723a6d1d06d9ef8f31c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a2b815e6730e8723a6d1d06d9ef8f31c0">adc_init</a> (void)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:af637f42904417bf40f4bdd3b3f59a6e3"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#af637f42904417bf40f4bdd3b3f59a6e3">adc_channel</a></td></tr>
+<tr class="memitem:a3e65a8ba9a0c33b193e3dce6702eb8ed"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a3e65a8ba9a0c33b193e3dce6702eb8ed">adc_power_ready</a></td></tr>
+<tr class="memitem:a8f80ad31c96fe4cdd95814e14d793a25"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a8f80ad31c96fe4cdd95814e14d793a25">adc_power_value</a></td></tr>
+<tr class="memitem:ae130a3de668a6871e250f59eb58dcade"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#ae130a3de668a6871e250f59eb58dcade">adc_position_ready</a></td></tr>
+<tr class="memitem:a6b0adeaa4d5257279f19acd053d1919d"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a6b0adeaa4d5257279f19acd053d1919d">adc_position_value</a></td></tr>
+<tr class="memitem:a3a9a062604355396f4efc05a9cdd233c"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="adc_8c.html#a3a9a062604355396f4efc05a9cdd233c">adc_voltage_needed</a></td></tr>
+</table>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="a70fb02eda2b41b8487e290186663f09b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_CHANNEL_POSITION&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="adc_8c_source.html#l00078">78</a> pliku <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="adc_8c_source.html#l00103">adc_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5530bcf2d3277bba7466d9accca0b65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_CHANNEL_POWER&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="adc_8c_source.html#l00077">77</a> pliku <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a06ae6661461b3020498eb584c2020e77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADC_CHANNEL_VOLTAGE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="adc_8c_source.html#l00079">79</a> pliku <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a13948ad035b5e2183d058b8762b870af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ADPS&#160;&#160;&#160;((1&lt;&lt;ADPS2) | (1&lt;&lt;ADPS1) | (0&lt;&lt;ADPS0))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="adc_8c_source.html#l00083">83</a> pliku <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="adc_8c_source.html#l00103">adc_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a773734684a2e2ee77ad1401b5aa414c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CRVALUE&#160;&#160;&#160;78</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="adc_8c_source.html#l00091">91</a> pliku <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="adc_8c_source.html#l00103">adc_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a62b0199efa9cfba6838583bb6d6839b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CSPS&#160;&#160;&#160;((1&lt;&lt;CS02) | (0&lt;&lt;CS01) | (1&lt;&lt;CS00))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="adc_8c_source.html#l00087">87</a> pliku <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="adc_8c_source.html#l00103">adc_init()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="a2b815e6730e8723a6d1d06d9ef8f31c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void adc_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="adc_8c_source.html#l00103">103</a> pliku <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="adc_8c_source.html#l00095">adc_channel</a>, <a class="el" href="adc_8c_source.html#l00078">ADC_CHANNEL_POSITION</a>, <a class="el" href="adc_8c_source.html#l00098">adc_position_ready</a>, <a class="el" href="adc_8c_source.html#l00099">adc_position_value</a>, <a class="el" href="adc_8c_source.html#l00096">adc_power_ready</a>, <a class="el" href="adc_8c_source.html#l00097">adc_power_value</a>, <a class="el" href="adc_8c_source.html#l00100">adc_voltage_needed</a>, <a class="el" href="adc_8c_source.html#l00083">ADPS</a>, <a class="el" href="adc_8c_source.html#l00091">CRVALUE</a> i <a class="el" href="adc_8c_source.html#l00087">CSPS</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c_source.html#l00104">main()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="comment">// Read from position first.</span></div>
+<div class="line">    <a class="code" href="adc_8c.html#af637f42904417bf40f4bdd3b3f59a6e3">adc_channel</a> = <a class="code" href="adc_8c.html#a70fb02eda2b41b8487e290186663f09b">ADC_CHANNEL_POSITION</a>;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Initialize flags and values.</span></div>
+<div class="line">    <a class="code" href="adc_8c.html#a3e65a8ba9a0c33b193e3dce6702eb8ed">adc_power_ready</a> = 0;</div>
+<div class="line">    <a class="code" href="adc_8c.html#a8f80ad31c96fe4cdd95814e14d793a25">adc_power_value</a> = 0;</div>
+<div class="line">    <a class="code" href="adc_8c.html#ae130a3de668a6871e250f59eb58dcade">adc_position_ready</a> = 0;</div>
+<div class="line">    <a class="code" href="adc_8c.html#a6b0adeaa4d5257279f19acd053d1919d">adc_position_value</a> = 0;</div>
+<div class="line">    <a class="code" href="adc_8c.html#a3a9a062604355396f4efc05a9cdd233c">adc_voltage_needed</a> = 1;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">//</span></div>
+<div class="line">    <span class="comment">// Initialize ADC registers to yield a 125KHz clock.</span></div>
+<div class="line">    <span class="comment">//</span></div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#if defined(__AVR_ATtiny45__) || defined(__AVR_ATtiny85__)</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Make sure port PB4 (ADC3) and PB5 (ADC0) are set as input.</span></div>
+<div class="line">    PORTB &amp;= ~((1&lt;&lt;PB4) | (1&lt;&lt;PB5));</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Disable digital input for ADC3 and ADC0 to reduce power consumption.</span></div>
+<div class="line">    DIDR0 |= (1&lt;&lt;ADC3D) | (1&lt;&lt;ADC0D);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the ADC multiplexer selection register.</span></div>
+<div class="line">    ADMUX = (0&lt;&lt;REFS2) | (0&lt;&lt;REFS1) | (0&lt;&lt;REFS0) |          <span class="comment">// Select VCC as voltage reference.</span></div>
+<div class="line">            (0&lt;&lt;MUX3) | (0&lt;&lt;MUX2) | (1&lt;&lt;MUX1) | (1&lt;&lt;MUX0) | <span class="comment">// Select ADC3 (PB3), no gain.</span></div>
+<div class="line">            (0&lt;&lt;ADLAR);                                     <span class="comment">// Keep high bits right adjusted.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the ADC control and status register B.</span></div>
+<div class="line">    ADCSRB = (0&lt;&lt;BIN) |                                     <span class="comment">// Gain working in unipolar mode.</span></div>
+<div class="line">             (0&lt;&lt;IPR) |                                     <span class="comment">// No input polarity reversal.</span></div>
+<div class="line">             (0&lt;&lt;ADTS2) | (1&lt;&lt;ADTS1) | (1&lt;&lt;ADTS0);          <span class="comment">// Timer/Counter0 Compare Match A.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the ADC control and status register A.</span></div>
+<div class="line">    ADCSRA = (1&lt;&lt;ADEN) |                                    <span class="comment">// Enable ADC.</span></div>
+<div class="line">             (0&lt;&lt;ADSC) |                                    <span class="comment">// Don&#39;s start yet, will be auto triggered.</span></div>
+<div class="line">             (1&lt;&lt;ADATE) |                                   <span class="comment">// Start auto triggering.</span></div>
+<div class="line">             (1&lt;&lt;ADIE) |                                    <span class="comment">// Activate ADC conversion complete interrupt.</span></div>
+<div class="line">             <a class="code" href="adc_8c.html#a13948ad035b5e2183d058b8762b870af">ADPS</a>;                                          <span class="comment">// Prescale -- see above.</span></div>
+<div class="line"><span class="preprocessor">#endif // __AVR_ATtiny45__ || __AVR_ATtiny85____</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if defined(__AVR_ATmega8__)</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Make sure ports PC0 (ADC0), PC1 (ADC1) and PC2 (ADC2) are set low.</span></div>
+<div class="line">    PORTC &amp;= ~((1&lt;&lt;PC2) | (1&lt;&lt;PC1) | (1&lt;&lt;PC0));</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the ADC multiplexer selection register.</span></div>
+<div class="line">    ADMUX = (0&lt;&lt;REFS1) | (1&lt;&lt;REFS0) |                       <span class="comment">// Select AVCC as voltage reference.</span></div>
+<div class="line">            (0&lt;&lt;MUX3) | (0&lt;&lt;MUX2) | (1&lt;&lt;MUX1) | (0&lt;&lt;MUX0) | <span class="comment">// Select ADC2 (PC2) as analog input.</span></div>
+<div class="line">            (0&lt;&lt;ADLAR);                                     <span class="comment">// Keep high bits right adjusted.</span></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the ADC control and status register A.</span></div>
+<div class="line">    ADCSRA = (1&lt;&lt;ADEN) |                                    <span class="comment">// Enable ADC.</span></div>
+<div class="line">             (1&lt;&lt;ADSC) |                                    <span class="comment">// Start the first conversion.</span></div>
+<div class="line">             (0&lt;&lt;ADFR) |                                    <span class="comment">// Free running disabled.</span></div>
+<div class="line">             (1&lt;&lt;ADIF) |                                    <span class="comment">// Clear any pending interrupt.</span></div>
+<div class="line">             (1&lt;&lt;ADIE) |                                    <span class="comment">// Activate ADC conversion complete interrupt.</span></div>
+<div class="line">             <a class="code" href="adc_8c.html#a13948ad035b5e2183d058b8762b870af">ADPS</a>;                                          <span class="comment">// Prescale -- see above.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Reset the counter value to initiate another ADC sample at the specified time.</span></div>
+<div class="line">    TCNT0 = 256 - <a class="code" href="adc_8c.html#a773734684a2e2ee77ad1401b5aa414c2">CRVALUE</a>;</div>
+<div class="line"><span class="preprocessor">#endif // __AVR_ATmega8____</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if defined(__AVR_ATmega88__) || defined(__AVR_ATmega168__)</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Make sure ports PC0 (ADC0), PC1 (ADC1) and PC2 (ADC2) are set low.</span></div>
+<div class="line">    PORTC &amp;= ~((1&lt;&lt;PC0) | (1&lt;&lt;PC1) | (1&lt;&lt;PC2));</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Disable digital input for ADC0, ADC1 and ADC2 to reduce power consumption.</span></div>
+<div class="line">    DIDR0 |= (1&lt;&lt;ADC2D) | (1&lt;&lt;ADC1D) |(1&lt;&lt;ADC0D);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the ADC multiplexer selection register.</span></div>
+<div class="line">    ADMUX = (0&lt;&lt;REFS1) | (1&lt;&lt;REFS0) |                       <span class="comment">// Select AVCC as voltage reference.</span></div>
+<div class="line">            (0&lt;&lt;MUX3) | (0&lt;&lt;MUX2) | (1&lt;&lt;MUX1) | (0&lt;&lt;MUX0) | <span class="comment">// Select ADC2 (PC2) as analog input.</span></div>
+<div class="line">            (0&lt;&lt;ADLAR);                                     <span class="comment">// Keep high bits right adjusted.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the ADC control and status register B.</span></div>
+<div class="line">    ADCSRB = (0&lt;&lt;ADTS2) | (1&lt;&lt;ADTS1) | (1&lt;&lt;ADTS0);          <span class="comment">// Timer/Counter0 Compare Match A.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the ADC control and status register A.</span></div>
+<div class="line">    ADCSRA = (1&lt;&lt;ADEN) |                                    <span class="comment">// Enable ADC.</span></div>
+<div class="line">             (0&lt;&lt;ADSC) |                                    <span class="comment">// Don&#39;s start yet, will be auto triggered.</span></div>
+<div class="line">             (1&lt;&lt;ADATE) |                                   <span class="comment">// Start auto triggering.</span></div>
+<div class="line">             (1&lt;&lt;ADIE) |                                    <span class="comment">// Activate ADC conversion complete interrupt.</span></div>
+<div class="line">             <a class="code" href="adc_8c.html#a13948ad035b5e2183d058b8762b870af">ADPS</a>;                                          <span class="comment">// Prescale -- see above.</span></div>
+<div class="line"><span class="preprocessor">#endif // __AVR_ATmega88__ || __AVR_ATmega168__</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if defined(__AVR_ATtiny45__) || defined(__AVR_ATtiny85__)</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Set timer/counter0 control register A.</span></div>
+<div class="line">    TCCR0A = (0&lt;&lt;COM0A1) | (0&lt;&lt;COM0A0) |                    <span class="comment">// Disconnect OCOA.</span></div>
+<div class="line">             (0&lt;&lt;COM0B1) | (0&lt;&lt;COM0B0) |                    <span class="comment">// Disconnect OCOB.</span></div>
+<div class="line">             (1&lt;&lt;WGM01) | (0&lt;&lt;WGM00);                       <span class="comment">// Mode 2 - clear timer on compare match.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set timer/counter0 control register B.</span></div>
+<div class="line">    TCCR0B = (0&lt;&lt;FOC0A) | (0&lt;&lt;FOC0B) |                      <span class="comment">// No force output compare A or B.</span></div>
+<div class="line">             (0&lt;&lt;WGM02) |                                   <span class="comment">// Mode 2 - clear timer on compare match.</span></div>
+<div class="line">             <a class="code" href="adc_8c.html#a62b0199efa9cfba6838583bb6d6839b3">CSPS</a>;                                          <span class="comment">// Timer clock prescale -- see above.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the timer/counter0 interrupt masks.</span></div>
+<div class="line">    TIMSK = (1&lt;&lt;OCIE0A) |                                   <span class="comment">// Interrupt on compare match A.</span></div>
+<div class="line">            (0&lt;&lt;OCIE0B) |                                   <span class="comment">// No interrupt on compare match B.</span></div>
+<div class="line">            (0&lt;&lt;TOIE0);                                     <span class="comment">// No interrupt on overflow.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the compare match A value which initiates an ADC sample.</span></div>
+<div class="line">    OCR0A = <a class="code" href="adc_8c.html#a773734684a2e2ee77ad1401b5aa414c2">CRVALUE</a>;</div>
+<div class="line"><span class="preprocessor">#endif // __AVR_ATtiny45__ || __AVR_ATtiny85__</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if defined(__AVR_ATmega8__)</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Set timer/counter0 control register.</span></div>
+<div class="line">    TCCR0 = <a class="code" href="adc_8c.html#a62b0199efa9cfba6838583bb6d6839b3">CSPS</a>;                                           <span class="comment">// Timer clock prescale -- see above.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Clear any pending interrupt.</span></div>
+<div class="line">    TIFR |= (1&lt;&lt;TOV0);                                      <span class="comment">// Interrupt on overflow.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the timer/counter0 interrupt masks.</span></div>
+<div class="line">    TIMSK |= (1&lt;&lt;TOIE0);                                    <span class="comment">// Interrupt on overflow.</span></div>
+<div class="line"><span class="preprocessor">#endif // __AVR_ATmega8____</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if defined(__AVR_ATmega88__) || defined(__AVR_ATmega168__)</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Set timer/counter0 control register A.</span></div>
+<div class="line">    TCCR0A = (0&lt;&lt;COM0A1) | (0&lt;&lt;COM0A0) |                    <span class="comment">// Disconnect OCOA.</span></div>
+<div class="line">             (0&lt;&lt;COM0B1) | (0&lt;&lt;COM0B0) |                    <span class="comment">// Disconnect OCOB.</span></div>
+<div class="line">             (1&lt;&lt;WGM01) | (0&lt;&lt;WGM00);                       <span class="comment">// Mode 2 - clear timer on compare match.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set timer/counter0 control register B.</span></div>
+<div class="line">    TCCR0B = (0&lt;&lt;FOC0A) | (0&lt;&lt;FOC0B) |                      <span class="comment">// No force output compare A or B.</span></div>
+<div class="line">             (0&lt;&lt;WGM02) |                                   <span class="comment">// Mode 2 - clear timer on compare match.</span></div>
+<div class="line">             <a class="code" href="adc_8c.html#a62b0199efa9cfba6838583bb6d6839b3">CSPS</a>;                                          <span class="comment">// Timer clock prescale -- see above.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the timer/counter0 interrupt masks.</span></div>
+<div class="line">    TIMSK0 = (1&lt;&lt;OCIE0A) |                                  <span class="comment">// Interrupt on compare match A.</span></div>
+<div class="line">             (0&lt;&lt;OCIE0B) |                                  <span class="comment">// No interrupt on compare match B.</span></div>
+<div class="line">             (0&lt;&lt;TOIE0);                                    <span class="comment">// No interrupt on overflow.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set the compare match A value which initiates an ADC sample.</span></div>
+<div class="line">    OCR0A = <a class="code" href="adc_8c.html#a773734684a2e2ee77ad1401b5aa414c2">CRVALUE</a>;</div>
+<div class="line"><span class="preprocessor">#endif // __AVR_ATmega88__ || __AVR_ATmega168__</span></div>
+<div class="line"><span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/><h2>Dokumentacja zmiennych</h2>
+<a class="anchor" id="af637f42904417bf40f4bdd3b3f59a6e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t adc_channel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="adc_8c_source.html#l00095">95</a> pliku <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="adc_8c_source.html#l00103">adc_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae130a3de668a6871e250f59eb58dcade"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t adc_position_ready</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="adc_8c_source.html#l00098">98</a> pliku <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="adc_8c_source.html#l00103">adc_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b0adeaa4d5257279f19acd053d1919d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint16_t adc_position_value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="adc_8c_source.html#l00099">99</a> pliku <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="adc_8c_source.html#l00103">adc_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e65a8ba9a0c33b193e3dce6702eb8ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t adc_power_ready</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="adc_8c_source.html#l00096">96</a> pliku <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="adc_8c_source.html#l00103">adc_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f80ad31c96fe4cdd95814e14d793a25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint16_t adc_power_value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="adc_8c_source.html#l00097">97</a> pliku <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="adc_8c_source.html#l00103">adc_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a9a062604355396f4efc05a9cdd233c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t adc_voltage_needed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="adc_8c_source.html#l00100">100</a> pliku <a class="el" href="adc_8c_source.html">adc.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="adc_8c_source.html#l00103">adc_init()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="adc_8c.html">adc.c</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:58:49 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

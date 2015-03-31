@@ -1,0 +1,26 @@
+var config_8h =
+[
+    [ "CURVE_MOTION_ENABLED", "config_8h.html#a1476ca0b2a01b7cc7ffc4a9ec7d13239", null ],
+    [ "DEFAULT_MAX_SEEK", "config_8h.html#ga3ac12ca83366ee84e3e98c1c0e70abc2", null ],
+    [ "DEFAULT_MIN_SEEK", "config_8h.html#gaf89d287dd6cd8931dd9544088a991b85", null ],
+    [ "DEFAULT_PID_DEADBAND", "config_8h.html#ga189d6d59ec599a9ec53608cc3fd2b940", null ],
+    [ "DEFAULT_PID_DGAIN", "config_8h.html#gadf9cdf1f42b924088ad9bef906bfb7e0", null ],
+    [ "DEFAULT_PID_IGAIN", "config_8h.html#ga0459007ac30598963eb6fe596d4e534c", null ],
+    [ "DEFAULT_PID_PGAIN", "config_8h.html#gab3593dabed4b2eff8e9f7c73088853bb", null ],
+    [ "DEFAULT_PWM_FREQ_DIVIDER", "config_8h.html#a6f4dc07662b1e0c01ddd085786cdce89", null ],
+    [ "ESTIMATOR_ENABLED", "config_8h.html#a436a1f59c8d04c25e231afeb3f04176d", null ],
+    [ "FIXED_MATH_ENABLED", "config_8h.html#ad7eaf029d42f6e860e3be58271cc68f4", null ],
+    [ "HARDWARE_TYPE", "config_8h.html#a04988e7d812ffad244fd37a708b92536", null ],
+    [ "HARDWARE_TYPE_FUTABA_S3003", "config_8h.html#a301191b9717586d633e51ea802a01685", null ],
+    [ "HARDWARE_TYPE_HITEC_HS_311", "config_8h.html#a753106f2508e696e898222f3b4f015bd", null ],
+    [ "HARDWARE_TYPE_HITEC_HS_475HB", "config_8h.html#a8ce5a816028f9b50912b98003805ffb4", null ],
+    [ "HARDWARE_TYPE_TOWERPRO_SG5010", "config_8h.html#aee3cc044940b17f5d1eff9c627452ac2", null ],
+    [ "HARDWARE_TYPE_UNKNOWN", "config_8h.html#a48a26a2b7ccd7d70dfd5941e5b4025ce", null ],
+    [ "IPD_MOTION_ENABLED", "config_8h.html#a71c4e8cef3f6c443018f609b74ec672b", null ],
+    [ "MAIN_MOTION_TEST_ENABLED", "config_8h.html#adfce27799f2b38c88e483f66ec3495a2", null ],
+    [ "PID_MOTION_ENABLED", "config_8h.html#a2ea69b36631f924a779b40522610d25d", null ],
+    [ "PULSE_CONTROL_ENABLED", "config_8h.html#adfba816875436e70c1f1a877f39b3075", null ],
+    [ "REGULATOR_MOTION_ENABLED", "config_8h.html#a6c48bcb54fc91a1bfc25b4ba169f8b92", null ],
+    [ "SWAP_PWM_DIRECTION_ENABLED", "config_8h.html#aa4d4df58e1d8fa908d7c638f48d1149b", null ],
+    [ "TWI_CHECKED_ENABLED", "config_8h.html#aa0ccd6b091225521476287acd59dc8ef", null ]
+];

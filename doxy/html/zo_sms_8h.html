@@ -1,0 +1,979 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku zoSms.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('zo_sms_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Struktury danych</a> &#124;
+<a href="#define-members">Definicje</a> &#124;
+<a href="#typedef-members">Definicje typów</a> &#124;
+<a href="#enum-members">Wyliczenia</a> &#124;
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku zoSms.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="zo_types_8h_source.html">zoTypes.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="zo_pid_8h_source.html">zoPid.h</a>&quot;</code><br/>
+<code>#include &lt;stdLib.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="zo_protocol_8h_source.html">zoProtocol.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="zo_encoder_8h_source.html">zoEncoder.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="zo_error_8h_source.html">zoError.h</a>&quot;</code><br/>
+</div>
+<p><a href="zo_sms_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+Struktury danych</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html">ZO_SMS_CONTROL</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html">ZO_SMS_SETTINGS</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html">ZO_SMS_BUFFERED_SETPOINT</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html">ZO_SMS_PROFILE</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html">ZO_SUPERMODIFIED</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:ab1aa922a7c9fd48e55706381f1bb3086"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#ab1aa922a7c9fd48e55706381f1bb3086">ZO_SMS_CONTROL_LOOP_HZ_APPROX</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memitem:a27f121f6161da1ac385708c767553620"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a27f121f6161da1ac385708c767553620">ZO_SMS_MOTOR_STALLED_TIMEOUT_MS</a>&#160;&#160;&#160;2000</td></tr>
+<tr class="memitem:acae9e721a3305c2963231a9dcf635892"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#acae9e721a3305c2963231a9dcf635892">ZO_EEPROM_ADDRESS_NODE_ID</a>&#160;&#160;&#160;0x0000</td></tr>
+<tr class="memitem:aab1401dff3390d9c0fbc4dba890a04d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#aab1401dff3390d9c0fbc4dba890a04d2">ZO_EEPROM_ADDRESS_GAIN_P</a>&#160;&#160;&#160;0x0010</td></tr>
+<tr class="memitem:a749a9e6c61e17daf2bb65a06ea418f65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a749a9e6c61e17daf2bb65a06ea418f65">ZO_EEPROM_ADDRESS_GAIN_I</a>&#160;&#160;&#160;0x0020</td></tr>
+<tr class="memitem:aa04c8715d8ee9dc04dc06fdfd29eae69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#aa04c8715d8ee9dc04dc06fdfd29eae69">ZO_EEPROM_ADDRESS_GAIN_D</a>&#160;&#160;&#160;0x0030</td></tr>
+<tr class="memitem:a042b7df2a6682bf87ff8f7f9b5f74ba0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a042b7df2a6682bf87ff8f7f9b5f74ba0">ZO_EEPROM_ADDRESS_CURRENT_LIMIT</a>&#160;&#160;&#160;0x0040</td></tr>
+<tr class="memitem:a42c5e84357b17a973974f07555994152"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a42c5e84357b17a973974f07555994152">ZO_EEPROM_ADDRESS_CURRENT_LIMIT_DURATION</a>&#160;&#160;&#160;0x0050</td></tr>
+<tr class="memitem:aba8c8b59a591d29966ec9f581bac32c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#aba8c8b59a591d29966ec9f581bac32c8">ZO_EEPROM_ADDRESS_PROFILE_ACCELERATION</a>&#160;&#160;&#160;0x0060</td></tr>
+<tr class="memitem:a6fc777041ed51de4b835667d44b6efa4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a6fc777041ed51de4b835667d44b6efa4">ZO_EEPROM_ADDRESS_PROFILE_VELOCITY</a>&#160;&#160;&#160;0x0070</td></tr>
+<tr class="memitem:a82fa6bd0ef23fad71fa2439c628502dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a82fa6bd0ef23fad71fa2439c628502dc">ZO_EEPROM_ADDRESS_DIGITAL_IO_CONFIG</a>&#160;&#160;&#160;0x0080</td></tr>
+<tr class="memitem:ad2d89f232976261e346228d02e63a283"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#ad2d89f232976261e346228d02e63a283">ZO_EEPROM_ADDRESS_BAUD_I2C</a>&#160;&#160;&#160;0x0090</td></tr>
+<tr class="memitem:a5da807ab1e37f4649d319577d62afbef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a5da807ab1e37f4649d319577d62afbef">ZO_EEPROM_ADDRESS_BAUD_UART</a>&#160;&#160;&#160;0x00A0</td></tr>
+<tr class="memitem:a8833aa80e293d0dd1734d06dc62883d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a8833aa80e293d0dd1734d06dc62883d5">ZO_EEPROM_ADDRESS_LAM</a>&#160;&#160;&#160;0x00B0</td></tr>
+<tr class="memitem:ae02acd0a5ed4e113dc90adbc6757e3ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#ae02acd0a5ed4e113dc90adbc6757e3ba">ZO_EEPROM_ADDRESS_ERROR_REPORTING_LVL</a>&#160;&#160;&#160;0x00C0</td></tr>
+<tr class="memitem:a248329ce9d8a74a25ec1d1929e71a6fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a248329ce9d8a74a25ec1d1929e71a6fb">ZO_DEFAULT_NODE_ID</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memitem:acc685e8f75a977d3317fc67a1c4ada18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#acc685e8f75a977d3317fc67a1c4ada18">ZO_DEFAULT_GAIN_P</a>&#160;&#160;&#160;8000</td></tr>
+<tr class="memitem:a20e8c83b9e009314384261bd6c1c64ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a20e8c83b9e009314384261bd6c1c64ba">ZO_DEFAULT_GAIN_I</a>&#160;&#160;&#160;4000</td></tr>
+<tr class="memitem:aced71ac45b02c51d10adea1c20ad1872"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#aced71ac45b02c51d10adea1c20ad1872">ZO_DEFAULT_GAIN_D</a>&#160;&#160;&#160;8000</td></tr>
+<tr class="memitem:a0407763bd4e928ea77fb541c7f1eb878"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a0407763bd4e928ea77fb541c7f1eb878">ZO_DEFAULT_CURRENT_LIMIT</a>&#160;&#160;&#160;5000</td></tr>
+<tr class="memitem:a4a7e662b5e85269a10807194c345a693"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a4a7e662b5e85269a10807194c345a693">ZO_DEFAULT_CURRENT_LIMIT_DURATION</a>&#160;&#160;&#160;5000</td></tr>
+<tr class="memitem:ab1ee40ad1f71dcb4125839bf1a947e9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#ab1ee40ad1f71dcb4125839bf1a947e9c">ZO_DEFAULT_PROFILE_ACCELERATION</a>&#160;&#160;&#160;800</td></tr>
+<tr class="memitem:ac35f2d8fdab8530b58151a749156673d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#ac35f2d8fdab8530b58151a749156673d">ZO_DEFAULT_PROFILE_VELOCITY</a>&#160;&#160;&#160;800</td></tr>
+<tr class="memitem:ac7a71c1d7abec23e99ba04e4f6676362"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#ac7a71c1d7abec23e99ba04e4f6676362">ZO_DEFAULT_DIGITAL_IO_CONFIG</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:acb06f1dba658c6e37e9d378ac49e7b08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#acb06f1dba658c6e37e9d378ac49e7b08">ZO_DEFAULT_BAUD_I2C</a>&#160;&#160;&#160;100000</td></tr>
+<tr class="memitem:a746b62db7fd433ade79a1e2281022c45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a746b62db7fd433ade79a1e2281022c45">ZO_DEFAULT_BAUD_UART</a>&#160;&#160;&#160;115200</td></tr>
+<tr class="memitem:aef8352f59ca3034e98122e722c4aea8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#aef8352f59ca3034e98122e722c4aea8b">ZO_DEFAULT_LAM</a>&#160;&#160;&#160;<a class="el" href="zo_protocol_8h.html#ac817870bb1146c4934b2d874454df629">ZO_PROTOCOL_DEFAULT_LAM</a></td></tr>
+<tr class="memitem:adae567eec727d823833efc362ed45c8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#adae567eec727d823833efc362ed45c8b">ZO_DEFAULT_ERROR_REPORTING_LVL</a>&#160;&#160;&#160;0</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="typedef-members"></a>
+Definicje typów</h2></td></tr>
+<tr class="memitem:af3554af6d9781043f986962d216d0cec"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10">ZO_SMS_CONTROL_STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#af3554af6d9781043f986962d216d0cec">ZO_SMS_CONTROL_STATE</a></td></tr>
+<tr class="memitem:a5f67e9eaf8851c1fb84e448a93cb4c5d"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4">ZO_SMS_PROFILE_STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a5f67e9eaf8851c1fb84e448a93cb4c5d">ZO_SMS_PROFILE_STATE</a></td></tr>
+<tr class="memitem:a7df6ea2cf4b59c37c7259615f5e77333"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html">ZO_SMS_CONTROL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a7df6ea2cf4b59c37c7259615f5e77333">ZO_SMS_CONTROL</a></td></tr>
+<tr class="memitem:a8fd8ccf824559cb8fc19c74e52c906df"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html">ZO_SMS_SETTINGS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a8fd8ccf824559cb8fc19c74e52c906df">ZO_SMS_SETTINGS</a></td></tr>
+<tr class="memitem:acaca6a510337d0ef02d851764d72c9b7"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714">ZO_SMS_SETPOINT_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#acaca6a510337d0ef02d851764d72c9b7">ZO_SMS_SETPOINT_TYPE</a></td></tr>
+<tr class="memitem:a5f6b96b784718b1c57d6e2a2c4a0dc0e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html">ZO_SMS_PROFILE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a5f6b96b784718b1c57d6e2a2c4a0dc0e">ZO_SMS_PROFILE</a></td></tr>
+<tr class="memitem:ac8d46be6e5b52ead9c65cf81374f7788"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html">ZO_SUPERMODIFIED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#ac8d46be6e5b52ead9c65cf81374f7788">ZO_SUPERMODIFIED</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="enum-members"></a>
+Wyliczenia</h2></td></tr>
+<tr class="memitem:a46769667eb78d6c9e04a197249c0ae10"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10">ZO_SMS_CONTROL_STATE</a> { <br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a655e3ee6e5e783b1d8116a0102312a7f">ZO_SMS_CONTROL_NO_CONTROL</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10ab0703001cd962f7e1f9a7af7c14a17f5">ZO_SMS_CONTROL_POSITION_CONTROL</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a9b0f9809532f42847c05c2d05b73f3eb">ZO_SMS_CONTROL_VELOCITY_CONTROL</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10aa258d9ab6f6a0212c389237db6fd9658">ZO_SMS_CONTROL_PROFILED_VELOCITY_CONTROL</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a9b6bca85605a98e2de787af5313ae941">ZO_SMS_CONTROL_PROFILED_POSITION_CONTROL</a>
+<br/>
+ }</td></tr>
+<tr class="memitem:aefd99f8c03fd4242e0e771ab9d9132c4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4">ZO_SMS_PROFILE_STATE</a> { <br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4a46ef4e60156137dfdd86c284a529f4ae">ZO_SMS_PROFILE_ACCELERATING</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4a23d348fc8a0e9490100ecf2ea0b7b546">ZO_SMS_PROFILE_MOVING_WITH_VELOCITY</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4a40f88c211fde5fef6b266b13bb5321cf">ZO_SMS_PROFILE_DECCELERATING</a>
+<br/>
+ }</td></tr>
+<tr class="memitem:ab52890896dd2e0743c3df66d08b56714"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714">ZO_SMS_SETPOINT_TYPE</a> { <br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a0c0bc7a498606c7855a37c56c5ca5b9a">ZO_SMS_SETPOINT_NONE</a> =  0, 
+<br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a7ce9e02788bae23439779a827b3f7dd5">ZO_SMS_SETPOINT_VELOCITY</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a9d746bf50dd5d391d3fbff67e4e5986f">ZO_SMS_SETPOINT_ABSOLUTE_POSITION</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714adbd7aab5297b41c60eb7f9d9bab8c3ab">ZO_SMS_SETPOINT_RELATIVE_POSITION</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a95308513be0d0448c314bbafdd6c72c4">ZO_SMS_SETPOINT_PROFILED_VELOCITY</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714aebcf04764dd9a322fa5aa838fc95d2dc">ZO_SMS_SETPOINT_PROFILED_ABSOLUTE_POSITION</a>, 
+<br/>
+&#160;&#160;<a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714afdceecea10870a446ace744b8ba6957f">ZO_SMS_SETPOINT_PROFILED_RELATIVE_POSITION</a>
+<br/>
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ad0ff2d7aff2c345e9ddfda99af235205"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#ad0ff2d7aff2c345e9ddfda99af235205">zoSmsInit</a> (void)</td></tr>
+<tr class="memitem:ad76b6154c60f318a205c04556108a895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#ad76b6154c60f318a205c04556108a895">zoSmsPinsInit</a> (void)</td></tr>
+<tr class="memitem:a193d60ee3a021aa88806631b9ee91828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom</a> (void)</td></tr>
+<tr class="memitem:a16f5a472c497e6c5e83c5af23af99f24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults</a> (void)</td></tr>
+<tr class="memitem:ae826e15b4aba21b9ca5b05ecacd6a0fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#ae826e15b4aba21b9ca5b05ecacd6a0fa">zoSmsControlLoop</a> (void)</td></tr>
+<tr class="memitem:add060a589db3baaef4a07d0ef7fe8000"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#add060a589db3baaef4a07d0ef7fe8000">accelerationCompleteCriterion</a> (void)</td></tr>
+<tr class="memitem:a3c233b4069cd593bea45124faa2b2eda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a3c233b4069cd593bea45124faa2b2eda">constantVelocityCompletedCriterion</a> (void)</td></tr>
+<tr class="memitem:ac87384ce66e2c198e793acbc95d37f3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#ac87384ce66e2c198e793acbc95d37f3a">positionReachedCriterion</a> (void)</td></tr>
+<tr class="memitem:a8399bacdf987309a8fbb9b2d5d0dbfd5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#a8399bacdf987309a8fbb9b2d5d0dbfd5">deccelRecalc</a> (void)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:ac57d7188cbc0e05cefde7fac8e37f1ae"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html">ZO_SUPERMODIFIED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_sms_8h.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a></td></tr>
+</table>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="acb06f1dba658c6e37e9d378ac49e7b08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_DEFAULT_BAUD_I2C&#160;&#160;&#160;100000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a746b62db7fd433ade79a1e2281022c45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_DEFAULT_BAUD_UART&#160;&#160;&#160;115200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0407763bd4e928ea77fb541c7f1eb878"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_DEFAULT_CURRENT_LIMIT&#160;&#160;&#160;5000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a7e662b5e85269a10807194c345a693"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_DEFAULT_CURRENT_LIMIT_DURATION&#160;&#160;&#160;5000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7a71c1d7abec23e99ba04e4f6676362"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_DEFAULT_DIGITAL_IO_CONFIG&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adae567eec727d823833efc362ed45c8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_DEFAULT_ERROR_REPORTING_LVL&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aced71ac45b02c51d10adea1c20ad1872"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_DEFAULT_GAIN_D&#160;&#160;&#160;8000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a20e8c83b9e009314384261bd6c1c64ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_DEFAULT_GAIN_I&#160;&#160;&#160;4000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc685e8f75a977d3317fc67a1c4ada18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_DEFAULT_GAIN_P&#160;&#160;&#160;8000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef8352f59ca3034e98122e722c4aea8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_DEFAULT_LAM&#160;&#160;&#160;<a class="el" href="zo_protocol_8h.html#ac817870bb1146c4934b2d874454df629">ZO_PROTOCOL_DEFAULT_LAM</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a248329ce9d8a74a25ec1d1929e71a6fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_DEFAULT_NODE_ID&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1ee40ad1f71dcb4125839bf1a947e9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_DEFAULT_PROFILE_ACCELERATION&#160;&#160;&#160;800</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac35f2d8fdab8530b58151a749156673d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_DEFAULT_PROFILE_VELOCITY&#160;&#160;&#160;800</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2d89f232976261e346228d02e63a283"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_EEPROM_ADDRESS_BAUD_I2C&#160;&#160;&#160;0x0090</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5da807ab1e37f4649d319577d62afbef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_EEPROM_ADDRESS_BAUD_UART&#160;&#160;&#160;0x00A0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a5bf813e5c8fb97148f20d1afee733517">zoCommandSetBaudUart()</a>, <a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a042b7df2a6682bf87ff8f7f9b5f74ba0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_EEPROM_ADDRESS_CURRENT_LIMIT&#160;&#160;&#160;0x0040</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a8d3ad03791d91f36700b6bfbdb7e2f19">zoCommandSetCurrentLimit()</a>, <a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42c5e84357b17a973974f07555994152"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_EEPROM_ADDRESS_CURRENT_LIMIT_DURATION&#160;&#160;&#160;0x0050</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#acbbe598c550c8a7806c717c55dae7e11">zoCommandSetCurrentLimitDuration()</a>, <a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a82fa6bd0ef23fad71fa2439c628502dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_EEPROM_ADDRESS_DIGITAL_IO_CONFIG&#160;&#160;&#160;0x0080</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#ae0e98a9a04565fc41ffc874a70204039">zoCommandConfigureDigitalIO()</a>, <a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae02acd0a5ed4e113dc90adbc6757e3ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_EEPROM_ADDRESS_ERROR_REPORTING_LVL&#160;&#160;&#160;0x00C0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a843d16f479f6f77f6c457143a1935e28">zoCommandSetErrorReportingLevel()</a>, <a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa04c8715d8ee9dc04dc06fdfd29eae69"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_EEPROM_ADDRESS_GAIN_D&#160;&#160;&#160;0x0030</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a5a604988c6ef56b38bf8640c45ae40ff">zoCommandSetGainD()</a>, <a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a749a9e6c61e17daf2bb65a06ea418f65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_EEPROM_ADDRESS_GAIN_I&#160;&#160;&#160;0x0020</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#aaf41c0ac2e1d44b88c56d75627c44a76">zoCommandSetGainI()</a>, <a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab1401dff3390d9c0fbc4dba890a04d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_EEPROM_ADDRESS_GAIN_P&#160;&#160;&#160;0x0010</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a9a088619b0460894d6a59fd2072200b6">zoCommandSetGainP()</a>, <a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8833aa80e293d0dd1734d06dc62883d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_EEPROM_ADDRESS_LAM&#160;&#160;&#160;0x00B0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a50d21024cff7420c4b385cb30057e7d8">zoCommandSetLocalAcceptanceMask()</a>, <a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acae9e721a3305c2963231a9dcf635892"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_EEPROM_ADDRESS_NODE_ID&#160;&#160;&#160;0x0000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a2ffd02d77914e77a036eda73e9575760">zoCommandSetNodeID()</a>, <a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba8c8b59a591d29966ec9f581bac32c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_EEPROM_ADDRESS_PROFILE_ACCELERATION&#160;&#160;&#160;0x0060</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a10a52ef74b8cf5d24c7625910611124b">zoCommandSetProfileAcceleration()</a>, <a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6fc777041ed51de4b835667d44b6efa4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_EEPROM_ADDRESS_PROFILE_VELOCITY&#160;&#160;&#160;0x0070</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a66e4b1b8959fe78b81b72ebd28ec48b5">zoCommandSetProfileVelocity()</a>, <a class="el" href="zo_sms_8h.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8h.html#a16f5a472c497e6c5e83c5af23af99f24">zoSmsRestoreDefaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1aa922a7c9fd48e55706381f1bb3086"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_SMS_CONTROL_LOOP_HZ_APPROX&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a27f121f6161da1ac385708c767553620"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_SMS_MOTOR_STALLED_TIMEOUT_MS&#160;&#160;&#160;2000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_error_8h.html#a7f12274bf720191766178e1da93ec6ed">zoSmsMotorStalled()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja definicji typów</h2>
+<a class="anchor" id="a7df6ea2cf4b59c37c7259615f5e77333"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html">ZO_SMS_CONTROL</a> <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html">ZO_SMS_CONTROL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af3554af6d9781043f986962d216d0cec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10">ZO_SMS_CONTROL_STATE</a> <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10">ZO_SMS_CONTROL_STATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f6b96b784718b1c57d6e2a2c4a0dc0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html">ZO_SMS_PROFILE</a> <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html">ZO_SMS_PROFILE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f67e9eaf8851c1fb84e448a93cb4c5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4">ZO_SMS_PROFILE_STATE</a> <a class="el" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4">ZO_SMS_PROFILE_STATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acaca6a510337d0ef02d851764d72c9b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714">ZO_SMS_SETPOINT_TYPE</a> <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714">ZO_SMS_SETPOINT_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8fd8ccf824559cb8fc19c74e52c906df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html">ZO_SMS_SETTINGS</a> <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html">ZO_SMS_SETTINGS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac8d46be6e5b52ead9c65cf81374f7788"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html">ZO_SUPERMODIFIED</a> <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html">ZO_SUPERMODIFIED</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Dokumentacja typów wyliczanych</h2>
+<a class="anchor" id="a46769667eb78d6c9e04a197249c0ae10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10">ZO_SMS_CONTROL_STATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Wartości wyliczeń: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a46769667eb78d6c9e04a197249c0ae10a655e3ee6e5e783b1d8116a0102312a7f"></a>ZO_SMS_CONTROL_NO_CONTROL</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a46769667eb78d6c9e04a197249c0ae10ab0703001cd962f7e1f9a7af7c14a17f5"></a>ZO_SMS_CONTROL_POSITION_CONTROL</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a46769667eb78d6c9e04a197249c0ae10a9b0f9809532f42847c05c2d05b73f3eb"></a>ZO_SMS_CONTROL_VELOCITY_CONTROL</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a46769667eb78d6c9e04a197249c0ae10aa258d9ab6f6a0212c389237db6fd9658"></a>ZO_SMS_CONTROL_PROFILED_VELOCITY_CONTROL</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a46769667eb78d6c9e04a197249c0ae10a9b6bca85605a98e2de787af5313ae941"></a>ZO_SMS_CONTROL_PROFILED_POSITION_CONTROL</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aefd99f8c03fd4242e0e771ab9d9132c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4">ZO_SMS_PROFILE_STATE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Wartości wyliczeń: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="aefd99f8c03fd4242e0e771ab9d9132c4a46ef4e60156137dfdd86c284a529f4ae"></a>ZO_SMS_PROFILE_ACCELERATING</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aefd99f8c03fd4242e0e771ab9d9132c4a23d348fc8a0e9490100ecf2ea0b7b546"></a>ZO_SMS_PROFILE_MOVING_WITH_VELOCITY</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aefd99f8c03fd4242e0e771ab9d9132c4a40f88c211fde5fef6b266b13bb5321cf"></a>ZO_SMS_PROFILE_DECCELERATING</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab52890896dd2e0743c3df66d08b56714"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714">ZO_SMS_SETPOINT_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Wartości wyliczeń: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ab52890896dd2e0743c3df66d08b56714a0c0bc7a498606c7855a37c56c5ca5b9a"></a>ZO_SMS_SETPOINT_NONE</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ab52890896dd2e0743c3df66d08b56714a7ce9e02788bae23439779a827b3f7dd5"></a>ZO_SMS_SETPOINT_VELOCITY</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ab52890896dd2e0743c3df66d08b56714a9d746bf50dd5d391d3fbff67e4e5986f"></a>ZO_SMS_SETPOINT_ABSOLUTE_POSITION</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ab52890896dd2e0743c3df66d08b56714adbd7aab5297b41c60eb7f9d9bab8c3ab"></a>ZO_SMS_SETPOINT_RELATIVE_POSITION</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ab52890896dd2e0743c3df66d08b56714a95308513be0d0448c314bbafdd6c72c4"></a>ZO_SMS_SETPOINT_PROFILED_VELOCITY</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ab52890896dd2e0743c3df66d08b56714aebcf04764dd9a322fa5aa838fc95d2dc"></a>ZO_SMS_SETPOINT_PROFILED_ABSOLUTE_POSITION</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ab52890896dd2e0743c3df66d08b56714afdceecea10870a446ace744b8ba6957f"></a>ZO_SMS_SETPOINT_PROFILED_RELATIVE_POSITION</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="add060a589db3baaef4a07d0ef7fe8000"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> accelerationCompleteCriterion </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">ZO_SUPERMODIFIED::Control</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#af6ad63e10c94f6011f356bd52e6cc5f9">ZO_SMS_PROFILE::LastVelocityDeltaPos</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#a18d647eef83332fc2399db3577056ead">ZO_SMS_CONTROL::LoopHz</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#ac05b9e0210b9ece4102f36feaf3dc403">ZO_SMS_PROFILE::TargetVelDeltaPos</a>, <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a> i <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a35300bb39987df18b2c4e812466c8b15">ZO_SMS_PROFILE::VelocityDeltaPos</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#ae826e15b4aba21b9ca5b05ecacd6a0fa">zoSmsControlLoop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c233b4069cd593bea45124faa2b2eda"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> constantVelocityCompletedCriterion </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a41bf231bb0b2fd9599f0e7cb6236f6d0">ZO_SMS_PROFILE::DeccelerationKnee</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a> i <a class="el" href="zo_encoder_8c.html#a3e44304e8885489bc7f96e2068e0f5f5">zoEncoderGetPos()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#ae826e15b4aba21b9ca5b05ecacd6a0fa">zoSmsControlLoop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8399bacdf987309a8fbb9b2d5d0dbfd5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double deccelRecalc </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a81e2608cc6bd4909dd60c2d9a1c71471">ZO_SMS_PROFILE::TargetPosition</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a35300bb39987df18b2c4e812466c8b15">ZO_SMS_PROFILE::VelocityDeltaPos</a> i <a class="el" href="zo_encoder_8c.html#a3e44304e8885489bc7f96e2068e0f5f5">zoEncoderGetPos()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#ae826e15b4aba21b9ca5b05ecacd6a0fa">zoSmsControlLoop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac87384ce66e2c198e793acbc95d37f3a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> positionReachedCriterion </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a81e2608cc6bd4909dd60c2d9a1c71471">ZO_SMS_PROFILE::TargetPosition</a>, <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a> i <a class="el" href="zo_encoder_8c.html#a3e44304e8885489bc7f96e2068e0f5f5">zoEncoderGetPos()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#ae826e15b4aba21b9ca5b05ecacd6a0fa">zoSmsControlLoop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae826e15b4aba21b9ca5b05ecacd6a0fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoSmsControlLoop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_sms_8c.html#add060a589db3baaef4a07d0ef7fe8000">accelerationCompleteCriterion()</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a550eac52bef17234049a49fd91f5d69b">ZO_SMS_PROFILE::ConstAccelDeltaVel</a>, <a class="el" href="zo_sms_8c.html#a3c233b4069cd593bea45124faa2b2eda">constantVelocityCompletedCriterion()</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">ZO_SUPERMODIFIED::Control</a>, <a class="el" href="zo_sms_8c.html#a8399bacdf987309a8fbb9b2d5d0dbfd5">deccelRecalc()</a>, <a class="el" href="struct_z_o___p_i_d.html#a2a929ad6d71ca980e2ab707e0cdedca0">ZO_PID::doPID</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#af6ad63e10c94f6011f356bd52e6cc5f9">ZO_SMS_PROFILE::LastVelocityDeltaPos</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">ZO_SUPERMODIFIED::Pid</a>, <a class="el" href="zo_sms_8c.html#ac87384ce66e2c198e793acbc95d37f3a">positionReachedCriterion()</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a5e9fbc6aa2b852a8cd3ce8d7bca25eaa">ZO_SMS_PROFILE::PositionSetpoint</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="struct_z_o___p_i_d.html#ab2ed884e6bf46fce682ce840b05f7650">ZO_PID::SetPoint</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#aa7f0733336b04ba2e8a8df719eddc176">ZO_SMS_CONTROL::State</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a0cddf8ad91ee3badd2df4e26a9f4f3dc">ZO_SMS_PROFILE::State</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a81e2608cc6bd4909dd60c2d9a1c71471">ZO_SMS_PROFILE::TargetPosition</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#ac05b9e0210b9ece4102f36feaf3dc403">ZO_SMS_PROFILE::TargetVelDeltaPos</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a35300bb39987df18b2c4e812466c8b15">ZO_SMS_PROFILE::VelocityDeltaPos</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a655e3ee6e5e783b1d8116a0102312a7f">ZO_SMS_CONTROL_NO_CONTROL</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10ab0703001cd962f7e1f9a7af7c14a17f5">ZO_SMS_CONTROL_POSITION_CONTROL</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a9b6bca85605a98e2de787af5313ae941">ZO_SMS_CONTROL_PROFILED_POSITION_CONTROL</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10aa258d9ab6f6a0212c389237db6fd9658">ZO_SMS_CONTROL_PROFILED_VELOCITY_CONTROL</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a9b0f9809532f42847c05c2d05b73f3eb">ZO_SMS_CONTROL_VELOCITY_CONTROL</a>, <a class="el" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4a46ef4e60156137dfdd86c284a529f4ae">ZO_SMS_PROFILE_ACCELERATING</a>, <a class="el" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4a40f88c211fde5fef6b266b13bb5321cf">ZO_SMS_PROFILE_DECCELERATING</a>, <a class="el" href="zo_sms_8h.html#aefd99f8c03fd4242e0e771ab9d9132c4a23d348fc8a0e9490100ecf2ea0b7b546">ZO_SMS_PROFILE_MOVING_WITH_VELOCITY</a> i <a class="el" href="zo_encoder_8c.html#abb25c889e29185fce687385098c7b81a">zoEncoderSetVel()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#ad0ff2d7aff2c345e9ddfda99af235205">zoSmsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0ff2d7aff2c345e9ddfda99af235205"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoSmsInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_i_d.html#a87d70361d05e8bd508c339b7491356ce">ZO_PID::AntiWindUp</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a778635970c8caea5f9fc9417d85ac900">ZO_SUPERMODIFIED::BufferdSetPoint</a>, <a class="el" href="avrlibdefs_8h.html#a68c330e94fe121eba993e5a5973c3162">cli</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">ZO_SUPERMODIFIED::Control</a>, <a class="el" href="struct_z_o___p_i_d.html#aeca1825aec626ed0564bf8b2fa9b3d1a">ZO_PID::Error</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="struct_z_o___p_i_d.html#a5569fd10f52e70e6b8ada2efab5bcc44">ZO_PID::GainP</a>, <a class="el" href="struct_z_o___p_i_d.html#a6ad941eb657bfbc6f8d4a836e08e0fdc">ZO_PID::getFeedBack</a>, <a class="el" href="struct_z_o___p_i_d.html#a8a3c79be3a9596e0f949a8c43ef4820d">ZO_PID::Integral</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">ZO_SUPERMODIFIED::Pid</a>, <a class="el" href="struct_z_o___p_i_d.html#a2cea5b374835ee6ea67bc0c87ec19901">ZO_PID::PrevError</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="avrlibdefs_8h.html#aad5ebd34cb344c26ac87594f79b06b73">sei</a>, <a class="el" href="struct_z_o___p_i_d.html#a130131d397603fd1080dc2c6f4e6b90c">ZO_PID::setActuator</a>, <a class="el" href="struct_z_o___p_i_d.html#ab2ed884e6bf46fce682ce840b05f7650">ZO_PID::SetPoint</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#aa7f0733336b04ba2e8a8df719eddc176">ZO_SMS_CONTROL::State</a>, <a class="el" href="struct_z_o___s_m_s___b_u_f_f_e_r_e_d___s_e_t_p_o_i_n_t.html#a92a5979ce432c73e93050fda778908fd">ZO_SMS_BUFFERED_SETPOINT::type</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#a35300bb39987df18b2c4e812466c8b15">ZO_SMS_PROFILE::VelocityDeltaPos</a>, <a class="el" href="zo_adc_8h.html#a1c9d2bf8c5d7cd2433df8ea36c20af47afb45caf736e49feadfedb1f593fa9300">ZO_ADC_CHANNEL_0</a>, <a class="el" href="zo_adc_8h.html#a1c9d2bf8c5d7cd2433df8ea36c20af47a01358d3a695099b1ad64cf0ceef6f79c">ZO_ADC_CHANNEL_1</a>, <a class="el" href="zo_adc_8h.html#a1c9d2bf8c5d7cd2433df8ea36c20af47aaad9b42b75fd78db1f7260d36c7d2a93">ZO_ADC_CHANNEL_2</a>, <a class="el" href="zo_adc_8h.html#a1c9d2bf8c5d7cd2433df8ea36c20af47ab39795878271efe93244129da0f36d48">ZO_ADC_CHANNEL_3</a>, <a class="el" href="zo_adc_8h.html#a1c9d2bf8c5d7cd2433df8ea36c20af47af88519e77eeff81e9eb4e538bdb8684b">ZO_ADC_CHANNEL_7</a>, <a class="el" href="zo_adc_8h.html#a3f6a8cbe3b549aa7dbc0b4563838589ea6d5c1bcb80e3d42b2a4a0c8334562642">ZO_ADC_TRIGGER_TIMER1_ICP</a>, <a class="el" href="zo_sms_8h.html#a46769667eb78d6c9e04a197249c0ae10a655e3ee6e5e783b1d8116a0102312a7f">ZO_SMS_CONTROL_NO_CONTROL</a>, <a class="el" href="zo_sms_8h.html#ab52890896dd2e0743c3df66d08b56714a0c0bc7a498606c7855a37c56c5ca5b9a">ZO_SMS_SETPOINT_NONE</a>, <a class="el" href="zo_adc_8c.html#a9ef779743eb6110c733e38311bec6a5c">zoAdcChannelEnable()</a>, <a class="el" href="zo_adc_8c.html#a2a88196fda383fc5cd8646950010cd5a">zoAdcInit()</a>, <a class="el" href="zo_adc_8c.html#a5a1de631179ab8e86bf1b48825d5ab1a">zoAdcSetTrigger()</a>, <a class="el" href="zo_encoder_8c.html#a3e44304e8885489bc7f96e2068e0f5f5">zoEncoderGetPos()</a>, <a class="el" href="zo_encoder_8c.html#a124dd2199ea1c0df6ceb6ad31c251a6b">zoEncoderInit()</a>, <a class="el" href="zo_encoder_8c.html#a3b29b6052e20861589b06b629d1f0b2d">zoEncoderReset()</a>, <a class="el" href="zo_motor_8c.html#a3be6bcd6eaee38e92f69c1ec4416bee1">zoMotorInit()</a>, <a class="el" href="zo_motor_8c.html#a4e815da1d2ac2f48667d97730e2e41c8">zoMotorSet()</a>, <a class="el" href="zo_motor_8c.html#ab0e98f7ee42bb777ee6ab1b8a8d54f5a">zoMotorSetState()</a>, <a class="el" href="zo_motor_8c.html#abda5fa01fe06b262a1d67aec3d3a5af0">zoMotorSetTimedEventHandler()</a>, <a class="el" href="zo_sms_8c.html#ae826e15b4aba21b9ca5b05ecacd6a0fa">zoSmsControlLoop()</a>, <a class="el" href="zo_sms_error_8c.html#ae1000b131520d79589d40d4efd76c920">zoSmsErrorInit()</a>, <a class="el" href="zo_sms_8c.html#a193d60ee3a021aa88806631b9ee91828">zoSmsInitSettingsFromEeprom()</a> i <a class="el" href="zo_sms_8c.html#ad76b6154c60f318a205c04556108a895">zoSmsPinsInit()</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a193d60ee3a021aa88806631b9ee91828"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoSmsInitSettingsFromEeprom </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a32ffadf49fe2e285b0e69133b13366ba">ZO_SMS_SETTINGS::BaudI2C</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a344d761b2658bda4e7740bfa89c4b27f">ZO_SMS_SETTINGS::BaudUart</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#af5f08299e45eea0353cef028acd4ee0a">ZO_SMS_SETTINGS::CurrentLimit</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a30cc3d678ceec8efa9d70d9ccf6fa01d">ZO_SMS_SETTINGS::CurrentLimitDuration</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#aacacd2ec1b68ebafe10814839d15526a">ZO_SMS_PROFILE::DesiredAcceleration</a>, <a class="el" href="struct_z_o___s_m_s___p_r_o_f_i_l_e.html#ac9dbc865ac761dbfdcad0d9e654f08b6">ZO_SMS_PROFILE::DesiredVelocity</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a9f0b432eb90e9e56237568c7dc841dc7">ZO_SMS_SETTINGS::DigitalIoConfig</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#afca30511132ca3aaa8592798b21650bd">ZO_SMS_SETTINGS::errorReportingLevel</a>, <a class="el" href="struct_z_o___p_i_d.html#a1ca7414a5492ede1eac2f23a9976768a">ZO_PID::GainD</a>, <a class="el" href="struct_z_o___p_i_d.html#abd1533d665a597f0c3e0b089551956a4">ZO_PID::GainI</a>, <a class="el" href="struct_z_o___p_i_d.html#a5569fd10f52e70e6b8ada2efab5bcc44">ZO_PID::GainP</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a655d7fc10bb465ca08a178377d4eb674">ZO_SMS_SETTINGS::localAcceptanceMask</a>, <a class="el" href="struct_z_o___s_m_s___s_e_t_t_i_n_g_s.html#a3ed12eed29266a0f446b81a0a23a853a">ZO_SMS_SETTINGS::NodeID</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#ae8a070922fa38ec97093a0edcf3358c5">ZO_SUPERMODIFIED::Pid</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a9ae15eb2a875c3cbab9c808c6fb3d666">ZO_SUPERMODIFIED::Profile</a>, <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a5180724bf1bb6ea9648e4a228eeecac5">ZO_SUPERMODIFIED::Settings</a>, <a class="el" href="zo_sms_8h.html#ad2d89f232976261e346228d02e63a283">ZO_EEPROM_ADDRESS_BAUD_I2C</a>, <a class="el" href="zo_sms_8h.html#a5da807ab1e37f4649d319577d62afbef">ZO_EEPROM_ADDRESS_BAUD_UART</a>, <a class="el" href="zo_sms_8h.html#a042b7df2a6682bf87ff8f7f9b5f74ba0">ZO_EEPROM_ADDRESS_CURRENT_LIMIT</a>, <a class="el" href="zo_sms_8h.html#a42c5e84357b17a973974f07555994152">ZO_EEPROM_ADDRESS_CURRENT_LIMIT_DURATION</a>, <a class="el" href="zo_sms_8h.html#a82fa6bd0ef23fad71fa2439c628502dc">ZO_EEPROM_ADDRESS_DIGITAL_IO_CONFIG</a>, <a class="el" href="zo_sms_8h.html#ae02acd0a5ed4e113dc90adbc6757e3ba">ZO_EEPROM_ADDRESS_ERROR_REPORTING_LVL</a>, <a class="el" href="zo_sms_8h.html#aa04c8715d8ee9dc04dc06fdfd29eae69">ZO_EEPROM_ADDRESS_GAIN_D</a>, <a class="el" href="zo_sms_8h.html#a749a9e6c61e17daf2bb65a06ea418f65">ZO_EEPROM_ADDRESS_GAIN_I</a>, <a class="el" href="zo_sms_8h.html#aab1401dff3390d9c0fbc4dba890a04d2">ZO_EEPROM_ADDRESS_GAIN_P</a>, <a class="el" href="zo_sms_8h.html#a8833aa80e293d0dd1734d06dc62883d5">ZO_EEPROM_ADDRESS_LAM</a>, <a class="el" href="zo_sms_8h.html#acae9e721a3305c2963231a9dcf635892">ZO_EEPROM_ADDRESS_NODE_ID</a>, <a class="el" href="zo_sms_8h.html#aba8c8b59a591d29966ec9f581bac32c8">ZO_EEPROM_ADDRESS_PROFILE_ACCELERATION</a> i <a class="el" href="zo_sms_8h.html#a6fc777041ed51de4b835667d44b6efa4">ZO_EEPROM_ADDRESS_PROFILE_VELOCITY</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#ad0ff2d7aff2c345e9ddfda99af235205">zoSmsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad76b6154c60f318a205c04556108a895"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoSmsPinsInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#ad0ff2d7aff2c345e9ddfda99af235205">zoSmsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a16f5a472c497e6c5e83c5af23af99f24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoSmsRestoreDefaults </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_sms_8h.html#acb06f1dba658c6e37e9d378ac49e7b08">ZO_DEFAULT_BAUD_I2C</a>, <a class="el" href="zo_sms_8h.html#a746b62db7fd433ade79a1e2281022c45">ZO_DEFAULT_BAUD_UART</a>, <a class="el" href="zo_sms_8h.html#a0407763bd4e928ea77fb541c7f1eb878">ZO_DEFAULT_CURRENT_LIMIT</a>, <a class="el" href="zo_sms_8h.html#a4a7e662b5e85269a10807194c345a693">ZO_DEFAULT_CURRENT_LIMIT_DURATION</a>, <a class="el" href="zo_sms_8h.html#ac7a71c1d7abec23e99ba04e4f6676362">ZO_DEFAULT_DIGITAL_IO_CONFIG</a>, <a class="el" href="zo_sms_8h.html#adae567eec727d823833efc362ed45c8b">ZO_DEFAULT_ERROR_REPORTING_LVL</a>, <a class="el" href="zo_sms_8h.html#aced71ac45b02c51d10adea1c20ad1872">ZO_DEFAULT_GAIN_D</a>, <a class="el" href="zo_sms_8h.html#a20e8c83b9e009314384261bd6c1c64ba">ZO_DEFAULT_GAIN_I</a>, <a class="el" href="zo_sms_8h.html#acc685e8f75a977d3317fc67a1c4ada18">ZO_DEFAULT_GAIN_P</a>, <a class="el" href="zo_sms_8h.html#aef8352f59ca3034e98122e722c4aea8b">ZO_DEFAULT_LAM</a>, <a class="el" href="zo_sms_8h.html#a248329ce9d8a74a25ec1d1929e71a6fb">ZO_DEFAULT_NODE_ID</a>, <a class="el" href="zo_sms_8h.html#ab1ee40ad1f71dcb4125839bf1a947e9c">ZO_DEFAULT_PROFILE_ACCELERATION</a>, <a class="el" href="zo_sms_8h.html#ac35f2d8fdab8530b58151a749156673d">ZO_DEFAULT_PROFILE_VELOCITY</a>, <a class="el" href="zo_sms_8h.html#ad2d89f232976261e346228d02e63a283">ZO_EEPROM_ADDRESS_BAUD_I2C</a>, <a class="el" href="zo_sms_8h.html#a5da807ab1e37f4649d319577d62afbef">ZO_EEPROM_ADDRESS_BAUD_UART</a>, <a class="el" href="zo_sms_8h.html#a042b7df2a6682bf87ff8f7f9b5f74ba0">ZO_EEPROM_ADDRESS_CURRENT_LIMIT</a>, <a class="el" href="zo_sms_8h.html#a42c5e84357b17a973974f07555994152">ZO_EEPROM_ADDRESS_CURRENT_LIMIT_DURATION</a>, <a class="el" href="zo_sms_8h.html#a82fa6bd0ef23fad71fa2439c628502dc">ZO_EEPROM_ADDRESS_DIGITAL_IO_CONFIG</a>, <a class="el" href="zo_sms_8h.html#ae02acd0a5ed4e113dc90adbc6757e3ba">ZO_EEPROM_ADDRESS_ERROR_REPORTING_LVL</a>, <a class="el" href="zo_sms_8h.html#aa04c8715d8ee9dc04dc06fdfd29eae69">ZO_EEPROM_ADDRESS_GAIN_D</a>, <a class="el" href="zo_sms_8h.html#a749a9e6c61e17daf2bb65a06ea418f65">ZO_EEPROM_ADDRESS_GAIN_I</a>, <a class="el" href="zo_sms_8h.html#aab1401dff3390d9c0fbc4dba890a04d2">ZO_EEPROM_ADDRESS_GAIN_P</a>, <a class="el" href="zo_sms_8h.html#a8833aa80e293d0dd1734d06dc62883d5">ZO_EEPROM_ADDRESS_LAM</a>, <a class="el" href="zo_sms_8h.html#acae9e721a3305c2963231a9dcf635892">ZO_EEPROM_ADDRESS_NODE_ID</a>, <a class="el" href="zo_sms_8h.html#aba8c8b59a591d29966ec9f581bac32c8">ZO_EEPROM_ADDRESS_PROFILE_ACCELERATION</a> i <a class="el" href="zo_sms_8h.html#a6fc777041ed51de4b835667d44b6efa4">ZO_EEPROM_ADDRESS_PROFILE_VELOCITY</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja zmiennych</h2>
+<a class="anchor" id="ac57d7188cbc0e05cefde7fac8e37f1ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html">ZO_SUPERMODIFIED</a> Sms</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main()</a>, <a class="el" href="zo_commands_8h.html#ab567d76ce5494d719aeff1b40ac6bff1">zoCommandAbsolutePositionMove()</a>, <a class="el" href="zo_commands_8h.html#ae0e98a9a04565fc41ffc874a70204039">zoCommandConfigureDigitalIO()</a>, <a class="el" href="zo_commands_8h.html#adc44190abaedf1fb0b0febc3d4009347">zoCommandDoMove()</a>, <a class="el" href="zo_commands_8h.html#ade2929ea91420e138a1b1deb293c4d38">zoCommandGetCurrentLimit()</a>, <a class="el" href="zo_commands_8h.html#a42a21a74a2b71f09ea978124ab1fcb95">zoCommandGetCurrentLimitDuration()</a>, <a class="el" href="zo_commands_8h.html#a5a17bd2c12f08c9a44758cb1e1ffd8f7">zoCommandGetDigitalIoConfiguration()</a>, <a class="el" href="zo_commands_8h.html#a2cb9557f9c3190e391b731016256ec83">zoCommandGetGainD()</a>, <a class="el" href="zo_commands_8h.html#ad7d8ba6e5f26ad8e088a97b68d4867f6">zoCommandGetGainI()</a>, <a class="el" href="zo_commands_8h.html#a30333fb4f0a109b22b9236fadf693cc2">zoCommandGetGainP()</a>, <a class="el" href="zo_commands_8h.html#acd282b35ad758c952d5dd491d683cc1c">zoCommandGetLocalAcceptanceMask()</a>, <a class="el" href="zo_commands_8h.html#ae3fc04871b6654e56503375482b84293">zoCommandGetProfileAcceleration()</a>, <a class="el" href="zo_commands_8h.html#a67e382bf2b4b76bacc34067ec08c90c4">zoCommandGetProfileVelocity()</a>, <a class="el" href="zo_commands_8h.html#a2409e12e788250e1680d1555d818d4e3">zoCommandHalt()</a>, <a class="el" href="zo_commands_8h.html#ae241cb0d785307b22d9685374136be3d">zoCommandRelativePositionMove()</a>, <a class="el" href="zo_commands_8h.html#a1e98e4798c14837ee9c6a8ba168b8901">zoCommandSetAbsolutePositionSetpoint()</a>, <a class="el" href="zo_commands_8h.html#a8d3ad03791d91f36700b6bfbdb7e2f19">zoCommandSetCurrentLimit()</a>, <a class="el" href="zo_commands_8h.html#acbbe598c550c8a7806c717c55dae7e11">zoCommandSetCurrentLimitDuration()</a>, <a class="el" href="zo_commands_8h.html#a2ca8ec5be256cf1dceec73851ec4290f">zoCommandSetDigitalOut()</a>, <a class="el" href="zo_commands_8h.html#a843d16f479f6f77f6c457143a1935e28">zoCommandSetErrorReportingLevel()</a>, <a class="el" href="zo_commands_8h.html#a5a604988c6ef56b38bf8640c45ae40ff">zoCommandSetGainD()</a>, <a class="el" href="zo_commands_8h.html#aaf41c0ac2e1d44b88c56d75627c44a76">zoCommandSetGainI()</a>, <a class="el" href="zo_commands_8h.html#a9a088619b0460894d6a59fd2072200b6">zoCommandSetGainP()</a>, <a class="el" href="zo_commands_8h.html#a10a52ef74b8cf5d24c7625910611124b">zoCommandSetProfileAcceleration()</a>, <a class="el" href="zo_commands_8h.html#a784da3d42fe55f475a4e20a07dcaad01">zoCommandSetProfiledAbsolutePositionSetpoint()</a>, <a class="el" href="zo_commands_8h.html#a303be9fa1311277364f7b69fa7a0f1d8">zoCommandSetProfiledRelativePositionSetpoint()</a>, <a class="el" href="zo_commands_8h.html#a044b0c7fd23c8f9e901530e89c7e2a50">zoCommandSetProfiledVelocitySetpoint()</a>, <a class="el" href="zo_commands_8h.html#a66e4b1b8959fe78b81b72ebd28ec48b5">zoCommandSetProfileVelocity()</a>, <a class="el" href="zo_commands_8h.html#a00056e3497c4aaa925dd373aa92fe801">zoCommandSetRelativePositionSetpoint()</a>, <a class="el" href="zo_commands_8h.html#a1fba542fd5265c056b4290bfd58ba283">zoCommandSetVelocitySetpoint()</a>, <a class="el" href="zo_commands_8h.html#a78ba12fba621c985b0ee498844c1c815">zoCommandStart()</a>, <a class="el" href="zo_commands_8h.html#a33e573991d4058b14fb7e832094cbf49">zoCommandStop()</a>, <a class="el" href="zo_commands_8h.html#ab7f41276777dd8ac1e09a5f23b45d4a3">zoCommandVelocityMove()</a>, <a class="el" href="zo_encoder_8h.html#abee94da3cd9232f74a6fa615241bbb79">zoEncoderGetVel()</a>, <a class="el" href="zo_motor_8h.html#a3be6bcd6eaee38e92f69c1ec4416bee1">zoMotorInit()</a>, <a class="el" href="zo_commands_8h.html#aede31b7046eb7e64ae11612d22fa2e2a">zoProfiledMoveAbsolute()</a>, <a class="el" href="zo_commands_8h.html#a13920e1b432d06d009a141670f1c4297">zoProfiledVelocity()</a>, <a class="el" href="zo_sms_error_8h.html#aeb4a8df3d1556c3bcf770591f3017d22">zoSmsErrorHandleCommandResponseFailure()</a>, <a class="el" href="zo_sms_error_8h.html#a37517af13d91ee187e9cfda90e000494">zoSmsErrorHandleServiceCommandFailure()</a>, <a class="el" href="zo_sms_error_8h.html#a8b2306b94095b0acb1228a2e7bc0a96b">zoSmsErrorPoll()</a> i <a class="el" href="zo_sms_error_8h.html#a7f12274bf720191766178e1da93ec6ed">zoSmsMotorStalled()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb5fb232909a11b4992a277a944d4228.html">SuperModified.V1</a></li><li class="navelem"><a class="el" href="zo_sms_8h.html">zoSms.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:49:50 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

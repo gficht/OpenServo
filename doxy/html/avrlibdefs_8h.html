@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku avrlibdefs.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('avrlibdefs_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku avrlibdefs.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>AVRlib global defines and macros.  
+<a href="#details">Więcej...</a></p>
+
+<p><a href="avrlibdefs_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:ae561444dd5a69b5ac942afb6abaaa18f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#ae561444dd5a69b5ac942afb6abaaa18f">outb</a>(addr, data)&#160;&#160;&#160;addr = (data)</td></tr>
+<tr class="memitem:a6324892f8728986cf9ff0a153210c670"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#a6324892f8728986cf9ff0a153210c670">inb</a>(addr)&#160;&#160;&#160;(addr)</td></tr>
+<tr class="memitem:a60e4d11e01b0d2e0dff35a1886830b46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#a60e4d11e01b0d2e0dff35a1886830b46">outw</a>(addr, data)&#160;&#160;&#160;addr = (data)</td></tr>
+<tr class="memitem:ac5b9320091a1d53ccf2dcabfff3d5c34"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#ac5b9320091a1d53ccf2dcabfff3d5c34">inw</a>(addr)&#160;&#160;&#160;(addr)</td></tr>
+<tr class="memitem:a0188837b5508334447b93ad7b944a0e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#a0188837b5508334447b93ad7b944a0e9">BV</a>(bit)&#160;&#160;&#160;(1&lt;&lt;(bit))</td></tr>
+<tr class="memitem:aa088c60e054842f8d77d5bcd8a863a81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#aa088c60e054842f8d77d5bcd8a863a81">cbi</a>(reg, bit)&#160;&#160;&#160;reg &amp;= ~(<a class="el" href="avrlibdefs_8h.html#a0188837b5508334447b93ad7b944a0e9">BV</a>(bit))</td></tr>
+<tr class="memitem:af99479fff216597a9fa50b0187920509"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#af99479fff216597a9fa50b0187920509">sbi</a>(reg, bit)&#160;&#160;&#160;reg |= (<a class="el" href="avrlibdefs_8h.html#a0188837b5508334447b93ad7b944a0e9">BV</a>(bit))</td></tr>
+<tr class="memitem:a68c330e94fe121eba993e5a5973c3162"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#a68c330e94fe121eba993e5a5973c3162">cli</a>()&#160;&#160;&#160;__asm__ __volatile__ (&quot;cli&quot; ::)</td></tr>
+<tr class="memitem:aad5ebd34cb344c26ac87594f79b06b73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#aad5ebd34cb344c26ac87594f79b06b73">sei</a>()&#160;&#160;&#160;__asm__ __volatile__ (&quot;sei&quot; ::)</td></tr>
+<tr class="memitem:a83634509fe5a3541db37e16a1964d0df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#a83634509fe5a3541db37e16a1964d0df">GNUC_PACKED</a>&#160;&#160;&#160;__attribute__((packed))</td></tr>
+<tr class="memitem:acbe348573e1b5adccdc7bcf157dc6425"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#acbe348573e1b5adccdc7bcf157dc6425">DDR</a>(x)&#160;&#160;&#160;((x)-1)</td></tr>
+<tr class="memitem:ad7581da21e9fd6fd6f6920dd68d1c782"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#ad7581da21e9fd6fd6f6920dd68d1c782">PIN</a>(x)&#160;&#160;&#160;((x)-2)</td></tr>
+<tr class="memitem:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(a, b)&#160;&#160;&#160;((a&lt;b)?(a):(b))</td></tr>
+<tr class="memitem:afa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>(a, b)&#160;&#160;&#160;((a&gt;b)?(a):(b))</td></tr>
+<tr class="memitem:a996f7be338ccb40d1a2a5abc1ad61759"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#a996f7be338ccb40d1a2a5abc1ad61759">ABS</a>(x)&#160;&#160;&#160;((x&gt;0)?(x):(-x))</td></tr>
+<tr class="memitem:a598a3330b3c21701223ee0ca14316eca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="avrlibdefs_8h.html#a598a3330b3c21701223ee0ca14316eca">PI</a>&#160;&#160;&#160;3.14159265359</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Opis szczegółowy</h2>
+<div class="textblock"><p>AVRlib global defines and macros. </p>
+</div><hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="a996f7be338ccb40d1a2a5abc1ad61759"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ABS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((x&gt;0)?(x):(-x))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0188837b5508334447b93ad7b944a0e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BV</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">bit</td><td>)</td>
+          <td>&#160;&#160;&#160;(1&lt;&lt;(bit))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa088c60e054842f8d77d5bcd8a863a81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define cbi</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">reg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">bit&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;reg &amp;= ~(<a class="el" href="avrlibdefs_8h.html#a0188837b5508334447b93ad7b944a0e9">BV</a>(bit))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a68c330e94fe121eba993e5a5973c3162"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define cli</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;__asm__ __volatile__ (&quot;cli&quot; ::)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#ad0ff2d7aff2c345e9ddfda99af235205">zoSmsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acbe348573e1b5adccdc7bcf157dc6425"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DDR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((x)-1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a83634509fe5a3541db37e16a1964d0df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GNUC_PACKED&#160;&#160;&#160;__attribute__((packed))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6324892f8728986cf9ff0a153210c670"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define inb</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr</td><td>)</td>
+          <td>&#160;&#160;&#160;(addr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac5b9320091a1d53ccf2dcabfff3d5c34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define inw</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr</td><td>)</td>
+          <td>&#160;&#160;&#160;(addr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa99ec4acc4ecb2dc3c2d05da15d0e3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((a&gt;b)?(a):(b))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3acffbd305ee72dcd4593c0d8af64a4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((a&lt;b)?(a):(b))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae561444dd5a69b5ac942afb6abaaa18f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define outb</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">data&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;addr = (data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a60e4d11e01b0d2e0dff35a1886830b46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define outw</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">data&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;addr = (data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a598a3330b3c21701223ee0ca14316eca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PI&#160;&#160;&#160;3.14159265359</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad7581da21e9fd6fd6f6920dd68d1c782"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((x)-2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af99479fff216597a9fa50b0187920509"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sbi</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">reg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">bit&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;reg |= (<a class="el" href="avrlibdefs_8h.html#a0188837b5508334447b93ad7b944a0e9">BV</a>(bit))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aad5ebd34cb344c26ac87594f79b06b73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define sei</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;__asm__ __volatile__ (&quot;sei&quot; ::)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołania w <a class="el" href="zo_adc_8h.html#a2a88196fda383fc5cd8646950010cd5a">zoAdcInit()</a>, <a class="el" href="zo_encoder_8h.html#a124dd2199ea1c0df6ceb6ad31c251a6b">zoEncoderInit()</a>, <a class="el" href="zo_i2c_8h.html#ac281ee5ffd48c105a275ba271eb8902c">zoI2cInit()</a>, <a class="el" href="zo_motor_8h.html#a3be6bcd6eaee38e92f69c1ec4416bee1">zoMotorInit()</a>, <a class="el" href="zo_sms_8h.html#ad0ff2d7aff2c345e9ddfda99af235205">zoSmsInit()</a> i <a class="el" href="zo_uart_8h.html#a126ca20da0fa20fba3e26235017aa6b9">zoUartInit()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb5fb232909a11b4992a277a944d4228.html">SuperModified.V1</a></li><li class="navelem"><a class="el" href="avrlibdefs_8h.html">avrlibdefs.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:49:49 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

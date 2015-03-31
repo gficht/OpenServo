@@ -1,0 +1,2012 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku macros.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="modules.html"><span>Moduły</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('macros_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku macros.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;avr/io.h&gt;</code><br/>
+</div>
+<p><a href="macros_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:aff6bf0ff0fa3b5cbd23a8ae1131c87a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#aff6bf0ff0fa3b5cbd23a8ae1131c87a9">__USER_LABEL_PREFIX__</a>&#160;&#160;&#160;_</td></tr>
+<tr class="memitem:a23b3808d12342e40e7459e77fccb85b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a23b3808d12342e40e7459e77fccb85b6">_L</a>&#160;&#160;&#160;$</td></tr>
+<tr class="memitem:ac1bd762df6f68795cfe6a980728bf233"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ac1bd762df6f68795cfe6a980728bf233">CONCAT1</a>(a, b)&#160;&#160;&#160;<a class="el" href="macros_8h.html#a2fef427b1927dac8bf612d1384f00503">CONCAT2</a>(a, b)</td></tr>
+<tr class="memitem:a2fef427b1927dac8bf612d1384f00503"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a2fef427b1927dac8bf612d1384f00503">CONCAT2</a>(a, b)&#160;&#160;&#160;a ## b</td></tr>
+<tr class="memitem:af88efd7e95e5d89a8247464f7a6fdb39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#af88efd7e95e5d89a8247464f7a6fdb39">_U</a>(x)&#160;&#160;&#160;<a class="el" href="macros_8h.html#ac1bd762df6f68795cfe6a980728bf233">CONCAT1</a>(<a class="el" href="macros_8h.html#aff6bf0ff0fa3b5cbd23a8ae1131c87a9">__USER_LABEL_PREFIX__</a>, x)</td></tr>
+<tr class="memitem:a12d024f7343710dfe919b23e56a70ea1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(x)&#160;&#160;&#160;<a class="el" href="macros_8h.html#ac1bd762df6f68795cfe6a980728bf233">CONCAT1</a>(__REGISTER_PREFIX__, x)</td></tr>
+<tr class="memitem:a18158291ef3dea6a3b8e73154d7d0ca9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a18158291ef3dea6a3b8e73154d7d0ca9">r0</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r0)</td></tr>
+<tr class="memitem:a03bf694db1bca491ee1b67714601b846"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a03bf694db1bca491ee1b67714601b846">r1</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r1)</td></tr>
+<tr class="memitem:a0f8ac18dc0c86549aeb832dda4e2aef0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a0f8ac18dc0c86549aeb832dda4e2aef0">r2</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r2)</td></tr>
+<tr class="memitem:a48c799f8430144567704a8f1ff4b9383"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a48c799f8430144567704a8f1ff4b9383">r3</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r3)</td></tr>
+<tr class="memitem:a3b8fa7cb7a6da36307ab75bf99f61c44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a3b8fa7cb7a6da36307ab75bf99f61c44">r4</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r4)</td></tr>
+<tr class="memitem:a696c1657d5454d403fb6f9c46ed876be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a696c1657d5454d403fb6f9c46ed876be">r5</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r5)</td></tr>
+<tr class="memitem:abdc15e93ab1dfc3cf499e795cd895a51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#abdc15e93ab1dfc3cf499e795cd895a51">r6</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r6)</td></tr>
+<tr class="memitem:aac40d07399a3deb8f84a24f2aed15a09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#aac40d07399a3deb8f84a24f2aed15a09">r7</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r7)</td></tr>
+<tr class="memitem:a3c12be0edd28e6c53f21ccff71d6eafc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a3c12be0edd28e6c53f21ccff71d6eafc">r8</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r8)</td></tr>
+<tr class="memitem:a58aae87ee751028e25cebfaa5466ce48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a58aae87ee751028e25cebfaa5466ce48">r9</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r9)</td></tr>
+<tr class="memitem:a38ee495ac0c0a781c66ef4cd9b09cefe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a38ee495ac0c0a781c66ef4cd9b09cefe">r10</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r10)</td></tr>
+<tr class="memitem:a9577afdd0e90a3f0b223d545acda5ca9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a9577afdd0e90a3f0b223d545acda5ca9">r11</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r11)</td></tr>
+<tr class="memitem:a396660c01c22342c1aae3d112f2c6849"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a396660c01c22342c1aae3d112f2c6849">r12</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r12)</td></tr>
+<tr class="memitem:a52f35800290439c13fb0d8a9ca7705ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a52f35800290439c13fb0d8a9ca7705ba">r13</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r13)</td></tr>
+<tr class="memitem:a6cfd07c25657897089b355f1b64e7576"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a6cfd07c25657897089b355f1b64e7576">r14</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r14)</td></tr>
+<tr class="memitem:a9c4791a68c2f462f42f8ae7586af10f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a9c4791a68c2f462f42f8ae7586af10f6">r15</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r15)</td></tr>
+<tr class="memitem:ae5a075ca292a64617852b96f43ddb76f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ae5a075ca292a64617852b96f43ddb76f">r16</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r16)</td></tr>
+<tr class="memitem:acef978243e61bb0742366fd7c5bdd7aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#acef978243e61bb0742366fd7c5bdd7aa">r17</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r17)</td></tr>
+<tr class="memitem:a0a38c7288bc9220784c7103924946193"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a0a38c7288bc9220784c7103924946193">r18</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r18)</td></tr>
+<tr class="memitem:a1757dc45872b88909f818c1a2288b20a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a1757dc45872b88909f818c1a2288b20a">r19</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r19)</td></tr>
+<tr class="memitem:af0bf826fa7e63557513ab51b6ed3ba1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#af0bf826fa7e63557513ab51b6ed3ba1b">r20</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r20)</td></tr>
+<tr class="memitem:a67015544b0fc6a8503d6bfe9f140673b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a67015544b0fc6a8503d6bfe9f140673b">r21</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r21)</td></tr>
+<tr class="memitem:ad46a0e2aa91f25b23568477111c8b335"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ad46a0e2aa91f25b23568477111c8b335">r22</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r22)</td></tr>
+<tr class="memitem:a25da815617d8d03684c8a81466ca1e9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a25da815617d8d03684c8a81466ca1e9c">r23</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r23)</td></tr>
+<tr class="memitem:ad8cd38bba51d5f19e6f37b1c1b1c1807"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ad8cd38bba51d5f19e6f37b1c1b1c1807">r24</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r24)</td></tr>
+<tr class="memitem:a713b4ab271e6194a6acbed0ea9f61849"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a713b4ab271e6194a6acbed0ea9f61849">r25</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r25)</td></tr>
+<tr class="memitem:ac158664d0977ed6d8ac14f0ca9a6f730"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ac158664d0977ed6d8ac14f0ca9a6f730">r26</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r26)</td></tr>
+<tr class="memitem:ac6909ae9968643e81f6d5f7f964954bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ac6909ae9968643e81f6d5f7f964954bf">r27</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r27)</td></tr>
+<tr class="memitem:aadc60960fb0d426901bff6806a258594"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#aadc60960fb0d426901bff6806a258594">r28</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r28)</td></tr>
+<tr class="memitem:a76fcf3570ab837fd5920b03e893eb9bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a76fcf3570ab837fd5920b03e893eb9bb">r29</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r29)</td></tr>
+<tr class="memitem:ad8938b0d48c32d6c20e21b4c0b8a9a64"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ad8938b0d48c32d6c20e21b4c0b8a9a64">r30</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r30)</td></tr>
+<tr class="memitem:afc3dd658b733702d244acb9f65e51ed6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r31)</td></tr>
+<tr class="memitem:a0e6fc492b674d6ccceccb06e3bbf907b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a0e6fc492b674d6ccceccb06e3bbf907b">__tmp_reg__</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a18158291ef3dea6a3b8e73154d7d0ca9">r0</a></td></tr>
+<tr class="memitem:afed1b0d4593d3b568a3d714ad3ac1aa5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#afed1b0d4593d3b568a3d714ad3ac1aa5">__zero_reg__</a>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a03bf694db1bca491ee1b67714601b846">r1</a></td></tr>
+<tr class="memitem:a8a3e96d3cc0663241a62b238fafcbadc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a8a3e96d3cc0663241a62b238fafcbadc">XJMP</a>&#160;&#160;&#160;rjmp</td></tr>
+<tr class="memitem:a3808121789dae4463f1c0aeab301f09b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a3808121789dae4463f1c0aeab301f09b">XCALL</a>&#160;&#160;&#160;rcall</td></tr>
+<tr class="memitem:a765c3138b0b1a4bd521e3becc75b1f6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a765c3138b0b1a4bd521e3becc75b1f6a">PROLOGUE_SAVES</a>(offset)&#160;&#160;&#160;<a class="el" href="macros_8h.html#a8a3e96d3cc0663241a62b238fafcbadc">XJMP</a> (__prologue_saves__ + 2 * (offset))</td></tr>
+<tr class="memitem:a9855db533b4b55f0914b558c1890a6ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a9855db533b4b55f0914b558c1890a6ae">EPILOGUE_RESTORES</a>(offset)&#160;&#160;&#160;<a class="el" href="macros_8h.html#a8a3e96d3cc0663241a62b238fafcbadc">XJMP</a> (__epilogue_restores__ + 2 * (offset))</td></tr>
+<tr class="memitem:ab5ab35bc6b410c60dbdb3239c4e8c29c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ab5ab35bc6b410c60dbdb3239c4e8c29c">BIG_CODE</a>&#160;&#160;&#160;0</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a1c7bdfb1dd441a65fb9dc7423fc17f3a"><td class="memItemLeft" align="right" valign="top">Invalid X_movw arg endif&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a1c7bdfb1dd441a65fb9dc7423fc17f3a">if</a> ((.<a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a>)-(.<a class="el" href="macros_8h.html#a719792b80147f44b2d8d97ffa434dc81">L_movw_dst</a>)).if(((.<a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a>)|(.<a class="el" href="macros_8h.html#a719792b80147f44b2d8d97ffa434dc81">L_movw_dst</a>))&amp;0x01).if(((.L_movw_src)-(.L_movw_dst))&amp;0x80) mov(.L_movw_dst)+1</td></tr>
+<tr class="memitem:acc666cba5a78b7ee45130924d80ff3ac"><td class="memItemLeft" align="right" valign="top">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#acc666cba5a78b7ee45130924d80ff3ac">mov</a> (.<a class="el" href="macros_8h.html#a719792b80147f44b2d8d97ffa434dc81">L_movw_dst</a>)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:a719792b80147f44b2d8d97ffa434dc81"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a719792b80147f44b2d8d97ffa434dc81">L_movw_dst</a></td></tr>
+<tr class="memitem:a18158291ef3dea6a3b8e73154d7d0ca9"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a18158291ef3dea6a3b8e73154d7d0ca9">r0</a></td></tr>
+<tr class="memitem:a03bf694db1bca491ee1b67714601b846"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a03bf694db1bca491ee1b67714601b846">r1</a></td></tr>
+<tr class="memitem:a0f8ac18dc0c86549aeb832dda4e2aef0"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a0f8ac18dc0c86549aeb832dda4e2aef0">r2</a></td></tr>
+<tr class="memitem:a48c799f8430144567704a8f1ff4b9383"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a48c799f8430144567704a8f1ff4b9383">r3</a></td></tr>
+<tr class="memitem:a3b8fa7cb7a6da36307ab75bf99f61c44"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a3b8fa7cb7a6da36307ab75bf99f61c44">r4</a></td></tr>
+<tr class="memitem:a696c1657d5454d403fb6f9c46ed876be"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a696c1657d5454d403fb6f9c46ed876be">r5</a></td></tr>
+<tr class="memitem:abdc15e93ab1dfc3cf499e795cd895a51"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#abdc15e93ab1dfc3cf499e795cd895a51">r6</a></td></tr>
+<tr class="memitem:aac40d07399a3deb8f84a24f2aed15a09"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#aac40d07399a3deb8f84a24f2aed15a09">r7</a></td></tr>
+<tr class="memitem:a3c12be0edd28e6c53f21ccff71d6eafc"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a3c12be0edd28e6c53f21ccff71d6eafc">r8</a></td></tr>
+<tr class="memitem:a58aae87ee751028e25cebfaa5466ce48"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a58aae87ee751028e25cebfaa5466ce48">r9</a></td></tr>
+<tr class="memitem:a38ee495ac0c0a781c66ef4cd9b09cefe"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a38ee495ac0c0a781c66ef4cd9b09cefe">r10</a></td></tr>
+<tr class="memitem:a9577afdd0e90a3f0b223d545acda5ca9"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a9577afdd0e90a3f0b223d545acda5ca9">r11</a></td></tr>
+<tr class="memitem:a396660c01c22342c1aae3d112f2c6849"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a396660c01c22342c1aae3d112f2c6849">r12</a></td></tr>
+<tr class="memitem:a52f35800290439c13fb0d8a9ca7705ba"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a52f35800290439c13fb0d8a9ca7705ba">r13</a></td></tr>
+<tr class="memitem:a6cfd07c25657897089b355f1b64e7576"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a6cfd07c25657897089b355f1b64e7576">r14</a></td></tr>
+<tr class="memitem:a9c4791a68c2f462f42f8ae7586af10f6"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a9c4791a68c2f462f42f8ae7586af10f6">r15</a></td></tr>
+<tr class="memitem:ae5a075ca292a64617852b96f43ddb76f"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ae5a075ca292a64617852b96f43ddb76f">r16</a></td></tr>
+<tr class="memitem:acef978243e61bb0742366fd7c5bdd7aa"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#acef978243e61bb0742366fd7c5bdd7aa">r17</a></td></tr>
+<tr class="memitem:a0a38c7288bc9220784c7103924946193"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a0a38c7288bc9220784c7103924946193">r18</a></td></tr>
+<tr class="memitem:a1757dc45872b88909f818c1a2288b20a"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a1757dc45872b88909f818c1a2288b20a">r19</a></td></tr>
+<tr class="memitem:af0bf826fa7e63557513ab51b6ed3ba1b"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#af0bf826fa7e63557513ab51b6ed3ba1b">r20</a></td></tr>
+<tr class="memitem:a67015544b0fc6a8503d6bfe9f140673b"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a67015544b0fc6a8503d6bfe9f140673b">r21</a></td></tr>
+<tr class="memitem:ad46a0e2aa91f25b23568477111c8b335"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ad46a0e2aa91f25b23568477111c8b335">r22</a></td></tr>
+<tr class="memitem:a25da815617d8d03684c8a81466ca1e9c"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a25da815617d8d03684c8a81466ca1e9c">r23</a></td></tr>
+<tr class="memitem:ad8cd38bba51d5f19e6f37b1c1b1c1807"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ad8cd38bba51d5f19e6f37b1c1b1c1807">r24</a></td></tr>
+<tr class="memitem:a713b4ab271e6194a6acbed0ea9f61849"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a713b4ab271e6194a6acbed0ea9f61849">r25</a></td></tr>
+<tr class="memitem:ac158664d0977ed6d8ac14f0ca9a6f730"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ac158664d0977ed6d8ac14f0ca9a6f730">r26</a></td></tr>
+<tr class="memitem:ac6909ae9968643e81f6d5f7f964954bf"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ac6909ae9968643e81f6d5f7f964954bf">r27</a></td></tr>
+<tr class="memitem:aadc60960fb0d426901bff6806a258594"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#aadc60960fb0d426901bff6806a258594">r28</a></td></tr>
+<tr class="memitem:a76fcf3570ab837fd5920b03e893eb9bb"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a76fcf3570ab837fd5920b03e893eb9bb">r29</a></td></tr>
+<tr class="memitem:ad8938b0d48c32d6c20e21b4c0b8a9a64"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ad8938b0d48c32d6c20e21b4c0b8a9a64">r30</a></td></tr>
+<tr class="memitem:a804bd1b1ca0587634e5fd4e9d44afcd0"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a804bd1b1ca0587634e5fd4e9d44afcd0">reg</a></td></tr>
+<tr class="memitem:ad8ce1b8f27ef9ae0bb76e5eb4f5f1526"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a></td></tr>
+<tr class="memitem:af24f9e622006e155ba40ce2919968439"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#af24f9e622006e155ba40ce2919968439">R0</a></td></tr>
+<tr class="memitem:a225029e7f5c48b517ab68db610eb5be6"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a225029e7f5c48b517ab68db610eb5be6">R1</a></td></tr>
+<tr class="memitem:a07b1c65aa06d569e4cdac64d19217713"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a07b1c65aa06d569e4cdac64d19217713">R2</a></td></tr>
+<tr class="memitem:a5dad7b8e3cc18af06c6789a98f7b27b0"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a5dad7b8e3cc18af06c6789a98f7b27b0">R3</a></td></tr>
+<tr class="memitem:a2faddac7a72cd6cbc7532bea5ff926ef"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a2faddac7a72cd6cbc7532bea5ff926ef">R4</a></td></tr>
+<tr class="memitem:aa65f769938a9f5b27654af312f000be0"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#aa65f769938a9f5b27654af312f000be0">R5</a></td></tr>
+<tr class="memitem:a2eaa7e4a693a7c375ae9d600a3238216"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a2eaa7e4a693a7c375ae9d600a3238216">R6</a></td></tr>
+<tr class="memitem:aaf0d43a4021a4f17653b54508229653d"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#aaf0d43a4021a4f17653b54508229653d">R7</a></td></tr>
+<tr class="memitem:a87a7057fb48185694e2663041787e1db"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a87a7057fb48185694e2663041787e1db">R8</a></td></tr>
+<tr class="memitem:ad381211f3e7a2b9951dda748e1e6457d"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ad381211f3e7a2b9951dda748e1e6457d">R9</a></td></tr>
+<tr class="memitem:a3b241e4e913d87c88f7cfd5f8edba70f"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a3b241e4e913d87c88f7cfd5f8edba70f">R10</a></td></tr>
+<tr class="memitem:ab5f71575881c30691f63b5e7b5333fa5"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ab5f71575881c30691f63b5e7b5333fa5">R11</a></td></tr>
+<tr class="memitem:ac1d6e17d881e9b586cc6ad44c7770319"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ac1d6e17d881e9b586cc6ad44c7770319">R12</a></td></tr>
+<tr class="memitem:a94fb871f2605e9cce0cfebe4c2a16052"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a94fb871f2605e9cce0cfebe4c2a16052">R13</a></td></tr>
+<tr class="memitem:a696670b0153e0fccf50fc0e13cf7e60d"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a696670b0153e0fccf50fc0e13cf7e60d">R14</a></td></tr>
+<tr class="memitem:af86202450752ab01e8f8ffa9e1465327"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#af86202450752ab01e8f8ffa9e1465327">R15</a></td></tr>
+<tr class="memitem:a8ca2a70688fa88775a31266dde987fc7"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a8ca2a70688fa88775a31266dde987fc7">R16</a></td></tr>
+<tr class="memitem:afd3684fdf5b638d05ae5a84d2243a914"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#afd3684fdf5b638d05ae5a84d2243a914">R17</a></td></tr>
+<tr class="memitem:a98b5d5fd15e7de177867fe1d948e1a0a"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a98b5d5fd15e7de177867fe1d948e1a0a">R18</a></td></tr>
+<tr class="memitem:ab0a2e407b074a01c0fbca7d8ecb9b2f8"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ab0a2e407b074a01c0fbca7d8ecb9b2f8">R19</a></td></tr>
+<tr class="memitem:a5647a06405448540f70dfc5cf7712f27"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a5647a06405448540f70dfc5cf7712f27">R20</a></td></tr>
+<tr class="memitem:aea16f3ed031f4bb0a485bd214cc42776"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#aea16f3ed031f4bb0a485bd214cc42776">R21</a></td></tr>
+<tr class="memitem:a78863fa2e4f58b66673c62b638d3910c"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a78863fa2e4f58b66673c62b638d3910c">R22</a></td></tr>
+<tr class="memitem:a5159343c672442d2e4de0b6cbe834858"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a5159343c672442d2e4de0b6cbe834858">R23</a></td></tr>
+<tr class="memitem:a6e6c394492636743e41c24b8eb01009e"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a6e6c394492636743e41c24b8eb01009e">R24</a></td></tr>
+<tr class="memitem:a4a0a12f865a9359faacf049054ee40e7"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a4a0a12f865a9359faacf049054ee40e7">R25</a></td></tr>
+<tr class="memitem:a3e82856f9f996fa243a0b6468173e44b"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a3e82856f9f996fa243a0b6468173e44b">R26</a></td></tr>
+<tr class="memitem:a02c8f4167f05f4333d5b1b4e98ef90c1"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a02c8f4167f05f4333d5b1b4e98ef90c1">R27</a></td></tr>
+<tr class="memitem:aead6c34f15a54f6650c45dba4309432b"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#aead6c34f15a54f6650c45dba4309432b">R28</a></td></tr>
+<tr class="memitem:a610f002b46f400a2bebf6554724272ef"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a610f002b46f400a2bebf6554724272ef">R29</a></td></tr>
+<tr class="memitem:a24b9d03c2106940c713cc71f008ef0e2"><td class="memItemLeft" align="right" valign="top">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <br class="typebreak"/>
+<a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a24b9d03c2106940c713cc71f008ef0e2">R30</a></td></tr>
+<tr class="memitem:a83998f2145c833354888213a681ea40b"><td class="memItemLeft" align="right" valign="top">Invalid X_movw arg endif <br class="typebreak"/>
+<a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <br class="typebreak"/>
+<a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif <br class="typebreak"/>
+else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <br class="typebreak"/>
+endif endif endm macro X_lpm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> = <a class="el" href="macros_8h.html#a18158291ef3dea6a3b8e73154d7d0ca9">r0</a></td></tr>
+<tr class="memitem:aef7604983d780ab74142dc6e0704f0b3"><td class="memItemLeft" align="right" valign="top">Invalid X_movw arg endif <br class="typebreak"/>
+<a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <br class="typebreak"/>
+<a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif <br class="typebreak"/>
+else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <br class="typebreak"/>
+endif endif endm macro X_lpm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a></td></tr>
+<tr class="memitem:a1aa8f97c229253bc6bf53d33df363df3"><td class="memItemLeft" align="right" valign="top">Invalid X_movw arg endif <br class="typebreak"/>
+<a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <br class="typebreak"/>
+<a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif <br class="typebreak"/>
+else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <br class="typebreak"/>
+endif endif endm macro X_lpm <br class="typebreak"/>
+<a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a1aa8f97c229253bc6bf53d33df363df3">L_lpm_dst</a></td></tr>
+<tr class="memitem:a5fe5da3d0b8694b53c26b895f0fbaf85"><td class="memItemLeft" align="right" valign="top">Invalid <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> arg of X_lpm macro <br class="typebreak"/>
+endif&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a5fe5da3d0b8694b53c26b895f0fbaf85">L_lpm_src</a></td></tr>
+<tr class="memitem:a9ecdcebca23a0d8cb6593e3dcfdd50a2"><td class="memItemLeft" align="right" valign="top">Invalid <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> arg of X_lpm macro <br class="typebreak"/>
+endif&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a9ecdcebca23a0d8cb6593e3dcfdd50a2">z</a></td></tr>
+<tr class="memitem:a6dbecd4893d86b696a890a9b9d3c6d79"><td class="memItemLeft" align="right" valign="top">Invalid <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> arg of X_lpm macro <br class="typebreak"/>
+endif&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a6dbecd4893d86b696a890a9b9d3c6d79">Z</a></td></tr>
+<tr class="memitem:a1d4c471fbe9dfe1e95c79c35eede9371"><td class="memItemLeft" align="right" valign="top">Invalid <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> arg of X_lpm macro <br class="typebreak"/>
+endif <a class="el" href="macros_8h.html#a1c7bdfb1dd441a65fb9dc7423fc17f3a">if</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a1d4c471fbe9dfe1e95c79c35eede9371">L_lpm_src&lt; 2.if.L_lpm_dst==0lpm.elselpmmov.L_lpm_dst, r0.endif.else.if(.L_lpm_dst &gt;</a></td></tr>
+</table>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="a0e6fc492b674d6ccceccb06e3bbf907b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __tmp_reg__&#160;&#160;&#160;<a class="el" href="macros_8h.html#a18158291ef3dea6a3b8e73154d7d0ca9">r0</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00101">101</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff6bf0ff0fa3b5cbd23a8ae1131c87a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __USER_LABEL_PREFIX__&#160;&#160;&#160;_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00047">47</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afed1b0d4593d3b568a3d714ad3ac1aa5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __zero_reg__&#160;&#160;&#160;<a class="el" href="macros_8h.html#a03bf694db1bca491ee1b67714601b846">r1</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00105">105</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a23b3808d12342e40e7459e77fccb85b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _L&#160;&#160;&#160;$</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00055">55</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a12d024f7343710dfe919b23e56a70ea1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _R</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="macros_8h.html#ac1bd762df6f68795cfe6a980728bf233">CONCAT1</a>(__REGISTER_PREFIX__, x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00062">62</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af88efd7e95e5d89a8247464f7a6fdb39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _U</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="macros_8h.html#ac1bd762df6f68795cfe6a980728bf233">CONCAT1</a>(<a class="el" href="macros_8h.html#aff6bf0ff0fa3b5cbd23a8ae1131c87a9">__USER_LABEL_PREFIX__</a>, x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00060">60</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5ab35bc6b410c60dbdb3239c4e8c29c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BIG_CODE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00123">123</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac1bd762df6f68795cfe6a980728bf233"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONCAT1</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a2fef427b1927dac8bf612d1384f00503">CONCAT2</a>(a, b)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00057">57</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2fef427b1927dac8bf612d1384f00503"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONCAT2</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;a ## b</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00058">58</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9855db533b4b55f0914b558c1890a6ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EPILOGUE_RESTORES</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">offset</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a8a3e96d3cc0663241a62b238fafcbadc">XJMP</a> (__epilogue_restores__ + 2 * (offset))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00118">118</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a765c3138b0b1a4bd521e3becc75b1f6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PROLOGUE_SAVES</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">offset</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a8a3e96d3cc0663241a62b238fafcbadc">XJMP</a> (__prologue_saves__ + 2 * (offset))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00117">117</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a18158291ef3dea6a3b8e73154d7d0ca9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r0&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00067">67</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a03bf694db1bca491ee1b67714601b846"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r1&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00068">68</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a38ee495ac0c0a781c66ef4cd9b09cefe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r10&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r10)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00077">77</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9577afdd0e90a3f0b223d545acda5ca9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r11&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r11)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00078">78</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a396660c01c22342c1aae3d112f2c6849"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r12&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00079">79</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52f35800290439c13fb0d8a9ca7705ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r13&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r13)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00080">80</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6cfd07c25657897089b355f1b64e7576"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r14&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r14)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00081">81</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c4791a68c2f462f42f8ae7586af10f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r15&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r15)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00082">82</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae5a075ca292a64617852b96f43ddb76f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r16&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r16)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00083">83</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acef978243e61bb0742366fd7c5bdd7aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r17&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r17)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00084">84</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a38c7288bc9220784c7103924946193"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r18&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r18)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00085">85</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1757dc45872b88909f818c1a2288b20a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r19&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r19)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00086">86</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f8ac18dc0c86549aeb832dda4e2aef0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r2&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00069">69</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0bf826fa7e63557513ab51b6ed3ba1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r20&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r20)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00087">87</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a67015544b0fc6a8503d6bfe9f140673b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r21&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r21)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00088">88</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad46a0e2aa91f25b23568477111c8b335"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r22&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r22)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00089">89</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a25da815617d8d03684c8a81466ca1e9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r23&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r23)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00090">90</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8cd38bba51d5f19e6f37b1c1b1c1807"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r24&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r24)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00091">91</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a713b4ab271e6194a6acbed0ea9f61849"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r25&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r25)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00092">92</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac158664d0977ed6d8ac14f0ca9a6f730"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r26&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r26)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00093">93</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6909ae9968643e81f6d5f7f964954bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r27&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r27)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00094">94</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aadc60960fb0d426901bff6806a258594"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r28&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r28)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00095">95</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76fcf3570ab837fd5920b03e893eb9bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r29&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r29)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00096">96</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48c799f8430144567704a8f1ff4b9383"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r3&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00070">70</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8938b0d48c32d6c20e21b4c0b8a9a64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Registers and are inhibited as X_lpm <a class="el" href="macros_8h.html#a6dbecd4893d86b696a890a9b9d3c6d79">Z</a> <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> endif lpm <a class="el" href="macros_8h.html#a1c7bdfb1dd441a65fb9dc7423fc17f3a">if</a> <a class="el" href="macros_8h.html#a1aa8f97c229253bc6bf53d33df363df3">L_lpm_dst</a> <a class="el" href="macros_8h.html#acc666cba5a78b7ee45130924d80ff3ac">mov</a> <a class="el" href="macros_8h.html#a18158291ef3dea6a3b8e73154d7d0ca9">r0</a> endif adiw endif endm macro LPM_R0_ZPLUS_INIT hhi endm macro LPM_R0_ZPLUS_NEXT hhi lpm adiw r30&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r30)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00097">97</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc3dd658b733702d244acb9f65e51ed6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define r31&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r31)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00098">98</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b8fa7cb7a6da36307ab75bf99f61c44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r4&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r4)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00071">71</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a696c1657d5454d403fb6f9c46ed876be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r5&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00072">72</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abdc15e93ab1dfc3cf499e795cd895a51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r6&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00073">73</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac40d07399a3deb8f84a24f2aed15a09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r7&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00074">74</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c12be0edd28e6c53f21ccff71d6eafc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r8&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r8)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00075">75</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a58aae87ee751028e25cebfaa5466ce48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r9&#160;&#160;&#160;<a class="el" href="macros_8h.html#a12d024f7343710dfe919b23e56a70ea1">_R</a>(r9)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00076">76</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3808121789dae4463f1c0aeab301f09b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XCALL&#160;&#160;&#160;rcall</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00113">113</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a3e96d3cc0663241a62b238fafcbadc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define XJMP&#160;&#160;&#160;rjmp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00112">112</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="a1c7bdfb1dd441a65fb9dc7423fc17f3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif if </td>
+          <td>(</td>
+          <td class="paramtype">(.<a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a>)-(.<a class="el" href="macros_8h.html#a719792b80147f44b2d8d97ffa434dc81">L_movw_dst</a>)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc666cba5a78b7ee45130924d80ff3ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> mov </td>
+          <td>(</td>
+          <td class="paramtype">.&#160;</td>
+          <td class="paramname"><em>L_movw_dst</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Dokumentacja zmiennych</h2>
+<a class="anchor" id="a83998f2145c833354888213a681ea40b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm dst = <a class="el" href="macros_8h.html#a18158291ef3dea6a3b8e73154d7d0ca9">r0</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00236">236</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1aa8f97c229253bc6bf53d33df363df3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Registers and are inhibited as X_lpm <a class="el" href="macros_8h.html#a6dbecd4893d86b696a890a9b9d3c6d79">Z</a> <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> endif lpm <a class="el" href="macros_8h.html#a1c7bdfb1dd441a65fb9dc7423fc17f3a">if</a> L_lpm_dst <a class="el" href="macros_8h.html#acc666cba5a78b7ee45130924d80ff3ac">mov</a> L_lpm_dst</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Wartość początkowa:</b><div class="fragment"><div class="line"> .L_lpm_n</div>
+<div class="line">    .endif</div>
+<div class="line">    .L_lpm_n = .L_lpm_n + 1</div>
+<div class="line">  .endr</div>
+<div class="line"></div>
+<div class="line">  .L_lpm_n = 0</div>
+<div class="line">  .irp  <a class="code" href="macros_8h.html#a804bd1b1ca0587634e5fd4e9d44afcd0">reg</a></div>
+</div><!-- fragment -->
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00247">247</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5fe5da3d0b8694b53c26b895f0fbaf85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> arg of X_lpm macro endif <a class="el" href="macros_8h.html#a6dbecd4893d86b696a890a9b9d3c6d79">Z</a> ifc <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> L_lpm_src</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Wartość początkowa:</b><div class="fragment"><div class="line"> -1</div>
+<div class="line">  .L_lpm_n = 0</div>
+<div class="line">  .irp  <a class="code" href="macros_8h.html#a804bd1b1ca0587634e5fd4e9d44afcd0">reg</a></div>
+</div><!-- fragment -->
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00278">278</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d4c471fbe9dfe1e95c79c35eede9371"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> arg of X_lpm macro endif <a class="el" href="macros_8h.html#a1c7bdfb1dd441a65fb9dc7423fc17f3a">if</a> <a class="el" href="macros_8h.html#a5fe5da3d0b8694b53c26b895f0fbaf85">L_lpm_src</a>&lt; 2.<a class="el" href="macros_8h.html#a1aa8f97c229253bc6bf53d33df363df3">if.L_lpm_dst</a>==0lpm.elselpmmov.L_lpm_dst, r0.endif.else.if(.L_lpm_dst &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Wartość początkowa:</b><div class="fragment"><div class="line"> 30)</div>
+<div class="line">      .err</div>
+</div><!-- fragment -->
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00304">304</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a719792b80147f44b2d8d97ffa434dc81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> R31 ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> L_movw_dst</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Wartość początkowa:</b><div class="fragment"><div class="line"> -1</div>
+<div class="line">    .L_movw_src = -1</div>
+<div class="line">    .L_movw_n = 0</div>
+<div class="line">    .irp  <a class="code" href="macros_8h.html#a804bd1b1ca0587634e5fd4e9d44afcd0">reg</a></div>
+</div><!-- fragment -->
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8ce1b8f27ef9ae0bb76e5eb4f5f1526"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">macro X_movw <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> R31 ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> <a class="el" href="macros_8h.html#aef7604983d780ab74142dc6e0704f0b3">src</a> L_movw_src</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Wartość początkowa:</b><div class="fragment"><div class="line"> .L_movw_n</div>
+<div class="line">        .endif</div>
+<div class="line">        .L_movw_n = .L_movw_n + 1</div>
+<div class="line">    .endr</div>
+<div class="line">    .L_movw_n = 0</div>
+<div class="line">    .irp  <a class="code" href="macros_8h.html#a804bd1b1ca0587634e5fd4e9d44afcd0">reg</a></div>
+</div><!-- fragment -->
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a18158291ef3dea6a3b8e73154d7d0ca9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af24f9e622006e155ba40ce2919968439"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a03bf694db1bca491ee1b67714601b846"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a225029e7f5c48b517ab68db610eb5be6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a38ee495ac0c0a781c66ef4cd9b09cefe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b241e4e913d87c88f7cfd5f8edba70f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9577afdd0e90a3f0b223d545acda5ca9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5f71575881c30691f63b5e7b5333fa5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a396660c01c22342c1aae3d112f2c6849"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac1d6e17d881e9b586cc6ad44c7770319"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52f35800290439c13fb0d8a9ca7705ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a94fb871f2605e9cce0cfebe4c2a16052"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6cfd07c25657897089b355f1b64e7576"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a696670b0153e0fccf50fc0e13cf7e60d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c4791a68c2f462f42f8ae7586af10f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af86202450752ab01e8f8ffa9e1465327"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae5a075ca292a64617852b96f43ddb76f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ca2a70688fa88775a31266dde987fc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acef978243e61bb0742366fd7c5bdd7aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd3684fdf5b638d05ae5a84d2243a914"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a38c7288bc9220784c7103924946193"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a98b5d5fd15e7de177867fe1d948e1a0a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1757dc45872b88909f818c1a2288b20a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab0a2e407b074a01c0fbca7d8ecb9b2f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f8ac18dc0c86549aeb832dda4e2aef0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a07b1c65aa06d569e4cdac64d19217713"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0bf826fa7e63557513ab51b6ed3ba1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5647a06405448540f70dfc5cf7712f27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a67015544b0fc6a8503d6bfe9f140673b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea16f3ed031f4bb0a485bd214cc42776"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad46a0e2aa91f25b23568477111c8b335"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a78863fa2e4f58b66673c62b638d3910c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a25da815617d8d03684c8a81466ca1e9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5159343c672442d2e4de0b6cbe834858"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8cd38bba51d5f19e6f37b1c1b1c1807"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e6c394492636743e41c24b8eb01009e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a713b4ab271e6194a6acbed0ea9f61849"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a0a12f865a9359faacf049054ee40e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac158664d0977ed6d8ac14f0ca9a6f730"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r26</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e82856f9f996fa243a0b6468173e44b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R26</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6909ae9968643e81f6d5f7f964954bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02c8f4167f05f4333d5b1b4e98ef90c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aadc60960fb0d426901bff6806a258594"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aead6c34f15a54f6650c45dba4309432b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76fcf3570ab837fd5920b03e893eb9bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r29</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a610f002b46f400a2bebf6554724272ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R29</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48c799f8430144567704a8f1ff4b9383"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5dad7b8e3cc18af06c6789a98f7b27b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8938b0d48c32d6c20e21b4c0b8a9a64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Registers and are inhibited as X_lpm <a class="el" href="macros_8h.html#a6dbecd4893d86b696a890a9b9d3c6d79">Z</a> <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> endif lpm <a class="el" href="macros_8h.html#a1c7bdfb1dd441a65fb9dc7423fc17f3a">if</a> <a class="el" href="macros_8h.html#a1aa8f97c229253bc6bf53d33df363df3">L_lpm_dst</a> <a class="el" href="macros_8h.html#acc666cba5a78b7ee45130924d80ff3ac">mov</a> <a class="el" href="macros_8h.html#a18158291ef3dea6a3b8e73154d7d0ca9">r0</a> endif adiw endif endm macro LPM_R0_ZPLUS_INIT hhi endm macro LPM_R0_ZPLUS_NEXT hhi lpm adiw r30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a24b9d03c2106940c713cc71f008ef0e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b8fa7cb7a6da36307ab75bf99f61c44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2faddac7a72cd6cbc7532bea5ff926ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a696c1657d5454d403fb6f9c46ed876be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa65f769938a9f5b27654af312f000be0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abdc15e93ab1dfc3cf499e795cd895a51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2eaa7e4a693a7c375ae9d600a3238216"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac40d07399a3deb8f84a24f2aed15a09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf0d43a4021a4f17653b54508229653d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c12be0edd28e6c53f21ccff71d6eafc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a87a7057fb48185694e2663041787e1db"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a58aae87ee751028e25cebfaa5466ce48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm r9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad381211f3e7a2b9951dda748e1e6457d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm <a class="el" href="macros_8h.html#afc3dd658b733702d244acb9f65e51ed6">r31</a> ifc <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> R9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00158">158</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a804bd1b1ca0587634e5fd4e9d44afcd0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> arg of X_lpm macro endif <a class="el" href="macros_8h.html#a6dbecd4893d86b696a890a9b9d3c6d79">Z</a> ifc reg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00147">147</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef7604983d780ab74142dc6e0704f0b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid X_movw arg endif <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif else <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> <a class="el" href="macros_8h.html#ad8ce1b8f27ef9ae0bb76e5eb4f5f1526">L_movw_src</a> endif endif endm macro X_lpm src</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Wartość początkowa:</b><div class="fragment"><div class="line"><a class="code" href="macros_8h.html#a6dbecd4893d86b696a890a9b9d3c6d79">Z</a></div>
+<div class="line"></div>
+<div class="line">  </div>
+<div class="line">  .L_lpm_dst = -1</div>
+<div class="line"></div>
+<div class="line">  .L_lpm_n = 0</div>
+<div class="line">  .irp  <a class="code" href="macros_8h.html#a804bd1b1ca0587634e5fd4e9d44afcd0">reg</a></div>
+</div><!-- fragment -->
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00236">236</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ecdcebca23a0d8cb6593e3dcfdd50a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> arg of X_lpm macro endif z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00278">278</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6dbecd4893d86b696a890a9b9d3c6d79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Invalid <a class="el" href="macros_8h.html#a83998f2145c833354888213a681ea40b">dst</a> arg of X_lpm macro endif Z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="macros_8h_source.html#l00278">278</a> pliku <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="macros_8h.html">macros.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:58:49 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

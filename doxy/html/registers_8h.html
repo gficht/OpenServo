@@ -1,0 +1,1600 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku registers.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="modules.html"><span>Moduły</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('registers_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku registers.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="registers_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:abacf9cc9a317e1a487d99330e8cd2110"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#abacf9cc9a317e1a487d99330e8cd2110">REG_DEVICE_TYPE</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memitem:a1e08e50000570fb8e87b136905214ea8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a1e08e50000570fb8e87b136905214ea8">REG_DEVICE_SUBTYPE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memitem:ae57a3f2b001d584f378d53947466a56f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#ae57a3f2b001d584f378d53947466a56f">REG_VERSION_MAJOR</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memitem:a71bec643ebf672b20d0f92775f7cc3a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a71bec643ebf672b20d0f92775f7cc3a0">REG_VERSION_MINOR</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memitem:af7933dab07440b3d6d7168238f0dd9cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#af7933dab07440b3d6d7168238f0dd9cf">REG_FLAGS_HI</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memitem:a196ff8b454bb2a2cf5777814aedaba5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a196ff8b454bb2a2cf5777814aedaba5e">REG_FLAGS_LO</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="memitem:a307787aaa130840baea0314d9de64c8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a307787aaa130840baea0314d9de64c8c">REG_TIMER_HI</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="memitem:ae33cceb42833c5a4fcd305266dc98d81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#ae33cceb42833c5a4fcd305266dc98d81">REG_TIMER_LO</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="memitem:aefedc13294bf7cbb72b11ee02d8e2b43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#aefedc13294bf7cbb72b11ee02d8e2b43">REG_POSITION_HI</a>&#160;&#160;&#160;0x08</td></tr>
+<tr class="memitem:a3a6c69a2e53039889d7d3cff4fe8b2dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a3a6c69a2e53039889d7d3cff4fe8b2dc">REG_POSITION_LO</a>&#160;&#160;&#160;0x09</td></tr>
+<tr class="memitem:a0ba8dbdee1f07b14aca450ebe30a00d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a0ba8dbdee1f07b14aca450ebe30a00d4">REG_VELOCITY_HI</a>&#160;&#160;&#160;0x0A</td></tr>
+<tr class="memitem:acb7378d833f227369cb67dfc769915ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#acb7378d833f227369cb67dfc769915ea">REG_VELOCITY_LO</a>&#160;&#160;&#160;0x0B</td></tr>
+<tr class="memitem:aa15d1b437298c95558c32e15f1c5e188"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#aa15d1b437298c95558c32e15f1c5e188">REG_POWER_HI</a>&#160;&#160;&#160;0x0C</td></tr>
+<tr class="memitem:a69a93f22a713a309f41e23a8d728e083"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a69a93f22a713a309f41e23a8d728e083">REG_POWER_LO</a>&#160;&#160;&#160;0x0D</td></tr>
+<tr class="memitem:ae61da0c85e2949c372b286d10a870174"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#ae61da0c85e2949c372b286d10a870174">REG_PWM_DIRA</a>&#160;&#160;&#160;0x0E</td></tr>
+<tr class="memitem:add869b129d1d025bb82d444c821c83e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#add869b129d1d025bb82d444c821c83e9">REG_PWM_DIRB</a>&#160;&#160;&#160;0x0F</td></tr>
+<tr class="memitem:a445a52028238cdd60d6bc748f2d7bc20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a445a52028238cdd60d6bc748f2d7bc20">REG_SEEK_POSITION_HI</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="memitem:a0db5ccd07201a9f148eec17f44116889"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a0db5ccd07201a9f148eec17f44116889">REG_SEEK_POSITION_LO</a>&#160;&#160;&#160;0x11</td></tr>
+<tr class="memitem:a435a2ba3bbe254832f1b63e405f90609"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a435a2ba3bbe254832f1b63e405f90609">REG_SEEK_VELOCITY_HI</a>&#160;&#160;&#160;0x12</td></tr>
+<tr class="memitem:a999594da1a68e5f44bcc9a8ba6108c5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a999594da1a68e5f44bcc9a8ba6108c5d">REG_SEEK_VELOCITY_LO</a>&#160;&#160;&#160;0x13</td></tr>
+<tr class="memitem:a632e3fa1b611cd38801c066f92fa391d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a632e3fa1b611cd38801c066f92fa391d">REG_VOLTAGE_HI</a>&#160;&#160;&#160;0x14</td></tr>
+<tr class="memitem:a1d4605be9e91ea5e578d17893841b89a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a1d4605be9e91ea5e578d17893841b89a">REG_VOLTAGE_LO</a>&#160;&#160;&#160;0x15</td></tr>
+<tr class="memitem:af19522174185009323cc1499b4a22cb2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#af19522174185009323cc1499b4a22cb2">REG_CURVE_RESERVED</a>&#160;&#160;&#160;0x16</td></tr>
+<tr class="memitem:a40239dc23bed6335c515605053cb782b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a40239dc23bed6335c515605053cb782b">REG_CURVE_BUFFER</a>&#160;&#160;&#160;0x17</td></tr>
+<tr class="memitem:ab8c8deda8a821830a85a6baf35944a42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#ab8c8deda8a821830a85a6baf35944a42">REG_CURVE_DELTA_HI</a>&#160;&#160;&#160;0x18</td></tr>
+<tr class="memitem:a7a22c1b08761e444266d8afbf465e08e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a7a22c1b08761e444266d8afbf465e08e">REG_CURVE_DELTA_LO</a>&#160;&#160;&#160;0x19</td></tr>
+<tr class="memitem:ac17e1e4b3eecca7f678a2d465c1977d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#ac17e1e4b3eecca7f678a2d465c1977d1">REG_CURVE_POSITION_HI</a>&#160;&#160;&#160;0x1A</td></tr>
+<tr class="memitem:a7bb5b9afbbaaeeeefcd55adae4584aac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a7bb5b9afbbaaeeeefcd55adae4584aac">REG_CURVE_POSITION_LO</a>&#160;&#160;&#160;0x1B</td></tr>
+<tr class="memitem:a2a7bd4d12b7fb8df6040ac2dd8503604"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a2a7bd4d12b7fb8df6040ac2dd8503604">REG_CURVE_IN_VELOCITY_HI</a>&#160;&#160;&#160;0x1C</td></tr>
+<tr class="memitem:a4b7b048e14ad0013819c6aff0ee87465"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a4b7b048e14ad0013819c6aff0ee87465">REG_CURVE_IN_VELOCITY_LO</a>&#160;&#160;&#160;0x1D</td></tr>
+<tr class="memitem:ac3ed7f6e82b5dd9ec97659107d16f83b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#ac3ed7f6e82b5dd9ec97659107d16f83b">REG_CURVE_OUT_VELOCITY_HI</a>&#160;&#160;&#160;0x1E</td></tr>
+<tr class="memitem:a15a6afdf131d4727675dbb543ed618bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a15a6afdf131d4727675dbb543ed618bf">REG_CURVE_OUT_VELOCITY_LO</a>&#160;&#160;&#160;0x1F</td></tr>
+<tr class="memitem:aea1079173619dc6f4c2250b1e10b4c52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#aea1079173619dc6f4c2250b1e10b4c52">REG_TWI_ADDRESS</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="memitem:a9fe3c0497ed3f43610f0719a1c5dbfce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a9fe3c0497ed3f43610f0719a1c5dbfce">REG_PID_DEADBAND</a>&#160;&#160;&#160;0x21</td></tr>
+<tr class="memitem:af96bcf19ea576c18f276a42bf49008cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#af96bcf19ea576c18f276a42bf49008cc">REG_PID_PGAIN_HI</a>&#160;&#160;&#160;0x22</td></tr>
+<tr class="memitem:a9dc1436c3b1ac6a454af49c5588d1a1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a9dc1436c3b1ac6a454af49c5588d1a1d">REG_PID_PGAIN_LO</a>&#160;&#160;&#160;0x23</td></tr>
+<tr class="memitem:aeb36aa4a1695caa44a4e29195a7063bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#aeb36aa4a1695caa44a4e29195a7063bc">REG_PID_DGAIN_HI</a>&#160;&#160;&#160;0x24</td></tr>
+<tr class="memitem:af1451996a332900d3b22101d513a8c50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#af1451996a332900d3b22101d513a8c50">REG_PID_DGAIN_LO</a>&#160;&#160;&#160;0x25</td></tr>
+<tr class="memitem:adb04a3964a04991cf52c06b1a814b38e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#adb04a3964a04991cf52c06b1a814b38e">REG_PID_IGAIN_HI</a>&#160;&#160;&#160;0x26</td></tr>
+<tr class="memitem:a083a7de0a571a29a2a797b9ef735de8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a083a7de0a571a29a2a797b9ef735de8c">REG_PID_IGAIN_LO</a>&#160;&#160;&#160;0x27</td></tr>
+<tr class="memitem:ab075f005f7a933e8ad3623fdf452c9af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#ab075f005f7a933e8ad3623fdf452c9af">REG_PWM_FREQ_DIVIDER_HI</a>&#160;&#160;&#160;0x28</td></tr>
+<tr class="memitem:a72bc114d1422c39404c72ff191d572da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a72bc114d1422c39404c72ff191d572da">REG_PWM_FREQ_DIVIDER_LO</a>&#160;&#160;&#160;0x29</td></tr>
+<tr class="memitem:a4057f850fd9b0870d1d25f047fa47147"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a4057f850fd9b0870d1d25f047fa47147">REG_MIN_SEEK_HI</a>&#160;&#160;&#160;0x2A</td></tr>
+<tr class="memitem:af895680d43595c4971277de44651f0cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#af895680d43595c4971277de44651f0cd">REG_MIN_SEEK_LO</a>&#160;&#160;&#160;0x2B</td></tr>
+<tr class="memitem:ad33d318398d6d9212ffda3302e333667"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#ad33d318398d6d9212ffda3302e333667">REG_MAX_SEEK_HI</a>&#160;&#160;&#160;0x2C</td></tr>
+<tr class="memitem:a9c22bbf6c47239cf536841620f947cc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a9c22bbf6c47239cf536841620f947cc8">REG_MAX_SEEK_LO</a>&#160;&#160;&#160;0x2D</td></tr>
+<tr class="memitem:a512d65e283c5e4481353eba8a226fd76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a512d65e283c5e4481353eba8a226fd76">REG_REVERSE_SEEK</a>&#160;&#160;&#160;0x2E</td></tr>
+<tr class="memitem:aefc2d61f457b2771f1abc8351e2ea1f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#aefc2d61f457b2771f1abc8351e2ea1f6">REG_RESERVED_2F</a>&#160;&#160;&#160;0x2F</td></tr>
+<tr class="memitem:ad1d070409e2d636f82ca095eb1c75bac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#ad1d070409e2d636f82ca095eb1c75bac">MIN_READ_ONLY_REGISTER</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memitem:afcbd1fff7fdf5acbe82e32e28d002e4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#afcbd1fff7fdf5acbe82e32e28d002e4e">MAX_READ_ONLY_REGISTER</a>&#160;&#160;&#160;0x0F</td></tr>
+<tr class="memitem:a3cc61b84440736f1d660fdfaae4ea0ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a3cc61b84440736f1d660fdfaae4ea0ea">MIN_READ_WRITE_REGISTER</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="memitem:a2f297011277d43f87cf84146d99a5848"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a2f297011277d43f87cf84146d99a5848">MAX_READ_WRITE_REGISTER</a>&#160;&#160;&#160;0x1F</td></tr>
+<tr class="memitem:a243b6bae9e45d99d703054da9c51d38c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a243b6bae9e45d99d703054da9c51d38c">MIN_WRITE_PROTECT_REGISTER</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="memitem:afcfb796f1c06140f959f923eeca4592e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#afcfb796f1c06140f959f923eeca4592e">MAX_WRITE_PROTECT_REGISTER</a>&#160;&#160;&#160;0x2F</td></tr>
+<tr class="memitem:ad060606f02727cfcb4fde3ab086c0d54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#ad060606f02727cfcb4fde3ab086c0d54">MIN_UNUSED_REGISTER</a>&#160;&#160;&#160;0x30</td></tr>
+<tr class="memitem:a533bedfba0d98587e7c93b2443076d05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a533bedfba0d98587e7c93b2443076d05">MAX_UNUSED_REGISTER</a>&#160;&#160;&#160;0x5F</td></tr>
+<tr class="memitem:a648219fbc7bc53777fca1dcacde4c556"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a648219fbc7bc53777fca1dcacde4c556">MIN_REDIRECT_REGISTER</a>&#160;&#160;&#160;0x60</td></tr>
+<tr class="memitem:a3b7b3d6499f0c44bfb1d7ceee4763bc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a3b7b3d6499f0c44bfb1d7ceee4763bc7">MAX_REDIRECT_REGISTER</a>&#160;&#160;&#160;0x6F</td></tr>
+<tr class="memitem:a293aafbec76a61f80371f63676011cdf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a293aafbec76a61f80371f63676011cdf">MIN_REDIRECTED_REGISTER</a>&#160;&#160;&#160;0x70</td></tr>
+<tr class="memitem:a5d77b6a728c620bfd6e5b65262bcbf26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a5d77b6a728c620bfd6e5b65262bcbf26">MAX_REDIRECTED_REGISTER</a>&#160;&#160;&#160;0x7F</td></tr>
+<tr class="memitem:a872bdec8b3471262a8a0131d7dc0fc0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a872bdec8b3471262a8a0131d7dc0fc0d">REGISTER_COUNT</a>&#160;&#160;&#160;(<a class="el" href="registers_8h.html#ad060606f02727cfcb4fde3ab086c0d54">MIN_UNUSED_REGISTER</a> + 16)</td></tr>
+<tr class="memitem:a2335970a48961f1ae2b526456256eda5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a2335970a48961f1ae2b526456256eda5">WRITE_PROTECT_REGISTER_COUNT</a>&#160;&#160;&#160;(<a class="el" href="registers_8h.html#afcfb796f1c06140f959f923eeca4592e">MAX_WRITE_PROTECT_REGISTER</a> - <a class="el" href="registers_8h.html#a243b6bae9e45d99d703054da9c51d38c">MIN_WRITE_PROTECT_REGISTER</a> + 1)</td></tr>
+<tr class="memitem:a03bff0d52dfce9187744d260f79694aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a03bff0d52dfce9187744d260f79694aa">REDIRECT_REGISTER_COUNT</a>&#160;&#160;&#160;(<a class="el" href="registers_8h.html#a3b7b3d6499f0c44bfb1d7ceee4763bc7">MAX_REDIRECT_REGISTER</a> - <a class="el" href="registers_8h.html#a648219fbc7bc53777fca1dcacde4c556">MIN_REDIRECT_REGISTER</a> + 1)</td></tr>
+<tr class="memitem:aacb2216a754f408ff37b684524230864"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#aacb2216a754f408ff37b684524230864">FLAGS_HI_RESERVED_07</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="memitem:af90b5add5cb85c0d4982cc2f4db18776"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#af90b5add5cb85c0d4982cc2f4db18776">FLAGS_HI_RESERVED_06</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="memitem:af45efde502cab7f1fc48544d15d59fa9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#af45efde502cab7f1fc48544d15d59fa9">FLAGS_HI_RESERVED_05</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="memitem:aae172d4fbe8e6b6639188752de504e7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#aae172d4fbe8e6b6639188752de504e7d">FLAGS_HI_RESERVED_04</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memitem:adeec3fe0ee9d0138c6326a7664696719"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#adeec3fe0ee9d0138c6326a7664696719">FLAGS_HI_RESERVED_03</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memitem:ad6b46cf7e4a39bd5a77bb37f521726ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#ad6b46cf7e4a39bd5a77bb37f521726ac">FLAGS_HI_RESERVED_02</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memitem:ad8230ab2da619da374115023cc4f8eba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#ad8230ab2da619da374115023cc4f8eba">FLAGS_HI_RESERVED_01</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memitem:a5049bc424a7d2c4c1e057c3601f2b529"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a5049bc424a7d2c4c1e057c3601f2b529">FLAGS_HI_RESERVED_00</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memitem:a7a29c4be31ae7535dcbd7386d9cb0fc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a7a29c4be31ae7535dcbd7386d9cb0fc5">FLAGS_LO_RESERVED_07</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="memitem:a09294f1524a080138d1450d1ec358860"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a09294f1524a080138d1450d1ec358860">FLAGS_LO_RESERVED_06</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="memitem:aa3545c483378c13aa0f210349cffbff7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#aa3545c483378c13aa0f210349cffbff7">FLAGS_LO_RESERVED_05</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="memitem:a6843eb0c0460ca0171e8fcd2fc92664d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a6843eb0c0460ca0171e8fcd2fc92664d">FLAGS_LO_RESERVED_04</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memitem:a3204c649589636c4668f2bb241ecec91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a3204c649589636c4668f2bb241ecec91">FLAGS_LO_RESERVED_03</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memitem:a80c78ac036eedc30cc874dac3d45cfca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a80c78ac036eedc30cc874dac3d45cfca">FLAGS_LO_MOTION_ENABLED</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memitem:a3b6da2a75f993f20ec8999012a1f7be3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a3b6da2a75f993f20ec8999012a1f7be3">FLAGS_LO_WRITE_ENABLED</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memitem:aa1158632d7f0ea4ad0f6a2e4e5253f71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#aa1158632d7f0ea4ad0f6a2e4e5253f71">FLAGS_LO_PWM_ENABLED</a>&#160;&#160;&#160;0x00</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a9857a49018487746c898aa6a2c38ccbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a9857a49018487746c898aa6a2c38ccbb">registers_init</a> (void)</td></tr>
+<tr class="memitem:aeaa2391a9f903aefcde752f3c0be93a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#aeaa2391a9f903aefcde752f3c0be93a6">registers_defaults</a> (void)</td></tr>
+<tr class="memitem:af8b091233149e27ba0ce0995fee7756b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#af8b091233149e27ba0ce0995fee7756b">registers_read_word</a> (uint8_t address_hi, uint8_t address_lo)</td></tr>
+<tr class="memitem:a2a7b20190fe395643f0d180422422e78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a2a7b20190fe395643f0d180422422e78">registers_write_word</a> (uint8_t address_hi, uint8_t address_lo, uint16_t value)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:a8f5f78749168c9713a13d33e502154c5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="registers_8h.html#a8f5f78749168c9713a13d33e502154c5">registers</a> [<a class="el" href="registers_8h.html#a872bdec8b3471262a8a0131d7dc0fc0d">REGISTER_COUNT</a>]</td></tr>
+</table>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="a5049bc424a7d2c4c1e057c3601f2b529"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_HI_RESERVED_00&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00172">172</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8230ab2da619da374115023cc4f8eba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_HI_RESERVED_01&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00171">171</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6b46cf7e4a39bd5a77bb37f521726ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_HI_RESERVED_02&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00170">170</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adeec3fe0ee9d0138c6326a7664696719"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_HI_RESERVED_03&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00169">169</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aae172d4fbe8e6b6639188752de504e7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_HI_RESERVED_04&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00168">168</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af45efde502cab7f1fc48544d15d59fa9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_HI_RESERVED_05&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00167">167</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af90b5add5cb85c0d4982cc2f4db18776"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_HI_RESERVED_06&#160;&#160;&#160;0x06</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00166">166</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aacb2216a754f408ff37b684524230864"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_HI_RESERVED_07&#160;&#160;&#160;0x07</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00165">165</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80c78ac036eedc30cc874dac3d45cfca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_LO_MOTION_ENABLED&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00179">179</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="motion_8c_source.html#l00210">motion_next()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1158632d7f0ea4ad0f6a2e4e5253f71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_LO_PWM_ENABLED&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00181">181</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pwm_8c_source.html#l00252">pwm_update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3204c649589636c4668f2bb241ecec91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_LO_RESERVED_03&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00178">178</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6843eb0c0460ca0171e8fcd2fc92664d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_LO_RESERVED_04&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00177">177</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3545c483378c13aa0f210349cffbff7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_LO_RESERVED_05&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00176">176</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a09294f1524a080138d1450d1ec358860"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_LO_RESERVED_06&#160;&#160;&#160;0x06</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00175">175</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a29c4be31ae7535dcbd7386d9cb0fc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_LO_RESERVED_07&#160;&#160;&#160;0x07</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00174">174</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b6da2a75f993f20ec8999012a1f7be3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS_LO_WRITE_ENABLED&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00180">180</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afcbd1fff7fdf5acbe82e32e28d002e4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_READ_ONLY_REGISTER&#160;&#160;&#160;0x0F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00137">137</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f297011277d43f87cf84146d99a5848"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_READ_WRITE_REGISTER&#160;&#160;&#160;0x1F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00139">139</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b7b3d6499f0c44bfb1d7ceee4763bc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_REDIRECT_REGISTER&#160;&#160;&#160;0x6F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00145">145</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d77b6a728c620bfd6e5b65262bcbf26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_REDIRECTED_REGISTER&#160;&#160;&#160;0x7F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00147">147</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a533bedfba0d98587e7c93b2443076d05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_UNUSED_REGISTER&#160;&#160;&#160;0x5F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00143">143</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afcfb796f1c06140f959f923eeca4592e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_WRITE_PROTECT_REGISTER&#160;&#160;&#160;0x2F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00141">141</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1d070409e2d636f82ca095eb1c75bac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_READ_ONLY_REGISTER&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00136">136</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3cc61b84440736f1d660fdfaae4ea0ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_READ_WRITE_REGISTER&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00138">138</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a648219fbc7bc53777fca1dcacde4c556"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_REDIRECT_REGISTER&#160;&#160;&#160;0x60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00144">144</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a293aafbec76a61f80371f63676011cdf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_REDIRECTED_REGISTER&#160;&#160;&#160;0x70</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00146">146</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad060606f02727cfcb4fde3ab086c0d54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_UNUSED_REGISTER&#160;&#160;&#160;0x30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00142">142</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a243b6bae9e45d99d703054da9c51d38c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_WRITE_PROTECT_REGISTER&#160;&#160;&#160;0x20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00140">140</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="eeprom_8c_source.html#l00081">eeprom_restore_registers()</a>, <a class="el" href="eeprom_8c_source.html#l00108">eeprom_save_registers()</a> i <a class="el" href="registers_8c_source.html#l00043">registers_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a03bff0d52dfce9187744d260f79694aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REDIRECT_REGISTER_COUNT&#160;&#160;&#160;(<a class="el" href="registers_8h.html#a3b7b3d6499f0c44bfb1d7ceee4763bc7">MAX_REDIRECT_REGISTER</a> - <a class="el" href="registers_8h.html#a648219fbc7bc53777fca1dcacde4c556">MIN_REDIRECT_REGISTER</a> + 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00159">159</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="eeprom_8c_source.html#l00081">eeprom_restore_registers()</a>, <a class="el" href="eeprom_8c_source.html#l00108">eeprom_save_registers()</a> i <a class="el" href="registers_8c_source.html#l00043">registers_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a40239dc23bed6335c515605053cb782b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_CURVE_BUFFER&#160;&#160;&#160;0x17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00065">65</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="motion_8c_source.html#l00210">motion_next()</a> i <a class="el" href="motion_8c_source.html#l00141">motion_registers_reset()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8c8deda8a821830a85a6baf35944a42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_CURVE_DELTA_HI&#160;&#160;&#160;0x18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00067">67</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c_source.html#l00104">main()</a>, <a class="el" href="motion_8c_source.html#l00156">motion_append()</a> i <a class="el" href="motion_8c_source.html#l00141">motion_registers_reset()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a22c1b08761e444266d8afbf465e08e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_CURVE_DELTA_LO&#160;&#160;&#160;0x19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00068">68</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c_source.html#l00104">main()</a>, <a class="el" href="motion_8c_source.html#l00156">motion_append()</a> i <a class="el" href="motion_8c_source.html#l00141">motion_registers_reset()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a7bd4d12b7fb8df6040ac2dd8503604"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_CURVE_IN_VELOCITY_HI&#160;&#160;&#160;0x1C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00071">71</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="motion_8c_source.html#l00156">motion_append()</a> i <a class="el" href="motion_8c_source.html#l00141">motion_registers_reset()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b7b048e14ad0013819c6aff0ee87465"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_CURVE_IN_VELOCITY_LO&#160;&#160;&#160;0x1D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00072">72</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="motion_8c_source.html#l00156">motion_append()</a> i <a class="el" href="motion_8c_source.html#l00141">motion_registers_reset()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3ed7f6e82b5dd9ec97659107d16f83b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_CURVE_OUT_VELOCITY_HI&#160;&#160;&#160;0x1E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00073">73</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="motion_8c_source.html#l00156">motion_append()</a> i <a class="el" href="motion_8c_source.html#l00141">motion_registers_reset()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a15a6afdf131d4727675dbb543ed618bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_CURVE_OUT_VELOCITY_LO&#160;&#160;&#160;0x1F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00074">74</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="motion_8c_source.html#l00156">motion_append()</a> i <a class="el" href="motion_8c_source.html#l00141">motion_registers_reset()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac17e1e4b3eecca7f678a2d465c1977d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_CURVE_POSITION_HI&#160;&#160;&#160;0x1A</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00069">69</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c_source.html#l00104">main()</a>, <a class="el" href="motion_8c_source.html#l00156">motion_append()</a> i <a class="el" href="motion_8c_source.html#l00141">motion_registers_reset()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7bb5b9afbbaaeeeefcd55adae4584aac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_CURVE_POSITION_LO&#160;&#160;&#160;0x1B</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00070">70</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c_source.html#l00104">main()</a>, <a class="el" href="motion_8c_source.html#l00156">motion_append()</a> i <a class="el" href="motion_8c_source.html#l00141">motion_registers_reset()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af19522174185009323cc1499b4a22cb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_CURVE_RESERVED&#160;&#160;&#160;0x16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00064">64</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="motion_8c_source.html#l00141">motion_registers_reset()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e08e50000570fb8e87b136905214ea8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DEVICE_SUBTYPE&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00038">38</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="registers_8c_source.html#l00043">registers_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abacf9cc9a317e1a487d99330e8cd2110"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_DEVICE_TYPE&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00037">37</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="registers_8c_source.html#l00043">registers_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af7933dab07440b3d6d7168238f0dd9cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_FLAGS_HI&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00041">41</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a196ff8b454bb2a2cf5777814aedaba5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_FLAGS_LO&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00042">42</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="motion_8c_source.html#l00210">motion_next()</a> i <a class="el" href="pwm_8c_source.html#l00252">pwm_update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad33d318398d6d9212ffda3302e333667"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_MAX_SEEK_HI&#160;&#160;&#160;0x2C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00092">92</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>, <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a> i <a class="el" href="pwm_8c_source.html#l00252">pwm_update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c22bbf6c47239cf536841620f947cc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_MAX_SEEK_LO&#160;&#160;&#160;0x2D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00093">93</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>, <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a> i <a class="el" href="pwm_8c_source.html#l00252">pwm_update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4057f850fd9b0870d1d25f047fa47147"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_MIN_SEEK_HI&#160;&#160;&#160;0x2A</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00090">90</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>, <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a> i <a class="el" href="pwm_8c_source.html#l00252">pwm_update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af895680d43595c4971277de44651f0cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_MIN_SEEK_LO&#160;&#160;&#160;0x2B</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00091">91</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>, <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a> i <a class="el" href="pwm_8c_source.html#l00252">pwm_update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9fe3c0497ed3f43610f0719a1c5dbfce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_PID_DEADBAND&#160;&#160;&#160;0x21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00080">80</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a> i <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb36aa4a1695caa44a4e29195a7063bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_PID_DGAIN_HI&#160;&#160;&#160;0x24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00083">83</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a> i <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af1451996a332900d3b22101d513a8c50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_PID_DGAIN_LO&#160;&#160;&#160;0x25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00084">84</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a> i <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adb04a3964a04991cf52c06b1a814b38e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_PID_IGAIN_HI&#160;&#160;&#160;0x26</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00085">85</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a083a7de0a571a29a2a797b9ef735de8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_PID_IGAIN_LO&#160;&#160;&#160;0x27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00086">86</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af96bcf19ea576c18f276a42bf49008cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_PID_PGAIN_HI&#160;&#160;&#160;0x22</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00081">81</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a> i <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9dc1436c3b1ac6a454af49c5588d1a1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_PID_PGAIN_LO&#160;&#160;&#160;0x23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00082">82</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a> i <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aefedc13294bf7cbb72b11ee02d8e2b43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_POSITION_HI&#160;&#160;&#160;0x08</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00046">46</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a6c69a2e53039889d7d3cff4fe8b2dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_POSITION_LO&#160;&#160;&#160;0x09</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00047">47</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa15d1b437298c95558c32e15f1c5e188"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_POWER_HI&#160;&#160;&#160;0x0C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00050">50</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="power_8c_source.html#l00042">power_init()</a> i <a class="el" href="power_8c_source.html#l00058">power_update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a69a93f22a713a309f41e23a8d728e083"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_POWER_LO&#160;&#160;&#160;0x0D</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00051">51</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="power_8c_source.html#l00042">power_init()</a> i <a class="el" href="power_8c_source.html#l00058">power_update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae61da0c85e2949c372b286d10a870174"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_PWM_DIRA&#160;&#160;&#160;0x0E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00052">52</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pwm_8c_source.html#l00207">pwm_init()</a> i <a class="el" href="pwm_8c_source.html#l00373">pwm_stop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add869b129d1d025bb82d444c821c83e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_PWM_DIRB&#160;&#160;&#160;0x0F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00053">53</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pwm_8c_source.html#l00207">pwm_init()</a> i <a class="el" href="pwm_8c_source.html#l00373">pwm_stop()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab075f005f7a933e8ad3623fdf452c9af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_PWM_FREQ_DIVIDER_HI&#160;&#160;&#160;0x28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00088">88</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pwm_8c_source.html#l00207">pwm_init()</a>, <a class="el" href="pwm_8c_source.html#l00193">pwm_registers_defaults()</a> i <a class="el" href="pwm_8c_source.html#l00252">pwm_update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72bc114d1422c39404c72ff191d572da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_PWM_FREQ_DIVIDER_LO&#160;&#160;&#160;0x29</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00089">89</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pwm_8c_source.html#l00207">pwm_init()</a>, <a class="el" href="pwm_8c_source.html#l00193">pwm_registers_defaults()</a> i <a class="el" href="pwm_8c_source.html#l00252">pwm_update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aefc2d61f457b2771f1abc8351e2ea1f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_RESERVED_2F&#160;&#160;&#160;0x2F</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00095">95</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a512d65e283c5e4481353eba8a226fd76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_REVERSE_SEEK&#160;&#160;&#160;0x2E</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00094">94</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>, <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a> i <a class="el" href="pwm_8c_source.html#l00252">pwm_update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a445a52028238cdd60d6bc748f2d7bc20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_SEEK_POSITION_HI&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00058">58</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c_source.html#l00104">main()</a>, <a class="el" href="motion_8c_source.html#l00210">motion_next()</a> i <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0db5ccd07201a9f148eec17f44116889"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_SEEK_POSITION_LO&#160;&#160;&#160;0x11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00059">59</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c_source.html#l00104">main()</a>, <a class="el" href="motion_8c_source.html#l00210">motion_next()</a> i <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a435a2ba3bbe254832f1b63e405f90609"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_SEEK_VELOCITY_HI&#160;&#160;&#160;0x12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00060">60</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c_source.html#l00104">main()</a>, <a class="el" href="motion_8c_source.html#l00210">motion_next()</a> i <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a999594da1a68e5f44bcc9a8ba6108c5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_SEEK_VELOCITY_LO&#160;&#160;&#160;0x13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00061">61</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c_source.html#l00104">main()</a>, <a class="el" href="motion_8c_source.html#l00210">motion_next()</a> i <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a307787aaa130840baea0314d9de64c8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_TIMER_HI&#160;&#160;&#160;0x06</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00043">43</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae33cceb42833c5a4fcd305266dc98d81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_TIMER_LO&#160;&#160;&#160;0x07</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00044">44</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea1079173619dc6f4c2250b1e10b4c52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_TWI_ADDRESS&#160;&#160;&#160;0x20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00079">79</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="registers_8c_source.html#l00069">registers_defaults()</a> i <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0ba8dbdee1f07b14aca450ebe30a00d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_VELOCITY_HI&#160;&#160;&#160;0x0A</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00048">48</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acb7378d833f227369cb67dfc769915ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_VELOCITY_LO&#160;&#160;&#160;0x0B</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00049">49</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae57a3f2b001d584f378d53947466a56f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_VERSION_MAJOR&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00039">39</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="registers_8c_source.html#l00043">registers_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a71bec643ebf672b20d0f92775f7cc3a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_VERSION_MINOR&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00040">40</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="registers_8c_source.html#l00043">registers_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a632e3fa1b611cd38801c066f92fa391d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_VOLTAGE_HI&#160;&#160;&#160;0x14</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00062">62</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d4605be9e91ea5e578d17893841b89a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_VOLTAGE_LO&#160;&#160;&#160;0x15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00063">63</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a872bdec8b3471262a8a0131d7dc0fc0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REGISTER_COUNT&#160;&#160;&#160;(<a class="el" href="registers_8h.html#ad060606f02727cfcb4fde3ab086c0d54">MIN_UNUSED_REGISTER</a> + 16)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00151">151</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="registers_8c_source.html#l00043">registers_init()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2335970a48961f1ae2b526456256eda5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WRITE_PROTECT_REGISTER_COUNT&#160;&#160;&#160;(<a class="el" href="registers_8h.html#afcfb796f1c06140f959f923eeca4592e">MAX_WRITE_PROTECT_REGISTER</a> - <a class="el" href="registers_8h.html#a243b6bae9e45d99d703054da9c51d38c">MIN_WRITE_PROTECT_REGISTER</a> + 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8h_source.html#l00156">156</a> pliku <a class="el" href="registers_8h_source.html">registers.h</a>.</p>
+
+<p>Odwołania w <a class="el" href="eeprom_8c_source.html#l00081">eeprom_restore_registers()</a>, <a class="el" href="eeprom_8c_source.html#l00108">eeprom_save_registers()</a> i <a class="el" href="registers_8c_source.html#l00043">registers_init()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="aeaa2391a9f903aefcde752f3c0be93a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void registers_defaults </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8c_source.html#l00069">69</a> pliku <a class="el" href="registers_8c_source.html">registers.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="estimator_8h.html#a0fb53d3af08e20cd18a4bcc8f8d1cdf3">estimator_registers_defaults()</a>, <a class="el" href="ipd_8h.html#a29c05dae2ecae71d3976e450bdfe54de">ipd_registers_defaults()</a>, <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a>, <a class="el" href="pwm_8c_source.html#l00193">pwm_registers_defaults()</a>, <a class="el" href="openservo_8h_source.html#l00042">REG_DEFAULT_TWI_ADDR</a>, <a class="el" href="registers_8h_source.html#l00079">REG_TWI_ADDRESS</a> i <a class="el" href="regulator_8h.html#a91c616a1b60477c58d278da32bc5b4cd">regulator_registers_defaults()</a>.</p>
+
+<p>Odwołania w <a class="el" href="registers_8c_source.html#l00043">registers_init()</a> i <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="comment">// Initialize read/write protected registers to defaults.</span></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Default TWI address.</span></div>
+<div class="line">    registers_write_byte(<a class="code" href="registers_8h.html#aea1079173619dc6f4c2250b1e10b4c52">REG_TWI_ADDRESS</a>, <a class="code" href="openservo_8h.html#ad320475b3e07a22be6e32a13d3fa2395">REG_DEFAULT_TWI_ADDR</a>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Call the PWM module to initialize the PWM related default values.</span></div>
+<div class="line">    <a class="code" href="pwm_8c.html#ad3a1781dd92142e14d906adddfe3959d">pwm_registers_defaults</a>();</div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#if ESTIMATOR_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Call the motion module to initialize the velocity estimator related</span></div>
+<div class="line">    <span class="comment">// default values. This is done so the estimator related parameters can</span></div>
+<div class="line">    <span class="comment">// be kept in a single file.</span></div>
+<div class="line">    <a class="code" href="estimator_8h.html#a0fb53d3af08e20cd18a4bcc8f8d1cdf3">estimator_registers_defaults</a>();</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if REGULATOR_MOTION_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Call the regulator module to initialize the regulator related default values.</span></div>
+<div class="line">    <a class="code" href="regulator_8h.html#a91c616a1b60477c58d278da32bc5b4cd">regulator_registers_defaults</a>();</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if PID_MOTION_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Call the PID module to initialize the PID related default values.</span></div>
+<div class="line">    <a class="code" href="pid_8c.html#acf086a9022e1612ec6fda447276271ba">pid_registers_defaults</a>();</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span></div>
+<div class="line"><span class="preprocessor">#if IPD_MOTION_ENABLED</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="comment">// Call the IPD module to initialize the IPD related default values.</span></div>
+<div class="line">    <a class="code" href="ipd_8h.html#a29c05dae2ecae71d3976e450bdfe54de">ipd_registers_defaults</a>();</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9857a49018487746c898aa6a2c38ccbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void registers_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8c_source.html#l00043">43</a> pliku <a class="el" href="registers_8c_source.html">registers.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="eeprom_8c_source.html#l00081">eeprom_restore_registers()</a>, <a class="el" href="registers_8h_source.html#l00140">MIN_WRITE_PROTECT_REGISTER</a>, <a class="el" href="openservo_8h_source.html#l00033">OPENSERVO_DEVICE_SUBTYPE</a>, <a class="el" href="openservo_8h_source.html#l00032">OPENSERVO_DEVICE_TYPE</a>, <a class="el" href="registers_8h_source.html#l00159">REDIRECT_REGISTER_COUNT</a>, <a class="el" href="registers_8h_source.html#l00038">REG_DEVICE_SUBTYPE</a>, <a class="el" href="registers_8h_source.html#l00037">REG_DEVICE_TYPE</a>, <a class="el" href="registers_8h_source.html#l00039">REG_VERSION_MAJOR</a>, <a class="el" href="registers_8h_source.html#l00040">REG_VERSION_MINOR</a>, <a class="el" href="registers_8h_source.html#l00151">REGISTER_COUNT</a>, <a class="el" href="registers_8c_source.html#l00041">registers</a>, <a class="el" href="registers_8c_source.html#l00069">registers_defaults()</a>, <a class="el" href="openservo_8h_source.html#l00038">SOFTWARE_VERSION_MAJOR</a>, <a class="el" href="openservo_8h_source.html#l00039">SOFTWARE_VERSION_MINOR</a> i <a class="el" href="registers_8h_source.html#l00156">WRITE_PROTECT_REGISTER_COUNT</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c_source.html#l00104">main()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="comment">// Initialize all registers to zero.</span></div>
+<div class="line">    memset(&amp;<a class="code" href="registers_8c.html#a8f5f78749168c9713a13d33e502154c5">registers</a>[0], 0, <a class="code" href="registers_8h.html#a872bdec8b3471262a8a0131d7dc0fc0d">REGISTER_COUNT</a>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Set device and software identification information.</span></div>
+<div class="line">    registers_write_byte(<a class="code" href="registers_8h.html#abacf9cc9a317e1a487d99330e8cd2110">REG_DEVICE_TYPE</a>, <a class="code" href="openservo_8h.html#aa82374b9c484c4aab7ce0e6655536129">OPENSERVO_DEVICE_TYPE</a>);</div>
+<div class="line">    registers_write_byte(<a class="code" href="registers_8h.html#a1e08e50000570fb8e87b136905214ea8">REG_DEVICE_SUBTYPE</a>, <a class="code" href="openservo_8h.html#adea7ffb48538b2a25520ab74e20ecb72">OPENSERVO_DEVICE_SUBTYPE</a>);</div>
+<div class="line">    registers_write_byte(<a class="code" href="registers_8h.html#ae57a3f2b001d584f378d53947466a56f">REG_VERSION_MAJOR</a>, <a class="code" href="openservo_8h.html#a8d45b0910a49830815b5a428d635eadd">SOFTWARE_VERSION_MAJOR</a>);</div>
+<div class="line">    registers_write_byte(<a class="code" href="registers_8h.html#a71bec643ebf672b20d0f92775f7cc3a0">REG_VERSION_MINOR</a>, <a class="code" href="openservo_8h.html#a8250bb5e4f4d2badb346a1251cf75f90">SOFTWARE_VERSION_MINOR</a>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Restore the read/write protected registers from EEPROM.  If the</span></div>
+<div class="line">    <span class="comment">// EEPROM fails checksum this function will return zero and the</span></div>
+<div class="line">    <span class="comment">// read/write protected registers should be initialized to defaults.</span></div>
+<div class="line">    <span class="keywordflow">if</span> (!<a class="code" href="eeprom_8c.html#a6b4f1a28ddcf2b17e72551da46599892">eeprom_restore_registers</a>())</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// Reset read/write protected registers to zero.</span></div>
+<div class="line">        memset(&amp;<a class="code" href="registers_8c.html#a8f5f78749168c9713a13d33e502154c5">registers</a>[<a class="code" href="registers_8h.html#a243b6bae9e45d99d703054da9c51d38c">MIN_WRITE_PROTECT_REGISTER</a>], <a class="code" href="registers_8h.html#a2335970a48961f1ae2b526456256eda5">WRITE_PROTECT_REGISTER_COUNT</a> + <a class="code" href="registers_8h.html#a03bff0d52dfce9187744d260f79694aa">REDIRECT_REGISTER_COUNT</a>, <a class="code" href="registers_8h.html#a872bdec8b3471262a8a0131d7dc0fc0d">REGISTER_COUNT</a>);</div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// Initialize read/write protected registers to defaults.</span></div>
+<div class="line">        <a class="code" href="registers_8c.html#aeaa2391a9f903aefcde752f3c0be93a6">registers_defaults</a>();</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af8b091233149e27ba0ce0995fee7756b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t registers_read_word </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>address_hi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>address_lo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8c_source.html#l00104">104</a> pliku <a class="el" href="registers_8c_source.html">registers.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="registers_8c_source.html#l00041">registers</a>.</p>
+
+<p>Odwołania w <a class="el" href="motion_8c_source.html#l00156">motion_append()</a>, <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>, <a class="el" href="pwm_8c_source.html#l00207">pwm_init()</a>, <a class="el" href="pwm_8c_source.html#l00252">pwm_update()</a> i <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    uint8_t sreg;</div>
+<div class="line">    uint16_t value;</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Clear interrupts.</span></div>
+<div class="line">    __asm__ <span class="keyword">volatile</span> (<span class="stringliteral">&quot;in %0,__SREG__\n\tcli\n\t&quot;</span> : <span class="stringliteral">&quot;=&amp;r&quot;</span> (sreg));</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Read the registers.</span></div>
+<div class="line">    value = (<a class="code" href="registers_8c.html#a8f5f78749168c9713a13d33e502154c5">registers</a>[address_hi] &lt;&lt; 8) | <a class="code" href="registers_8c.html#a8f5f78749168c9713a13d33e502154c5">registers</a>[address_lo];</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Restore status.</span></div>
+<div class="line">    __asm__ <span class="keyword">volatile</span> (<span class="stringliteral">&quot;out __SREG__,%0\n\t&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (sreg));</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">return</span> value;</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2a7b20190fe395643f0d180422422e78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void registers_write_word </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>address_hi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>address_lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8c_source.html#l00125">125</a> pliku <a class="el" href="registers_8c_source.html">registers.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="registers_8c_source.html#l00041">registers</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c_source.html#l00104">main()</a>, <a class="el" href="motion_8c_source.html#l00210">motion_next()</a>, <a class="el" href="motion_8c_source.html#l00141">motion_registers_reset()</a>, <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>, <a class="el" href="pid_8c_source.html#l00085">pid_registers_defaults()</a>, <a class="el" href="power_8c_source.html#l00042">power_init()</a>, <a class="el" href="power_8c_source.html#l00058">power_update()</a>, <a class="el" href="pwm_8c_source.html#l00193">pwm_registers_defaults()</a> i <a class="el" href="rs485_8c_source.html#l00408">RS485CMD()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    uint8_t sreg;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Clear interrupts.</span></div>
+<div class="line">    __asm__ <span class="keyword">volatile</span> (<span class="stringliteral">&quot;in %0,__SREG__\n\tcli\n\t&quot;</span> : <span class="stringliteral">&quot;=&amp;r&quot;</span> (sreg));</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Write the registers.</span></div>
+<div class="line">    <a class="code" href="registers_8c.html#a8f5f78749168c9713a13d33e502154c5">registers</a>[address_hi] = value &gt;&gt; 8;</div>
+<div class="line">    <a class="code" href="registers_8c.html#a8f5f78749168c9713a13d33e502154c5">registers</a>[address_lo] = value;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Restore status.</span></div>
+<div class="line">    __asm__ <span class="keyword">volatile</span> (<span class="stringliteral">&quot;out __SREG__,%0\n\t&quot;</span> : : <span class="stringliteral">&quot;r&quot;</span> (sreg));</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/><h2>Dokumentacja zmiennych</h2>
+<a class="anchor" id="a8f5f78749168c9713a13d33e502154c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t registers[<a class="el" href="registers_8h.html#a872bdec8b3471262a8a0131d7dc0fc0d">REGISTER_COUNT</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="registers_8c_source.html#l00041">41</a> pliku <a class="el" href="registers_8c_source.html">registers.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="eeprom_8c_source.html#l00081">eeprom_restore_registers()</a>, <a class="el" href="eeprom_8c_source.html#l00108">eeprom_save_registers()</a>, <a class="el" href="registers_8c_source.html#l00043">registers_init()</a>, <a class="el" href="registers_8c_source.html#l00104">registers_read_word()</a> i <a class="el" href="registers_8c_source.html#l00125">registers_write_word()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="registers_8h.html">registers.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:58:50 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

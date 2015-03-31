@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku zoPid.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('zo_pid_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Struktury danych</a> &#124;
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku zoPid.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="zo_types_8h_source.html">zoTypes.h</a>&quot;</code><br/>
+</div>
+<p><a href="zo_pid_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+Struktury danych</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_z_o___p_i_d.html">ZO_PID</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:a97752506a4dfad7070c8b8513a8cc9b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_pid_8h.html#a97752506a4dfad7070c8b8513a8cc9b7">ZO_PID_DEFAULTS</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a80358cbc55b5bf531a2ff08e22b91e95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_pid_8h.html#a80358cbc55b5bf531a2ff08e22b91e95">zoPidDoPid</a> (struct <a class="el" href="struct_z_o___p_i_d.html">ZO_PID</a> *p)</td></tr>
+</table>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="a97752506a4dfad7070c8b8513a8cc9b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ZO_PID_DEFAULTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Wartość:</b><div class="fragment"><div class="line">{0,0,0,0,0,0,0,0, \</div>
+<div class="line">        (void (*)(<span class="keyword">struct </span><a class="code" href="struct_z_o___p_i_d.html">ZO_PID</a> *))<a class="code" href="zo_pid_8c.html#a80358cbc55b5bf531a2ff08e22b91e95">zoPidDoPid</a>, \</div>
+<div class="line">        0,0}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="a80358cbc55b5bf531a2ff08e22b91e95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoPidDoPid </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_z_o___p_i_d.html">ZO_PID</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___p_i_d.html#a87d70361d05e8bd508c339b7491356ce">ZO_PID::AntiWindUp</a>, <a class="el" href="struct_z_o___p_i_d.html#aeca1825aec626ed0564bf8b2fa9b3d1a">ZO_PID::Error</a>, <a class="el" href="struct_z_o___p_i_d.html#a1ca7414a5492ede1eac2f23a9976768a">ZO_PID::GainD</a>, <a class="el" href="struct_z_o___p_i_d.html#abd1533d665a597f0c3e0b089551956a4">ZO_PID::GainI</a>, <a class="el" href="struct_z_o___p_i_d.html#a5569fd10f52e70e6b8ada2efab5bcc44">ZO_PID::GainP</a>, <a class="el" href="struct_z_o___p_i_d.html#a6ad941eb657bfbc6f8d4a836e08e0fdc">ZO_PID::getFeedBack</a>, <a class="el" href="struct_z_o___p_i_d.html#a8a3c79be3a9596e0f949a8c43ef4820d">ZO_PID::Integral</a>, <a class="el" href="struct_z_o___p_i_d.html#a2cea5b374835ee6ea67bc0c87ec19901">ZO_PID::PrevError</a>, <a class="el" href="struct_z_o___p_i_d.html#a130131d397603fd1080dc2c6f4e6b90c">ZO_PID::setActuator</a> i <a class="el" href="struct_z_o___p_i_d.html#ab2ed884e6bf46fce682ce840b05f7650">ZO_PID::SetPoint</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb5fb232909a11b4992a277a944d4228.html">SuperModified.V1</a></li><li class="navelem"><a class="el" href="zo_pid_8h.html">zoPid.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:49:50 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku rs485.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="modules.html"><span>Moduły</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('rs485_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Struktury danych</a> &#124;
+<a href="#define-members">Definicje</a> &#124;
+<a href="#enum-members">Wyliczenia</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku rs485.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
+<code>#include &quot;openservo.h&quot;</code><br/>
+<code>#include &lt;avr/io.h&gt;</code><br/>
+<code>#include &lt;avr/interrupt.h&gt;</code><br/>
+</div>
+<p><a href="rs485_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+Struktury danych</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_frame.html">Frame</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:ga695ad4d27f59bb03b44bdaa55b17c7b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga695ad4d27f59bb03b44bdaa55b17c7b5">UART_DEFAULT_BAUD_RATE</a>&#160;&#160;&#160;19200</td></tr>
+<tr class="memitem:gaed01711bbda8d6630409a73fe67b8501"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gaed01711bbda8d6630409a73fe67b8501">UART_DEFAULT_DATA_BITS</a>&#160;&#160;&#160;<a class="el" href="group__tolinski__uart.html#ggab8bf6f1e0ab2758330334975157f7eccad768185f3773e2d5953b28f3345561db">UART_DATA_BITS_8</a></td></tr>
+<tr class="memitem:ga7acb7474eeba61bfe5f28c3629f619ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga7acb7474eeba61bfe5f28c3629f619ed">UART_DEFAULT_PARITY</a>&#160;&#160;&#160;<a class="el" href="group__tolinski__uart.html#gga24fd4dba815fc40fbd8e8c37dbf87c7aaa80d2d8ea61454045ebe71d155e85b3d">UART_PARITY_NONE</a></td></tr>
+<tr class="memitem:gaea62f470e264a7286e51b0cf978f047b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gaea62f470e264a7286e51b0cf978f047b">UART_DEFAULT_STOP_BITS</a>&#160;&#160;&#160;<a class="el" href="group__tolinski__uart.html#ggab75244284ddae5a45f23bcb71b5bb485a44b3bfbe90aebe2b23227f5c011f41cc">UART_STOP_BITS_1</a></td></tr>
+<tr class="memitem:gaa88515bc3149c994d94b7eb27dcb621b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gaa88515bc3149c994d94b7eb27dcb621b">UART_DEFAULT_TRANSMIT_TIMEOUT_MILISECONDS</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memitem:ga3f07a2f79c06fc4a6b6ee50eacc344e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga3f07a2f79c06fc4a6b6ee50eacc344e6">UART_DEFAULT_BUFFER_SIZE</a></td></tr>
+<tr class="memitem:ga6b1561dd9bcbc067ff6845b425929621"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga6b1561dd9bcbc067ff6845b425929621">ReceiveNoError</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memitem:ga9b281404594768c39381f9297393f6b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga9b281404594768c39381f9297393f6b4">ReceiveParityE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memitem:ga9ac8d146c8c359c99949b07f196c6ac7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga9ac8d146c8c359c99949b07f196c6ac7">ReceiveFrameE</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memitem:gaf4cef63f675fb8fb47d4a053a6f82393"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gaf4cef63f675fb8fb47d4a053a6f82393">ReceiveOverrunE</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memitem:gaa22129b19aaaf69cf65cd2e435a73f33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gaa22129b19aaaf69cf65cd2e435a73f33">FRAMECRCVALID</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memitem:gac6badc8250157c219d149f6b783ac919"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gac6badc8250157c219d149f6b783ac919">FRAMECRCMISMATCH</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memitem:ga8752dbf255ad047209ede89f92592137"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga8752dbf255ad047209ede89f92592137">CMD_DIAG</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memitem:gafe1dd8546b0a8cd30b19a0229205c8df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gafe1dd8546b0a8cd30b19a0229205c8df">CMD_RESET</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memitem:gaa29b99fe1a3200f8ee6b645b74ead433"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gaa29b99fe1a3200f8ee6b645b74ead433">CMD_READNORMALREG</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memitem:gab7958077ae2efc3880b1524166236516"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gab7958077ae2efc3880b1524166236516">CMD_WRITENORMALREG</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memitem:ga46f6785195db82dc70532ebffaa74c4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga46f6785195db82dc70532ebffaa74c4d">CMD_NOTFOUND</a>&#160;&#160;&#160;0xF0</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="enum-members"></a>
+Wyliczenia</h2></td></tr>
+<tr class="memitem:ga24fd4dba815fc40fbd8e8c37dbf87c7a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga24fd4dba815fc40fbd8e8c37dbf87c7a">UART_PARITY</a> { <br/>
+&#160;&#160;<a class="el" href="group__tolinski__uart.html#gga24fd4dba815fc40fbd8e8c37dbf87c7aaa80d2d8ea61454045ebe71d155e85b3d">UART_PARITY_NONE</a> =  0x00, 
+<br/>
+&#160;&#160;<a class="el" href="group__tolinski__uart.html#gga24fd4dba815fc40fbd8e8c37dbf87c7aad90cc425f5ba447773a44a75be6593e2">UART_PARITY_ODD</a> =  0x30, 
+<br/>
+&#160;&#160;<a class="el" href="group__tolinski__uart.html#gga24fd4dba815fc40fbd8e8c37dbf87c7aad908a637b1dd23f93b149dd2d8bdfdb8">UART_PARITY_EVEN</a> =  0x20
+<br/>
+ }</td></tr>
+<tr class="memitem:gab8bf6f1e0ab2758330334975157f7ecc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gab8bf6f1e0ab2758330334975157f7ecc">UART_DATA_BITS</a> { <br/>
+&#160;&#160;<a class="el" href="group__tolinski__uart.html#ggab8bf6f1e0ab2758330334975157f7ecca20932d2daf15a9ac33d71d9d91550e01">UART_DATA_BITS_5</a> =  0x00, 
+<br/>
+&#160;&#160;<a class="el" href="group__tolinski__uart.html#ggab8bf6f1e0ab2758330334975157f7ecca12ee42f7fd9804e1315391151603d405">UART_DATA_BITS_6</a> =  0x02, 
+<br/>
+&#160;&#160;<a class="el" href="group__tolinski__uart.html#ggab8bf6f1e0ab2758330334975157f7ecca317e473e32315f1632829d176fbfd545">UART_DATA_BITS_7</a> =  0x04, 
+<br/>
+&#160;&#160;<a class="el" href="group__tolinski__uart.html#ggab8bf6f1e0ab2758330334975157f7eccad768185f3773e2d5953b28f3345561db">UART_DATA_BITS_8</a> =  0x06, 
+<br/>
+&#160;&#160;<a class="el" href="group__tolinski__uart.html#ggab8bf6f1e0ab2758330334975157f7ecca57a012c58e476a76ed8f54db28d94810">UART_DATA_BITS_9</a> =  0x0E
+<br/>
+ }</td></tr>
+<tr class="memitem:gab75244284ddae5a45f23bcb71b5bb485"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gab75244284ddae5a45f23bcb71b5bb485">UART_STOP_BITS</a> { <br/>
+&#160;&#160;<a class="el" href="group__tolinski__uart.html#ggab75244284ddae5a45f23bcb71b5bb485a44b3bfbe90aebe2b23227f5c011f41cc">UART_STOP_BITS_1</a> = 0x00, 
+<br/>
+&#160;&#160;<a class="el" href="group__tolinski__uart.html#ggab75244284ddae5a45f23bcb71b5bb485a00c73c92b3d624bc86cfa63636dd99b3">UART_STOP_BITS_2</a> = 0x80
+<br/>
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ga6a736b13f76843e56a4f1d9f707f1d81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga6a736b13f76843e56a4f1d9f707f1d81">UartInit</a> (void)</td></tr>
+<tr class="memdesc:ga6a736b13f76843e56a4f1d9f707f1d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjuje UART.  <a href="group__tolinski__uart.html#ga6a736b13f76843e56a4f1d9f707f1d81"></a><br/></td></tr>
+<tr class="memitem:ga1ea1d962fb1fec76bbd8655aacaa604b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga1ea1d962fb1fec76bbd8655aacaa604b">UartSetBaud</a> (uint32_t baudRate)</td></tr>
+<tr class="memdesc:ga1ea1d962fb1fec76bbd8655aacaa604b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia prędkość transmisji (BaudRate)  <a href="group__tolinski__uart.html#ga1ea1d962fb1fec76bbd8655aacaa604b"></a><br/></td></tr>
+<tr class="memitem:gabfafe07eb5843d617ad386522dd71038"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gabfafe07eb5843d617ad386522dd71038">UartSetDataBits</a> (<a class="el" href="group__tolinski__uart.html#gab8bf6f1e0ab2758330334975157f7ecc">UART_DATA_BITS</a> dataBits)</td></tr>
+<tr class="memdesc:gabfafe07eb5843d617ad386522dd71038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia ilość bitów danych.  <a href="group__tolinski__uart.html#gabfafe07eb5843d617ad386522dd71038"></a><br/></td></tr>
+<tr class="memitem:gaecb0c989853121f4479bf8aa3ec7b1a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gaecb0c989853121f4479bf8aa3ec7b1a7">UartSetParity</a> (<a class="el" href="group__tolinski__uart.html#ga24fd4dba815fc40fbd8e8c37dbf87c7a">UART_PARITY</a> parity)</td></tr>
+<tr class="memdesc:gaecb0c989853121f4479bf8aa3ec7b1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia bity parzytości.  <a href="group__tolinski__uart.html#gaecb0c989853121f4479bf8aa3ec7b1a7"></a><br/></td></tr>
+<tr class="memitem:gacce4b42d418c554608de82ee4093a615"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gacce4b42d418c554608de82ee4093a615">UartSetStopBits</a> (<a class="el" href="group__tolinski__uart.html#gab75244284ddae5a45f23bcb71b5bb485">UART_STOP_BITS</a> stopBits)</td></tr>
+<tr class="memdesc:gacce4b42d418c554608de82ee4093a615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia ilość bitów stopu.  <a href="group__tolinski__uart.html#gacce4b42d418c554608de82ee4093a615"></a><br/></td></tr>
+<tr class="memitem:ga150d9138d71a10556a40c19071684748"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga150d9138d71a10556a40c19071684748">UartSetBuffersSize</a> (uint8_t size)</td></tr>
+<tr class="memitem:ga1ef6e34e7e5bea45d9b704ffbd98061a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga1ef6e34e7e5bea45d9b704ffbd98061a">UartInitRs485</a> (volatile uint8_t *port, uint8_t pinConnectedToReDe)</td></tr>
+<tr class="memdesc:ga1ef6e34e7e5bea45d9b704ffbd98061a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjalizuje pin obsługujący kierunek przeływu danych na potrzeby half-duplexu RS485.  <a href="group__tolinski__uart.html#ga1ef6e34e7e5bea45d9b704ffbd98061a"></a><br/></td></tr>
+<tr class="memitem:gafb6d9f224e8e57c039e1e93db4a463a8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gafb6d9f224e8e57c039e1e93db4a463a8">FrameCRC</a> (volatile const <a class="el" href="struct_frame.html">Frame</a> *f)</td></tr>
+<tr class="memdesc:gafb6d9f224e8e57c039e1e93db4a463a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oblicza sumę kontrolną ramki.  <a href="group__tolinski__uart.html#gafb6d9f224e8e57c039e1e93db4a463a8"></a><br/></td></tr>
+<tr class="memitem:ga097fbe40f3ece7b88aec43938bed0f00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga097fbe40f3ece7b88aec43938bed0f00">FrameCheckCRC</a> (volatile <a class="el" href="struct_frame.html">Frame</a> *f)</td></tr>
+<tr class="memdesc:ga097fbe40f3ece7b88aec43938bed0f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza poprawność sumy kontrolnej ramki.  <a href="group__tolinski__uart.html#ga097fbe40f3ece7b88aec43938bed0f00"></a><br/></td></tr>
+<tr class="memitem:ga7a978a0320370033a09d655fabc905e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga7a978a0320370033a09d655fabc905e5">FrameInit</a> (volatile <a class="el" href="struct_frame.html">Frame</a> *f, uint8_t a, uint8_t c, uint16_t d1, int16_t d2)</td></tr>
+<tr class="memdesc:ga7a978a0320370033a09d655fabc905e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjuje strukturę ramki podanymi wartościami i oblicza jej sumę kontrolną  <a href="group__tolinski__uart.html#ga7a978a0320370033a09d655fabc905e5"></a><br/></td></tr>
+<tr class="memitem:ga48a3576905b477b6c54f3c79af79f87a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga48a3576905b477b6c54f3c79af79f87a">FrameCopy</a> (volatile <a class="el" href="struct_frame.html">Frame</a> *to, volatile <a class="el" href="struct_frame.html">Frame</a> *from)</td></tr>
+<tr class="memdesc:ga48a3576905b477b6c54f3c79af79f87a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kopiuje ramkę  <a href="group__tolinski__uart.html#ga48a3576905b477b6c54f3c79af79f87a"></a><br/></td></tr>
+<tr class="memitem:gaaa81ac0a77c7959fa862e5256b192adb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gaaa81ac0a77c7959fa862e5256b192adb">SendFrame</a> (<a class="el" href="struct_frame.html">Frame</a> *f)</td></tr>
+<tr class="memdesc:gaaa81ac0a77c7959fa862e5256b192adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rozpoczyna wysyłanie ramki.  <a href="group__tolinski__uart.html#gaaa81ac0a77c7959fa862e5256b192adb"></a><br/></td></tr>
+<tr class="memitem:ga30684d7f416fb9284684d2553d19656c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga30684d7f416fb9284684d2553d19656c">GetFrame</a> (volatile <a class="el" href="struct_frame.html">Frame</a> *f)</td></tr>
+<tr class="memdesc:ga30684d7f416fb9284684d2553d19656c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy pobrano ramkę  <a href="group__tolinski__uart.html#ga30684d7f416fb9284684d2553d19656c"></a><br/></td></tr>
+<tr class="memitem:ga1786dc4e4daeaa3ce26e68b47748da48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga1786dc4e4daeaa3ce26e68b47748da48">RS485CMD</a> ()</td></tr>
+<tr class="memdesc:ga1786dc4e4daeaa3ce26e68b47748da48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy przyszło jakieś polecenie, jeśli tak wykonuje je.  <a href="group__tolinski__uart.html#ga1786dc4e4daeaa3ce26e68b47748da48"></a><br/></td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="rs485_8h.html">rs485.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 11:03:46 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

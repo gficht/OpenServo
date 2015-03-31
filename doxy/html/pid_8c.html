@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku pid.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="modules.html"><span>Moduły</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('pid_8c.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku pid.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;inttypes.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="openservo_8h_source.html">openservo.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="pid_8h_source.html">pid.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="registers_8h_source.html">registers.h</a>&quot;</code><br/>
+</div>
+<p><a href="pid_8c_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:ae1933db0f5cd1f42ad9d70e345b5d5b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pid_8c.html#ae1933db0f5cd1f42ad9d70e345b5d5b6">MIN_POSITION</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memitem:a850290a622822618b3cfb2fb46f8d269"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pid_8c.html#a850290a622822618b3cfb2fb46f8d269">MAX_POSITION</a>&#160;&#160;&#160;(1023)</td></tr>
+<tr class="memitem:a38afea15614bc71fe955c04b1a28a853"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pid_8c.html#a38afea15614bc71fe955c04b1a28a853">MAX_OUTPUT</a>&#160;&#160;&#160;(255)</td></tr>
+<tr class="memitem:a0779b886e07264f0779a80cab68e75b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pid_8c.html#a0779b886e07264f0779a80cab68e75b7">MIN_OUTPUT</a>&#160;&#160;&#160;(-<a class="el" href="pid_8c.html#a38afea15614bc71fe955c04b1a28a853">MAX_OUTPUT</a>)</td></tr>
+<tr class="memitem:afb6f541bcea6f47b6b74ed588223e9d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pid_8c.html#afb6f541bcea6f47b6b74ed588223e9d2">FILTER_SHIFT</a>&#160;&#160;&#160;1</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a8737ad004468c0af47ae555e26d1f5ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pid_8c.html#a8737ad004468c0af47ae555e26d1f5ca">pid_init</a> (void)</td></tr>
+<tr class="memitem:acf086a9022e1612ec6fda447276271ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pid_8c.html#acf086a9022e1612ec6fda447276271ba">pid_registers_defaults</a> (void)</td></tr>
+<tr class="memitem:adab6656960be75a26489709fb1dd2f77"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pid_8c.html#adab6656960be75a26489709fb1dd2f77">pid_position_to_pwm</a> (int16_t current_position)</td></tr>
+</table>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="afb6f541bcea6f47b6b74ed588223e9d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILTER_SHIFT&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="pid_8c_source.html#l00063">63</a> pliku <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a38afea15614bc71fe955c04b1a28a853"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_OUTPUT&#160;&#160;&#160;(255)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="pid_8c_source.html#l00039">39</a> pliku <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a850290a622822618b3cfb2fb46f8d269"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_POSITION&#160;&#160;&#160;(1023)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="pid_8c_source.html#l00036">36</a> pliku <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0779b886e07264f0779a80cab68e75b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_OUTPUT&#160;&#160;&#160;(-<a class="el" href="pid_8c.html#a38afea15614bc71fe955c04b1a28a853">MAX_OUTPUT</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="pid_8c_source.html#l00040">40</a> pliku <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="pid_8c_source.html#l00106">pid_position_to_pwm()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1933db0f5cd1f42ad9d70e345b5d5b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_POSITION&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="pid_8c_source.html#l00035">35</a> pliku <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="a8737ad004468c0af47ae555e26d1f5ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pid_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="pid_8c_source.html#l00076">76</a> pliku <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c_source.html#l00104">main()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="comment">// Initialize preserved values.</span></div>
+<div class="line">    previous_seek = 0;</div>
+<div class="line">    previous_position = 0;</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="adab6656960be75a26489709fb1dd2f77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t pid_position_to_pwm </td>
+          <td>(</td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>current_position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="pid_8c_source.html#l00106">106</a> pliku <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="pid_8c_source.html#l00039">MAX_OUTPUT</a>, <a class="el" href="pid_8c_source.html#l00036">MAX_POSITION</a>, <a class="el" href="pid_8c_source.html#l00040">MIN_OUTPUT</a>, <a class="el" href="registers_8h_source.html#l00092">REG_MAX_SEEK_HI</a>, <a class="el" href="registers_8h_source.html#l00093">REG_MAX_SEEK_LO</a>, <a class="el" href="registers_8h_source.html#l00090">REG_MIN_SEEK_HI</a>, <a class="el" href="registers_8h_source.html#l00091">REG_MIN_SEEK_LO</a>, <a class="el" href="registers_8h_source.html#l00080">REG_PID_DEADBAND</a>, <a class="el" href="registers_8h_source.html#l00083">REG_PID_DGAIN_HI</a>, <a class="el" href="registers_8h_source.html#l00084">REG_PID_DGAIN_LO</a>, <a class="el" href="registers_8h_source.html#l00081">REG_PID_PGAIN_HI</a>, <a class="el" href="registers_8h_source.html#l00082">REG_PID_PGAIN_LO</a>, <a class="el" href="registers_8h_source.html#l00046">REG_POSITION_HI</a>, <a class="el" href="registers_8h_source.html#l00047">REG_POSITION_LO</a>, <a class="el" href="registers_8h_source.html#l00094">REG_REVERSE_SEEK</a>, <a class="el" href="registers_8h_source.html#l00058">REG_SEEK_POSITION_HI</a>, <a class="el" href="registers_8h_source.html#l00059">REG_SEEK_POSITION_LO</a>, <a class="el" href="registers_8h_source.html#l00060">REG_SEEK_VELOCITY_HI</a>, <a class="el" href="registers_8h_source.html#l00061">REG_SEEK_VELOCITY_LO</a>, <a class="el" href="registers_8h_source.html#l00048">REG_VELOCITY_HI</a>, <a class="el" href="registers_8h_source.html#l00049">REG_VELOCITY_LO</a>, <a class="el" href="registers_8c_source.html#l00104">registers_read_word()</a> i <a class="el" href="registers_8c_source.html#l00125">registers_write_word()</a>.</p>
+
+<p>Odwołania w <a class="el" href="main_8c_source.html#l00104">main()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="comment">// We declare these static to keep them off the stack.</span></div>
+<div class="line">    <span class="keyword">static</span> int16_t deadband;</div>
+<div class="line">    <span class="keyword">static</span> int16_t p_component;</div>
+<div class="line">    <span class="keyword">static</span> int16_t d_component;</div>
+<div class="line">    <span class="keyword">static</span> int16_t seek_position;</div>
+<div class="line">    <span class="keyword">static</span> int16_t seek_velocity;</div>
+<div class="line">    <span class="keyword">static</span> int16_t minimum_position;</div>
+<div class="line">    <span class="keyword">static</span> int16_t maximum_position;</div>
+<div class="line">    <span class="keyword">static</span> int16_t current_velocity;</div>
+<div class="line">    <span class="keyword">static</span> int16_t filtered_position;</div>
+<div class="line">    <span class="keyword">static</span> int32_t pwm_output;</div>
+<div class="line">    <span class="keyword">static</span> uint16_t d_gain;</div>
+<div class="line">    <span class="keyword">static</span> uint16_t p_gain;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Filter the current position thru a digital low-pass filter.</span></div>
+<div class="line">    filtered_position = filter_update(current_position);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Use the filtered position to determine velocity.</span></div>
+<div class="line">    current_velocity = filtered_position - previous_position;</div>
+<div class="line">    previous_position = filtered_position;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Get the seek position and velocity.</span></div>
+<div class="line">    seek_position = (int16_t) <a class="code" href="registers_8c.html#af8b091233149e27ba0ce0995fee7756b">registers_read_word</a>(<a class="code" href="registers_8h.html#a445a52028238cdd60d6bc748f2d7bc20">REG_SEEK_POSITION_HI</a>, <a class="code" href="registers_8h.html#a0db5ccd07201a9f148eec17f44116889">REG_SEEK_POSITION_LO</a>);</div>
+<div class="line">    seek_velocity = (int16_t) <a class="code" href="registers_8c.html#af8b091233149e27ba0ce0995fee7756b">registers_read_word</a>(<a class="code" href="registers_8h.html#a435a2ba3bbe254832f1b63e405f90609">REG_SEEK_VELOCITY_HI</a>, <a class="code" href="registers_8h.html#a999594da1a68e5f44bcc9a8ba6108c5d">REG_SEEK_VELOCITY_LO</a>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Get the minimum and maximum position.</span></div>
+<div class="line">    minimum_position = (int16_t) <a class="code" href="registers_8c.html#af8b091233149e27ba0ce0995fee7756b">registers_read_word</a>(<a class="code" href="registers_8h.html#a4057f850fd9b0870d1d25f047fa47147">REG_MIN_SEEK_HI</a>, <a class="code" href="registers_8h.html#af895680d43595c4971277de44651f0cd">REG_MIN_SEEK_LO</a>);</div>
+<div class="line">    maximum_position = (int16_t) <a class="code" href="registers_8c.html#af8b091233149e27ba0ce0995fee7756b">registers_read_word</a>(<a class="code" href="registers_8h.html#ad33d318398d6d9212ffda3302e333667">REG_MAX_SEEK_HI</a>, <a class="code" href="registers_8h.html#a9c22bbf6c47239cf536841620f947cc8">REG_MAX_SEEK_LO</a>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Are we reversing the seek sense?</span></div>
+<div class="line">    <span class="keywordflow">if</span> (registers_read_byte(<a class="code" href="registers_8h.html#a512d65e283c5e4481353eba8a226fd76">REG_REVERSE_SEEK</a>) != 0)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// Yes. Update the position and velocity using reverse sense.</span></div>
+<div class="line">        <a class="code" href="registers_8c.html#a2a7b20190fe395643f0d180422422e78">registers_write_word</a>(<a class="code" href="registers_8h.html#aefedc13294bf7cbb72b11ee02d8e2b43">REG_POSITION_HI</a>, <a class="code" href="registers_8h.html#a3a6c69a2e53039889d7d3cff4fe8b2dc">REG_POSITION_LO</a>, (uint16_t) (<a class="code" href="pid_8c.html#a850290a622822618b3cfb2fb46f8d269">MAX_POSITION</a> - current_position));</div>
+<div class="line">        <a class="code" href="registers_8c.html#a2a7b20190fe395643f0d180422422e78">registers_write_word</a>(<a class="code" href="registers_8h.html#a0ba8dbdee1f07b14aca450ebe30a00d4">REG_VELOCITY_HI</a>, <a class="code" href="registers_8h.html#acb7378d833f227369cb67dfc769915ea">REG_VELOCITY_LO</a>, (uint16_t) -current_velocity);</div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// Reverse sense the seek and other position values.</span></div>
+<div class="line">        seek_position = <a class="code" href="pid_8c.html#a850290a622822618b3cfb2fb46f8d269">MAX_POSITION</a> - seek_position;</div>
+<div class="line">        minimum_position = <a class="code" href="pid_8c.html#a850290a622822618b3cfb2fb46f8d269">MAX_POSITION</a> - minimum_position;</div>
+<div class="line">        maximum_position = <a class="code" href="pid_8c.html#a850290a622822618b3cfb2fb46f8d269">MAX_POSITION</a> - maximum_position;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span></div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// No. Update the position and velocity registers without change.</span></div>
+<div class="line">        <a class="code" href="registers_8c.html#a2a7b20190fe395643f0d180422422e78">registers_write_word</a>(<a class="code" href="registers_8h.html#aefedc13294bf7cbb72b11ee02d8e2b43">REG_POSITION_HI</a>, <a class="code" href="registers_8h.html#a3a6c69a2e53039889d7d3cff4fe8b2dc">REG_POSITION_LO</a>, (uint16_t) current_position);</div>
+<div class="line">        <a class="code" href="registers_8c.html#a2a7b20190fe395643f0d180422422e78">registers_write_word</a>(<a class="code" href="registers_8h.html#a0ba8dbdee1f07b14aca450ebe30a00d4">REG_VELOCITY_HI</a>, <a class="code" href="registers_8h.html#acb7378d833f227369cb67dfc769915ea">REG_VELOCITY_LO</a>, (uint16_t) current_velocity);</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Get the deadband.</span></div>
+<div class="line">    deadband = (int16_t) registers_read_byte(<a class="code" href="registers_8h.html#a9fe3c0497ed3f43610f0719a1c5dbfce">REG_PID_DEADBAND</a>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Use the filtered position when the seek position is not changing.</span></div>
+<div class="line">    <span class="keywordflow">if</span> (seek_position == previous_seek) current_position = filtered_position;</div>
+<div class="line">    previous_seek = seek_position;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Keep the seek position bound within the minimum and maximum position.</span></div>
+<div class="line">    <span class="keywordflow">if</span> (seek_position &lt; minimum_position) seek_position = minimum_position;</div>
+<div class="line">    <span class="keywordflow">if</span> (seek_position &gt; maximum_position) seek_position = maximum_position;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// The proportional component to the PID is the position error.</span></div>
+<div class="line">    p_component = seek_position - current_position;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// The derivative component to the PID is the velocity.</span></div>
+<div class="line">    d_component = seek_velocity - current_velocity;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Get the proportional, derivative and integral gains.</span></div>
+<div class="line">    p_gain = <a class="code" href="registers_8c.html#af8b091233149e27ba0ce0995fee7756b">registers_read_word</a>(<a class="code" href="registers_8h.html#af96bcf19ea576c18f276a42bf49008cc">REG_PID_PGAIN_HI</a>, <a class="code" href="registers_8h.html#a9dc1436c3b1ac6a454af49c5588d1a1d">REG_PID_PGAIN_LO</a>);</div>
+<div class="line">    d_gain = <a class="code" href="registers_8c.html#af8b091233149e27ba0ce0995fee7756b">registers_read_word</a>(<a class="code" href="registers_8h.html#aeb36aa4a1695caa44a4e29195a7063bc">REG_PID_DGAIN_HI</a>, <a class="code" href="registers_8h.html#af1451996a332900d3b22101d513a8c50">REG_PID_DGAIN_LO</a>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Start with zero PWM output.</span></div>
+<div class="line">    pwm_output = 0;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Apply proportional component to the PWM output if outside the deadband.</span></div>
+<div class="line">    <span class="keywordflow">if</span> ((p_component &gt; deadband) || (p_component &lt; -deadband))</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// Apply the proportional component of the PWM output.</span></div>
+<div class="line">        pwm_output += (int32_t) p_component * (int32_t) p_gain;</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Apply the derivative component of the PWM output.</span></div>
+<div class="line">    pwm_output += (int32_t) d_component * (int32_t) d_gain;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Shift by 8 to account for the multiply by the 8:8 fixed point gain values.</span></div>
+<div class="line">    pwm_output &gt;&gt;= 8;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Check for output saturation.</span></div>
+<div class="line">    <span class="keywordflow">if</span> (pwm_output &gt; <a class="code" href="pid_8c.html#a38afea15614bc71fe955c04b1a28a853">MAX_OUTPUT</a>)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// Can&#39;t go higher than the maximum output value.</span></div>
+<div class="line">        pwm_output = <a class="code" href="pid_8c.html#a38afea15614bc71fe955c04b1a28a853">MAX_OUTPUT</a>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pwm_output &lt; <a class="code" href="pid_8c.html#a0779b886e07264f0779a80cab68e75b7">MIN_OUTPUT</a>)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="comment">// Can&#39;t go lower than the minimum output value.</span></div>
+<div class="line">        pwm_output = <a class="code" href="pid_8c.html#a0779b886e07264f0779a80cab68e75b7">MIN_OUTPUT</a>;</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Return the PID output.</span></div>
+<div class="line">    <span class="keywordflow">return</span> (int16_t) pwm_output;</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="acf086a9022e1612ec6fda447276271ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pid_registers_defaults </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="pid_8c_source.html#l00085">85</a> pliku <a class="el" href="pid_8c_source.html">pid.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="config_8h_source.html#l00186">DEFAULT_MAX_SEEK</a>, <a class="el" href="config_8h_source.html#l00184">DEFAULT_MIN_SEEK</a>, <a class="el" href="config_8h_source.html#l00179">DEFAULT_PID_DEADBAND</a>, <a class="el" href="config_8h_source.html#l00175">DEFAULT_PID_DGAIN</a>, <a class="el" href="config_8h_source.html#l00177">DEFAULT_PID_IGAIN</a>, <a class="el" href="config_8h_source.html#l00173">DEFAULT_PID_PGAIN</a>, <a class="el" href="registers_8h_source.html#l00092">REG_MAX_SEEK_HI</a>, <a class="el" href="registers_8h_source.html#l00093">REG_MAX_SEEK_LO</a>, <a class="el" href="registers_8h_source.html#l00090">REG_MIN_SEEK_HI</a>, <a class="el" href="registers_8h_source.html#l00091">REG_MIN_SEEK_LO</a>, <a class="el" href="registers_8h_source.html#l00080">REG_PID_DEADBAND</a>, <a class="el" href="registers_8h_source.html#l00083">REG_PID_DGAIN_HI</a>, <a class="el" href="registers_8h_source.html#l00084">REG_PID_DGAIN_LO</a>, <a class="el" href="registers_8h_source.html#l00085">REG_PID_IGAIN_HI</a>, <a class="el" href="registers_8h_source.html#l00086">REG_PID_IGAIN_LO</a>, <a class="el" href="registers_8h_source.html#l00081">REG_PID_PGAIN_HI</a>, <a class="el" href="registers_8h_source.html#l00082">REG_PID_PGAIN_LO</a>, <a class="el" href="registers_8h_source.html#l00094">REG_REVERSE_SEEK</a> i <a class="el" href="registers_8c_source.html#l00125">registers_write_word()</a>.</p>
+
+<p>Odwołania w <a class="el" href="registers_8c_source.html#l00069">registers_defaults()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="comment">// Default deadband.</span></div>
+<div class="line">    registers_write_byte(<a class="code" href="registers_8h.html#a9fe3c0497ed3f43610f0719a1c5dbfce">REG_PID_DEADBAND</a>, <a class="code" href="group__tolinski__openservo.html#ga189d6d59ec599a9ec53608cc3fd2b940" title="Martwa strefa TowerPro SG5010.">DEFAULT_PID_DEADBAND</a>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Default gain values.</span></div>
+<div class="line">    <a class="code" href="registers_8c.html#a2a7b20190fe395643f0d180422422e78">registers_write_word</a>(<a class="code" href="registers_8h.html#af96bcf19ea576c18f276a42bf49008cc">REG_PID_PGAIN_HI</a>, <a class="code" href="registers_8h.html#a9dc1436c3b1ac6a454af49c5588d1a1d">REG_PID_PGAIN_LO</a>, <a class="code" href="group__tolinski__openservo.html#gab3593dabed4b2eff8e9f7c73088853bb" title="Konfiguracja P w PID dla TowerPro SG5010.">DEFAULT_PID_PGAIN</a>);</div>
+<div class="line">    <a class="code" href="registers_8c.html#a2a7b20190fe395643f0d180422422e78">registers_write_word</a>(<a class="code" href="registers_8h.html#aeb36aa4a1695caa44a4e29195a7063bc">REG_PID_DGAIN_HI</a>, <a class="code" href="registers_8h.html#af1451996a332900d3b22101d513a8c50">REG_PID_DGAIN_LO</a>, <a class="code" href="group__tolinski__openservo.html#gadf9cdf1f42b924088ad9bef906bfb7e0" title="Konfiguracja D w PID dla TowerPro SG5010.">DEFAULT_PID_DGAIN</a>);</div>
+<div class="line">    <a class="code" href="registers_8c.html#a2a7b20190fe395643f0d180422422e78">registers_write_word</a>(<a class="code" href="registers_8h.html#adb04a3964a04991cf52c06b1a814b38e">REG_PID_IGAIN_HI</a>, <a class="code" href="registers_8h.html#a083a7de0a571a29a2a797b9ef735de8c">REG_PID_IGAIN_LO</a>, <a class="code" href="group__tolinski__openservo.html#ga0459007ac30598963eb6fe596d4e534c" title="Konfiguracja I w PID dla TowerPro SG5010.">DEFAULT_PID_IGAIN</a>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Default position limits.</span></div>
+<div class="line">    <a class="code" href="registers_8c.html#a2a7b20190fe395643f0d180422422e78">registers_write_word</a>(<a class="code" href="registers_8h.html#a4057f850fd9b0870d1d25f047fa47147">REG_MIN_SEEK_HI</a>, <a class="code" href="registers_8h.html#af895680d43595c4971277de44651f0cd">REG_MIN_SEEK_LO</a>, <a class="code" href="group__tolinski__openservo.html#gaf89d287dd6cd8931dd9544088a991b85" title="Minimalna pozycja.">DEFAULT_MIN_SEEK</a>);</div>
+<div class="line">    <a class="code" href="registers_8c.html#a2a7b20190fe395643f0d180422422e78">registers_write_word</a>(<a class="code" href="registers_8h.html#ad33d318398d6d9212ffda3302e333667">REG_MAX_SEEK_HI</a>, <a class="code" href="registers_8h.html#a9c22bbf6c47239cf536841620f947cc8">REG_MAX_SEEK_LO</a>, <a class="code" href="group__tolinski__openservo.html#ga3ac12ca83366ee84e3e98c1c0e70abc2" title="Maksymalna pozycja.">DEFAULT_MAX_SEEK</a>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// Default reverse seek setting.</span></div>
+<div class="line">    registers_write_byte(<a class="code" href="registers_8h.html#a512d65e283c5e4481353eba8a226fd76">REG_REVERSE_SEEK</a>, 0x00);</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="pid_8c.html">pid.c</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:58:50 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

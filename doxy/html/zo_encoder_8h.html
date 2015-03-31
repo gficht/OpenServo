@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku zoEncoder.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('zo_encoder_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku zoEncoder.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;avr/interrupt.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="zo_types_8h_source.html">zoTypes.h</a>&quot;</code><br/>
+</div>
+<p><a href="zo_encoder_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a124dd2199ea1c0df6ceb6ad31c251a6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_encoder_8h.html#a124dd2199ea1c0df6ceb6ad31c251a6b">zoEncoderInit</a> (void)</td></tr>
+<tr class="memitem:a3e44304e8885489bc7f96e2068e0f5f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_encoder_8h.html#a3e44304e8885489bc7f96e2068e0f5f5">zoEncoderGetPos</a> (void)</td></tr>
+<tr class="memitem:aa3292a261ffea2334857d1adeac64189"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_encoder_8h.html#aa3292a261ffea2334857d1adeac64189">zoEncoderGetPosAbsolute</a> (void)</td></tr>
+<tr class="memitem:abee94da3cd9232f74a6fa615241bbb79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_encoder_8h.html#abee94da3cd9232f74a6fa615241bbb79">zoEncoderGetVel</a> (void)</td></tr>
+<tr class="memitem:abb25c889e29185fce687385098c7b81a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_encoder_8h.html#abb25c889e29185fce687385098c7b81a">zoEncoderSetVel</a> (void)</td></tr>
+<tr class="memitem:a3b29b6052e20861589b06b629d1f0b2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_encoder_8h.html#a3b29b6052e20861589b06b629d1f0b2d">zoEncoderReset</a> (void)</td></tr>
+<tr class="memitem:ab8de637dc6905226a52ae422bf3f97a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_encoder_8h.html#ab8de637dc6905226a52ae422bf3f97a2">zoEncoderIcpIsrEnable</a> (void)</td></tr>
+<tr class="memitem:acd2b52a2ea2f1771e54df07f972ace06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_encoder_8h.html#acd2b52a2ea2f1771e54df07f972ace06">zoEncoderIcpIsrDisable</a> (void)</td></tr>
+<tr class="memitem:acfb45f47442176aa96a9ee5e0c7a80f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_encoder_8h.html#acfb45f47442176aa96a9ee5e0c7a80f6">zoEncoderPollOverFlowError</a> (void)</td></tr>
+<tr class="memitem:ace7d91b73062a4711b289f79bd384b85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_encoder_8h.html#ace7d91b73062a4711b289f79bd384b85">zoEncoderPollUnderFlowError</a> (void)</td></tr>
+</table>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="a3e44304e8885489bc7f96e2068e0f5f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#ae9b1af5c037e57a98884758875d3a7c4">s32</a> zoEncoderGetPos </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a> i <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#a3c233b4069cd593bea45124faa2b2eda">constantVelocityCompletedCriterion()</a>, <a class="el" href="zo_sms_8h.html#a8399bacdf987309a8fbb9b2d5d0dbfd5">deccelRecalc()</a>, <a class="el" href="zo_sms_8h.html#ac87384ce66e2c198e793acbc95d37f3a">positionReachedCriterion()</a>, <a class="el" href="zo_commands_8h.html#adc44190abaedf1fb0b0febc3d4009347">zoCommandDoMove()</a>, <a class="el" href="zo_commands_8h.html#a063898d0fa81732c6ceee9ffeebec59c">zoCommandGetPosition()</a>, <a class="el" href="zo_commands_8h.html#a2409e12e788250e1680d1555d818d4e3">zoCommandHalt()</a>, <a class="el" href="zo_commands_8h.html#af3864ab04fa183898cf807af86d2771b">zoCommandProfiledRelativePositionMove()</a>, <a class="el" href="zo_commands_8h.html#ab7f41276777dd8ac1e09a5f23b45d4a3">zoCommandVelocityMove()</a>, <a class="el" href="zo_commands_8h.html#aede31b7046eb7e64ae11612d22fa2e2a">zoProfiledMoveAbsolute()</a>, <a class="el" href="zo_commands_8h.html#a13920e1b432d06d009a141670f1c4297">zoProfiledVelocity()</a>, <a class="el" href="zo_sms_8h.html#ad0ff2d7aff2c345e9ddfda99af235205">zoSmsInit()</a> i <a class="el" href="zo_sms_error_8h.html#a7f12274bf720191766178e1da93ec6ed">zoSmsMotorStalled()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3292a261ffea2334857d1adeac64189"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> zoEncoderGetPosAbsolute </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_encoder_8c.html#a99e70d93f58523b09df175fd311757eb">CLOCK_TICKS_PER_MICROSEC</a>, <a class="el" href="zo_encoder_8c.html#a85e07e3d422c0ee621eb73234f748a60">ENCODER_TICKS_PER_MICROSEC</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a> i <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a296d00336ab885d5ce45d42e350b4419">zoCommandGetAbsolutePosition()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abee94da3cd9232f74a6fa615241bbb79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#aa980e2c02ba2305e0f489d5650655425">s16</a> zoEncoderGetVel </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___s_u_p_e_r_m_o_d_i_f_i_e_d.html#a02db6cfe1cb9f45ed9cbcee5cb64b56b">ZO_SUPERMODIFIED::Control</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___s_m_s___c_o_n_t_r_o_l.html#a18d647eef83332fc2399db3577056ead">ZO_SMS_CONTROL::LoopHz</a>, <a class="el" href="zo_sms_8c.html#ac57d7188cbc0e05cefde7fac8e37f1ae">Sms</a> i <a class="el" href="zo_encoder_8c.html#a4f2ad217c8f059dd22682836ef1c3fe1">VELOCITY_READ_CONTROL_LOOP_ENTRIES</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#ab8d1c7b8a7410b8008a3be4597bce1be">zoCommandGetVelocity()</a>, <a class="el" href="zo_commands_8h.html#aede31b7046eb7e64ae11612d22fa2e2a">zoProfiledMoveAbsolute()</a> i <a class="el" href="zo_commands_8h.html#a13920e1b432d06d009a141670f1c4297">zoProfiledVelocity()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd2b52a2ea2f1771e54df07f972ace06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoEncoderIcpIsrDisable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a> i <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8de637dc6905226a52ae422bf3f97a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoEncoderIcpIsrEnable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a> i <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_encoder_8h.html#a124dd2199ea1c0df6ceb6ad31c251a6b">zoEncoderInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a124dd2199ea1c0df6ceb6ad31c251a6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoEncoderInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="avrlibdefs_8h.html#aad5ebd34cb344c26ac87594f79b06b73">sei</a> i <a class="el" href="zo_encoder_8c.html#ab8de637dc6905226a52ae422bf3f97a2">zoEncoderIcpIsrEnable()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#ad0ff2d7aff2c345e9ddfda99af235205">zoSmsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acfb45f47442176aa96a9ee5e0c7a80f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoEncoderPollOverFlowError </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a> i <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_sms_error_8h.html#a8b2306b94095b0acb1228a2e7bc0a96b">zoSmsErrorPoll()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ace7d91b73062a4711b289f79bd384b85"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoEncoderPollUnderFlowError </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a> i <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_sms_error_8h.html#a8b2306b94095b0acb1228a2e7bc0a96b">zoSmsErrorPoll()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b29b6052e20861589b06b629d1f0b2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoEncoderReset </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a> i <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_commands_8h.html#a80ad114ddf27b86719cadbaa354db937">zoCommandResetPosition()</a>, <a class="el" href="zo_commands_8h.html#a78ba12fba621c985b0ee498844c1c815">zoCommandStart()</a> i <a class="el" href="zo_sms_8h.html#ad0ff2d7aff2c345e9ddfda99af235205">zoSmsInit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abb25c889e29185fce687385098c7b81a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoEncoderSetVel </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_encoder_8c.html#a4f2ad217c8f059dd22682836ef1c3fe1">VELOCITY_READ_CONTROL_LOOP_ENTRIES</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_sms_8h.html#ae826e15b4aba21b9ca5b05ecacd6a0fa">zoSmsControlLoop()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb5fb232909a11b4992a277a944d4228.html">SuperModified.V1</a></li><li class="navelem"><a class="el" href="zo_encoder_8h.html">zoEncoder.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:49:49 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

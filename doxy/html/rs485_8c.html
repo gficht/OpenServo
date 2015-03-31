@@ -1,0 +1,1030 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku rs485.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="modules.html"><span>Moduły</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('rs485_8c.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku rs485.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;avr/io.h&gt;</code><br/>
+<code>#include &lt;avr/interrupt.h&gt;</code><br/>
+<code>#include &lt;util/crc16.h&gt;</code><br/>
+<code>#include &lt;util/delay.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="rs485_8h_source.html">rs485.h</a>&quot;</code><br/>
+<code>#include &quot;twi.h&quot;</code><br/>
+<code>#include &quot;watchdog.h&quot;</code><br/>
+<code>#include &quot;registers.h&quot;</code><br/>
+</div>
+<p><a href="rs485_8c_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:a8ef01535c7e3a5870496230aa82d9f7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a8ef01535c7e3a5870496230aa82d9f7b">MAX_uint8_t</a>&#160;&#160;&#160;255</td></tr>
+<tr class="memitem:aedbeca6c3953a92cab955be5f95a683b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#aedbeca6c3953a92cab955be5f95a683b">MAX_uint16_t</a>&#160;&#160;&#160;65535</td></tr>
+<tr class="memitem:a20b4183ab07f41e496119f451c134041"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a20b4183ab07f41e496119f451c134041">MAX_U32</a>&#160;&#160;&#160;4294967295</td></tr>
+<tr class="memitem:ac8062182d83c81a213080383559798c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#ac8062182d83c81a213080383559798c5">MIN_int8_t</a>&#160;&#160;&#160;-128</td></tr>
+<tr class="memitem:a1ec4e277861e2a5864bf53f34fb29a75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a1ec4e277861e2a5864bf53f34fb29a75">MAX_int8_t</a>&#160;&#160;&#160;127</td></tr>
+<tr class="memitem:a42776ec71318628a4dd8fb4abb2ea1b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a42776ec71318628a4dd8fb4abb2ea1b7">MIN_int16_t</a>&#160;&#160;&#160;-32768</td></tr>
+<tr class="memitem:a66ad7c24a3471cff9f2840fa6ce8149f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a66ad7c24a3471cff9f2840fa6ce8149f">MAX_int16_t</a>&#160;&#160;&#160;32767</td></tr>
+<tr class="memitem:afbba66fcb199cf13330cc678960a7e7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#afbba66fcb199cf13330cc678960a7e7a">MIN_S32</a>&#160;&#160;&#160;-2147483648</td></tr>
+<tr class="memitem:a9d45091964bbb21641595ab37f2067f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a9d45091964bbb21641595ab37f2067f3">MAX_S32</a>&#160;&#160;&#160;2147483647</td></tr>
+<tr class="memitem:affeb47b78e03333ea8f004c301354cad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#affeb47b78e03333ea8f004c301354cad">DATA_BITS_MASK_UCSR0C</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="memitem:a6f89188607dd8843034bf1e92b626f76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a6f89188607dd8843034bf1e92b626f76">DATA_BITS_MASK_UCSR0B</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="memitem:a1aeab1f204d7842923e07b6d262b1513"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a1aeab1f204d7842923e07b6d262b1513">PARITY_BITS_MASK</a>&#160;&#160;&#160;0x30</td></tr>
+<tr class="memitem:a5d934d3bd5ca1ec1817669d61fb9b036"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a5d934d3bd5ca1ec1817669d61fb9b036">STOP_BITS_MASK</a>&#160;&#160;&#160;0x80</td></tr>
+<tr class="memitem:a5f24c4e8bb9860fe18362cbf1af6496e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a5f24c4e8bb9860fe18362cbf1af6496e">FRAMELENGTH</a>&#160;&#160;&#160;9</td></tr>
+<tr class="memitem:ab62206b703c140f4e69ec162d93de7a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#ab62206b703c140f4e69ec162d93de7a4">WAITONSTART</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a7e0884315934cd82a1821ab294b94b75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a7e0884315934cd82a1821ab294b94b75">WAITONADDRESS</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a46d06f513265227935136f9cb8e91b06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a46d06f513265227935136f9cb8e91b06">WAITONCMD</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:a3d20ea94bb26fdfd6d5d69bbfe56d163"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a3d20ea94bb26fdfd6d5d69bbfe56d163">WAITONDATA1</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:acb38e5fdf361f55fa71faea634e54a4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#acb38e5fdf361f55fa71faea634e54a4c">WAITONDATA2</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memitem:af7fd7cf95153bb52622e04070a908da1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#af7fd7cf95153bb52622e04070a908da1">WAITONDATA3</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memitem:a06dac768ad10c110cb79850527b114e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a06dac768ad10c110cb79850527b114e7">WAITONDATA4</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memitem:ac7dc4c9f5cd0dca77522789ae8cff25d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#ac7dc4c9f5cd0dca77522789ae8cff25d">WAITONCRC1</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memitem:a99c91a36c5083570353566884bde261b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a99c91a36c5083570353566884bde261b">WAITONCRC2</a>&#160;&#160;&#160;8</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ga6a736b13f76843e56a4f1d9f707f1d81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga6a736b13f76843e56a4f1d9f707f1d81">UartInit</a> (void)</td></tr>
+<tr class="memdesc:ga6a736b13f76843e56a4f1d9f707f1d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjuje UART.  <a href="group__tolinski__uart.html#ga6a736b13f76843e56a4f1d9f707f1d81"></a><br/></td></tr>
+<tr class="memitem:ga1ea1d962fb1fec76bbd8655aacaa604b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga1ea1d962fb1fec76bbd8655aacaa604b">UartSetBaud</a> (uint32_t baudRate)</td></tr>
+<tr class="memdesc:ga1ea1d962fb1fec76bbd8655aacaa604b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia prędkość transmisji (BaudRate)  <a href="group__tolinski__uart.html#ga1ea1d962fb1fec76bbd8655aacaa604b"></a><br/></td></tr>
+<tr class="memitem:gabfafe07eb5843d617ad386522dd71038"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gabfafe07eb5843d617ad386522dd71038">UartSetDataBits</a> (<a class="el" href="group__tolinski__uart.html#gab8bf6f1e0ab2758330334975157f7ecc">UART_DATA_BITS</a> dataBits)</td></tr>
+<tr class="memdesc:gabfafe07eb5843d617ad386522dd71038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia ilość bitów danych.  <a href="group__tolinski__uart.html#gabfafe07eb5843d617ad386522dd71038"></a><br/></td></tr>
+<tr class="memitem:gaecb0c989853121f4479bf8aa3ec7b1a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gaecb0c989853121f4479bf8aa3ec7b1a7">UartSetParity</a> (<a class="el" href="group__tolinski__uart.html#ga24fd4dba815fc40fbd8e8c37dbf87c7a">UART_PARITY</a> parity)</td></tr>
+<tr class="memdesc:gaecb0c989853121f4479bf8aa3ec7b1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia bity parzytości.  <a href="group__tolinski__uart.html#gaecb0c989853121f4479bf8aa3ec7b1a7"></a><br/></td></tr>
+<tr class="memitem:gacce4b42d418c554608de82ee4093a615"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gacce4b42d418c554608de82ee4093a615">UartSetStopBits</a> (<a class="el" href="group__tolinski__uart.html#gab75244284ddae5a45f23bcb71b5bb485">UART_STOP_BITS</a> stopBits)</td></tr>
+<tr class="memdesc:gacce4b42d418c554608de82ee4093a615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia ilość bitów stopu.  <a href="group__tolinski__uart.html#gacce4b42d418c554608de82ee4093a615"></a><br/></td></tr>
+<tr class="memitem:ga1ef6e34e7e5bea45d9b704ffbd98061a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga1ef6e34e7e5bea45d9b704ffbd98061a">UartInitRs485</a> (volatile uint8_t *port, uint8_t pinConnectedToReDe)</td></tr>
+<tr class="memdesc:ga1ef6e34e7e5bea45d9b704ffbd98061a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjalizuje pin obsługujący kierunek przeływu danych na potrzeby half-duplexu RS485.  <a href="group__tolinski__uart.html#ga1ef6e34e7e5bea45d9b704ffbd98061a"></a><br/></td></tr>
+<tr class="memitem:a033b72b4aed29d3109f639f1a96befd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a033b72b4aed29d3109f639f1a96befd6">UartStartTx</a> (void)</td></tr>
+<tr class="memitem:a561dbefc7160129132392c9699311439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a561dbefc7160129132392c9699311439">UartRxFlush</a> (void)</td></tr>
+<tr class="memitem:gafb6d9f224e8e57c039e1e93db4a463a8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gafb6d9f224e8e57c039e1e93db4a463a8">FrameCRC</a> (volatile const <a class="el" href="struct_frame.html">Frame</a> *f)</td></tr>
+<tr class="memdesc:gafb6d9f224e8e57c039e1e93db4a463a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oblicza sumę kontrolną ramki.  <a href="group__tolinski__uart.html#gafb6d9f224e8e57c039e1e93db4a463a8"></a><br/></td></tr>
+<tr class="memitem:ga097fbe40f3ece7b88aec43938bed0f00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga097fbe40f3ece7b88aec43938bed0f00">FrameCheckCRC</a> (volatile <a class="el" href="struct_frame.html">Frame</a> *f)</td></tr>
+<tr class="memdesc:ga097fbe40f3ece7b88aec43938bed0f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza poprawność sumy kontrolnej ramki.  <a href="group__tolinski__uart.html#ga097fbe40f3ece7b88aec43938bed0f00"></a><br/></td></tr>
+<tr class="memitem:a4b55cb18a12cdc88be98fcf5726cfe7d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a4b55cb18a12cdc88be98fcf5726cfe7d">UartGetFrameISR</a> (volatile <a class="el" href="struct_frame.html">Frame</a> *f, volatile uint8_t byte)</td></tr>
+<tr class="memitem:aef390bf07b5f01f3dd8ad9944f88f76c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#aef390bf07b5f01f3dd8ad9944f88f76c">UartPutFrameISR</a> (volatile <a class="el" href="struct_frame.html">Frame</a> *f)</td></tr>
+<tr class="memitem:ga7a978a0320370033a09d655fabc905e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga7a978a0320370033a09d655fabc905e5">FrameInit</a> (volatile <a class="el" href="struct_frame.html">Frame</a> *f, uint8_t a, uint8_t c, uint16_t d1, int16_t d2)</td></tr>
+<tr class="memdesc:ga7a978a0320370033a09d655fabc905e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjuje strukturę ramki podanymi wartościami i oblicza jej sumę kontrolną  <a href="group__tolinski__uart.html#ga7a978a0320370033a09d655fabc905e5"></a><br/></td></tr>
+<tr class="memitem:ga48a3576905b477b6c54f3c79af79f87a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga48a3576905b477b6c54f3c79af79f87a">FrameCopy</a> (volatile <a class="el" href="struct_frame.html">Frame</a> *f, volatile <a class="el" href="struct_frame.html">Frame</a> *from)</td></tr>
+<tr class="memdesc:ga48a3576905b477b6c54f3c79af79f87a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kopiuje ramkę  <a href="group__tolinski__uart.html#ga48a3576905b477b6c54f3c79af79f87a"></a><br/></td></tr>
+<tr class="memitem:a09ce999e15ad60b8a3f07d08af1946f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a09ce999e15ad60b8a3f07d08af1946f9">ISR</a> (USART_RX_vect)</td></tr>
+<tr class="memitem:ad878deb12efde50ce23b8afa0cd310d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#ad878deb12efde50ce23b8afa0cd310d1">ISR</a> (USART_UDRE_vect)</td></tr>
+<tr class="memitem:a2e1a1228dec9ed3dac10f2d3fa96bede"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a2e1a1228dec9ed3dac10f2d3fa96bede">ISR</a> (USART_TX_vect)</td></tr>
+<tr class="memitem:gaaa81ac0a77c7959fa862e5256b192adb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#gaaa81ac0a77c7959fa862e5256b192adb">SendFrame</a> (<a class="el" href="struct_frame.html">Frame</a> *f)</td></tr>
+<tr class="memdesc:gaaa81ac0a77c7959fa862e5256b192adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rozpoczyna wysyłanie ramki.  <a href="group__tolinski__uart.html#gaaa81ac0a77c7959fa862e5256b192adb"></a><br/></td></tr>
+<tr class="memitem:ga30684d7f416fb9284684d2553d19656c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga30684d7f416fb9284684d2553d19656c">GetFrame</a> (volatile <a class="el" href="struct_frame.html">Frame</a> *f)</td></tr>
+<tr class="memdesc:ga30684d7f416fb9284684d2553d19656c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy pobrano ramkę  <a href="group__tolinski__uart.html#ga30684d7f416fb9284684d2553d19656c"></a><br/></td></tr>
+<tr class="memitem:ga1786dc4e4daeaa3ce26e68b47748da48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__uart.html#ga1786dc4e4daeaa3ce26e68b47748da48">RS485CMD</a> ()</td></tr>
+<tr class="memdesc:ga1786dc4e4daeaa3ce26e68b47748da48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy przyszło jakieś polecenie, jeśli tak wykonuje je.  <a href="group__tolinski__uart.html#ga1786dc4e4daeaa3ce26e68b47748da48"></a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:a904bb85ed89e4a1615310e8080f1d284"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a904bb85ed89e4a1615310e8080f1d284">FrameBytesCount</a> = 0</td></tr>
+<tr class="memitem:a80171d727fe56705b83bbd21cbc1629c"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a80171d727fe56705b83bbd21cbc1629c">FrameSendBytesCount</a> = 0</td></tr>
+<tr class="memitem:a9daff125829259b15e776e7c7c4abccc"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a9daff125829259b15e776e7c7c4abccc">FrameReceived</a> = FALSE</td></tr>
+<tr class="memitem:a6024c5e32b6d5ea0b8866a7970d15cab"><td class="memItemLeft" align="right" valign="top">volatile bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a6024c5e32b6d5ea0b8866a7970d15cab">FrameSend</a> = FALSE</td></tr>
+<tr class="memitem:a9e9737cc8797d21fe6341265f6401454"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a9e9737cc8797d21fe6341265f6401454">FrameErrors</a> = 0</td></tr>
+<tr class="memitem:a4b0fabe25324b152015ac6d5d6750414"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a4b0fabe25324b152015ac6d5d6750414">FrameOverflows</a> = 0</td></tr>
+<tr class="memitem:acc3c715480a06b48f7a5333e33ea0510"><td class="memItemLeft" align="right" valign="top">volatile uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#acc3c715480a06b48f7a5333e33ea0510">ReceiveErrors</a> = 0</td></tr>
+<tr class="memitem:a5b5a52104c58a57355129e2e47363c38"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="struct_frame.html">Frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a5b5a52104c58a57355129e2e47363c38">InFrame</a></td></tr>
+<tr class="memitem:aef672b6f4c319a765718b7d35d3d9f51"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="struct_frame.html">Frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#aef672b6f4c319a765718b7d35d3d9f51">OutFrame</a></td></tr>
+<tr class="memitem:a520e25e85eefe4cd306816e6f7e21775"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_frame.html">Frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a520e25e85eefe4cd306816e6f7e21775">response</a></td></tr>
+<tr class="memitem:a77dc18d46915ac325de8a1fb79f16284"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_frame.html">Frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a77dc18d46915ac325de8a1fb79f16284">cmd</a></td></tr>
+<tr class="memitem:a1617bafee80cb8c458689c826d1e2466"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_frame.html">Frame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rs485_8c.html#a1617bafee80cb8c458689c826d1e2466">erro</a></td></tr>
+</table>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="a6f89188607dd8843034bf1e92b626f76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_BITS_MASK_UCSR0B&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00026">26</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00105">UartSetDataBits()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="affeb47b78e03333ea8f004c301354cad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_BITS_MASK_UCSR0C&#160;&#160;&#160;0x06</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00025">25</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00105">UartSetDataBits()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f24c4e8bb9860fe18362cbf1af6496e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FRAMELENGTH&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00036">36</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a66ad7c24a3471cff9f2840fa6ce8149f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_int16_t&#160;&#160;&#160;32767</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00021">21</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ec4e277861e2a5864bf53f34fb29a75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_int8_t&#160;&#160;&#160;127</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00019">19</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d45091964bbb21641595ab37f2067f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_S32&#160;&#160;&#160;2147483647</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00023">23</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a20b4183ab07f41e496119f451c134041"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_U32&#160;&#160;&#160;4294967295</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00014">14</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aedbeca6c3953a92cab955be5f95a683b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_uint16_t&#160;&#160;&#160;65535</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00013">13</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ef01535c7e3a5870496230aa82d9f7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_uint8_t&#160;&#160;&#160;255</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00012">12</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42776ec71318628a4dd8fb4abb2ea1b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_int16_t&#160;&#160;&#160;-32768</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00020">20</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8062182d83c81a213080383559798c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_int8_t&#160;&#160;&#160;-128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00018">18</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afbba66fcb199cf13330cc678960a7e7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_S32&#160;&#160;&#160;-2147483648</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00022">22</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1aeab1f204d7842923e07b6d262b1513"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PARITY_BITS_MASK&#160;&#160;&#160;0x30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00027">27</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00111">UartSetParity()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5d934d3bd5ca1ec1817669d61fb9b036"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STOP_BITS_MASK&#160;&#160;&#160;0x80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00028">28</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00116">UartSetStopBits()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e0884315934cd82a1821ab294b94b75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WAITONADDRESS&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00038">38</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00196">UartGetFrameISR()</a> i <a class="el" href="rs485_8c_source.html#l00241">UartPutFrameISR()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a46d06f513265227935136f9cb8e91b06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WAITONCMD&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00039">39</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00196">UartGetFrameISR()</a> i <a class="el" href="rs485_8c_source.html#l00241">UartPutFrameISR()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7dc4c9f5cd0dca77522789ae8cff25d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WAITONCRC1&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00044">44</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00196">UartGetFrameISR()</a> i <a class="el" href="rs485_8c_source.html#l00241">UartPutFrameISR()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a99c91a36c5083570353566884bde261b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WAITONCRC2&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00045">45</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00196">UartGetFrameISR()</a> i <a class="el" href="rs485_8c_source.html#l00241">UartPutFrameISR()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d20ea94bb26fdfd6d5d69bbfe56d163"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WAITONDATA1&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00040">40</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00196">UartGetFrameISR()</a> i <a class="el" href="rs485_8c_source.html#l00241">UartPutFrameISR()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acb38e5fdf361f55fa71faea634e54a4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WAITONDATA2&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00041">41</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00196">UartGetFrameISR()</a> i <a class="el" href="rs485_8c_source.html#l00241">UartPutFrameISR()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af7fd7cf95153bb52622e04070a908da1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WAITONDATA3&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00042">42</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00196">UartGetFrameISR()</a> i <a class="el" href="rs485_8c_source.html#l00241">UartPutFrameISR()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a06dac768ad10c110cb79850527b114e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WAITONDATA4&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00043">43</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00196">UartGetFrameISR()</a> i <a class="el" href="rs485_8c_source.html#l00241">UartPutFrameISR()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab62206b703c140f4e69ec162d93de7a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WAITONSTART&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00037">37</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00196">UartGetFrameISR()</a> i <a class="el" href="rs485_8c_source.html#l00241">UartPutFrameISR()</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="a09ce999e15ad60b8a3f07d08af1946f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype">USART_RX_vect&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00293">293</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="rs485_8c_source.html#l00051">FrameBytesCount</a>, <a class="el" href="rs485_8c_source.html#l00056">FrameErrors</a>, <a class="el" href="rs485_8c_source.html#l00057">FrameOverflows</a>, <a class="el" href="rs485_8c_source.html#l00053">FrameReceived</a>, <a class="el" href="rs485_8c_source.html#l00058">ReceiveErrors</a>, <a class="el" href="rs485_8h_source.html#l00090">ReceiveFrameE</a>, <a class="el" href="rs485_8h_source.html#l00088">ReceiveNoError</a>, <a class="el" href="rs485_8h_source.html#l00091">ReceiveOverrunE</a>, <a class="el" href="rs485_8h_source.html#l00089">ReceiveParityE</a> i <a class="el" href="rs485_8c_source.html#l00196">UartGetFrameISR()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    uint8_t <span class="keyword">volatile</span> c;</div>
+<div class="line">    uint8_t errors=<a class="code" href="group__tolinski__uart.html#ga6b1561dd9bcbc067ff6845b425929621">ReceiveNoError</a>;</div>
+<div class="line">    <span class="keywordflow">if</span> ((UCSR0A &amp; _BV(FE0)) != 0x00)  <span class="comment">//is there a frame error?</span></div>
+<div class="line">            errors|=<a class="code" href="group__tolinski__uart.html#ga9ac8d146c8c359c99949b07f196c6ac7">ReceiveFrameE</a>;</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">if</span> ((UCSR0A &amp; _BV(UPE0)) != 0x00) <span class="comment">//is there a parity error?</span></div>
+<div class="line">            errors|=<a class="code" href="group__tolinski__uart.html#ga9b281404594768c39381f9297393f6b4">ReceiveParityE</a>;</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">if</span> ( (UCSR0A &amp; _BV(DOR0)) != 0x00 ) <span class="comment">//Is there data overrun?</span></div>
+<div class="line">            errors|=<a class="code" href="group__tolinski__uart.html#gaf4cef63f675fb8fb47d4a053a6f82393">ReceiveOverrunE</a>;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">//Above three bits are cleared automatically when UDR0 is read.                                                                                         //</span></div>
+<div class="line">    c  = UDR0;</div>
+<div class="line">    <span class="keywordflow">if</span>(errors==<a class="code" href="group__tolinski__uart.html#ga6b1561dd9bcbc067ff6845b425929621">ReceiveNoError</a>)</div>
+<div class="line">        <span class="keywordflow">if</span>(!<a class="code" href="rs485_8c.html#a9daff125829259b15e776e7c7c4abccc">FrameReceived</a>)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">if</span>(!<a class="code" href="rs485_8c.html#a4b55cb18a12cdc88be98fcf5726cfe7d">UartGetFrameISR</a>(&amp;<a class="code" href="rs485_8c.html#a5b5a52104c58a57355129e2e47363c38">InFrame</a>,c))</div>
+<div class="line">                ++<a class="code" href="rs485_8c.html#a9e9737cc8797d21fe6341265f6401454">FrameErrors</a>;</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span></div>
+<div class="line">            ++<a class="code" href="rs485_8c.html#a4b0fabe25324b152015ac6d5d6750414">FrameOverflows</a>;</div>
+<div class="line">    <span class="keywordflow">else</span></div>
+<div class="line">    {</div>
+<div class="line">        ++<a class="code" href="rs485_8c.html#acc3c715480a06b48f7a5333e33ea0510">ReceiveErrors</a>;</div>
+<div class="line">        <span class="comment">//if(FrameBytesCount&lt;7)//if only crc left</span></div>
+<div class="line">        <a class="code" href="rs485_8c.html#a904bb85ed89e4a1615310e8080f1d284">FrameBytesCount</a>=0;<span class="comment">//drop frame, start receiving new</span></div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad878deb12efde50ce23b8afa0cd310d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype">USART_UDRE_vect&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00325">325</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="rs485_8c_source.html#l00054">FrameSend</a> i <a class="el" href="rs485_8c_source.html#l00241">UartPutFrameISR()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">//PORTB&amp;=~_BV(PORTB3);//|_BV(PORTB5));//wlacz PB3 - kierunek wysylanie</span></div>
+<div class="line">    <span class="comment">//PORTB|=_BV(PORTB4);//wlacz PB4 - kierunek wysylanie</span></div>
+<div class="line">    <span class="comment">//if(!BufferIsEmpty(&amp;TxBuffer))</span></div>
+<div class="line">    <span class="comment">//PORTB&amp;=~_BV(PORTB4);//wlacz PB4 - kierunek odbieranie</span></div>
+<div class="line">    <span class="comment">//*Rs485ReDePort |= _BV(Rs485ReDePin);</span></div>
+<div class="line">    <span class="keywordflow">if</span>(<a class="code" href="rs485_8c.html#a6024c5e32b6d5ea0b8866a7970d15cab">FrameSend</a>)</div>
+<div class="line">    {</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line">            <span class="comment">//_delay_us(5);</span></div>
+<div class="line"></div>
+<div class="line">            UCSR0B |= _BV(TXEN0);                   <span class="comment">//enable transmitter we are about to send data on the bus</span></div>
+<div class="line">            <span class="comment">//UCSR0B |= _BV(TXCIE0);</span></div>
+<div class="line"></div>
+<div class="line">            <span class="comment">//PORTB&amp;=~_BV(PORTB4);//wlacz PB4 - kierunek odbieranie</span></div>
+<div class="line">            <span class="comment">//_delay_us(10);</span></div>
+<div class="line">            <span class="keyword">volatile</span> uint8_t c=<a class="code" href="rs485_8c.html#aef390bf07b5f01f3dd8ad9944f88f76c">UartPutFrameISR</a>(&amp;<a class="code" href="rs485_8c.html#aef672b6f4c319a765718b7d35d3d9f51">OutFrame</a>);</div>
+<div class="line">            <span class="comment">//if(Rs485Used)</span></div>
+<div class="line">            UDR0=c;</div>
+<div class="line">            <span class="comment">//_delay_us(5);</span></div>
+<div class="line">            <span class="comment">//UDR0 =BufferPopISR(&amp;TxBuffer);</span></div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">else</span></div>
+<div class="line">    {</div>
+<div class="line">        UCSR0B&amp;=~_BV(UDRIE0);<span class="comment">// Buffer empty, Disable Tx interrupts</span></div>
+<div class="line"></div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">//*Rs485ReDePort &amp;= ~_BV(Rs485ReDePin);</span></div>
+<div class="line">    <span class="comment">//PORTB|=_BV(PORTB4);//wlacz PB4 - kierunek wysylanie</span></div>
+<div class="line">    <span class="comment">//PORTB|=_BV(PORTB3);//|_BV(PORTB5);//wylacz PB3 - kierunek odbieranie</span></div>
+<div class="line">    <span class="comment">//PORTB|=_BV(PORTB4);//wylacz PB3 - kierunek odbieranie</span></div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2e1a1228dec9ed3dac10f2d3fa96bede"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype">USART_TX_vect&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00361">361</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line"></div>
+<div class="line">        UCSR0B &amp;= ~_BV(TXEN0);                          <span class="comment">//disable transmitter, allow other nodes on the uart bus to communicate</span></div>
+<div class="line">        DDRD &amp;= ~_BV(PD1);                                      <span class="comment">//put tx pin in high impendance mode in order to allow others to communicate</span></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line">        *Rs485ReDePort &amp;= ~_BV(Rs485ReDePin);   <span class="comment">// Clear RS485 Pin for receive mode</span></div>
+<div class="line">        <span class="comment">//_delay_us(10);</span></div>
+<div class="line">        <span class="comment">//_delay_us(10);</span></div>
+<div class="line">        PORTB|=_BV(PORTB4);<span class="comment">//wlacz PB4 - kierunek wysylanie</span></div>
+<div class="line">        UCSR0B &amp;=~_BV(TXCIE0);                                       <span class="comment">// Disable trasnmit complete interrupt</span></div>
+<div class="line">        UCSR0B |= _BV(RXCIE0);</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4b55cb18a12cdc88be98fcf5726cfe7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t UartGetFrameISR </td>
+          <td>(</td>
+          <td class="paramtype">volatile <a class="el" href="struct_frame.html">Frame</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">volatile uint8_t&#160;</td>
+          <td class="paramname"><em>byte</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00196">196</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="rs485_8h_source.html#l00080">Frame::address</a>, <a class="el" href="rs485_8h_source.html#l00081">Frame::cmd</a>, <a class="el" href="rs485_8h_source.html#l00084">Frame::crc</a>, <a class="el" href="rs485_8h_source.html#l00082">Frame::data1</a>, <a class="el" href="rs485_8h_source.html#l00083">Frame::data2</a>, <a class="el" href="rs485_8c_source.html#l00051">FrameBytesCount</a>, <a class="el" href="rs485_8c_source.html#l00053">FrameReceived</a>, <a class="el" href="rs485_8c_source.html#l00038">WAITONADDRESS</a>, <a class="el" href="rs485_8c_source.html#l00039">WAITONCMD</a>, <a class="el" href="rs485_8c_source.html#l00044">WAITONCRC1</a>, <a class="el" href="rs485_8c_source.html#l00045">WAITONCRC2</a>, <a class="el" href="rs485_8c_source.html#l00040">WAITONDATA1</a>, <a class="el" href="rs485_8c_source.html#l00041">WAITONDATA2</a>, <a class="el" href="rs485_8c_source.html#l00042">WAITONDATA3</a>, <a class="el" href="rs485_8c_source.html#l00043">WAITONDATA4</a> i <a class="el" href="rs485_8c_source.html#l00037">WAITONSTART</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00293">ISR()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="keywordflow">if</span>(!<a class="code" href="rs485_8c.html#a9daff125829259b15e776e7c7c4abccc">FrameReceived</a>)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">switch</span>(<a class="code" href="rs485_8c.html#a904bb85ed89e4a1615310e8080f1d284">FrameBytesCount</a>)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#ab62206b703c140f4e69ec162d93de7a4">WAITONSTART</a>:</div>
+<div class="line">                <span class="keywordflow">if</span>(byte!=<span class="charliteral">&#39;&lt;&#39;</span>)</div>
+<div class="line">                    <span class="keywordflow">return</span> FALSE;</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#a7e0884315934cd82a1821ab294b94b75">WAITONADDRESS</a>:</div>
+<div class="line">                f-&gt;address=byte;</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#a46d06f513265227935136f9cb8e91b06">WAITONCMD</a>:</div>
+<div class="line">                f-&gt;cmd=byte;</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#a3d20ea94bb26fdfd6d5d69bbfe56d163">WAITONDATA1</a>:</div>
+<div class="line">                f-&gt;data1=(uint16_t)byte&lt;&lt;8;</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#acb38e5fdf361f55fa71faea634e54a4c">WAITONDATA2</a>:</div>
+<div class="line">                f-&gt;data1+=byte&amp; 0xFF;</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#af7fd7cf95153bb52622e04070a908da1">WAITONDATA3</a>:</div>
+<div class="line">                f-&gt;data2=(uint16_t)byte&lt;&lt;8;</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#a06dac768ad10c110cb79850527b114e7">WAITONDATA4</a>:</div>
+<div class="line">                f-&gt;data2+=byte&amp; 0xFF;</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#ac7dc4c9f5cd0dca77522789ae8cff25d">WAITONCRC1</a>:</div>
+<div class="line">                f-&gt;crc=(uint16_t)byte&lt;&lt;8;</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#a99c91a36c5083570353566884bde261b">WAITONCRC2</a>:</div>
+<div class="line">            {</div>
+<div class="line">                f-&gt;crc+=byte&amp; 0xFF;</div>
+<div class="line">                <a class="code" href="rs485_8c.html#a9daff125829259b15e776e7c7c4abccc">FrameReceived</a>=TRUE;</div>
+<div class="line">                <a class="code" href="rs485_8c.html#a904bb85ed89e4a1615310e8080f1d284">FrameBytesCount</a>=0;</div>
+<div class="line">                <span class="keywordflow">return</span> TRUE;</div>
+<div class="line">            }</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">        }</div>
+<div class="line">        ++<a class="code" href="rs485_8c.html#a904bb85ed89e4a1615310e8080f1d284">FrameBytesCount</a>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> TRUE;</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aef390bf07b5f01f3dd8ad9944f88f76c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t UartPutFrameISR </td>
+          <td>(</td>
+          <td class="paramtype">volatile <a class="el" href="struct_frame.html">Frame</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00241">241</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="rs485_8h_source.html#l00080">Frame::address</a>, <a class="el" href="rs485_8h_source.html#l00081">Frame::cmd</a>, <a class="el" href="rs485_8h_source.html#l00084">Frame::crc</a>, <a class="el" href="rs485_8h_source.html#l00082">Frame::data1</a>, <a class="el" href="rs485_8h_source.html#l00083">Frame::data2</a>, <a class="el" href="rs485_8c_source.html#l00054">FrameSend</a>, <a class="el" href="rs485_8c_source.html#l00052">FrameSendBytesCount</a>, <a class="el" href="rs485_8c_source.html#l00038">WAITONADDRESS</a>, <a class="el" href="rs485_8c_source.html#l00039">WAITONCMD</a>, <a class="el" href="rs485_8c_source.html#l00044">WAITONCRC1</a>, <a class="el" href="rs485_8c_source.html#l00045">WAITONCRC2</a>, <a class="el" href="rs485_8c_source.html#l00040">WAITONDATA1</a>, <a class="el" href="rs485_8c_source.html#l00041">WAITONDATA2</a>, <a class="el" href="rs485_8c_source.html#l00042">WAITONDATA3</a>, <a class="el" href="rs485_8c_source.html#l00043">WAITONDATA4</a> i <a class="el" href="rs485_8c_source.html#l00037">WAITONSTART</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00325">ISR()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="comment">//if(FrameSend)</span></div>
+<div class="line">    <span class="comment">//{</span></div>
+<div class="line">        <span class="comment">//++</span></div>
+<div class="line">        <span class="keywordflow">switch</span>(<a class="code" href="rs485_8c.html#a80171d727fe56705b83bbd21cbc1629c">FrameSendBytesCount</a>)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#ab62206b703c140f4e69ec162d93de7a4">WAITONSTART</a>:</div>
+<div class="line">                <span class="keywordflow">return</span> <span class="charliteral">&#39;&lt;&#39;</span>;<span class="comment">//send frame start sign</span></div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#a7e0884315934cd82a1821ab294b94b75">WAITONADDRESS</a>:</div>
+<div class="line">                <span class="keywordflow">return</span> f-&gt;address;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#a46d06f513265227935136f9cb8e91b06">WAITONCMD</a>:</div>
+<div class="line">                <span class="keywordflow">return</span> f-&gt;cmd;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#a3d20ea94bb26fdfd6d5d69bbfe56d163">WAITONDATA1</a>:</div>
+<div class="line">                <span class="keywordflow">return</span> (f-&gt;data1)&gt;&gt;8;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#acb38e5fdf361f55fa71faea634e54a4c">WAITONDATA2</a>:</div>
+<div class="line">                <span class="keywordflow">return</span> (f-&gt;data1)&amp; 0xFF;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#af7fd7cf95153bb52622e04070a908da1">WAITONDATA3</a>:</div>
+<div class="line">                <span class="keywordflow">return</span> (f-&gt;data2)&gt;&gt;8;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#a06dac768ad10c110cb79850527b114e7">WAITONDATA4</a>:</div>
+<div class="line">                <span class="keywordflow">return</span> (f-&gt;data2)&amp; 0xFF;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#ac7dc4c9f5cd0dca77522789ae8cff25d">WAITONCRC1</a>:</div>
+<div class="line">                <span class="keywordflow">return</span> (f-&gt;crc)&gt;&gt;8;</div>
+<div class="line">            <span class="keywordflow">case</span> <a class="code" href="rs485_8c.html#a99c91a36c5083570353566884bde261b">WAITONCRC2</a>:</div>
+<div class="line">            {</div>
+<div class="line">                <a class="code" href="rs485_8c.html#a6024c5e32b6d5ea0b8866a7970d15cab">FrameSend</a>=FALSE;<span class="comment">//clear &quot;sending frame&quot; flag, ready for new frame to send</span></div>
+<div class="line">                <a class="code" href="rs485_8c.html#a80171d727fe56705b83bbd21cbc1629c">FrameSendBytesCount</a>=0;</div>
+<div class="line">                <span class="keywordflow">return</span> (f-&gt;crc)&amp; 0xFF;</div>
+<div class="line">            }</div>
+<div class="line">            <span class="comment">//default:</span></div>
+<div class="line">            <span class="comment">//  return FrameSend=FALSE;</span></div>
+<div class="line">        }</div>
+<div class="line">        ++<a class="code" href="rs485_8c.html#a80171d727fe56705b83bbd21cbc1629c">FrameSendBytesCount</a>;</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a561dbefc7160129132392c9699311439"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UartRxFlush </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00148">148</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    uint8_t  dummy;</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">while</span> (bit_is_set(UCSR0A, RXC0))</div>
+<div class="line">         dummy = UDR0;</div>
+<div class="line"></div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a033b72b4aed29d3109f639f1a96befd6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UartStartTx </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00134">134</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołuje się do <a class="el" href="rs485_8c_source.html#l00054">FrameSend</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00377">SendFrame()</a>.</p>
+<div class="fragment"><div class="line">{</div>
+<div class="line">    enterCritical();</div>
+<div class="line">    PORTB&amp;=~_BV(PORTB4);<span class="comment">//wlacz PB4 - kierunek odbieranie</span></div>
+<div class="line">    *Rs485ReDePort |= _BV(Rs485ReDePin);</div>
+<div class="line">    <span class="keywordflow">if</span>(<a class="code" href="rs485_8c.html#a6024c5e32b6d5ea0b8866a7970d15cab">FrameSend</a>)                                          <span class="comment">// See if this is the first character</span></div>
+<div class="line">    {</div>
+<div class="line">        UCSR0B |= _BV(UDRIE0);                                  <span class="comment">// Yes, Enable Tx interrupts</span></div>
+<div class="line">        UCSR0B |=_BV(TXCIE0);                                       <span class="comment">// Disable trasnmit complete interrupt</span></div>
+<div class="line">        UCSR0B &amp;=~ _BV(RXCIE0);</div>
+<div class="line">    }</div>
+<div class="line">    exitCritical();</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/><h2>Dokumentacja zmiennych</h2>
+<a class="anchor" id="a77dc18d46915ac325de8a1fb79f16284"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_frame.html">Frame</a> cmd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00064">64</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1617bafee80cb8c458689c826d1e2466"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_frame.html">Frame</a> erro</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00065">65</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a904bb85ed89e4a1615310e8080f1d284"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t FrameBytesCount = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00051">51</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00293">ISR()</a> i <a class="el" href="rs485_8c_source.html#l00196">UartGetFrameISR()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e9737cc8797d21fe6341265f6401454"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint16_t FrameErrors = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00056">56</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00293">ISR()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b0fabe25324b152015ac6d5d6750414"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint16_t FrameOverflows = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00057">57</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00293">ISR()</a> i <a class="el" href="rs485_8c_source.html#l00377">SendFrame()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9daff125829259b15e776e7c7c4abccc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool FrameReceived = FALSE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00053">53</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00393">GetFrame()</a>, <a class="el" href="rs485_8c_source.html#l00293">ISR()</a> i <a class="el" href="rs485_8c_source.html#l00196">UartGetFrameISR()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6024c5e32b6d5ea0b8866a7970d15cab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile bool FrameSend = FALSE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00054">54</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00325">ISR()</a>, <a class="el" href="rs485_8c_source.html#l00377">SendFrame()</a>, <a class="el" href="rs485_8c_source.html#l00241">UartPutFrameISR()</a> i <a class="el" href="rs485_8c_source.html#l00134">UartStartTx()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80171d727fe56705b83bbd21cbc1629c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t FrameSendBytesCount = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00052">52</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00241">UartPutFrameISR()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b5a52104c58a57355129e2e47363c38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="struct_frame.html">Frame</a> InFrame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00060">60</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef672b6f4c319a765718b7d35d3d9f51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="struct_frame.html">Frame</a> OutFrame</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00061">61</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc3c715480a06b48f7a5333e33ea0510"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint16_t ReceiveErrors = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00058">58</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+<p>Odwołania w <a class="el" href="rs485_8c_source.html#l00293">ISR()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a520e25e85eefe4cd306816e6f7e21775"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_frame.html">Frame</a> response</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="rs485_8c_source.html#l00063">63</a> pliku <a class="el" href="rs485_8c_source.html">rs485.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="rs485_8c.html">rs485.c</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 11:03:46 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

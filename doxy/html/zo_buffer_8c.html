@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku zoBuffer.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('zo_buffer_8c.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku zoBuffer.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="zo_buffer_8h_source.html">zoBuffer.h</a>&quot;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="zo_mcu_8h_source.html">zoMcu.h</a>&quot;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ae0f396e30a97b29d5825f5cbdc009c49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_buffer_8c.html#ae0f396e30a97b29d5825f5cbdc009c49">zoBufferIsEmpty</a> (<a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *p)</td></tr>
+<tr class="memitem:a2f5c0acd8a531cae1ee233f4c318dfa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_buffer_8c.html#a2f5c0acd8a531cae1ee233f4c318dfa7">zoBufferIsFull</a> (<a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *p)</td></tr>
+<tr class="memitem:ab80fd651719be21a7c535d1799acca9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_buffer_8c.html#ab80fd651719be21a7c535d1799acca9b">zoBufferFlush</a> (<a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *p)</td></tr>
+<tr class="memitem:a6e7ab2914217a60835afc299612b9752"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_buffer_8c.html#a6e7ab2914217a60835afc299612b9752">zoBufferInit</a> (<a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *p, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> size)</td></tr>
+<tr class="memitem:ac91e83db532bdbe179c5e481419ff1e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_buffer_8c.html#ac91e83db532bdbe179c5e481419ff1e0">zoBufferGetIsr</a> (<a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *p)</td></tr>
+<tr class="memitem:af5f42def134d5815af2341c11b42efac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_buffer_8c.html#af5f42def134d5815af2341c11b42efac">zoBufferGet</a> (<a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *p)</td></tr>
+<tr class="memitem:a1a7a09356f4af67ede4af7909eb8d657"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_buffer_8c.html#a1a7a09356f4af67ede4af7909eb8d657">zoBufferPutIsr</a> (<a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *p, const <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> data)</td></tr>
+<tr class="memitem:a4f5e3911a610c215168f210ce6ba3963"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_buffer_8c.html#a4f5e3911a610c215168f210ce6ba3963">zoBufferPut</a> (<a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *p, const <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> data)</td></tr>
+<tr class="memitem:ab6a41647c9859171304e51df575903d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_buffer_8c.html#ab6a41647c9859171304e51df575903d3">zoBufferReadIsr</a> (<a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *p, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> index)</td></tr>
+<tr class="memitem:ae7e77b8b2567cb1f99dfa3c1fdb2be94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zo_buffer_8c.html#ae7e77b8b2567cb1f99dfa3c1fdb2be94">zoBufferRead</a> (<a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *p, <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> index)</td></tr>
+</table>
+<hr/><h2>Dokumentacja funkcji</h2>
+<a class="anchor" id="ab80fd651719be21a7c535d1799acca9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoBufferFlush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___b_u_f_f_e_r.html#ad32827256b907a666febce05cad7715c">ZO_BUFFER::ctr</a>, <a class="el" href="struct_z_o___b_u_f_f_e_r.html#ab48a9c6f3816edaa59d6e6b08cd73e48">ZO_BUFFER::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="struct_z_o___b_u_f_f_e_r.html#a4c3a826acab50bf7bf3473cd2a63c358">ZO_BUFFER::pIn</a> i <a class="el" href="struct_z_o___b_u_f_f_e_r.html#a61253c20a63a2ca2ad4c48613dc937a2">ZO_BUFFER::pOut</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_uart_8h.html#a16c3e5f6a520624fc8eb98e3ebeb02d4">zoUartRxFlush()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5f42def134d5815af2341c11b42efac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> zoBufferGet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a> i <a class="el" href="zo_buffer_8c.html#ac91e83db532bdbe179c5e481419ff1e0">zoBufferGetIsr()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_uart_8h.html#ae4aaebffbfa0801a00fc359d698a04c1">zoUartGetChar()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac91e83db532bdbe179c5e481419ff1e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> zoBufferGetIsr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___b_u_f_f_e_r.html#ad32827256b907a666febce05cad7715c">ZO_BUFFER::ctr</a>, <a class="el" href="struct_z_o___b_u_f_f_e_r.html#ab48a9c6f3816edaa59d6e6b08cd73e48">ZO_BUFFER::data</a>, <a class="el" href="struct_z_o___b_u_f_f_e_r.html#a61253c20a63a2ca2ad4c48613dc937a2">ZO_BUFFER::pOut</a> i <a class="el" href="struct_z_o___b_u_f_f_e_r.html#a00f9a3a822f1d43f1df001694eea132f">ZO_BUFFER::size</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_uart_8c.html#ad878deb12efde50ce23b8afa0cd310d1">ISR()</a> i <a class="el" href="zo_buffer_8h.html#af5f42def134d5815af2341c11b42efac">zoBufferGet()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e7ab2914217a60835afc299612b9752"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoBufferInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___b_u_f_f_e_r.html#ad32827256b907a666febce05cad7715c">ZO_BUFFER::ctr</a>, <a class="el" href="struct_z_o___b_u_f_f_e_r.html#ab48a9c6f3816edaa59d6e6b08cd73e48">ZO_BUFFER::data</a>, <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="zo_types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="el" href="struct_z_o___b_u_f_f_e_r.html#a4c3a826acab50bf7bf3473cd2a63c358">ZO_BUFFER::pIn</a>, <a class="el" href="struct_z_o___b_u_f_f_e_r.html#a61253c20a63a2ca2ad4c48613dc937a2">ZO_BUFFER::pOut</a>, <a class="el" href="struct_z_o___b_u_f_f_e_r.html#a00f9a3a822f1d43f1df001694eea132f">ZO_BUFFER::size</a> i <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_uart_8h.html#a002af3fe83db9b5720a10cdea7b3a802">zoUartSetBuffersSize()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0f396e30a97b29d5825f5cbdc009c49"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoBufferIsEmpty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___b_u_f_f_e_r.html#ad32827256b907a666febce05cad7715c">ZO_BUFFER::ctr</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a> i <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_uart_8c.html#ad878deb12efde50ce23b8afa0cd310d1">ISR()</a> i <a class="el" href="zo_uart_8h.html#a3c2d97d7b324798b97bc50978463827d">zoUartRxBufferIsEmpty()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f5c0acd8a531cae1ee233f4c318dfa7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6156fe0b594c9754f386f6c6a30c8165">bool</a> zoBufferIsFull </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___b_u_f_f_e_r.html#ad32827256b907a666febce05cad7715c">ZO_BUFFER::ctr</a>, <a class="el" href="zo_types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="el" href="struct_z_o___b_u_f_f_e_r.html#a00f9a3a822f1d43f1df001694eea132f">ZO_BUFFER::size</a> i <a class="el" href="zo_types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_uart_8c.html#a09ce999e15ad60b8a3f07d08af1946f9">ISR()</a>, <a class="el" href="zo_uart_8h.html#afb955160c9ba50ac40f2877acadeb07e">zoUartPutChar()</a> i <a class="el" href="zo_uart_8h.html#a13c242805415916e61aa1b3dacb009fd">zoUartTxBufferIsFull()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f5e3911a610c215168f210ce6ba3963"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoBufferPut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a> i <a class="el" href="zo_buffer_8c.html#a1a7a09356f4af67ede4af7909eb8d657">zoBufferPutIsr()</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_uart_8h.html#afb955160c9ba50ac40f2877acadeb07e">zoUartPutChar()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1a7a09356f4af67ede4af7909eb8d657"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void zoBufferPutIsr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___b_u_f_f_e_r.html#ad32827256b907a666febce05cad7715c">ZO_BUFFER::ctr</a>, <a class="el" href="struct_z_o___b_u_f_f_e_r.html#ab48a9c6f3816edaa59d6e6b08cd73e48">ZO_BUFFER::data</a>, <a class="el" href="struct_z_o___b_u_f_f_e_r.html#a4c3a826acab50bf7bf3473cd2a63c358">ZO_BUFFER::pIn</a> i <a class="el" href="struct_z_o___b_u_f_f_e_r.html#a00f9a3a822f1d43f1df001694eea132f">ZO_BUFFER::size</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_uart_8c.html#a09ce999e15ad60b8a3f07d08af1946f9">ISR()</a> i <a class="el" href="zo_buffer_8h.html#a4f5e3911a610c215168f210ce6ba3963">zoBufferPut()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7e77b8b2567cb1f99dfa3c1fdb2be94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> zoBufferRead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="zo_mcu_8h.html#a4bbb64be9c2c27f436bf05995a16c9a5">enterCritical</a>, <a class="el" href="zo_mcu_8h.html#a7eaf5d3dbc6a31a449a914428e2d1963">exitCritical</a> i <a class="el" href="zo_buffer_8c.html#ab6a41647c9859171304e51df575903d3">zoBufferReadIsr()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6a41647c9859171304e51df575903d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a> zoBufferReadIsr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_z_o___b_u_f_f_e_r.html">ZO_BUFFER</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="zo_types_8h.html#a6fb566012d3df25f99176f5b77c04693">u08</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Odwołuje się do <a class="el" href="struct_z_o___b_u_f_f_e_r.html#ab48a9c6f3816edaa59d6e6b08cd73e48">ZO_BUFFER::data</a>, <a class="el" href="struct_z_o___b_u_f_f_e_r.html#a61253c20a63a2ca2ad4c48613dc937a2">ZO_BUFFER::pOut</a> i <a class="el" href="struct_z_o___b_u_f_f_e_r.html#a00f9a3a822f1d43f1df001694eea132f">ZO_BUFFER::size</a>.</p>
+
+<p>Odwołania w <a class="el" href="zo_buffer_8h.html#ae7e77b8b2567cb1f99dfa3c1fdb2be94">zoBufferRead()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_fb5fb232909a11b4992a277a944d4228.html">SuperModified.V1</a></li><li class="navelem"><a class="el" href="zo_buffer_8c.html">zoBuffer.c</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 10:49:49 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>

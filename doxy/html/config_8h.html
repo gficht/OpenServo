@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>OpenServo RS485: Dokumentacja pliku config.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">OpenServo RS485
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">OpenServo z komunikacją z użyciem interfejsu RS485</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="modules.html"><span>Moduły</span></a></li>
+      <li><a href="annotated.html"><span>Struktury&#160;Danych</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Globalne</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('config_8h.html','');});
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku config.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="config_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:aa0ccd6b091225521476287acd59dc8ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#aa0ccd6b091225521476287acd59dc8ef">TWI_CHECKED_ENABLED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a2ea69b36631f924a779b40522610d25d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a2ea69b36631f924a779b40522610d25d">PID_MOTION_ENABLED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a71c4e8cef3f6c443018f609b74ec672b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a71c4e8cef3f6c443018f609b74ec672b">IPD_MOTION_ENABLED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a6c48bcb54fc91a1bfc25b4ba169f8b92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a6c48bcb54fc91a1bfc25b4ba169f8b92">REGULATOR_MOTION_ENABLED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a436a1f59c8d04c25e231afeb3f04176d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a436a1f59c8d04c25e231afeb3f04176d">ESTIMATOR_ENABLED</a>&#160;&#160;&#160;(<a class="el" href="config_8h.html#a6c48bcb54fc91a1bfc25b4ba169f8b92">REGULATOR_MOTION_ENABLED</a>)</td></tr>
+<tr class="memitem:ad7eaf029d42f6e860e3be58271cc68f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#ad7eaf029d42f6e860e3be58271cc68f4">FIXED_MATH_ENABLED</a>&#160;&#160;&#160;(<a class="el" href="config_8h.html#a436a1f59c8d04c25e231afeb3f04176d">ESTIMATOR_ENABLED</a> || REGULATOR_ENABLED)</td></tr>
+<tr class="memitem:a1476ca0b2a01b7cc7ffc4a9ec7d13239"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a1476ca0b2a01b7cc7ffc4a9ec7d13239">CURVE_MOTION_ENABLED</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:adfce27799f2b38c88e483f66ec3495a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#adfce27799f2b38c88e483f66ec3495a2">MAIN_MOTION_TEST_ENABLED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:adfba816875436e70c1f1a877f39b3075"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#adfba816875436e70c1f1a877f39b3075">PULSE_CONTROL_ENABLED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:aa4d4df58e1d8fa908d7c638f48d1149b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#aa4d4df58e1d8fa908d7c638f48d1149b">SWAP_PWM_DIRECTION_ENABLED</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a48a26a2b7ccd7d70dfd5941e5b4025ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a48a26a2b7ccd7d70dfd5941e5b4025ce">HARDWARE_TYPE_UNKNOWN</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a301191b9717586d633e51ea802a01685"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a301191b9717586d633e51ea802a01685">HARDWARE_TYPE_FUTABA_S3003</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a753106f2508e696e898222f3b4f015bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a753106f2508e696e898222f3b4f015bd">HARDWARE_TYPE_HITEC_HS_311</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:a8ce5a816028f9b50912b98003805ffb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a8ce5a816028f9b50912b98003805ffb4">HARDWARE_TYPE_HITEC_HS_475HB</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:aee3cc044940b17f5d1eff9c627452ac2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#aee3cc044940b17f5d1eff9c627452ac2">HARDWARE_TYPE_TOWERPRO_SG5010</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memitem:a04988e7d812ffad244fd37a708b92536"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a04988e7d812ffad244fd37a708b92536">HARDWARE_TYPE</a>&#160;&#160;&#160;<a class="el" href="config_8h.html#aee3cc044940b17f5d1eff9c627452ac2">HARDWARE_TYPE_TOWERPRO_SG5010</a></td></tr>
+<tr class="memitem:gab3593dabed4b2eff8e9f7c73088853bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__openservo.html#gab3593dabed4b2eff8e9f7c73088853bb">DEFAULT_PID_PGAIN</a>&#160;&#160;&#160;0x047C</td></tr>
+<tr class="memdesc:gab3593dabed4b2eff8e9f7c73088853bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konfiguracja P w PID dla TowerPro SG5010.  <a href="group__tolinski__openservo.html#gab3593dabed4b2eff8e9f7c73088853bb"></a><br/></td></tr>
+<tr class="memitem:gadf9cdf1f42b924088ad9bef906bfb7e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__openservo.html#gadf9cdf1f42b924088ad9bef906bfb7e0">DEFAULT_PID_DGAIN</a>&#160;&#160;&#160;0x1000</td></tr>
+<tr class="memdesc:gadf9cdf1f42b924088ad9bef906bfb7e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konfiguracja D w PID dla TowerPro SG5010.  <a href="group__tolinski__openservo.html#gadf9cdf1f42b924088ad9bef906bfb7e0"></a><br/></td></tr>
+<tr class="memitem:ga0459007ac30598963eb6fe596d4e534c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__openservo.html#ga0459007ac30598963eb6fe596d4e534c">DEFAULT_PID_IGAIN</a>&#160;&#160;&#160;0x0001</td></tr>
+<tr class="memdesc:ga0459007ac30598963eb6fe596d4e534c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konfiguracja I w PID dla TowerPro SG5010.  <a href="group__tolinski__openservo.html#ga0459007ac30598963eb6fe596d4e534c"></a><br/></td></tr>
+<tr class="memitem:ga189d6d59ec599a9ec53608cc3fd2b940"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__openservo.html#ga189d6d59ec599a9ec53608cc3fd2b940">DEFAULT_PID_DEADBAND</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memdesc:ga189d6d59ec599a9ec53608cc3fd2b940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Martwa strefa TowerPro SG5010.  <a href="group__tolinski__openservo.html#ga189d6d59ec599a9ec53608cc3fd2b940"></a><br/></td></tr>
+<tr class="memitem:gaf89d287dd6cd8931dd9544088a991b85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__openservo.html#gaf89d287dd6cd8931dd9544088a991b85">DEFAULT_MIN_SEEK</a>&#160;&#160;&#160;0x0060</td></tr>
+<tr class="memdesc:gaf89d287dd6cd8931dd9544088a991b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimalna pozycja.  <a href="group__tolinski__openservo.html#gaf89d287dd6cd8931dd9544088a991b85"></a><br/></td></tr>
+<tr class="memitem:ga3ac12ca83366ee84e3e98c1c0e70abc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tolinski__openservo.html#ga3ac12ca83366ee84e3e98c1c0e70abc2">DEFAULT_MAX_SEEK</a>&#160;&#160;&#160;0x03A0</td></tr>
+<tr class="memdesc:ga3ac12ca83366ee84e3e98c1c0e70abc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maksymalna pozycja.  <a href="group__tolinski__openservo.html#ga3ac12ca83366ee84e3e98c1c0e70abc2"></a><br/></td></tr>
+<tr class="memitem:a6f4dc07662b1e0c01ddd085786cdce89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="config_8h.html#a6f4dc07662b1e0c01ddd085786cdce89">DEFAULT_PWM_FREQ_DIVIDER</a>&#160;&#160;&#160;0x0010</td></tr>
+</table>
+<hr/><h2>Dokumentacja definicji</h2>
+<a class="anchor" id="a1476ca0b2a01b7cc7ffc4a9ec7d13239"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CURVE_MOTION_ENABLED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00099">99</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f4dc07662b1e0c01ddd085786cdce89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_PWM_FREQ_DIVIDER&#160;&#160;&#160;0x0010</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00189">189</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a436a1f59c8d04c25e231afeb3f04176d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ESTIMATOR_ENABLED&#160;&#160;&#160;(<a class="el" href="config_8h.html#a6c48bcb54fc91a1bfc25b4ba169f8b92">REGULATOR_MOTION_ENABLED</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00088">88</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad7eaf029d42f6e860e3be58271cc68f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FIXED_MATH_ENABLED&#160;&#160;&#160;(<a class="el" href="config_8h.html#a436a1f59c8d04c25e231afeb3f04176d">ESTIMATOR_ENABLED</a> || REGULATOR_ENABLED)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00093">93</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a04988e7d812ffad244fd37a708b92536"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HARDWARE_TYPE&#160;&#160;&#160;<a class="el" href="config_8h.html#aee3cc044940b17f5d1eff9c627452ac2">HARDWARE_TYPE_TOWERPRO_SG5010</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00147">147</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a301191b9717586d633e51ea802a01685"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HARDWARE_TYPE_FUTABA_S3003&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00139">139</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a753106f2508e696e898222f3b4f015bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HARDWARE_TYPE_HITEC_HS_311&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00140">140</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ce5a816028f9b50912b98003805ffb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HARDWARE_TYPE_HITEC_HS_475HB&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00141">141</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aee3cc044940b17f5d1eff9c627452ac2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HARDWARE_TYPE_TOWERPRO_SG5010&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00142">142</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48a26a2b7ccd7d70dfd5941e5b4025ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HARDWARE_TYPE_UNKNOWN&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00138">138</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a71c4e8cef3f6c443018f609b74ec672b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IPD_MOTION_ENABLED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00070">70</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adfce27799f2b38c88e483f66ec3495a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAIN_MOTION_TEST_ENABLED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00105">105</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ea69b36631f924a779b40522610d25d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PID_MOTION_ENABLED&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00060">60</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adfba816875436e70c1f1a877f39b3075"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PULSE_CONTROL_ENABLED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00111">111</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c48bcb54fc91a1bfc25b4ba169f8b92"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REGULATOR_MOTION_ENABLED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00080">80</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4d4df58e1d8fa908d7c638f48d1149b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SWAP_PWM_DIRECTION_ENABLED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00118">118</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0ccd6b091225521476287acd59dc8ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TWI_CHECKED_ENABLED&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicja w linii <a class="el" href="config_8h_source.html#l00052">52</a> pliku <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="config_8h.html">config.h</a></li>
+    <li class="footer">Wygenerowano Cz, 31 maj 2012 11:03:46 dla OpenServo RS485 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1 </li>
+  </ul>
+</div>
+</body>
+</html>
